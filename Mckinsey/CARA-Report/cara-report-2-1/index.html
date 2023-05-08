@@ -1,0 +1,483 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-cara-report',
+            issueAliasSlug: 'cara-report-2-1',
+            issue: {"id":648267,"projectId":96807,"slug":"experience-62bcb8b901ebe","name":"CARA report quiz interactive v2","status":"published","creationDate":"2022-06-29T20:40:25.000Z","lastModifiedDate":"2022-07-18T15:34:14.000Z","deletionDate":null,"firstPublishedDate":"2022-07-18T18:51:50.000Z","wipExperienceVersionId":2506743,"publishedExperienceVersionId":2536891,"createdByMemberId":6387,"primaryIssueAliasId":901698,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-62bcb8b5c3f67.jpg","importLinkShared":0,"lastPublishedDate":"2022-07-18T18:51:50.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"62bcb8b9-c683fe4ed5207","title":"CARA report quiz interactive v2"},
+            docVersion: {"id":2536891,"experienceId":648267,"slug":"experience-version-62d5abc69b73d","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-62d5abc69b73d.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d5abc69b749","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/18\/522b1083bd0fdfed77255a467b9dce71\/page-thumbnail.jpg?imageOpt=1&crop=683,442,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d5abc6a50d9","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/18\/4f3991b2546544fde0d24c13596fb90c\/page-thumbnail.jpg?imageOpt=1&crop=683,442,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d5abc6ab038","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/18\/8d08615d52f71ed055456b37cf92e18a\/page-thumbnail.jpg?imageOpt=1&crop=683,442,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d5abc6b14b2","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/18\/48d4f887a8a61279af449738fe988333\/page-thumbnail.jpg?imageOpt=1&crop=683,442,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d5abc6c1e5a","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/18\/4643fd43aa6514a6f057130787b56f46\/page-thumbnail.jpg?imageOpt=1&crop=683,442,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d5abc6c7acb","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/18\/ba646ebfbdcfca5588d88fd9ff1765ba\/page-thumbnail.jpg?imageOpt=1&crop=683,442,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-62bcb8b901ebe-07-18-2022-1851.cde","exportAppVersion":"8.7.1","creationDate":"2022-07-18T18:51:50.000Z","modificationDate":"2023-04-27T21:14:27.000Z","publishedDate":"2022-07-18T18:51:50.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":null,"ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-62bcb8b901ebe-07-18-2022-1851.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Light","familyGuid":"Uploaded|363cb0be-34c9-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Light-No-VplYhhY4","cssFileURL":"fonts\/48742f12-6a1e-406f-8d97-54b706bfda97\/mckinseysans-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Bower Bold","familyGuid":"Uploaded|5f5f3495-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1050,"ascent":840,"variantGuid":"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Bower Bold-Normal-IjUkOdL9","cssFileURL":"fonts\/b54def70-852a-418e-ac9f-c219271262b8\/bower-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Medium-Norm-2YcZ2E8f","cssFileURL":"fonts\/96e789a5-4c16-4b2b-bc11-5792733382ff\/theinhardt-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6","variantName":"Italic","cssFamilyName":"McKinsey Sans Medium-I-63FFQQOT","cssFileURL":"fonts\/061bac42-6f2f-4acd-8f27-c7db556b767f\/mckinseysans-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Medium-N-f9cPRz3F","cssFileURL":"fonts\/049f0573-4072-4a9d-afeb-eca67f9653ee\/mckinseysans-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|b1cca652-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans","familyGuid":"Uploaded|b1cc58b4-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|b1cca652-4abb-11eb-8f81-1211e90532b6","variantName":"Regular","cssFamilyName":"McKinsey Sans-Regular-eNT1Y2TC","cssFileURL":"fonts\/0f9a4790-35af-43b4-916c-09be2d416e70\/mckinseysans-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|bc806f65-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans","familyGuid":"Uploaded|b1cc58b4-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|bc806f65-4abb-11eb-8f81-1211e90532b6","variantName":"Italic","cssFamilyName":"McKinsey Sans-Italic-7E18cicF","cssFileURL":"fonts\/ceaf71af-227a-45cb-b212-89b7b86ed9ed\/mckinseysans-italic.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>CARA report quiz interactive v2</title>
+
+
+
+
+    <meta property="og:title" content="CARA report quiz interactive v2"/>
+        <meta property="og:image" content="media/522b1083bd0fdfed77255a467b9dce71/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CARA report quiz interactive v2">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/522b1083bd0fdfed77255a467b9dce71/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-62d5abc69b73d.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_62d5abc69b73d",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Which job profile would most frontline employees choose?</p>
+<p class="text-component">Our survey asked low-wage frontline employees and job seekers in the United States to choose among different job profiles and attributes. Can you predict which offer was more attractive to these employees?</p>
+<img src="media/3abdc60919364754a840c0c909e5b297/asset-5-at-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $1-per-hour raise
+• Flexible hours
+• Health insurance
+• Opportunity for promotion</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $2-per-hour raise
+• Predictable schedule
+• Health insurance
+• Tuition reimbursement</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $1-per-hour raise
+• Flexible hours
+• Health insurance
+• Opportunity for promotion</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $2-per-hour raise
+• Predictable schedule
+• Health insurance
+• Tuition reimbursement</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $1-per-hour raise
+• Flexible hours
+• Health insurance
+• Opportunity for promotion</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $2-per-hour raise
+• Predictable schedule
+• Health insurance
+• Tuition reimbursement</p>
+<p class="text-component">INCORRECT</p>
+<p class="text-component">Correct answer: Offer 1</p>
+<p class="text-component">The opportunity for job growth or a promotion is of high priority to frontline employees. This priority is consistently reflected in their stated desires and trade-off decisions. Here, we see more frontline employees opting for a job profile that offers the opportunity for promotion over an immediate incremental increase in pay.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">CORRECT</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">The opportunity for job growth or a promotion is of high priority to frontline employees. This priority is consistently reflected in their stated desires and trade-off decisions. Here, we see more frontline employees opting for a job profile that offers the opportunity for promotion over an immediate incremental increase in pay.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">1/6</p></div>
+            <div class="page"><p class="text-component">Which job profile would most frontline employees choose?</p>
+<p class="text-component">Our survey asked low-wage frontline employees and job seekers in the United States to choose among different job profiles and attributes. Can you predict which offer was more attractive to these employees?</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $2-per-hour raise
+• Not working nights
+• Parental leave
+• No additional advancement</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Flexible hours
+• Life insurance
+• On-the-job mentoring</p>
+<p class="text-component">INCORRECT</p>
+<p class="text-component">Correct answer: Offer 1</p>
+<p class="text-component">For those making $22 per hour or less, a wage increase can materially improve quality of life and is, unsurprisingly, prioritized by such workers. Here, we find that a $2-per-hour raise without advancement opportunities is still preferred to an alternative that offers other benefits but no pay raise.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">CORRECT</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">For those making $22 per hour or less, a wage increase can materially improve quality of life and is, unsurprisingly, prioritized by such workers. Here, we find that a $2-per-hour raise without advancement opportunities is still preferred to an alternative that offers other benefits but no pay raise.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $2-per-hour raise
+• Not working nights
+• Parental leave
+• No additional advancement  </p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $2-per-hour raise
+• Not working nights
+• Parental leave
+• No additional advancement </p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Flexible hours
+• Life insurance
+• On-the-job mentoring</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Flexible hours
+• Life insurance
+• On-the-job mentoring</p>
+<p class="text-component">opportunities</p>
+<p class="text-component">opportunities</p>
+<p class="text-component">opportunities</p>
+<img src="media/3abdc60919364754a840c0c909e5b297/asset-5-at-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">2/6</p></div>
+            <div class="page"><p class="text-component">Which job profile would most frontline employees choose?</p>
+<p class="text-component">Our survey asked low-wage frontline employees and job seekers in the United States to choose among different job profiles and attributes. Can you predict which offer was more attractive to these employees?</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $2-per-hour raise
+• Not working weekends
+• Health insurance
+• No additional advancement </p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $1-per-hour raise
+• Not working weekends
+• Health insurance
+• Opportunity for a yearly raise</p>
+<p class="text-component">INCORRECT</p>
+<p class="text-component">Correct answer: Offer 2</p>
+<p class="text-component">Career advancement opportunities that offer a modest wage increase in the near term and promise additional wage growth over time are preferred over an immediate, larger wage increase with no opportunity for advancement.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">CORRECT</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">Career advancement opportunities that offer a modest wage increase in the near term and promise additional wage growth over time are preferred over an immediate, larger wage increase with no opportunity for advancement.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $2-per-hour raise
+• Not working weekends
+• Health insurance
+• No additional advancement </p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $2-per-hour raise
+• Not working weekends
+• Health insurance
+• No additional advancement </p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $1-per-hour raise
+• Not working weekends
+• Health insurance
+• Opportunity for a yearly raise</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $1-per-hour raise
+• Not working weekends
+• Health insurance
+• Opportunity for a yearly raise</p>
+<p class="text-component">opportunities</p>
+<p class="text-component">opportunities</p>
+<p class="text-component">opportunities</p>
+<img src="media/3abdc60919364754a840c0c909e5b297/asset-5-at-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">3/6</p></div>
+            <div class="page"><p class="text-component">Which job profile would most frontline employees choose?</p>
+<p class="text-component">Our survey asked low-wage frontline employees and job seekers in the United States to choose among different job profiles and attributes. Can you predict which offer was more attractive to these employees?</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• Not working weekends
+• Paid time off
+• Additional responsibilities in 
+  the role</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Flexible hours
+• Parental leave
+• Childcare</p>
+<p class="text-component">INCORRECT</p>
+<p class="text-component">Correct answer: Offer 1</p>
+<p class="text-component">Parental leave and childcare may not be universally prioritized benefits. In fact, we find that even among parents for whom family-support benefits matter, more would opt for opportunities that offer career growth in the form of additional responsibilities, promotions, and paid training.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">CORRECT</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">Parental leave and childcare may not be universally prioritized benefits. In fact, we find that even among parents for whom family-support benefits matter, more would opt for opportunities that offer career growth in the form of additional responsibilities, promotions, and paid training.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• Not working weekends
+• Paid time off
+• Additional responsibilities in 
+  the role</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• Not working weekends
+• Paid time off
+• Additional responsibilities in 
+  the role</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Flexible hours
+• Parental leave
+• Childcare</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Flexible hours
+• Parental leave
+• Childcare</p>
+<img src="media/3abdc60919364754a840c0c909e5b297/asset-5-at-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">4/6</p></div>
+            <div class="page"><p class="text-component">Which job profile would most frontline employees choose?</p>
+<p class="text-component">Our survey asked low-wage frontline employees and job seekers in the United States to choose among different job profiles and attributes. Can you predict which offer was more attractive to these employees?</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• Predictable schedule
+• Life insurance
+• Opportunity to manage others</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Predictable schedule
+• 401(k) or other retirement             
+</p>
+<p class="text-component">INCORRECT</p>
+<p class="text-component">Correct answer: Offer 2</p>
+<p class="text-component">Select traditional benefits, such as heath insurance and retirement plans, are of high importance. We find that health and retirement benefits are more important to frontline employees today than in years past.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">CORRECT</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">Select traditional benefits, such as heath insurance and retirement plans, are of high importance. We find that health and retirement benefits are more important to frontline employees today than in years past.</p>
+<p class="text-component">Next question</p>
+<img src="media/91fac3bd682de4e3451dfb60597124db/start-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• Predictable schedule
+• Life insurance
+• Opportunity to manage others</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• Predictable schedule
+• Life insurance
+• Opportunity to manage others</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Predictable schedule
+• 401(k) or other retirement</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• Predictable schedule
+• 401(k) or other retirement  </p>
+<img src="media/3abdc60919364754a840c0c909e5b297/asset-5-at-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">5/6</p>
+<p class="text-component">• On-the-job mentoring</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• On-the-job mentoring</p>
+<p class="text-component">benefits</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• On-the-job mentoring</p></div>
+            <div class="page"><p class="text-component">Which job profile would most frontline employees choose?</p>
+<p class="text-component">Our survey asked low-wage frontline employees and job seekers in the United States to choose among different job profiles and attributes. Can you predict which offer was more attractive to these employees?</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $1-per-hour raise
+• Not working nights
+• 401(k) or other retirement</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $1-per-hour raise
+• Flexible hours
+• 401(k) or other retirement  </p>
+<p class="text-component">INCORRECT</p>
+<p class="text-component">Correct answer: Offer 2</p>
+<p class="text-component">In light of the pandemic, workplace flexibility has been an important consideration. Flexible hours are still the preferred work schedule for frontline employees; however, the utility obtained from flexible hours is considerably lower than the utility received from the other levers.</p>
+<p class="text-component">CORRECT</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">In light of the pandemic, workplace flexibility has been an important consideration. Flexible hours are still the preferred work schedule for frontline employees; however, the utility obtained from flexible hours is considerably lower than the utility received from the other levers.</p>
+<p class="text-component">Retake quiz</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $1-per-hour raise
+• Not working nights
+• 401(k) or other retirement</p>
+<p class="text-component">Offer 1</p>
+<p class="text-component">• $1-per-hour raise
+• Not working nights
+• 401(k) or other retirement</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $1-per-hour raise
+• Flexible hours
+• 401(k) or other retirement</p>
+<p class="text-component">Offer 2</p>
+<p class="text-component">• $1-per-hour raise
+• Flexible hours
+• 401(k) or other retirement</p>
+<img src="media/b3576938d39d23dc25bd7eda9c357cc0/processed-svg-back-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Retake quiz</p>
+<img src="media/db0c6a0eea257424cb90a12267527727/processed-svg-back-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">benefits</p>
+<p class="text-component">• Paid training opportunities</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• Paid training opportunities</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• Paid training opportunities</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• Paid training opportunities</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• Paid training opportunities</p>
+<p class="text-component">benefits</p>
+<p class="text-component">• Paid training opportunities</p>
+<img src="media/3abdc60919364754a840c0c909e5b297/asset-5-at-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">6/6</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'altprotein-ceros-scorecard',
+            issueAliasSlug: 'alt-protein',
+            issue: {"id":235908,"projectId":38291,"slug":"experience-5cf93915e2ef1","name":"Alt Protein","status":"published","creationDate":"2019-06-06T16:02:29.000Z","lastModifiedDate":"2019-09-10T23:29:05.000Z","deletionDate":null,"firstPublishedDate":"2019-08-02T20:20:36.000Z","wipExperienceVersionId":730562,"publishedExperienceVersionId":833045,"createdByMemberId":14154,"primaryIssueAliasId":322943,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5cf939159e63c.jpg","importLinkShared":0,"lastPublishedDate":"2019-09-10T15:33:35.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p89a15344487a","title":"Alt Protein"},
+            docVersion: {"id":833045,"experienceId":235908,"slug":"experience-version-5d77c24f848c7","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5d77c24f848c7.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Alt Protein","seoMetaKeywords":"","seoMetaDescription":"Alt Protein","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5d77c24f84997","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/09\/10\/2533981f8d6fc4e45c4ab82586c4ab6b\/page-thumbnail.jpg?imageOpt=1&crop=742,870,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5cf93915e2ef1-09-10-2019-1533.cde","exportAppVersion":"8.7.1","creationDate":"2019-09-10T15:33:35.000Z","modificationDate":"2023-04-27T21:19:32.000Z","publishedDate":"2019-09-10T15:33:35.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5cf93915e2ef1-09-10-2019-1533.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"viewport-width","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":640,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Bower Bold","familyGuid":"Uploaded|5f5f3495-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1050,"ascent":840,"variantGuid":"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Bower Bold-Normal-IjUkOdL9","cssFileURL":"fonts\/b54def70-852a-418e-ac9f-c219271262b8\/bower-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Light-Norma-AxPRkJpr","cssFileURL":"fonts\/87f3cab9-783a-46dd-8a5e-56c3fb6a53e8\/theinhardt-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Medium-Norm-2YcZ2E8f","cssFileURL":"fonts\/96e789a5-4c16-4b2b-bc11-5792733382ff\/theinhardt-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|68fc5331-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt","familyGuid":"Uploaded|68fc2ed5-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|68fc5331-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt-Italic-gVgL82Az","cssFileURL":"fonts\/93145360-6904-483d-a71d-4bb523463581\/theinhardt-italic.css","api":"Uploaded","woffFileURL":null},"Uploaded|6a9eb215-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt","familyGuid":"Uploaded|68fc2ed5-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6a9eb215-36de-11e9-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Theinhardt-Regular-Yl8PyLlh","cssFileURL":"fonts\/ff6babd4-d0bf-470c-a95a-6447ea8a7c24\/theinhardt-regular.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Alt Protein Alt Protein</title>
+
+
+
+        <meta name="description" content="Alt Protein"/>
+
+    <meta property="og:title" content="Alt Protein"/>
+        <meta property="og:image" content="media/2533981f8d6fc4e45c4ab82586c4ab6b/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Alt Protein">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/2533981f8d6fc4e45c4ab82586c4ab6b/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d77c24f848c7.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5d77c24f848c7",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Comparing alternative protein sources based on key consumer criteria for food selection reveals opportunities and challenges.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Safety perception</p>
+<p class="text-component">$/kg, 100% protein</p>
+<p class="text-component">Taste</p>
+<p class="text-component">Protein digestibility-corrected amino acid score</p>
+<p class="text-component">Environmental impact</p>
+<p class="text-component">Perceived animal welfare</p>
+<p class="text-component">Novelty</p>
+<p class="text-component">Concern over estrogenic effect or GMO</p>
+<p class="text-component">2.0</p>
+<p class="text-component">Clean taste; versatile ingredient</p>
+<p class="text-component">0.96</p>
+<p class="text-component">N/A</p>
+<p class="text-component">Low</p>
+<p class="text-component">>10 years on the market</p>
+<p class="text-component">Product nature</p>
+<p class="text-component">Sold as concentrate containing around 65 percent protein or isolate containing 85 percent protein. </p>
+<p class="text-component">Functionality</p>
+<p class="text-component">It has one of the highest scores on digestibility and amino acid balance for all alternative proteins and a neutral taste profile, making it a versatile ingredient.</p>
+<p class="text-component">Competitive position</p>
+<p class="text-component">Soy is extremely well developed, with major investments across its value chain from farm to fork. It has one of the lowest levels of environmental impact as a nitrogen-fixing crop and a low price point. All of these factors make soy the highest-value alternative protein.</p>
+<p class="text-component">Challenges</p>
+<p class="text-component">Soy is generally a GMO, so perceptions may be affected by the broader consumer debate about the safety of GMOs. In addition, soy is reported to have allergenic and estrogenic effects, though a recent review of the literature shows that any negative effects are very limited. </p>
+<img src="media/66cd644d6a64b9255b9296a17468059d/challenges-full.png" alt=""  class="image-component"/>
+<img src="media/93b5669fb0281f4b46a872ecfd3d38a6/competitive-position-full.png" alt=""  class="image-component"/>
+<img src="media/9cb27a59be1ef503505f0bd1a311cd68/functionality-full.png" alt=""  class="image-component"/>
+<img src="media/5e565c01a9e30f1dc483a54ad3976933/product-nature-full.png" alt=""  class="image-component"/>
+<p class="text-component">Safety perception</p>
+<p class="text-component">Taste</p>
+<p class="text-component">Protein digestibility-corrected amino acid score</p>
+<p class="text-component">Environmental impact</p>
+<p class="text-component">Perceived animal welfare</p>
+<p class="text-component">Novelty</p>
+<p class="text-component">$/kg, 100% protein</p>
+<p class="text-component">Non-GMO, nonallergenic, and very safe</p>
+<p class="text-component">Slight beany taste must be masked</p>
+<p class="text-component">>10 years on the market</p>
+<p class="text-component">N/A</p>
+<p class="text-component">Low</p>
+<p class="text-component">5.0</p>
+<p class="text-component">0.72</p>
+<p class="text-component">Product nature</p>
+<p class="text-component">Sold either as a concentrate 65 percent prepared through dry fractionation or an isolate at 85 percent protein through wet fractionation, which could be functional or denatured protein depending on the process.</p>
+<p class="text-component">Functionality</p>
+<p class="text-component">Its minimal beany flavor makes it versatile, but it has a lower score than soy on amino acid balance and digestibility.</p>
+<p class="text-component">Competitive position</p>
+<p class="text-component">Coming from a nitrogen-fixing legume, pea protein has one of the lowest levels of environmental impact. In addition, it is one of the cheapest alternative protein sources and also gets points with consumers for safety, as it is non-GMO and nonallergenic. The industry has seen a spike in patent filing on pea protein by 15 percent CAGR since 2009, while soy declined by 2 percent over the same period, signaling growing interest. </p>
+<p class="text-component">Challenges</p>
+<p class="text-component">Peas contain approximately 24 percent protein. Processing them for protein leads to a high volume of by-product, mainly starch, therefore manufacturers must find a specialty starch market to make pea processing economics less vulnerable to pea price volatility. Current markets include vermicelli noodles, thickening agents, and batter.</p>
+<img src="media/66cd644d6a64b9255b9296a17468059d/challenges-full.png" alt=""  class="image-component"/>
+<img src="media/93b5669fb0281f4b46a872ecfd3d38a6/competitive-position-full.png" alt=""  class="image-component"/>
+<img src="media/9cb27a59be1ef503505f0bd1a311cd68/functionality-full.png" alt=""  class="image-component"/>
+<img src="media/5e565c01a9e30f1dc483a54ad3976933/product-nature-full.png" alt=""  class="image-component"/>
+<p class="text-component">Safety perception</p>
+<p class="text-component">Taste</p>
+<p class="text-component">Protein digestibility-corrected amino acid score</p>
+<p class="text-component">Environmental impact</p>
+<p class="text-component">Perceived animal welfare</p>
+<p class="text-component">Novelty</p>
+<p class="text-component">$/kg, 100% protein</p>
+<p class="text-component">Potentially allergenic</p>
+<p class="text-component">Unfamiliar taste, texture, and aroma requires extensive development</p>
+<p class="text-component">>5 years on the market</p>
+<p class="text-component">Acceptable</p>
+<p class="text-component">Low</p>
+<p class="text-component">41.0</p>
+<p class="text-component">0.73</p>
+<p class="text-component">Product nature</p>
+<p class="text-component">Sold as whole or milled as flour containing up to 25 percent protein; no protein isolate is currently available in large scale.</p>
+<p class="text-component">Functionality</p>
+<p class="text-component">The flour has a distinct texture, appearance, and aroma that creates challenges in product formulation. The protein also has a low digestibility and amino acid balance score.</p>
+<p class="text-component">Competitive position</p>
+<p class="text-component">Insect protein is the most efficient in conversion of feed into edible weight, requiring 2.3 kilograms of feed to 1.0 kilogram of live animal weight and can be raised on low-value agricultural by-products. Chicken (2.3 kilograms), pork (5.0 kilograms), and beef (8.8 kilograms) all call for significantly more feed.</p>
+<p class="text-component">Challenges</p>
+<p class="text-component">Production is currently costlier ($4 to $5 a pound) than alternatives with higher-quality protein, such as poultry, dairy, and beef. To be competitive, insect protein would need to be ~$2 a pound. Furthermore, the taste is a barrier for adoption.</p>
+<img src="media/66cd644d6a64b9255b9296a17468059d/challenges-full.png" alt=""  class="image-component"/>
+<img src="media/93b5669fb0281f4b46a872ecfd3d38a6/competitive-position-full.png" alt=""  class="image-component"/>
+<img src="media/9cb27a59be1ef503505f0bd1a311cd68/functionality-full.png" alt=""  class="image-component"/>
+<img src="media/5e565c01a9e30f1dc483a54ad3976933/product-nature-full.png" alt=""  class="image-component"/>
+<p class="text-component">Safety perception</p>
+<p class="text-component">Taste</p>
+<p class="text-component">Protein digestibility-corrected amino acid score</p>
+<p class="text-component">Environmental impact</p>
+<p class="text-component">Perceived animal welfare</p>
+<p class="text-component">Novelty</p>
+<p class="text-component">$/kg, 100% protein</p>
+<p class="text-component">FDA requires mold labeling due to lawsuit</p>
+<p class="text-component">Currently mixed with egg and frozen to mimic meat texture</p>
+<p class="text-component">>5 years on the market</p>
+<p class="text-component">Medium</p>
+<p class="text-component">13.0</p>
+<p class="text-component">1.0</p>
+<p class="text-component">Product nature</p>
+<p class="text-component">A filamentous fungus, or mold, that is processed in its whole form typically without going through protein extraction. It contains approximately 47 percent protein and has a high digestibility and amino acid balance score.</p>
+<p class="text-component">Functionality</p>
+<p class="text-component">Mycoprotein is typically mixed with eggs to achieve a meat-like texture. Its neutral aromatic and flavor profile allows it to be a versatile ingredient. </p>
+<p class="text-component">Competitive position</p>
+<p class="text-component">Mycoprotein has higher fiber and a lower fat content than meat. It has experienced relative success in Europe and is growing in the US market. The food industry is selecting new strains and using gene-editing technology to improve performance. Traditionally, mycoprotein has been produced using glucose, a relatively costly feedstock. Start-ups are working on changing the feedstock to reduce production costs. </p>
+<p class="text-component">Challenges</p>
+<p class="text-component">Consumers are unfamiliar with mycoprotein, and a recent legal settlement required labeling to explicitly include the term “mold,” which negatively affects consumer perception and could impede its growth. </p>
+<img src="media/66cd644d6a64b9255b9296a17468059d/challenges-full.png" alt=""  class="image-component"/>
+<img src="media/93b5669fb0281f4b46a872ecfd3d38a6/competitive-position-full.png" alt=""  class="image-component"/>
+<img src="media/9cb27a59be1ef503505f0bd1a311cd68/functionality-full.png" alt=""  class="image-component"/>
+<img src="media/5e565c01a9e30f1dc483a54ad3976933/product-nature-full.png" alt=""  class="image-component"/>
+<p class="text-component">N/A</p>
+<p class="text-component">Safety perception</p>
+<p class="text-component">Taste</p>
+<p class="text-component">Protein digestibility-corrected amino acid score</p>
+<p class="text-component">Environmental impact</p>
+<p class="text-component">Perceived animal welfare</p>
+<p class="text-component">Novelty</p>
+<p class="text-component">$/kg, 100% protein</p>
+<p class="text-component">Complex technology perceived cautiously</p>
+<p class="text-component">Requires texture development and fat cell inclusion to mimic animal meat</p>
+<p class="text-component">Not available</p>
+<p class="text-component">High</p>
+<p class="text-component">300.0</p>
+<p class="text-component">0.92</p>
+<p class="text-component">Product nature</p>
+<p class="text-component">An aggregation of animal cells produced through tissue culture. Current production techniques seek to mimic animal muscle architecture and fat content and subsequently meat texture and flavor.</p>
+<p class="text-component">Functionality</p>
+<p class="text-component">Cultured meat scores high on digestibility, amino acid balance, and taste. Ground beef is expected to be the initial product offered. </p>
+<p class="text-component">Competitive position</p>
+<p class="text-component">Cultured meat is currently not available for purchase, but over the next five years it is predicted to reach the high-end market through specialty restaurants. In the next ten years, it should be cost competitive with conventional animal production systems.</p>
+<p class="text-component">Challenges</p>
+<p class="text-component">The industry must overcome major technological challenges before it can hope to become price competitive with conventional animal production systems. The electric energy consumed when producing cultured meat is the main contributer to the environmental impact. The barrier to entry is high for food producers as this technology is still in the development stage and substantial investment in infrastructure and expertise is required.</p>
+<img src="media/66cd644d6a64b9255b9296a17468059d/challenges-full.png" alt=""  class="image-component"/>
+<img src="media/93b5669fb0281f4b46a872ecfd3d38a6/competitive-position-full.png" alt=""  class="image-component"/>
+<img src="media/9cb27a59be1ef503505f0bd1a311cd68/functionality-full.png" alt=""  class="image-component"/>
+<img src="media/5e565c01a9e30f1dc483a54ad3976933/product-nature-full.png" alt=""  class="image-component"/>
+<p class="text-component">Acceptable</p>
+<p class="text-component">Safety perception</p>
+<p class="text-component">Taste</p>
+<p class="text-component">Protein digestibility-corrected amino acid score</p>
+<p class="text-component">Environmental impact</p>
+<p class="text-component">Perceived animal welfare</p>
+<p class="text-component">Novelty</p>
+<p class="text-component">$/k, 100% protein</p>
+<p class="text-component">Very safe</p>
+<p class="text-component">Clean taste; excellent functionality in beverages</p>
+<p class="text-component">>10 years on the market</p>
+<p class="text-component">Medium</p>
+<p class="text-component">7.5</p>
+<p class="text-component">1.0</p>
+<p class="text-component">Product nature</p>
+<p class="text-component">A protein derived from dairy products, it has a high digestibility and amino acid balance score.</p>
+<p class="text-component">Functionality</p>
+<p class="text-component">Whey’s neutral flavor profile means that it can be included in a range of products without altering taste and functionality. </p>
+<p class="text-component">Competitive position</p>
+<p class="text-component">Whey falls in the middle of other proteins by cost, and it is well established and accepted by consumers in the market. </p>
+<p class="text-component">Challenges</p>
+<p class="text-component">Whey has faced competition from the dairy-free industry, which is typically supported by consumers who desire to be healthier and more environmentally conscious.</p>
+<img src="media/66cd644d6a64b9255b9296a17468059d/challenges-full.png" alt=""  class="image-component"/>
+<img src="media/93b5669fb0281f4b46a872ecfd3d38a6/competitive-position-full.png" alt=""  class="image-component"/>
+<img src="media/9cb27a59be1ef503505f0bd1a311cd68/functionality-full.png" alt=""  class="image-component"/>
+<img src="media/5e565c01a9e30f1dc483a54ad3976933/product-nature-full.png" alt=""  class="image-component"/>
+<p class="text-component">Consumer concerns</p>
+<p class="text-component">Soy protein</p>
+<p class="text-component">Pea protein</p>
+<p class="text-component">Insect protein; ‘crickets’</p>
+<p class="text-component">Mycoprotein</p>
+<p class="text-component">Cultured meat</p>
+<p class="text-component">Whey protein</p>
+<p class="text-component">Soy protein</p>
+<p class="text-component">Pea protein</p>
+<p class="text-component">Insect protein; ‘crickets’</p>
+<p class="text-component">Mycoprotein</p>
+<p class="text-component">Cultured meat</p>
+<p class="text-component">Whey protein</p>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">A nitrogen-fixing crop is one whose roots are populated by bacteria through the process of extracting nitrogen from the air and converting it into a form it can use to help its growth. In short, the plant and the bacteria have a symbiotic relationship. </p>
+<p class="text-component">The Nutrition Source, “Straight talk about Soy.”</p>
+<p class="text-component">4</p>
+<p class="text-component">Volker Heinz et al., “Meat alternatives: life cycle assessment of most known meat substitutes,” The International Journal of Life Cycle Assessment, 2015, Volume 20, Number 9, pp. 1254–67, link.springer.com.</p>
+<p class="text-component">6</p>
+<p class="text-component">Arnold van Huis et al., Edible insects: future prospects for food and feed security, Food and Agriculture Organization of the United Nations, 2013, fao.org. </p>
+<p class="text-component">7</p>
+<p class="text-component">Amy Zhong, Product development considerations for a nutrient rich bar using cricket (Acheta domesticus) protein, California State University Department of Family and Consumer Sciences, May 2017, search.proquest.com.</p>
+<p class="text-component">8</p>
+<p class="text-component">Dennis G. A. B. Oonincx et al., “Feed conversion, survival and development, and composition of four insect species on diets composed of food by-products,” PLoS ONE, 2015, Volume 10, Number 12, pp. 1–20, journals.plos.org.
+
+Huis et al., Edible insects; J. Mike Wilkinson, “Re-defining efficiency of feed use by livestock,” International Journal of Animal Biosciences, Volume 5, Number 7, 2011, pp. 1014–22, cambridge.org.</p>
+<p class="text-component">9</p>
+<p class="text-component">Adele Peters, “Lab-grown meat is getting cheap enough for anyone to buy,” Fast Company, May 5, 2018, fastcompany.com; Elaine Watson, “Grasshoppers,”; and Huis et al., Edible insects.; Morales-Ramos, Mass Production of Beneficial Organisms, first edition, Oxford, UK: Elsevier, 2014.</p>
+<p class="text-component">Soy protein</p>
+<p class="text-component">Pea protein</p>
+<p class="text-component">Insect protein; ‘crickets’</p>
+<p class="text-component">Mycoprotein</p>
+<p class="text-component">Cultured meat</p>
+<p class="text-component">Whey protein</p>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Prices are based on industry interviews at the time of writing this article.</p>
+<p class="text-component">3</p>
+<p class="text-component">Glenna Hughes, et al., “Protein digestibility-corrected amino acid scores (PDCAAS) for soy protein isolates and concentrate: criteria for evaluation,” The Journal of Agricultural and Food Chemistry,” 2011, Volume 59, Number 23, pp.12707–12, ncbi.nlm.nih.gov.</p>
+<img src="null" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">The protein digestibility-corrected amino acid score for pea protein is an average score based on the following two studies referenced. The score is also influenced by the type of protein fractionation process used. Shane Rutherfurd, et al., “Protein Digestibility-Corrected Amino Acid Scores and Digestible Indispensable Amino Acid Scores Differentially Describe Protein Quality in Growing Male Rats [1–3],” The Journal of Nutrition, November 2014, Volume 145, pp. 372–9, academic.oup.com; “Protein quality of cooked pulses,” Pulse Canada, 2016, pulsecanada.com. </p>
+<img src="media/fbb234cd41c359d01bd9ce0fff46123b/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">10</p>
+<p class="text-component">Florence Oibiokpa, et al., “Protein quality of four indigenous edible insect species in Nigeria,” Food Science and Human Wellness, June 2018, Volume 7, Number 2, pp. 175–83, sciencedirect.com.</p>
+<img src="media/fbb234cd41c359d01bd9ce0fff46123b/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">11</p>
+<p class="text-component">D. G. Edwards and J. H. Cummings, “The protein quality myth of mycoprotein,” Proceedings of the Nutrition Society, 2010, Volume 69, cambridge.org.</p>
+<img src="media/fbb234cd41c359d01bd9ce0fff46123b/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">12</p>
+<p class="text-component"> Gertjan Schaafsma, “The protein digestibility–corrected amino acid score,” The Journal of Nutrition, 2000, Volume 130, Number 7, pp. 1865S–7S,  academic.oup.com. </p>
+<img src="media/fbb234cd41c359d01bd9ce0fff46123b/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">12</p>
+<p class="text-component">Gertjan Schaafsma, “The protein digestibility–corrected amino acid score,” The Journal of Nutrition, 2000, Volume 130, Number 7, pp. 1865S–7S,  academic.oup.com. </p>
+<p class="text-component">13</p>
+<p class="text-component">Schaafsma, “The protein digestibility–corrected amino acid score,” 1865S–7S.</p>
+<img src="media/fbb234cd41c359d01bd9ce0fff46123b/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/>
+<img src="media/4a822cc0acadf60b39f86e8c7286ca9b/close-icon.svg" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
