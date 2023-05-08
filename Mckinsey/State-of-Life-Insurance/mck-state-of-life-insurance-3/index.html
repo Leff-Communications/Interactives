@@ -1,0 +1,235 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck',
+            issueAliasSlug: 'mck-state-of-life-insurance-3',
+            issue: {"id":174732,"projectId":26116,"slug":"experience-5bc62b510dfb7","name":"WHERE THE LIFE INSURANCE INDUSTRY CAN GO FROM HERE Mobile","status":"published","creationDate":"2018-10-16T18:17:53.000Z","lastModifiedDate":"2018-10-30T17:04:07.000Z","deletionDate":null,"firstPublishedDate":"2018-10-29T21:31:46.000Z","wipExperienceVersionId":510577,"publishedExperienceVersionId":523033,"createdByMemberId":6384,"primaryIssueAliasId":242078,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5bc62b50a4764.jpg","importLinkShared":0,"lastPublishedDate":"2018-10-29T21:31:46.000Z","lastModifiedByMemberId":6384,"lastPublishedByMemberId":6384,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p3f2ad6583739","title":"WHERE THE LIFE INSURANCE INDUSTRY CAN GO FROM HERE Mobile"},
+            docVersion: {"id":523033,"experienceId":174732,"slug":"experience-version-5bd77c41f2342","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5bd77c41f2342.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"https:\/\/www.mckinsey.com\/industries\/financial-services\/our-insights\/where-the-life-insurance-industry-can-go-from-here","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5bd77c41f240f","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2018\/10\/29\/f7eaad2b11a2cc8b62131508650b1eb8\/page-thumbnail.jpg?imageOpt=1&crop=544,782,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5bc62b510dfb7-10-29-2018-2131.cde","exportAppVersion":"8.7.1","creationDate":"2018-10-29T21:31:46.000Z","modificationDate":"2023-04-27T21:23:25.000Z","publishedDate":"2018-10-29T21:31:45.000Z","committedByMemberId":6384,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5bc62b510dfb7-10-29-2018-2131.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d570a64b-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570a64b-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Bd","cssFamilyName":"Helvetica Neue LT Std--51X5Be92","cssFileURL":"fonts\/f442178f-3ee6-4dff-894a-44ffa547affb\/helveticaneueltstd-bd.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570af1c-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570af1c-3d30-11e8-88f3-0e55d9bc9e68","variantName":"BdIt","cssFamilyName":"Helvetica Neue LT Std--HfsLN0WF","cssFileURL":"fonts\/81422e42-bf93-4c8f-a1df-a4991afdd89a\/helveticaneueltstd-bdit.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570dd72-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570dd72-3d30-11e8-88f3-0e55d9bc9e68","variantName":"It","cssFamilyName":"Helvetica Neue LT Std--VJfeJDYa","cssFileURL":"fonts\/2348ad25-a699-4377-a8f8-2a90889bb7c4\/helveticaneueltstd-it.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570de90-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570de90-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Lt","cssFamilyName":"Helvetica Neue LT Std--AHSibGoJ","cssFileURL":"fonts\/1594ccab-825e-4b8e-8213-8708b32fc6b0\/helveticaneueltstd-lt.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570e91f-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570e91f-3d30-11e8-88f3-0e55d9bc9e68","variantName":"LtIt","cssFamilyName":"Helvetica Neue LT Std--2BAEeMCF","cssFileURL":"fonts\/1359aa20-8ae8-4d3d-9f4e-a500596d643d\/helveticaneueltstd-ltit.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570ea2d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570ea2d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Md","cssFamilyName":"Helvetica Neue LT Std--Lt6UhciU","cssFileURL":"fonts\/c5cd2839-d3f4-4f18-98a9-6ba420047b07\/helveticaneueltstd-md.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570f4e4-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570f4e4-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Roman","cssFamilyName":"Helvetica Neue LT Std--24tr0LRo","cssFileURL":"fonts\/315098eb-431e-4ca4-81ce-a6b10ff8baa0\/helveticaneueltstd-roman.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>WHERE THE LIFE INSURANCE INDUSTRY CAN GO FROM HERE Mobile</title>
+
+
+
+
+    <meta property="og:title" content="WHERE THE LIFE INSURANCE INDUSTRY CAN GO FROM HERE Mobile"/>
+        <meta property="og:image" content="media/f7eaad2b11a2cc8b62131508650b1eb8/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WHERE THE LIFE INSURANCE INDUSTRY CAN GO FROM HERE Mobile">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/f7eaad2b11a2cc8b62131508650b1eb8/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5bd77c41f2342.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5bd77c41f2342",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        <h1>WHERE THE LIFE INSURANCE INDUSTRY CAN GO FROM HERE</h1>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    <script type="text/javascript">
+	function loadScript(src, callback)
+	{
+		var s, r, t;
+		r = false;
+		s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = src;
+		s.onload = s.onreadystatechange = function() {
+			if ( !r && (!this.readyState || this.readyState == 'complete') )
+			{
+				r = true;
+				callback();
+			}
+		};
+		t = document.getElementsByTagName('script')[0];
+		t.parentNode.insertBefore(s, t);
+	}
+	loadScript('//assets.adobedtm.com/31d0cc0e4278bee6dc9b353b467120decd1519fd/satelliteLib-7f174c9b3b254630ecc3bec11e94362f56a7bd43.js', function(){_satellite.pageBottom();})
+</script>
+
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

@@ -1,0 +1,439 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck',
+            issueAliasSlug: 'mck-state-of-life-insurance-3-2',
+            issue: {"id":178287,"projectId":26116,"slug":"experience-5bd86db321fa1","name":"WHERE THE LIFE INSURANCE Mobile to rework copy","status":"published","creationDate":"2018-10-30T14:41:55.000Z","lastModifiedDate":"2018-10-31T02:13:40.000Z","deletionDate":null,"firstPublishedDate":"2018-10-31T15:29:55.000Z","wipExperienceVersionId":523556,"publishedExperienceVersionId":525015,"createdByMemberId":6384,"primaryIssueAliasId":246623,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5bd86db2bccb2.jpg","importLinkShared":0,"lastPublishedDate":"2018-10-31T15:29:55.000Z","lastModifiedByMemberId":6384,"lastPublishedByMemberId":6384,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pebe0ed939501","title":"WHERE THE LIFE INSURANCE Mobile to rework copy"},
+            docVersion: {"id":525015,"experienceId":178287,"slug":"experience-version-5bd9ca731ee6e","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5bd9ca731ee6e.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"https:\/\/www.mckinsey.com\/industries\/financial-services\/our-insights\/where-the-life-insurance-industry-can-go-from-here","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5bd9ca731ef3d","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2018\/10\/31\/3ee6be210a59a76ec7b67a9a0cc42b0f\/page-thumbnail.jpg?imageOpt=1&crop=544,782,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5bd86db321fa1-10-31-2018-1529.cde","exportAppVersion":"8.7.1","creationDate":"2018-10-31T15:29:55.000Z","modificationDate":"2023-04-27T21:22:19.000Z","publishedDate":"2018-10-31T15:29:55.000Z","committedByMemberId":6384,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5bd86db321fa1-10-31-2018-1529.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d570a64b-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570a64b-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Bd","cssFamilyName":"Helvetica Neue LT Std--51X5Be92","cssFileURL":"fonts\/f442178f-3ee6-4dff-894a-44ffa547affb\/helveticaneueltstd-bd.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570af1c-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570af1c-3d30-11e8-88f3-0e55d9bc9e68","variantName":"BdIt","cssFamilyName":"Helvetica Neue LT Std--HfsLN0WF","cssFileURL":"fonts\/81422e42-bf93-4c8f-a1df-a4991afdd89a\/helveticaneueltstd-bdit.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570de90-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570de90-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Lt","cssFamilyName":"Helvetica Neue LT Std--AHSibGoJ","cssFileURL":"fonts\/1594ccab-825e-4b8e-8213-8708b32fc6b0\/helveticaneueltstd-lt.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570e91f-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570e91f-3d30-11e8-88f3-0e55d9bc9e68","variantName":"LtIt","cssFamilyName":"Helvetica Neue LT Std--2BAEeMCF","cssFileURL":"fonts\/1359aa20-8ae8-4d3d-9f4e-a500596d643d\/helveticaneueltstd-ltit.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570ea2d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570ea2d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Md","cssFamilyName":"Helvetica Neue LT Std--Lt6UhciU","cssFileURL":"fonts\/c5cd2839-d3f4-4f18-98a9-6ba420047b07\/helveticaneueltstd-md.css","api":"Uploaded","woffFileURL":null},"Uploaded|d570f4e4-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3bd86f4-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d570f4e4-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Roman","cssFamilyName":"Helvetica Neue LT Std--24tr0LRo","cssFileURL":"fonts\/315098eb-431e-4ca4-81ce-a6b10ff8baa0\/helveticaneueltstd-roman.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>WHERE THE LIFE INSURANCE Mobile to rework copy</title>
+
+
+
+
+    <meta property="og:title" content="WHERE THE LIFE INSURANCE Mobile to rework copy"/>
+        <meta property="og:image" content="media/3ee6be210a59a76ec7b67a9a0cc42b0f/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WHERE THE LIFE INSURANCE Mobile to rework copy">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/3ee6be210a59a76ec7b67a9a0cc42b0f/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5bd9ca731ee6e.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5bd9ca731ee6e",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b4c1a2e1a2e49b1055cb80fdad2a35f0/white-block-full.png" alt=""  class="image-component"/>
+<img src="media/7a734265509d5a30514b07fb4bf50fa1/yellow-line-full.png" alt=""  class="image-component"/>
+<img src="media/968cffec09029c2b11fd21f1e4fa6a69/blue-block-full.png" alt=""  class="image-component"/>
+<img src="media/7a734265509d5a30514b07fb4bf50fa1/yellow-line-full.png" alt=""  class="image-component"/>
+<img src="media/b4c1a2e1a2e49b1055cb80fdad2a35f0/white-block-full.png" alt=""  class="image-component"/>
+<img src="media/7a734265509d5a30514b07fb4bf50fa1/yellow-line-full.png" alt=""  class="image-component"/>
+<img src="media/968cffec09029c2b11fd21f1e4fa6a69/blue-block-full.png" alt=""  class="image-component"/>
+<img src="media/7a734265509d5a30514b07fb4bf50fa1/yellow-line-full.png" alt=""  class="image-component"/>
+<img src="media/b4c1a2e1a2e49b1055cb80fdad2a35f0/white-block-full.png" alt=""  class="image-component"/>
+<img src="media/7a734265509d5a30514b07fb4bf50fa1/yellow-line-full.png" alt=""  class="image-component"/>
+<img src="media/71cd25578f7bd2f41372a77a0166f1db/asset-7-full.png" alt=""  class="image-component"/>
+<img src="media/3149457c88665cc5be8d2be472656390/mck-logos-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">WHERE THE</p>
+<p class="text-component">LIFE INSURANCE INDUSTRY</p>
+<p class="text-component">CAN GO FROM HERE</p>
+<p class="text-component">The life and annuities industry is at a critical juncture—no longer in recovery mode and firmly focused on growth. The ground has shifted since the global financial crisis of 2007–08, and life insurers will need to look for growth in new areas.</p>
+<p class="text-component">Data collected by McKinsey suggests that winners in 
+the industry will benefit from bold resource allocation to the right markets, customer segments, and adjacent sectors, such 
+as asset management, while also driving substantial productivity improvement.</p>
+<p class="text-component">This interactive summarizes the state of the industry and explains how insurers can move forward to pursue new opportunities.
+
+The findings are extracted from our new report, Life insurance and annuities state of the industry 2018: The growth imperative (PDF–1.87MB).</p>
+<img src="media/3224fa0c8bd2f62242aa4ebb9e738ac6/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">INDUSTRY GROWTH IS UP</p>
+<p class="text-component">The past year was particularly productive for life insurers. Global premiums grew 5 percent in 2017, up from 3.7 percent in 2016. In addition, total market capitalization for the top 50 insurance players rose 17 percent, with nearly all regions seeing the top companies gain market value during 
+this period.</p>
+<p class="text-component">Life insurance companies have recovered from the financial crisis and grown beyond pre-crisis levels.</p>
+<img src="media/ed30309269212c277069a3f264ff80ee/asset-2-full.png" alt=""  class="image-component"/>
+<img src="media/5e0fedb27041ec8d9e06f53a1340e118/asset-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Developed</p>
+<p class="text-component">Emerging</p>
+<p class="text-component">Total market capitalization,¹ $ trillions</p>
+<p class="text-component">Based on top 100 life insurance companies.
+Source: CapitalIQ database</p>
+<p class="text-component">1</p>
+<img src="media/58fc1b06e9f15bef31e3c3a3052528d2/asset-4-full.png" alt=""  class="image-component"/>
+<img src="media/9f43f22ad0436d90dcfb343b88c488f6/new-line-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">THE GLOBAL VIEW MASKS A DIVERGENCE</p>
+<p class="text-component">Top-line numbers obscure differences in industry performance among regions and verticals. Developed markets (such as Europe, Japan, and North America) recorded low growth of around 1 to 2 percent, while developing markets (for example, Asia and Latin America) grew much faster—at 12 to 15 percent.</p>
+<p class="text-component">China is now nearly as large as the United States in terms of absolute 
+profit in the life insurance industry, powered by explosive growth over the past several years.</p>
+<p class="text-component">2017 after-tax profit, $ </p>
+<p class="text-component">Profit growth rate, 2015–17, CAGR, %</p>
+<p class="text-component">Source: McKinsey Global Insurance Pools database</p>
+<p class="text-component">Global
+$149 billion</p>
+<p class="text-component">Global
+$149 billion</p>
+<p class="text-component">+2%</p>
+<p class="text-component">Americas
+(excluding US)
+$15 billion</p>
+<p class="text-component">Americas
+(excluding US)
+$15 billion</p>
+<p class="text-component">+36%</p>
+<img src="media/75c032ff0ba334f022e23bc7c43b06fc/americas-map-highlight-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">APAC(excluding China, Japan)
+$20 billion</p>
+<p class="text-component">APAC(excluding China, Japan)
+$20 billion</p>
+<p class="text-component">+5%</p>
+<img src="media/0cc841a29a9334639e4a6def880b956a/apac-map-highlight-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">China
+$25 billion</p>
+<p class="text-component">China
+$25 billion</p>
+<p class="text-component">+13%</p>
+<img src="media/9d93be2a44d53a098ac38c1bdcaef83e/china-map-highlight-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">EMEA
+(excluding UK)
+$32 billion</p>
+<p class="text-component">EMEA
+(excluding UK)
+$32 billion</p>
+<p class="text-component">–2%</p>
+<p class="text-component">Japan
+$9 billion</p>
+<p class="text-component">Japan
+$9 billion</p>
+<p class="text-component">–8%</p>
+<img src="media/344ccf3b4b12376a65568b81d80e4fea/japan-map-highlight-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">UK
+$16 billion</p>
+<p class="text-component">UK
+$16 billion</p>
+<p class="text-component">–11%</p>
+<img src="media/1335ca976b7f29ba4f4846b43448258e/uk-map-highlight-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">US
+$31 billion</p>
+<p class="text-component">US
+$31 billion</p>
+<p class="text-component">–2%</p>
+<img src="media/70694b5d59b165819cc4dc12a36c6ed0/us-map-highlight-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Industry cost structure has changed incrementally, but much more is needed</p>
+<p class="text-component">Since the financial crisis, little has changed in the expense structure, investment management, and capital structure of life insurers. Expense ratios have remained flat or increased by one percentage point in most regions.</p>
+<p class="text-component">Across geographies, life insurers have not yet begun to address operating costs, with expense ratios mostly flat in recent years.</p>
+<p class="text-component">Average expense ratio percentage point change, 2011–16, 
+by geography, %</p>
+<p class="text-component">Source: McKinsey Global Insurance Pools database</p>
+<img src="media/a942508fbbb8addff7aff0f1dbf4727a/6-full.png" alt=""  class="image-component"/>
+<img src="media/d0f511ea463798dcec7ca2e7f6a13d9a/3-full.png" alt=""  class="image-component"/>
+<img src="media/23d1e871a1891bd9328b2e9541d4c2ae/1-full.png" alt=""  class="image-component"/>
+<img src="media/db1c6fd106acbf7382d62f49f50bfa6a/4-full.png" alt=""  class="image-component"/>
+<img src="media/8a61228f566752b4b60b5abbf63ec010/5-full.png" alt=""  class="image-component"/>
+<img src="media/21a296af04bfba1d93b1f8e735821d3c/2-full.png" alt=""  class="image-component"/>
+<img src="media/8de8dfbd92a259de94548f360c5aaaff/7-full.png" alt=""  class="image-component"/>
+<p class="text-component">China</p>
+<p class="text-component">Japan</p>
+<p class="text-component">United Kingdom</p>
+<p class="text-component">United
+States</p>
+<p class="text-component">Americas 
+(excluding US)</p>
+<p class="text-component">APAC (excluding Japan, China)</p>
+<p class="text-component">EMEA 
+(excluding UK)</p>
+<p class="text-component">Long-term value creation will be powered by bold moves</p>
+<p class="text-component">Fifty percent of a company’s long-term growth is determined by bold moves (or lack thereof) on resource allocation, M&A, productivity improvements, and investments in the future. Among the largest, most globally diverse companies in the life and annuities industry, the top performers are more than three times more likely to have done programmatic M&A and achieved productivity or differentiation improvements over the past ten years.</p>
+<p class="text-component">Our research found that four moves increase a company’s likelihood to move up the Power Curve.</p>
+<p class="text-component">What a “big move” means over 10 years</p>
+<img src="media/89fccf451bb1ed14b286f6fd8be7024b/gray-bar-full.png" alt=""  class="image-component"/>
+<img src="media/d06f4c0dd5a856503190e812d2c82120/orange-bar-full.png" alt=""  class="image-component"/>
+<img src="media/2fce1e7b547d865439d09a2ea34ce3cb/purple-bar-full.png" alt=""  class="image-component"/>
+<img src="media/49479df0449ef7726b3cae662d528ca0/yellow-bar-full.png" alt=""  class="image-component"/>
+<img src="media/071e9eb533db347d75117fc111cacdf1/bar-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Mergers, acquisitions, and divestments</p>
+<p class="text-component">Mergers, 
+acquisitions, and divestments</p>
+<p class="text-component">At least one deal per year, with no single deal greater than 30% of market capitalization but adding up to 30% of your market capitalization over 10 years</p>
+<img src="media/6499ba4cd3da7c727d579f471e5cc48d/bar-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Resource reallocation</p>
+<p class="text-component">Resource reallocation</p>
+<p class="text-component">Shift in capital expenditure across the portfolio such that more than 60% of annual capital expenditure allocated to different business units</p>
+<img src="media/c8445a7a48bc25db30be32b17aec7d19/bar-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Productivity improvement</p>
+<p class="text-component">Productivity improvement</p>
+<p class="text-component">SG&A productivity improvement relative to 
+industry in top 40% of companies; and labor productivity improvement relative to industry 
+in top 30% of companies</p>
+<img src="media/7cc62f1700812aa788ab2c3c7173bbc1/bar-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Differentiation improvement</p>
+<p class="text-component">Differentiation improvement</p>
+<p class="text-component">Gross margin improvement relative to industry in top 30% of companies</p>
+<p class="text-component">COMPANIES MUST PICK THE RIGHT MARKETS</p>
+<p class="text-component">Our analysis identified three archetypes of markets where insurance companies can compete: commodity, harvest, and cultivation. Understanding and balancing resource allocation across these markets by characteristics such as maturity, competitive environment, and level of government-supported pensions can support growth.</p>
+<p class="text-component">High-level market attractiveness can be assessed through the role of state pension and healthcare systems and asset management penetration. </p>
+<p class="text-component">Protection and accumulation demand framework</p>
+<p class="text-component">Limited penetration</p>
+<p class="text-component">Large </p>
+<p class="text-component">Small</p>
+<p class="text-component">Mature 
+market </p>
+<p class="text-component">Maturity of retail asset management industry</p>
+<p class="text-component">Role of state-sponsored retirement system</p>
+<p class="text-component">Variations exist among countries in region.</p>
+<p class="text-component">1</p>
+<img src="media/fe293076409c3d33ce9bef5b051b24b0/icon-01-full.png" alt=""  class="image-component"/>
+<img src="media/4e0f41024dbcba36a03b390f56287346/icon-02-full.png" alt=""  class="image-component"/>
+<img src="media/604b8ff7704f688a3c9c41b1a7d9ed0c/icon-03-full.png" alt=""  class="image-component"/>
+<img src="media/56f973647565d4c0d4bee2e95fa14a37/icon-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">Opportunity to harvest shift from state pension 
+to DC, with low competition from asset management</p>
+<p class="text-component">Western Europe</p>
+<p class="text-component">1</p>
+<p class="text-component">Markets to cultivate 
+with low competition 
+from adjacent industries</p>
+<p class="text-component">Fully ripened 
+Japan
+South Korea</p>
+<p class="text-component">Fresh blooms 
+China
+Latin America
+Southeast Asia</p>
+<p class="text-component">1</p>
+<p class="text-component">1</p>
+<p class="text-component">Market with limited potential due to high competition from asset management and state pensions</p>
+<p class="text-component">Large commodity market driven by need for low-cost operations </p>
+<p class="text-component">Canada
+United Kingdom
+United States
+</p>
+<img src="media/0749dd42d91dcc561a3e04fd6682b42a/white-dashed-line-full.png" alt=""  class="image-component"/>
+<img src="media/0749dd42d91dcc561a3e04fd6682b42a/white-dashed-line-full.png" alt=""  class="image-component"/>
+<img src="media/0749dd42d91dcc561a3e04fd6682b42a/white-dashed-line-full.png" alt=""  class="image-component"/>
+<p class="text-component">Moving forward, insurers will need to support a strategy of bold moves in these markets with the following four actions:</p>
+<p class="text-component">strengthen the M&A and business development functions to partner with or acquire new companies in adjacent industries to benefit from the economies of new ecosystems</p>
+<img src="media/a04c56c5fe48fbfec724d76b3ec2b911/8-full.png" alt=""  class="image-component"/>
+<p class="text-component">structure the corporate center to better reflect more frequent resource allocation across the portfolio</p>
+<img src="media/a04c56c5fe48fbfec724d76b3ec2b911/8-full.png" alt=""  class="image-component"/>
+<p class="text-component">dramatically improve productivity through automation and outsourcing</p>
+<img src="media/a04c56c5fe48fbfec724d76b3ec2b911/8-full.png" alt=""  class="image-component"/>
+<p class="text-component">accelerate the path to an agile operating model and more rapid decision making</p>
+<img src="media/a04c56c5fe48fbfec724d76b3ec2b911/8-full.png" alt=""  class="image-component"/>
+<img src="media/54016ae625a2eb8a57b7999298896b23/arrow-in-a-circle-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/f30a57834e53469eca0d8ef3bb7bc3eb/mck-logos-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Download the full report on which this interactive is based, Life insurance and annuities state of the industry 2018: The growth imperative (PDF–1.87MB).</p>
+<p class="text-component">Copyright © 2018 McKinsey & Company. All rights reserved. </p>
+<img src="media/8a63771df89e487ce5f7ccdc1660a0ca/stateoflifeinsurance-fullmap-grey-01-full.png" alt=""  class="image-component"/>
+<img src="media/f57b9325829bf60e59770a981ded42f2/globalmap-yellow-01-full.png" alt=""  class="image-component"/>
+<img src="media/91fc2ac2b24239f10cb2bb67fa8d04a5/emea-map-highlight-01-full.png" alt=""  class="image-component"/>
+<img src="media/9a96aea26f437816b78108a519e556c5/newchart-2-01-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    <script type="text/javascript">
+	function loadScript(src, callback)
+	{
+		var s, r, t;
+		r = false;
+		s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = src;
+		s.onload = s.onreadystatechange = function() {
+			if ( !r && (!this.readyState || this.readyState == 'complete') )
+			{
+				r = true;
+				callback();
+			}
+		};
+		t = document.getElementsByTagName('script')[0];
+		t.parentNode.insertBefore(s, t);
+	}
+	loadScript('//assets.adobedtm.com/31d0cc0e4278bee6dc9b353b467120decd1519fd/satelliteLib-7f174c9b3b254630ecc3bec11e94362f56a7bd43.js', function(){_satellite.pageBottom();})
+</script>
+
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

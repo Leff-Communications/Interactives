@@ -1,0 +1,270 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-tli-tourism-economy',
+            issueAliasSlug: 'tourism-economy-chart',
+            issue: {"id":370181,"projectId":59440,"slug":"experience-5f22f1b4c7300","name":"TLI Tourism Economy","status":"published","creationDate":"2020-07-30T16:13:40.000Z","lastModifiedDate":"2022-06-30T20:33:02.000Z","deletionDate":null,"firstPublishedDate":"2020-07-31T19:26:56.000Z","wipExperienceVersionId":1258221,"publishedExperienceVersionId":1260656,"createdByMemberId":14154,"primaryIssueAliasId":504108,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5f22f1b45641b.jpg","importLinkShared":0,"lastPublishedDate":"2020-07-31T19:26:56.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pcb2624011d59","title":"TLI Tourism Economy"},
+            docVersion: {"id":1260656,"experienceId":370181,"slug":"experience-version-5f24707fe1e31","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5f24707fe1e31.js","themingBackgroundImageUri":null,"seoTitleKeywords":"TLI Tourism Economy","seoMetaKeywords":"","seoMetaDescription":"TLI Tourism Economy","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5f24707fe1e42","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/07\/31\/7c30dc8f8d4f2a65342dca09cdab18a4\/page-thumbnail.jpg?imageOpt=1&crop=683,680,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5f22f1b4c7300-07-31-2020-1926.cde","exportAppVersion":"8.7.1","creationDate":"2020-07-31T19:26:56.000Z","modificationDate":"2023-04-27T21:16:34.000Z","publishedDate":"2020-07-31T19:26:55.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5f22f1b4c7300-07-31-2020-1926.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Light-Norma-AxPRkJpr","cssFileURL":"fonts\/87f3cab9-783a-46dd-8a5e-56c3fb6a53e8\/theinhardt-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Medium-Norm-2YcZ2E8f","cssFileURL":"fonts\/96e789a5-4c16-4b2b-bc11-5792733382ff\/theinhardt-medium.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>TLI Tourism Economy TLI Tourism Economy</title>
+
+
+
+        <meta name="description" content="TLI Tourism Economy"/>
+
+    <meta property="og:title" content="TLI Tourism Economy"/>
+        <meta property="og:image" content="media/7c30dc8f8d4f2a65342dca09cdab18a4/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="TLI Tourism Economy">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/7c30dc8f8d4f2a65342dca09cdab18a4/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5f24707fe1e31.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5f24707fe1e31",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Teams are built to reflect real-world needs rather than existing organizational entities.</p>
+<p class="text-component">Project 
+teams¹</p>
+<img src="media/48e65d9b2db6e25403cab8ec0b622164/mck-scriptmark-rgb-mckdeepblue-full.png" alt=""  class="image-component"/>
+<p class="text-component">A tourism nerve center as an agile team across public and private sectors </p>
+<p class="text-component">Click on icons to read typical activities</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Central crisis management team</p>
+<p class="text-component">Tourism response lead</p>
+<img src="media/dd4137175b692dccbf0cf381aa028dcd/icon-1-full.png" alt=""  class="image-component"/>
+<img src="media/2315a1990889646c2399f2c7cc9458c0/icon-1b-full.png" alt=""  class="image-component"/>
+<img src="media/a461f435a68503a3bb2c4c465d5b3bff/icon-2-full.png" alt=""  class="image-component"/>
+<img src="media/67a0afe2d9c2b8664f9ccdda8f1ab1d6/icon-2b-full.png" alt=""  class="image-component"/>
+<img src="media/ddea6719e95cb5ea39be217ef8b9ed2d/icon-3-full.png" alt=""  class="image-component"/>
+<img src="media/309f1d767df5cfb70d5c8658e3f6eb62/icon-3b-full.png" alt=""  class="image-component"/>
+<img src="media/c13ebacb400b7a51215783f4a9d917d3/icon-4-full.png" alt=""  class="image-component"/>
+<img src="media/2b22a06515a317e9cfe98e8274b48098/icon-4b-full.png" alt=""  class="image-component"/>
+<img src="media/8792c03b291461515017a365ede64045/icon-5-full.png" alt=""  class="image-component"/>
+<img src="media/1e7d407752c18669c7093a1c3bdbb76f/icon-5b-full.png" alt=""  class="image-component"/>
+<p class="text-component">Protection of workforce 
+and tourists</p>
+<p class="text-component">Industry financial relief</p>
+<p class="text-component">Communication and demand fostering</p>
+<p class="text-component">Industry relaunch</p>
+<p class="text-component">Industry observatory² </p>
+<p class="text-component">Coordinate and facilitate several weekly meetings with project-team leads
+
+Ensures coordination with central team</p>
+<img src="media/408275aa9c413b5f0553ffa8395bc515/lines-full.png" alt=""  class="image-component"/>
+<p class="text-component">1 Typical full-time teams include data analysis, legal, communications, finance or budget, supply chain, and procurement.
+2 Can be part of a central crisis management observatory.
+3 Small and medium-size enterprises.</p>
+<img src="media/d471060f40fc1738353ef5bf04ed94bd/pop-up-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Manage support programs for fragile workers (especially seasonal workers) </p>
+<p class="text-component">Develop sanitary protocols (eg, for airports, hotels, museums) </p>
+<p class="text-component">Monitor compliance with these protocols (eg, via random checks)</p>
+<p class="text-component">Define business-support measures (via public–private cooperation), regularly monitor the evolution of companies’ financial situation through surveys</p>
+<p class="text-component">Help actors get access to this support and navigate application process (communicate on eligibility criteria, streamline granting process)</p>
+<p class="text-component">Survey stakeholders’ liquidity weekly to get real-time pulse</p>
+<img src="media/b616b32764646be7a036e6ea40fa54be/pop-up-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Design and launch communication and subsidies campaigns to promote local tourism, and reassure both customers and employees about safety measures</p>
+<p class="text-component">Identify new trends in consumer preferences (eg, local and outdoor tourism) using surveys</p>
+<img src="media/727634190d43f8410d80fae084cc75a3/pop-up-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Prepare for relaunch in several stages (ie, domestic tourism followed by international tourism, prioritizing measures to be taken) with the help of public–private cooperation </p>
+<img src="media/6cab26561cf3b28b1a72ac11d1f1bca0/pop-up-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Adapt action plan for each business category (eg, conversion to long-term stays, renovation, SMEs³ digitization)</p>
+<p class="text-component">Design dynamic dashboards to monitor the evolution of supply indicators (eg, inventory of all open and closed establishments) and demand (eg, flight reservations 2–3 months out)</p>
+<p class="text-component">Collect data in real time with the help of local (hotels and tour operators) and international stakeholders and conduct regular interviews with them</p>
+<img src="media/791b864fb4e4b463c9159ff00c75725b/pop-up-5-full.png" alt=""  class="image-component"/>
+<img src="media/2315a1990889646c2399f2c7cc9458c0/icon-1b-full.png" alt=""  class="image-component"/>
+<img src="media/67a0afe2d9c2b8664f9ccdda8f1ab1d6/icon-2b-full.png" alt=""  class="image-component"/>
+<img src="media/309f1d767df5cfb70d5c8658e3f6eb62/icon-3b-full.png" alt=""  class="image-component"/>
+<img src="media/2b22a06515a317e9cfe98e8274b48098/icon-4b-full.png" alt=""  class="image-component"/>
+<img src="media/1e7d407752c18669c7093a1c3bdbb76f/icon-5b-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
