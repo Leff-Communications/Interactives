@@ -1,0 +1,324 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-voices-june-2019',
+            issueAliasSlug: 'uav-debate',
+            issue: {"id":239914,"projectId":37650,"slug":"experience-5d0a71d586bc8","name":"UAV Debate","status":"published","creationDate":"2019-06-19T17:33:09.000Z","lastModifiedDate":"2019-08-20T15:58:51.000Z","deletionDate":null,"firstPublishedDate":"2019-07-03T14:20:03.000Z","wipExperienceVersionId":744365,"publishedExperienceVersionId":807778,"createdByMemberId":6387,"primaryIssueAliasId":332984,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5d0a71d55882f.jpg","importLinkShared":0,"lastPublishedDate":"2019-08-20T16:00:33.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pe74737060993","title":"UAV Debate"},
+            docVersion: {"id":807778,"experienceId":239914,"slug":"experience-version-5d5c192190f9a","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5d5c192190f9a.js","themingBackgroundImageUri":null,"seoTitleKeywords":"UAV Debate","seoMetaKeywords":"","seoMetaDescription":"UAV Debate","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5d5c192191046","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/08\/20\/2df2d768d2bf6c57e22dc27307c1691e\/page-thumbnail.jpg?imageOpt=1&crop=870,612,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5d0a71d586bc8-08-20-2019-1600.cde","exportAppVersion":"8.7.1","creationDate":"2019-08-20T16:00:33.000Z","modificationDate":"2023-04-27T21:20:33.000Z","publishedDate":"2019-08-20T16:00:33.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5d0a71d586bc8-08-20-2019-1600.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Bower Bold","familyGuid":"Uploaded|5f5f3495-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1050,"ascent":840,"variantGuid":"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Bower Bold-Normal-IjUkOdL9","cssFileURL":"fonts\/b54def70-852a-418e-ac9f-c219271262b8\/bower-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Light-Norma-AxPRkJpr","cssFileURL":"fonts\/87f3cab9-783a-46dd-8a5e-56c3fb6a53e8\/theinhardt-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|6a9c6be9-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6a9c6be9-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Light-Itali-SRN6RMzx","cssFileURL":"fonts\/98d88cfc-430f-491b-97af-fa02600f7d52\/theinhardt-lightitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Medium-Norm-2YcZ2E8f","cssFileURL":"fonts\/96e789a5-4c16-4b2b-bc11-5792733382ff\/theinhardt-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|68ef50b5-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|68ef50b5-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Medium-Ital-vdDnfj5s","cssFileURL":"fonts\/9755340f-5f53-4694-9c48-13dce01cd94b\/theinhardt-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|6a9eb215-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt","familyGuid":"Uploaded|68fc2ed5-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6a9eb215-36de-11e9-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Theinhardt-Regular-Yl8PyLlh","cssFileURL":"fonts\/ff6babd4-d0bf-470c-a95a-6447ea8a7c24\/theinhardt-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Light-N-WI9zSQsD","cssFileURL":"fonts\/c51e5b12-7097-4ed8-b6b8-b7b1af6838ec\/theinhardtpan-light.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>UAV Debate UAV Debate</title>
+
+
+
+        <meta name="description" content="UAV Debate"/>
+
+    <meta property="og:title" content="UAV Debate"/>
+        <meta property="og:image" content="media/2df2d768d2bf6c57e22dc27307c1691e/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="UAV Debate">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/2df2d768d2bf6c57e22dc27307c1691e/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d5c192190f9a.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5d5c192190f9a",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Flying vehicles have long tantalized our imagination, as evidenced by films such as Metropolis and Blade Runner and the cartoon series The Jetsons. Yet I think they will stay in our imagination for some time to come. In lightweight applications—for example, sensing and small parcels—UAVs can indeed play a big role in sparsely populated areas and in cities. But there are various physical and practical reasons why our city skies will not be filled with delivery UAVs anytime soon.
+
+Let’s consider the physics. A huge amount of energy is required to lift a heavy object vertically into the air, creating a vast amount of noise and air disturbance. In dense cities such as New York, an overwhelming percentage of all goods is delivered via trucks. Each day, approximately 25,000 delivery trucks and commercial vehicles move into, around, and out of Manhattan.¹ If even just 5 percent of those vehicles were replaced by drones, that would mean 1,250 UAVs—the largest helicopters—dotting the skies.
+
+There is also the issue of safety. Even with the new lithium-metal batteries, which have twice the energy density of—and more stable performance than—conventional lithium-ion batteries, moving substantial quantities of goods overhead presents a recurring safety hazard. Modern trucks may be noisy, but a dead battery or a broken rotor blade in a delivery drone used for urban deliveries could cause it to fall onto a densely populated area. 
+
+Even if we used UAVs only for lightweight deliveries, thus allowing the use of smaller drones that pose a less significant safety risk, we would find ourselves with tens of thousands of vehicles in the sky. How could we ensure these flying objects were protected from hackers, terrorists, and other criminals? How might air traffic control systems safely coordinate their intersecting journeys?
+
+Of course, these challenges do not signal the end outright or new delivery options or UAVs. However, in densely populated cities, the challenge of achieving faster and more efficient last-mile deliveries could probably be better fixed in other ways by rotors planted firmly on the ground. For these reasons, I do not believe UAVs will gain traction and claim a significant share of urban deliveries by 2030.</p>
+<p class="text-component">Debate: Will delivery UAVs scale by 2030?</p>
+<p class="text-component">Motion: </p>
+<img src="media/88a24f4c6662725189df47e121430335/arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">For: Will Hetzler,</p>
+<p class="text-component">Against: Carlo Ratti,</p>
+<p class="text-component">Unmanned aerial vehicles (UAVs) will gain traction and claim a significant share (1 to 5 percent) of urban deliveries by 2030. </p>
+<p class="text-component">Cofounder, Zipline International</p>
+<p class="text-component">Director, SENSEable City Lab; Professor of Urban Technologies and</p>
+<p class="text-component">Planning, MIT</p>
+<p class="text-component">UAVs, commonly known as drones, are a hot topic of debate. Will they become ubiquitous? How can safety concerns be addressed? How should they be regulated? McKinsey asked two professionals close to the issue to weigh in on whether they believe UAVs will gain traction and claim a significant share of urban deliveries by 2030. Below, Will Hetzler and Carlo Ratti share their initial arguments and then respond to each other’s claims.</p>
+<p class="text-component">Opening statement</p>
+<p class="text-component">Drones provide a unique combination of flexibility, efficiency, and speed. Logistics systems need these capabilities to meet growing demand for residential deliveries as consumer expectations set by online shopping spread to sectors outside retail, such as healthcare. This demand will lead to drones being used for a significant share of urban deliveries by 2030. 
+
+Drones’ advantage in the United States is strongest for B2C deliveries, such as healthcare products, small online purchases, and food. Traditional ground transportation is optimized for B2B deliveries and fails to adequately serve many new B2C business models recently enabled by technology. B2C deliveries are already a majority of the package volume in the United States and are growing faster than B2B deliveries, making the opportunity for drones significant.² Drones can meet the demand of consumers for faster delivery and also give consumers more control over the time and location of delivery.
+
+Due to technical and regulatory constraints, drones are best suited to small-package delivery. Barring a breakthrough in energy storage, this will remain true in 2030. While this might be viewed as a limitation, B2C deliveries trend small. For example, 86 percent of the items that Amazon ships weigh less than five pounds.³ And the demand for such small-package delivery is increasing rapidly.⁴
+
+Today, drones most easily deliver to single-occupancy, detached structures. While this type of development is often associated with suburban and rural areas, single-family, detached homes make up approximately 60 percent of the housing units in America’s largest metropolitan areas.⁵ Consequently, while drone delivery may be impractical in Manhattan, most US metropolitan areas are readily serviceable with current drone technology. As technology continues to improve over the coming decade, the proportion of urban addresses that are serviceable by drones will only increase.</p>
+<p class="text-component">Opening statement</p>
+<img src="media/78d98a875626b0ef72c0bc5be7640248/cr-rgb-full.png" alt=""  class="image-component"/>
+<img src="media/30afbb0643ccba1c608463eb83876e1e/wh-rgb-full.png" alt=""  class="image-component"/>
+<p class="text-component">We both agree that drones are not likely to work in the densest urban areas. And we also agree that they could indeed play a role in rural areas and in places where the road infrastructure is not fully developed—especially for time-sensitive or medical deliveries. However, we disagree about the ability to scale in urban areas. 
+
+To Will’s point that drones combine flexibility, efficiency, and speed, I would argue 
+that safety and reliability are more important than any of these factors. And there is a simple reason why drones are much less reliable and safe than any vehicle on wheels: weather.  
+
+Most of us have experienced commercial flights being canceled because of weather. A common thunderstorm can ground a light aircraft with a mass that’s three or four orders of magnitude larger than a drone. Air movement of just a few meters per second could be enough to send small drones bumping into buildings or falling from the sky.
+
+In China, drones are used in remote rural locations to ship parcels. Despite having some of the loosest regulations for UAVs in the world, the local civil aviation authority does not allow drones to fly under circumstances in which the use of a car or even a bike would not be questioned, including through rain, light wind, and darkness.⁶  While it’s possible that new sensors might combat the darkness issue in the future, the problems with rain and wind are based on physics and therefore unlikely to be resolved. 
+
+How will drones perform in metropolitan areas such as Vancouver or Amazon’s home, Seattle, both respectively known as “Rain City”? The first week of May 2019 in Boston was marked by near-constant rain—what would have happened to time-sensitive deliveries? Such unreliable conditions make it unlikely that we will be able to scale drone delivery in the near future.
+
+A majority of the items Amazon ships weigh less than five pounds, as Will points out, while typically hundreds or even thousands of such small parcels are packed together on the same truck and delivered with clear efficiencies of scale. Meanwhile, lightweight drones are unlikely to be able to transport much more weight than one or two pairs of shoes, thus forcing them to return to the base to collect the next parcel. As a result, the total number of required trips would need to be multiplied by two or three orders of magnitude, generating congestion in the skies.⁷ Not to mention, these small drones would be much more sensitive to even mildly adverse weather. Such conditions would hinder speed and efficiency and make it difficult to scale.⁸
+
+I believe UAVs indeed offer interesting solutions for mobility and logistics in the future—especially for remote locations. But I am still skeptical about their ability to scale in cities.</p>
+<p class="text-component">Rebuttal</p>
+<p class="text-component">It’s easy to agree on what the future of drones in cities is not. Large drones capable of transporting a full truckload are unlikely to make many urban deliveries within the next ten years. And drones of any size may be impractical delivery vehicles in the densest urban environments in this time frame. However, there is a real opportunity for urban drone delivery of small packages in the vast majority of cities. 
+
+The technical capability exists today for residents of most cities to routinely receive deliveries by drone, and a decade is plenty of time for new technology to transform the industry. For an example of how quickly urban transportation can change, consider ridesharing, which has only existed for around ten years but now accounts for significantly more annual rides than taxis.⁹
+
+As Carlo notes, the safety of urban drone delivery is an important topic, and many questions must be answered before urban drone delivery can reach scale. For example, cybersecurity is a concern for drones, just as it is for all transportation technologies, including in cars and trucks. How to coordinate drone traffic is another concern. Fortunately, academics, regulators, and private industry experts have started working on these issues and are making fast progress.¹⁰
+
+It is important to note that delivery drones differ dramatically from the recreational drones flown by hobbyists. Performance standards and rigorous testing ensure that delivery drone designs are safe. I believe the FAA would never allow commercial operation of a delivery drone that could fall out of the sky due to a dead battery or broken rotor blade. The aviation industry has a long-standing practice of designing redundancy into safety-critical systems, and commercial drone companies use this same approach. Delivery drones are also already safely operating in heavy rain and turbulent winds greater than 60 miles per hour.
+
+In the United States, the FAA certifies drone delivery operators under the same part of the Code of Federal Regulations as manned air carriers that provide commuter, on-demand, and cargo flights, commonly referred to as “Part 135 operators.”¹¹ Consequently, drone delivery operators are held to equivalent safety standards. While it’s difficult to directly compare safety statistics for different transportation modes, ground transportation has significantly higher accident rates than Part 135 operators and roughly double the number of accidents involving fatalities.</p>
+<p class="text-component">Rebuttal</p>
+<p class="text-component">“Off-Hour Deliveries (OHD) Program,” New York City Department of Transportation, accessed May 21, 2019, www1.nyc.gov.
+Strong today: Creating our tomorrow, UPS 2018 annual report, investors.ups.com.
+Jeff Bezos, “Amazon’s Jeff Bezos Looks to the Future,” interview by Charlie Rose, 60 Minutes, CBS, December 1, 2013, transcript, 6.
+Strong today: Creating our tomorrow, investors.ups.com.
+2017 American housing survey, United States Census Bureau, census.gov. All occupied units for 43 listed 
+metropolitan areas. 
+“China is on the fast track to drone deliveries,” Bloomberg, July 3, 2018, bloomberg.com.
+Drones’ lift force is generated by moving large volumes of air downward, which means they cannot fly on the top of one another (unless at large distances). This effectively restricts the use of space as it relates to vertical dimensions and could exacerbate congestion issues in the future.
+A standard last-mile delivery truck can carry a volume of approximately 12 square meters with a ground footprint of approximately 10 square meters. Amazon’s large, standard-size truck has the following specs: maximum weight of less than 20 pounds and maximum dimensions of 18 x 14 x 8 inches. This means that the load of just one truck would need at least 380 drones to be delivered—and more than 1,000 if parcels are smaller (closer to 5 pounds).
+Johana Bhuiyan, “Ride-hail apps like Uber and Lyft generated 65 percent more rides than taxis did in New York in 2017,” Recode, March 15, 2018, recode.net.
+For instance, the FAA and NASA are collaborating with the aviation industry to develop unmanned aircraft system 
+traffic management (UTM) to assist with coordinating the high volume of advanced drone operations that will come in 
+the near future.
+The full definition of 14 CFR Part 135 operations is complex but covers the following: air ambulance and commercial helicopter operations, on-demand cargo flights on airplanes with a maximum payload capacity of 7,500 pounds, air taxi and charter flights on airplanes with seats for a maximum of 30 passengers, and scheduled commuter flights on airplanes with seats for a maximum of nine passengers.
+The most recent five-year period for which federal safety statistics are publicly available.
+Traffic safety facts: A compilation of motor vehicle crash data from the fatality analysis reporting system and the general estimates system, U.S. Department of Transportation, 2016, crashstats.nhtsa.dot.gov.
+Figures are based on US civil aviation accident statistics from 2012 to 2016, National Transportation Safety Board, ntsb.gov; and US air carrier traffic statistics from 2012 to 2016, Bureau of Transportation Statistics, bts.gov. </p>
+<p class="text-component">Carlo Ratti
+Director, SENSEable City Lab; Professor of Urban Technologies and Planning, MIT</p>
+<p class="text-component">Will Hetzler
+Cofounder, Zipline International</p>
+<p class="text-component">Carlo Ratti, MIT</p>
+<p class="text-component">Will Hetzler, Zipline</p>
+<p class="text-component">¹</p>
+<p class="text-component">² </p>
+<p class="text-component">³</p>
+<p class="text-component">⁴</p>
+<p class="text-component">⁵</p>
+<p class="text-component">⁶</p>
+<p class="text-component">⁷ </p>
+<p class="text-component">⁸ </p>
+<p class="text-component">⁹</p>
+<p class="text-component">¹⁰</p>
+<p class="text-component">¹¹</p>
+<p class="text-component">¹² </p>
+<p class="text-component">While drones will deliver pizzas and small online purchases in the near future, the primary social benefit of drone delivery is in healthcare. Drone delivery has the potential to affordably provide every human on Earth with near-instant access to vital medical supplies, regardless of whether they live in a city or a rural community. Such delivery will reduce the logistical burden of managing chronic health conditions, enable more home-based acute care, and avert hospitalizations and trips to the emergency room. This is a vision for drone delivery that excites me, and it’s a future that our team at Zipline is working to build.</p>
+<p class="text-component">¹³</p>
+<p class="text-component">¹⁴</p>
+<p class="text-component">The SENSEable City Lab is a research initiative at MIT that studies and anticipates the impact of technology on urban residents and environments.</p>
+<p class="text-component">Zipline is a drone-delivery company that supplies essential medical products to underserved communities.</p>
+<p class="text-component">Cofounder, Zipline International</p>
+<p class="text-component">Director, SENSEable City Lab; Professor of Urban Technologies and</p>
+<p class="text-component">Planning, MIT</p>
+<img src="media/7f1d9d5758340a63c87f49fa0a65c481/arrow-down-icon.svg" alt=""  class="image-component"/>
+<img src="media/a0d352d604d13be053cfa90639a92323/mck-scriptmark-rgb-white-full.png" alt=""  class="image-component"/>
+<p class="text-component">Copyright © 2019 McKinsey & Company. All rights reserved. </p>
+<img src="media/f006ed411ec5fac587a8e159f0bb117b/arrow-up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/c6e70102dd48c13a333396040284d9c8/debate-design-chart-2-full.png" alt=""  class="image-component"/>
+<img src="null" alt=""  class="image-component"/>
+<img src="media/f006ed411ec5fac587a8e159f0bb117b/arrow-up-icon.svg" alt=""  class="image-component"/>
+<img src="media/a0d352d604d13be053cfa90639a92323/mck-scriptmark-rgb-white-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
