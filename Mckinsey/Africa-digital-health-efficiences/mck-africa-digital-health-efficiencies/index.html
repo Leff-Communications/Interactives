@@ -1,0 +1,1063 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-africa-digital-health-efficiencies',
+            issueAliasSlug: 'mck-africa-digital-health-efficiencies',
+            issue: {"id":721720,"projectId":107283,"slug":"experience-639fe5a97e1cc","name":"McK Africa digital health efficiencies","status":"published","creationDate":"2022-12-19T04:16:41.000Z","lastModifiedDate":"2023-03-14T04:29:56.000Z","deletionDate":null,"firstPublishedDate":"2023-02-20T19:54:50.000Z","wipExperienceVersionId":2859756,"publishedExperienceVersionId":3035753,"createdByMemberId":36346,"primaryIssueAliasId":1007932,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-639fe5a981050.jpg","importLinkShared":0,"lastPublishedDate":"2023-03-14T04:30:02.000Z","lastModifiedByMemberId":36346,"lastPublishedByMemberId":36346,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"639fe5a9-c65bf64661734","title":"McK Africa digital health efficiencies"},
+            docVersion: {"id":3035753,"experienceId":721720,"slug":"experience-version-640ff84a8bc22","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-640ff84a8bc22.js","themingBackgroundImageUri":null,"seoTitleKeywords":null,"seoMetaKeywords":null,"seoMetaDescription":null,"canonicalUrlOverride":null,"editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-640ff84a8bc3d","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/14\/134d7c0c3b9fcac98f21b00a9a1ab789\/page-thumbnail.jpg?imageOpt=1&crop=636,870,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-639fe5a97e1cc-03-14-2023-0430.cde","exportAppVersion":"8.7.1","creationDate":"2023-03-14T04:30:02.000Z","modificationDate":"2023-04-27T20:59:44.000Z","publishedDate":"2023-03-14T04:30:02.000Z","committedByMemberId":36346,"unsupportedBrowserRedirectUrl":null,"ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-639fe5a97e1cc-03-14-2023-0430.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Light","familyGuid":"Uploaded|363cb0be-34c9-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Light-No-VplYhhY4","cssFileURL":"fonts\/48742f12-6a1e-406f-8d97-54b706bfda97\/mckinseysans-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6","variantName":"Italic","cssFamilyName":"McKinsey Sans Medium-I-63FFQQOT","cssFileURL":"fonts\/061bac42-6f2f-4acd-8f27-c7db556b767f\/mckinseysans-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Medium-N-f9cPRz3F","cssFileURL":"fonts\/049f0573-4072-4a9d-afeb-eca67f9653ee\/mckinseysans-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|bc806f65-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans","familyGuid":"Uploaded|b1cc58b4-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|bc806f65-4abb-11eb-8f81-1211e90532b6","variantName":"Italic","cssFamilyName":"McKinsey Sans-Italic-7E18cicF","cssFileURL":"fonts\/ceaf71af-227a-45cb-b212-89b7b86ed9ed\/mckinseysans-italic.css","api":"Uploaded","woffFileURL":null},"Uploaded|b1cca652-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans","familyGuid":"Uploaded|b1cc58b4-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|b1cca652-4abb-11eb-8f81-1211e90532b6","variantName":"Regular","cssFamilyName":"McKinsey Sans-Regular-eNT1Y2TC","cssFileURL":"fonts\/0f9a4790-35af-43b4-916c-09be2d416e70\/mckinseysans-regular.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>McK Africa digital health efficiencies</title>
+
+
+
+
+    <meta property="og:title" content="McK Africa digital health efficiencies"/>
+        <meta property="og:image" content="media/134d7c0c3b9fcac98f21b00a9a1ab789/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="McK Africa digital health efficiencies">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/134d7c0c3b9fcac98f21b00a9a1ab789/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-640ff84a8bc22.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_640ff84a8bc22",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">South Africa</p>
+<p class="text-component">Nigeria</p>
+<p class="text-component">Kenya</p>
+<p class="text-component">Kenya</p>
+<p class="text-component">South Africa</p>
+<p class="text-component">Nigeria</p>
+<p class="text-component">Fully launching 24 digital health tools could enable the realization of healthcare expenditure efficiency gains in Kenya.</p>
+<p class="text-component">Share of total savings from digital adoption in Kenya, 2030, %</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Paperless data</p>
+<p class="text-component">AI virtual assistant
+EHR/HIE
+E-prescribing
+Staff communication software</p>
+<p class="text-component">Live audio or video consultations
+Remote monitoring
+E-triage</p>
+<p class="text-component">Virtual interactions</p>
+<p class="text-component">Decision intelligence systems</p>
+<p class="text-component">Analytics for payers
+Clinical-decision support
+Genetic testing and analysis
+Patient flow management
+Performance dashboards</p>
+<p class="text-component">Patient self-care</p>
+<p class="text-component">Digital diagnostics
+Patient support networks
+Disease-prevention tools
+VR for pain management
+CDM</p>
+<p class="text-component">E-booking</p>
+<p class="text-component">Patient self-service
+</p>
+<p class="text-component">Workflow automation</p>
+<p class="text-component">BCMA
+E-referral
+Nurse mobile connectivity
+RFID
+Vital parameter tracking (eICU)
+Hospital logistics robotics (RAGV)</p>
+<p class="text-component">Share of total savings from digital adoption in Nigeria, 2030, %</p>
+<p class="text-component">Fully launching 24 digital health tools could enable the realization of healthcare expenditure efficiency gains in Nigeria.</p>
+<p class="text-component">Share of total savings from digital adoption in South Africa, 2030, %</p>
+<p class="text-component">Fully launching 24 digital health tools could enable the realization of healthcare expenditure efficiency gains in South Africa.</p>
+<p class="text-component">2.1</p>
+<p class="text-component">0.4</p>
+<p class="text-component">2.0</p>
+<p class="text-component">1.6</p>
+<p class="text-component">23.7</p>
+<p class="text-component">27.4</p>
+<p class="text-component">1.3</p>
+<p class="text-component">0.6</p>
+<p class="text-component">32.6</p>
+<p class="text-component">15.4</p>
+<p class="text-component">6.4</p>
+<p class="text-component">10.5</p>
+<p class="text-component">3.2</p>
+<p class="text-component">1.3</p>
+<p class="text-component">0.4</p>
+<p class="text-component">2.9</p>
+<p class="text-component">8.4</p>
+<p class="text-component">0.0</p>
+<p class="text-component">0.3</p>
+<p class="text-component">2.0</p>
+<p class="text-component">0.0</p>
+<p class="text-component">3.9</p>
+<p class="text-component">2.1</p>
+<p class="text-component">2.5</p>
+<p class="text-component">1.2</p>
+<p class="text-component">0.8</p>
+<p class="text-component">3.6</p>
+<p class="text-component">2.4</p>
+<p class="text-component">3.4</p>
+<p class="text-component">5.5</p>
+<p class="text-component">5.2</p>
+<p class="text-component">1.0</p>
+<p class="text-component">0.6</p>
+<p class="text-component">0.2</p>
+<p class="text-component">3.0</p>
+<p class="text-component">4.1</p>
+<p class="text-component">0.0</p>
+<p class="text-component">0.0</p>
+<p class="text-component">0.2</p>
+<p class="text-component">0.9</p>
+<p class="text-component">2.8</p>
+<p class="text-component">4.4</p>
+<p class="text-component">1.7</p>
+<p class="text-component">0.4</p>
+<p class="text-component">2.4</p>
+<p class="text-component">1.8</p>
+<p class="text-component">1.5</p>
+<p class="text-component">1.8</p>
+<p class="text-component">Electronic health record (EHR)/health information exchange (HIE)</p>
+<p class="text-component">An electronic record of patient data that replaces handwritten records
+</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">23.7%</p>
+<p class="text-component">27.4%</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">93.92</p>
+<p class="text-component">681.67</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.1%</p>
+<p class="text-component">8.34</p>
+<p class="text-component">10.71</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps health professionals document patient notes through artificial intelligence–based text-speech functionality and voice recognition, helps predict and manage patient workflow, and helps manage charts</p>
+<p class="text-component">AI virtual assistant</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.0%</p>
+<p class="text-component">7.87</p>
+<p class="text-component">32.74</p>
+<p class="text-component">1.3%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Software that allows clinicians to issue prescriptions that go directly to a pharmacy without any additional documents and are linked to patient IDs</p>
+<p class="text-component">E-prescribing</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.6%</p>
+<p class="text-component">6.33</p>
+<p class="text-component">15.51</p>
+<p class="text-component">0.6%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">A technological solution that allows health professionals to communicate virtually between wards and clinics</p>
+<p class="text-component">Intrahospital staff communication software</p>
+<p class="text-component">Click an item for more info:</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">15.4%</p>
+<p class="text-component">60.91</p>
+<p class="text-component">808.80</p>
+<p class="text-component">32.6%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allows patients to visit with clinicians online</p>
+<p class="text-component">Live audio/video consultations (telemedicine)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.3%</p>
+<p class="text-component">5.09</p>
+<p class="text-component">14.53</p>
+<p class="text-component">0.6%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps doctors make differential diagnoses and generate potential management plans (includes AI imaging interpretation)</p>
+<p class="text-component">Clinical decision support</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.2%</p>
+<p class="text-component">12.56</p>
+<p class="text-component">24.82</p>
+<p class="text-component">1.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Machine-learning solutions that allow payers to evaluate value-based care, overstaying at hospitals, and so on</p>
+<p class="text-component">Analytics for payers</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">10.5%</p>
+<p class="text-component">41.74</p>
+<p class="text-component">129.41</p>
+<p class="text-component">5.2%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">A web-based algorithm that patients use to self-triage</p>
+<p class="text-component">E-triage (web/algorithm-based risk assessment)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">6.4%</p>
+<p class="text-component">25.29</p>
+<p class="text-component">137.09</p>
+<p class="text-component">5.5%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Monitors patient vitals and other parameters remotely and flags any emergencies back to clinicians</p>
+<p class="text-component">Remote monitoring</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">0.01</p>
+<p class="text-component">0.05</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps lessen opioid use </p>
+<p class="text-component">Virtual reality (VR) for pain management</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">1.68</p>
+<p class="text-component">5.28</p>
+<p class="text-component">0.2%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Genomic analysis of patients that can allow for better dosage determinations, thus reducing side effects and hospitalizations</p>
+<p class="text-component">Genetic testing and analysis</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.0%</p>
+<p class="text-component">7.99</p>
+<p class="text-component">22.08</p>
+<p class="text-component">0.9%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Decrease risk factors by promoting weight management, smoking cessation, and other measures</p>
+<p class="text-component">Disease-prevention tools</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.3%</p>
+<p class="text-component">1.18</p>
+<p class="text-component">4.13</p>
+<p class="text-component">0.2%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allow patients with the same condition to connect with one another online</p>
+<p class="text-component">Patient support networks</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">0.07</p>
+<p class="text-component">.99</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Diagnoses patients outside of clinical facilities, including in their homes</p>
+<p class="text-component">Digital diagnostics</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.9%</p>
+<p class="text-component">11.58</p>
+<p class="text-component">74.49</p>
+<p class="text-component">3.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Manages the flow and transfer of patients from ward to ward to optimize length of stay and use of beds</p>
+<p class="text-component">Patient flow management</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">8.4%</p>
+<p class="text-component">33.12</p>
+<p class="text-component">102.29</p>
+<p class="text-component">4.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Monitor clinical efficiency to identify underutilized areas, find unused beds, and track lengths of stay against benchmarks</p>
+<p class="text-component">Performance dashboards</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.4%</p>
+<p class="text-component">13.58</p>
+<p class="text-component">45.68</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Manages logistical work traditionally done by nonclinical staff, such as deliveries and filing</p>
+<p class="text-component">Hospital logistics robotics (robotic automated guided vehicles)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.4%</p>
+<p class="text-component">9.41</p>
+<p class="text-component">37.18</p>
+<p class="text-component">1.5%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Remote monitoring of patients in intensive care</p>
+<p class="text-component">Vital parameter tracking (electronic intensive care unit)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.6%</p>
+<p class="text-component">14.45</p>
+<p class="text-component">45.66</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps lessen opioid use </p>
+<p class="text-component">Radio-frequency identification (RFID)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.8%</p>
+<p class="text-component">3.00</p>
+<p class="text-component">58.64</p>
+<p class="text-component">2.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Optimizes the way nurses manage both inpatients and outpatients, reducing referrals, unnecessary consults, and other inefficiencies</p>
+<p class="text-component">Nurse mobile connectivity</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.2%</p>
+<p class="text-component">4.76</p>
+<p class="text-component">9.41</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Enables the seamless transfer of patient information to another clinician or hospital</p>
+<p class="text-component">E-referral</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.5%</p>
+<p class="text-component">9.86</p>
+<p class="text-component">43.22</p>
+<p class="text-component">1.7%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Controls medication inventory and helps prevent medical errors and other adverse events</p>
+<p class="text-component">Bar-coding medication administration</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.1%</p>
+<p class="text-component">8.18</p>
+<p class="text-component">110.08</p>
+<p class="text-component">4.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allows patients to book medical visits online</p>
+<p class="text-component">E-booking</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.9%</p>
+<p class="text-component">15.44</p>
+<p class="text-component">70.15</p>
+<p class="text-component">2.8%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Chronic-disease management applications that facilitate prescription adherence, pill management and patient education programs, for example for mental health, diabetes, respiratory diseases or cardiovascular diseases</p>
+<p class="text-component">Chronic-disease management tools</p>
+<p class="text-component">1.1</p>
+<p class="text-component">1.5</p>
+<p class="text-component">1.9</p>
+<p class="text-component">9.6</p>
+<p class="text-component">0.4</p>
+<p class="text-component">1.6</p>
+<p class="text-component">6.9</p>
+<p class="text-component">4.1</p>
+<p class="text-component">0.1</p>
+<p class="text-component">1.3</p>
+<p class="text-component">0.4</p>
+<p class="text-component">0.0</p>
+<p class="text-component">4.1</p>
+<p class="text-component">3.0</p>
+<p class="text-component">0.2</p>
+<p class="text-component">1.7</p>
+<p class="text-component">1.0</p>
+<p class="text-component">7.9</p>
+<p class="text-component">5.5</p>
+<p class="text-component">22.0</p>
+<p class="text-component">0.4</p>
+<p class="text-component">1.4</p>
+<p class="text-component">23.0</p>
+<p class="text-component">1.0</p>
+<p class="text-component">1.6</p>
+<p class="text-component">1.9</p>
+<p class="text-component">3.1</p>
+<p class="text-component">10.2</p>
+<p class="text-component">1.1</p>
+<p class="text-component">1.8</p>
+<p class="text-component">2.9</p>
+<p class="text-component">4.8</p>
+<p class="text-component">0.1</p>
+<p class="text-component">2.5</p>
+<p class="text-component">0.6</p>
+<p class="text-component">0.0</p>
+<p class="text-component">6.8</p>
+<p class="text-component">2.4</p>
+<p class="text-component">0.3</p>
+<p class="text-component">2.6</p>
+<p class="text-component">2.6</p>
+<p class="text-component">13.5</p>
+<p class="text-component">5.2</p>
+<p class="text-component">8.5</p>
+<p class="text-component">0.8</p>
+<p class="text-component">1.7</p>
+<p class="text-component">21.1</p>
+<p class="text-component">3.7</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.6%</p>
+<p class="text-component">11.0</p>
+<p class="text-component">35.6</p>
+<p class="text-component">1.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Manages logistical work traditionally done by nonclinical staff, such as deliveries and filing</p>
+<p class="text-component">Hospital logistics robotics (robotic automated guided vehicles)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.9%</p>
+<p class="text-component">12.9</p>
+<p class="text-component">49.0</p>
+<p class="text-component">1.5%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Remote monitoring of patients in intensive care</p>
+<p class="text-component">Vital parameter tracking (electronic intensive care unit)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.1%</p>
+<p class="text-component">20.7</p>
+<p class="text-component">63.0</p>
+<p class="text-component">1.9%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps lessen opioid use </p>
+<p class="text-component">Radio-frequency identification (RFID)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">10.2%</p>
+<p class="text-component">68.5</p>
+<p class="text-component">320.4</p>
+<p class="text-component">9.6%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Optimizes the way nurses manage both inpatients and outpatients, reducing referrals, unnecessary consults, and other inefficiencies</p>
+<p class="text-component">Nurse mobile connectivity</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.1%</p>
+<p class="text-component">7.3</p>
+<p class="text-component">13.8</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Enables the seamless transfer of patient information to another clinician or hospital</p>
+<p class="text-component">E-referral</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">12.3</p>
+<p class="text-component">54.6</p>
+<p class="text-component">1.6%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Controls medication inventory and helps prevent medical errors and other adverse events</p>
+<p class="text-component">Bar-coding medication administration</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.9%</p>
+<p class="text-component">19.2</p>
+<p class="text-component">228.3</p>
+<p class="text-component">6.9%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allows patients to book medical visits online</p>
+<p class="text-component">E-booking</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">4.8%</p>
+<p class="text-component">32.0</p>
+<p class="text-component">134.5</p>
+<p class="text-component">4.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Chronic-disease management applications that facilitate prescription adherence, pill management and patient education programs, for example for mental health, diabetes, respiratory diseases or cardiovascular diseases</p>
+<p class="text-component">Chronic-disease management tools</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.1%</p>
+<p class="text-component">0.7</p>
+<p class="text-component">2.0</p>
+<p class="text-component">0.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps lessen opioid use </p>
+<p class="text-component">Virtual reality (VR) for pain management</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.5%</p>
+<p class="text-component">16.6</p>
+<p class="text-component">44.8</p>
+<p class="text-component">1.3%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Decrease risk factors by promoting weight management, smoking cessation, and other measures</p>
+<p class="text-component">Disease-prevention tools</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.6%</p>
+<p class="text-component">3.8</p>
+<p class="text-component">13.3</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allow patients with the same condition to connect with one another online</p>
+<p class="text-component">Patient support networks</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">0.1</p>
+<p class="text-component">0.9</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Diagnoses patients outside of clinical facilities, including in their homes</p>
+<p class="text-component">Digital diagnostics</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">6.8%</p>
+<p class="text-component">45.5</p>
+<p class="text-component">135.1</p>
+<p class="text-component">4.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Monitor clinical efficiency to identify underutilized areas, find unused beds, and track lengths of stay against benchmarks</p>
+<p class="text-component">Performance dashboards</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.4%</p>
+<p class="text-component">16.1</p>
+<p class="text-component">99.5</p>
+<p class="text-component">3.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Manages the flow and transfer of patients from ward to ward to optimize length of stay and use of beds</p>
+<p class="text-component">Patient flow management</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.3%</p>
+<p class="text-component">2.3</p>
+<p class="text-component">7.0</p>
+<p class="text-component">0.2%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Genomic analysis of patients that can allow for better dosage determinations, thus reducing side effects and hospitalizations</p>
+<p class="text-component">Genetic testing and analysis</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.6%</p>
+<p class="text-component">17.6</p>
+<p class="text-component">56.9</p>
+<p class="text-component">1.7%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps doctors make differential diagnoses and generate potential management plans (includes AI imaging interpretation)</p>
+<p class="text-component">Clinical decision support</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.6%</p>
+<p class="text-component">17.2</p>
+<p class="text-component">32.7</p>
+<p class="text-component">1.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Machine-learning solutions that allow payers to evaluate value-based care, overstaying at hospitals, and so on</p>
+<p class="text-component">Analytics for payers</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">13.5%</p>
+<p class="text-component">90.4</p>
+<p class="text-component">261.3</p>
+<p class="text-component">7.9%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">A web-based algorithm that patients use to self-triage</p>
+<p class="text-component">E-triage (web/algorithm-based risk assessment)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">5.2%</p>
+<p class="text-component">34.7</p>
+<p class="text-component">182.2</p>
+<p class="text-component">5.5%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Monitors patient vitals and other parameters remotely and flags any emergencies back to clinicians</p>
+<p class="text-component">Remote monitoring</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">8.5%</p>
+<p class="text-component">56.8</p>
+<p class="text-component">729.6</p>
+<p class="text-component">22.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allows patients to visit with clinicians online</p>
+<p class="text-component">Live audio/video consultations (telemedicine)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.8%</p>
+<p class="text-component">5.6</p>
+<p class="text-component">13.2</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">A technological solution that allows health professionals to communicate virtually between wards and clinics</p>
+<p class="text-component">Intrahospital staff communication software</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.7%</p>
+<p class="text-component">11.6</p>
+<p class="text-component">47.3</p>
+<p class="text-component">1.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Software that allows clinicians to issue prescriptions that go directly to a pharmacy without any additional documents and are linked to patient IDs</p>
+<p class="text-component">E-prescribing</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">21.1%</p>
+<p class="text-component">141.6</p>
+<p class="text-component">762.4</p>
+<p class="text-component">23.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">An electronic record of patient data that replaces handwritten records
+</p>
+<p class="text-component">Electronic health record (EHR)/health information exchange (HIE)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.7%</p>
+<p class="text-component">24.9</p>
+<p class="text-component">33.2</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps health professionals document patient notes through artificial intelligence–based text-speech functionality and voice recognition, helps predict and manage patient workflow, and helps manage charts</p>
+<p class="text-component">AI virtual assistant</p>
+<p class="text-component">2.0</p>
+<p class="text-component">1.8</p>
+<p class="text-component">2.2</p>
+<p class="text-component">2.0</p>
+<p class="text-component">0.4</p>
+<p class="text-component">2.1</p>
+<p class="text-component">4.1</p>
+<p class="text-component">3.4</p>
+<p class="text-component">0.0</p>
+<p class="text-component">0.8</p>
+<p class="text-component">0.3</p>
+<p class="text-component">0.0</p>
+<p class="text-component">2.7</p>
+<p class="text-component">5.9</p>
+<p class="text-component">0.3</p>
+<p class="text-component">1.8</p>
+<p class="text-component">1.2</p>
+<p class="text-component">6.1</p>
+<p class="text-component">6.6</p>
+<p class="text-component">26.3</p>
+<p class="text-component">0.7</p>
+<p class="text-component">1.5</p>
+<p class="text-component">27.4</p>
+<p class="text-component">0.5</p>
+<p class="text-component">3.0</p>
+<p class="text-component">2.3</p>
+<p class="text-component">3.4</p>
+<p class="text-component">0.3</p>
+<p class="text-component">1.1</p>
+<p class="text-component">2.3</p>
+<p class="text-component">1.8</p>
+<p class="text-component">4.8</p>
+<p class="text-component">0.0</p>
+<p class="text-component">1.5</p>
+<p class="text-component">0.4</p>
+<p class="text-component">0.0</p>
+<p class="text-component">5.1</p>
+<p class="text-component">5.6</p>
+<p class="text-component">0.4</p>
+<p class="text-component">2.4</p>
+<p class="text-component">3.0</p>
+<p class="text-component">18.0</p>
+<p class="text-component">6.0</p>
+<p class="text-component">14.9</p>
+<p class="text-component">1.3</p>
+<p class="text-component">1.8</p>
+<p class="text-component">18.7</p>
+<p class="text-component">1.9</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.0%</p>
+<p class="text-component">57.4</p>
+<p class="text-component">223.0</p>
+<p class="text-component">2.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Manages logistical work traditionally done by nonclinical staff, such as deliveries and filing</p>
+<p class="text-component">Hospital logistics robotics (robotic automated guided vehicles)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.3%</p>
+<p class="text-component">43.4</p>
+<p class="text-component">197.9</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Remote monitoring of patients in intensive care</p>
+<p class="text-component">Vital parameter tracking (electronic intensive care unit)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.4%</p>
+<p class="text-component">65.1</p>
+<p class="text-component">237.3</p>
+<p class="text-component">2.2%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps lessen opioid use </p>
+<p class="text-component">Radio-frequency identification (RFID)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.3%</p>
+<p class="text-component">6.5</p>
+<p class="text-component">221.2</p>
+<p class="text-component">2.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Optimizes the way nurses manage both inpatients and outpatients, reducing referrals, unnecessary consults, and other inefficiencies</p>
+<p class="text-component">Nurse mobile connectivity</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.1%</p>
+<p class="text-component">21.3</p>
+<p class="text-component">48.6</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Enables the seamless transfer of patient information to another clinician or hospital</p>
+<p class="text-component">E-referral</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.3%</p>
+<p class="text-component">44.4</p>
+<p class="text-component">227.7</p>
+<p class="text-component">2.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Controls medication inventory and helps prevent medical errors and other adverse events</p>
+<p class="text-component">Bar-coding medication administration</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">33.9</p>
+<p class="text-component">452.3</p>
+<p class="text-component">4.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allows patients to book medical visits online</p>
+<p class="text-component">E-booking</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">4.8%</p>
+<p class="text-component">91.6</p>
+<p class="text-component">377.7</p>
+<p class="text-component">3.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Chronic-disease management applications that facilitate prescription adherence, pill management and patient education programs, for example for mental health, diabetes, respiratory diseases or cardiovascular diseases</p>
+<p class="text-component">Chronic-disease management tools</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">0.3</p>
+<p class="text-component">1.0</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps lessen opioid use </p>
+<p class="text-component">Virtual reality (VR) for pain management</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.5%</p>
+<p class="text-component">28.2</p>
+<p class="text-component">90.2</p>
+<p class="text-component">0.8%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Decrease risk factors by promoting weight management, smoking cessation, and other measures</p>
+<p class="text-component">Disease-prevention tools</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">7.8</p>
+<p class="text-component">27.5</p>
+<p class="text-component">0.3%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allow patients with the same condition to connect with one another online</p>
+<p class="text-component">Patient support networks</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">0.3</p>
+<p class="text-component">3.9</p>
+<p class="text-component">0.0%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Diagnoses patients outside of clinical facilities, including in their homes</p>
+<p class="text-component">Digital diagnostics</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">5.1%</p>
+<p class="text-component">98.2</p>
+<p class="text-component">296.1</p>
+<p class="text-component">2.7%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Monitor clinical efficiency to identify underutilized areas, find unused beds, and track lengths of stay against benchmarks</p>
+<p class="text-component">Performance dashboards</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">5.6%</p>
+<p class="text-component">107.5</p>
+<p class="text-component">642.3</p>
+<p class="text-component">5.9%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Manages the flow and transfer of patients from ward to ward to optimize length of stay and use of beds</p>
+<p class="text-component">Patient flow management</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">0.4%</p>
+<p class="text-component">7.7</p>
+<p class="text-component">28.1</p>
+<p class="text-component">0.3%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Genomic analysis of patients that can allow for better dosage determinations, thus reducing side effects and hospitalizations</p>
+<p class="text-component">Genetic testing and analysis</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">2.4%</p>
+<p class="text-component">47.1</p>
+<p class="text-component">197.7</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps doctors make differential diagnoses and generate potential management plans (includes AI imaging interpretation)</p>
+<p class="text-component">Clinical decision support</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">3.0%</p>
+<p class="text-component">57.9</p>
+<p class="text-component">132.1</p>
+<p class="text-component">1.2%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Machine-learning solutions that allow payers to evaluate value-based care, overstaying at hospitals, and so on</p>
+<p class="text-component">Analytics for payers</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">18.0%</p>
+<p class="text-component">347.0</p>
+<p class="text-component">662.8</p>
+<p class="text-component">6.1%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">A web-based algorithm that patients use to self-triage</p>
+<p class="text-component">E-triage (web/algorithm-based risk assessment)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">6.0%</p>
+<p class="text-component">116.2</p>
+<p class="text-component">719.1</p>
+<p class="text-component">6.6%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Monitors patient vitals and other parameters remotely and flags any emergencies back to clinicians</p>
+<p class="text-component">Remote monitoring</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">14.9%</p>
+<p class="text-component">286.7</p>
+<p class="text-component">2877.2</p>
+<p class="text-component">26.3%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Allows patients to visit with clinicians online</p>
+<p class="text-component">Live audio/video consultations (telemedicine)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.3%</p>
+<p class="text-component">25.7</p>
+<p class="text-component">72.8</p>
+<p class="text-component">0.7%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">A technological solution that allows health professionals to communicate virtually between wards and clinics</p>
+<p class="text-component">Intrahospital staff communication software</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.8%</p>
+<p class="text-component">35.4</p>
+<p class="text-component">168.6</p>
+<p class="text-component">1.5%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Software that allows clinicians to issue prescriptions that go directly to a pharmacy without any additional documents and are linked to patient IDs</p>
+<p class="text-component">E-prescribing</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">18.7%</p>
+<p class="text-component">360.3</p>
+<p class="text-component">2999.6</p>
+<p class="text-component">27.4%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">An electronic record of patient data that replaces handwritten records
+</p>
+<p class="text-component">Electronic health record (EHR)/health information exchange (HIE)</p>
+<p class="text-component">Total efficiency gains, $ millions</p>
+<p class="text-component">1.9%</p>
+<p class="text-component">37.5</p>
+<p class="text-component">49.6</p>
+<p class="text-component">0.5%</p>
+<p class="text-component">Optimistic scenario</p>
+<p class="text-component">Conservative scenario</p>
+<p class="text-component">Helps health professionals document patient notes through artificial intelligence–based text-speech functionality and voice recognition, helps predict and manage patient workflow, and helps manage charts</p>
+<p class="text-component">AI virtual assistant</p>
+<p class="text-component">1.0%</p>
+<p class="text-component">McKinsey & Company</p>
+<img src="media/26180e4901bdb304850dfd3397e75074/sa-1-full.png" alt=""  class="image-component"/>
+<img src="media/83fe7566a23eb2e14522f8cd40bcd948/sa-2-full.png" alt=""  class="image-component"/>
+<img src="media/751fbbe747aad867bb94c5779ed8de7e/ni-2-full.png" alt=""  class="image-component"/>
+<img src="media/4a0c6aca733444d684dbc5859f01eb8c/ni-1-full.png" alt=""  class="image-component"/>
+<img src="media/40f1b4064dca652a2d19ea6a2db68022/k-1-full.png" alt=""  class="image-component"/>
+<img src="media/098efb42c9403ac5c5ff290722b6d404/k-2-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
