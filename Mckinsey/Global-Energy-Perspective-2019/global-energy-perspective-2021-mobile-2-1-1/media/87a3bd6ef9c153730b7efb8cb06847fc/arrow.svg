@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="28px" viewBox="0 0 41 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-Jan-25" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="energy-interactive-design_V2" transform="translate(-690.000000, -6116.000000)" fill-rule="nonzero" stroke="#00ADEF" stroke-width="1.5">
+            <g id="FPO-Modules" transform="translate(143.000000, 6035.000000)">
+                <g id="arrow" transform="translate(548.000000, 82.000000)">
+                    <path d="M0,13 L38.0487805,13" id="Path-12"></path>
+                    <polyline id="Path-13" points="26.3170732 0 39 13 26.3170732 26"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

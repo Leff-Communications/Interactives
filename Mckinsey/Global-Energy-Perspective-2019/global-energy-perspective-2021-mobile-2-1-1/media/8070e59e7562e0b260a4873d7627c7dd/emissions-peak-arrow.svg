@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="31px" viewBox="0 0 34 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-Jan-25" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="energy-interactive-design_V2" transform="translate(-313.000000, -4985.000000)" fill="#00306E" fill-rule="nonzero">
+            <g id="Emissions" transform="translate(-66.000000, 4557.000000)">
+                <g id="Group-15" transform="translate(213.000000, 341.000000)">
+                    <g id="Peak" transform="translate(96.000000, 0.000000)">
+                        <path d="M103.739069,89.9843496 L88.9541962,116.133956 C88.4105549,117.09548 87.1903775,117.434241 86.2288538,116.890599 C85.9125977,116.71179 85.6510205,116.450212 85.4722107,116.133956 L70.6873382,89.9843496 C70.1436969,89.0228259 70.4824575,87.8026485 71.4439813,87.2590072 C71.7442701,87.0892253 72.0833682,87 72.4283309,87 L101.998076,87 C103.102645,87 103.998076,87.8954305 103.998076,89 C103.998076,89.3449627 103.908851,89.6840608 103.739069,89.9843496 Z" id="Rectangle"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,439 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'global-energy-perspective-2019',
+            issueAliasSlug: 'global-energy-perspective-2021-desktop-2-2',
+            issue: {"id":434815,"projectId":66495,"slug":"experience-600f42f3cf8f1","name":"Energy Reference Case 2021 Desktop Branding VI 2  version Copy","status":"published","creationDate":"2021-01-25T22:15:15.000Z","lastModifiedDate":"2022-03-30T12:55:42.000Z","deletionDate":null,"firstPublishedDate":"2021-01-27T03:03:31.000Z","wipExperienceVersionId":1530226,"publishedExperienceVersionId":1639109,"createdByMemberId":6387,"primaryIssueAliasId":595225,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-600f42f3508b8.jpg","importLinkShared":0,"lastPublishedDate":"2021-03-28T19:36:38.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pf1262daa93ed","title":"Energy Reference Case 2021 Desktop Branding VI 2  version Copy"},
+            docVersion: {"id":1639109,"experienceId":434815,"slug":"experience-version-6060dac61599e","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-6060dac61599e.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-6060dac6159ca","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/03\/28\/13fb24e9e9faa42b273aff6d60623e46\/page-thumbnail.jpg?imageOpt=1&crop=870,515,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-03-28T19:36:38.000Z","modificationDate":"2021-03-28T19:36:38.000Z","publishedDate":"2021-03-28T19:36:38.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":1,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Light","familyGuid":"Uploaded|363cb0be-34c9-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Light-No-VplYhhY4","cssFileURL":"fonts\/48742f12-6a1e-406f-8d97-54b706bfda97\/mckinseysans-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Bower Bold","familyGuid":"Uploaded|5f5f3495-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1050,"ascent":840,"variantGuid":"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Bower Bold-Normal-IjUkOdL9","cssFileURL":"fonts\/b54def70-852a-418e-ac9f-c219271262b8\/bower-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6","variantName":"Italic","cssFamilyName":"McKinsey Sans Medium-I-63FFQQOT","cssFileURL":"fonts\/061bac42-6f2f-4acd-8f27-c7db556b767f\/mckinseysans-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Medium-N-f9cPRz3F","cssFileURL":"fonts\/049f0573-4072-4a9d-afeb-eca67f9653ee\/mckinseysans-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5280281-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3acd5a3-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d5280281-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Roman","cssFamilyName":"Helvetica Neue LT Std--lFur8KHc","cssFileURL":"fonts\/c8345ef5-568a-4abe-82d4-7b16e102a2aa\/helveticaneueltstd-roman.css","api":"Uploaded","woffFileURL":null},"Uploaded|d52807e2-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3acd5a3-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d52807e2-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Bd","cssFamilyName":"Helvetica Neue LT Std--R2ytO5c9","cssFileURL":"fonts\/5dfdbc60-4336-4d1d-994c-0f0bbb946c1d\/helveticaneueltstd-bd.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Energy Reference Case 2021 Desktop Branding VI 2  version Copy</title>
+
+
+
+
+    <meta property="og:title" content="Energy Reference Case 2021 Desktop Branding VI 2  version Copy"/>
+        <meta property="og:image" content="media/13fb24e9e9faa42b273aff6d60623e46/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Energy Reference Case 2021 Desktop Branding VI 2  version Copy">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/13fb24e9e9faa42b273aff6d60623e46/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6060dac61599e.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_6060dac61599e",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Global Energy Perspective 2021</p>
+<p class="text-component">The Global Energy Perspective describes our view on how the energy transition can unfold, through four scenarios. </p>
+<img src="media/88aca4d812131f3ea867c37632bdbac0/down-arrow.svg" alt=""  class="image-component"/>
+<p class="text-component">The global energy landscape is going through 
+major shifts</p>
+<p class="text-component">We publish this long-term energy outlook at the start of 2021, after a year that has brought extraordinary challenges. The COVID-19 pandemic and subsequent economic crisis caused unprecedented disruption in the energy landscape—and the path to recovery 
+remains uncertain.
+
+At the same time, the world’s energy systems are going through rapid transitions that 
+are triggered by simultaneous shifts in technological development, regulations, 
+consumer preferences, and investor sentiments. Our Reference Case sheds light on these developments and provides a synthesis on how energy demand will evolve.
+
+
+</p>
+<p class="text-component">Download the summary</p>
+<p class="text-component">The impacts of COVID-19 have permanently shifted energy-demand curves. Although demand rebounds to 2019 levels in one to four years, it does not return to the previous growth path. Electricity and gas rebound more quickly than oil demand, and coal does not return to pre-COVID-19 demand levels.
+
+Recent work by McKinsey on the effects of the COVID-19 crisis on economic growth introduces a set of scenarios, reflecting varying levels of effectiveness of the public-health response and speed and strength of policy interventions.
+
+From these scenarios, two were selected as most likely outcomes by a group of more than 2,000 executive respondents globally: “Virus Contained; growth returns” and “Muted Recovery.” At the time of this report’s publication 
+(January 2021), the latest actual numbers show a trajectory that comes closest to “Virus Contained; growth returns.” Consequently, this scenario underlies the projections in our report.
+
+Given the unparalleled size of many economic-recovery packages, the focus of the stimulus measures plays a key role in shaping energy systems in the decades to come.</p>
+<p class="text-component">In the short term, a return to pre-COVID-19 levels is projected 
+in one to four years</p>
+<img src="media/a835be226870d678ad67964cd385e9fb/wave-separator.svg" alt=""  class="image-component"/>
+<p class="text-component">As economies and energy markets recover from the short-term impact of 
+COVID-19, fundamental shifts in the energy system continue, and the coming decades will likely see a rapid acceleration of the energy transition.</p>
+<p class="text-component">In the longer term, fundamental shifts already 
+emerging pre-COVID-19 are going to be the key drivers 
+of the energy transition</p>
+<p class="text-component">Energy efficiency </p>
+<p class="text-component">Despite rapid shifts in the Reference Case, global greenhouse gas emissions decline only by 25% by 2050, implying a 3.5°C pathway</p>
+<p class="text-component">Change is too slow to reach a 1.5°C Pathway</p>
+<img src="media/55a35ffcda6da1409034ca8d365999b0/cloud.svg" alt=""  class="image-component"/>
+<img src="media/55a35ffcda6da1409034ca8d365999b0/cloud.svg" alt=""  class="image-component"/>
+<img src="media/8ceb008f22259fcedc186cd9a6931ace/emissions-dotted-2x-full.png" alt=""  class="image-component"/>
+<p class="text-component">2023</p>
+<img src="media/8070e59e7562e0b260a4873d7627c7dd/emissions-peak-arrow.svg" alt=""  class="image-component"/>
+<img src="media/0ee571c53a08ef9d3bf07be15dcdad5b/emissions-downward-arrow.svg" alt=""  class="image-component"/>
+<p class="text-component">–25%</p>
+<p class="text-component">Moving to a 1.5°C Pathway requires stronger ambitions and accelerated implementation at a global scale*</p>
+<p class="text-component">To learn more about our comprehensive Global Energy Perspective, contact us.</p>
+<p class="text-component">Download the summary</p>
+<p class="text-component">Contact us</p>
+<img src="media/9a8e5754a7ad744f97504cb5339608b5/blue-windmill-line.svg" alt=""  class="image-component"/>
+<img src="media/252a1a8c2a6707b567426004aa6a6ddf/windmil-blue.svg" alt=""  class="image-component"/>
+<img src="media/c6700e83e2a29d03b690b9277fe9fc9d/blue-cloud.svg" alt=""  class="image-component"/>
+<img src="media/5f8b78d64b4c331e6769215c23055d88/bottom-dark-blue-line.svg" alt=""  class="image-component"/>
+<img src="media/5b4b9699895e4668b4f7eadfe18cbdb2/windmill-dark-blue-post.svg" alt=""  class="image-component"/>
+<img src="media/252a1a8c2a6707b567426004aa6a6ddf/windmil-blue.svg" alt=""  class="image-component"/>
+<img src="media/c6700e83e2a29d03b690b9277fe9fc9d/blue-cloud.svg" alt=""  class="image-component"/>
+<img src="media/b05fd067c01c126b1f14459856a7ec70/footer-lightblue.svg" alt=""  class="image-component"/>
+<p class="text-component">Projected peaks in demand for hydrocarbons have come forward. Oil demand peaks in 2029 and gas in 2037, whereas coal shows a steady decline.
+
+Yet in the Reference Case fossil fuels continue to play a major role in the energy system by 2050, driven by growth in areas such as chemicals and aviation.
+
+In the Accelerated Transition scenario, demand for fossil fuels continues to decline, particularly oil and coal. Peak oil demand could move forward by five years to the early 2020s, at a level less than 1 MMB/D above 2019 levels. 
+</p>
+<p class="text-component">Peaks in fossil-fuel demand keep coming closer</p>
+<p class="text-component">Gas</p>
+<p class="text-component">Oil</p>
+<p class="text-component">Coal</p>
+<p class="text-component">Gas continues to increase its share of global energy demand in the next ten to 15 years—the only fossil fuel to do so—and then peaks in the late 2030s. Even in the Reference Case, gas demand in 2050 is 5% higher than today</p>
+<p class="text-component">After a long period of growth, global liquids demand peaks in the late 2020s, followed by a 10% decline in demand by 2050. This is mainly driven by slowing car-park growth, enhanced engine efficiency in road transport, and increased electrification </p>
+<p class="text-component">The energy intensity of the global GDP drops </p>
+<p class="text-component">by 2050 because of energy-efficiency gains coming from technological advancements and fuel switching</p>
+<p class="text-component">40%</p>
+<p class="text-component">As an example, EV passenger cars require </p>
+<p class="text-component">less energy compared with conventional ICE engines</p>
+<p class="text-component">3–4 times</p>
+<p class="text-component">Energy consumption per capita drops by </p>
+<p class="text-component">from 2019 to 2050, despite strong economic development that affects billions of people during that same period</p>
+<p class="text-component">5% globally</p>
+<p class="text-component">Emerging economies*</p>
+<p class="text-component">their share of the global energy mix, 
+with particularly strong growth in Africa, ASEAN, and India (from 24% to 34%)</p>
+<p class="text-component">double </p>
+<p class="text-component">China sees a </p>
+<p class="text-component">in energy demand as of 2030</p>
+<p class="text-component">plateau </p>
+<p class="text-component">in energy demand by 2050, triggered by a decline in population and enhanced efficiency</p>
+<p class="text-component">20% drop</p>
+<p class="text-component">Global power demand </p>
+<p class="text-component">from 2020 to 2050</p>
+<p class="text-component">doubles </p>
+<p class="text-component">*McKinsey’s view of a pathway that limits global  warming to 1.5ºC, across sectors and energy products</p>
+<p class="text-component">RELATED RESEARCH</p>
+<p class="text-component">Global oil supply-
+and-demand outlook 
+to 2040</p>
+<p class="text-component">COVID-19 sent shocks through global oil markets, with oil demand and supply still struggling to return to pre-pandemic levels. Our outlook looks back at 2020 and presents our most-likely scenarios for oil demand, supply, and prices through 2040.</p>
+<img src="media/87a3bd6ef9c153730b7efb8cb06847fc/arrow.svg" alt=""  class="image-component"/>
+<p class="text-component">By 2035, more than </p>
+<p class="text-component">of global power generation will come from renewable sources.</p>
+<p class="text-component">50%</p>
+<p class="text-component">Renewables become cheaper than existing fossil plants within the next decade. This triggers a sharp uptake in the installed capacity of solar photovoltaics and onshore and offshore wind (5 TW of new solar and wind capacity installed by 2035—which is equivalent to fivefold growth).</p>
+<p class="text-component">. . . and low-cost renewables dominate power markets</p>
+<p class="text-component">Power consumption doubles by 2050 as energy demand electrifies, wealth increases, and green hydrogen picks up momentum.</p>
+<p class="text-component">Power wins and hydrogen changes the landscape . . .</p>
+<p class="text-component">North American and the EU-27 plus the United Kingdom face a </p>
+<p class="text-component">Increased remote working and reduced willingness to fly can reduce global oil demand by </p>
+<p class="text-component">by 2035 (versus a decrease of 19 MMB/D because of growing fuel efficiencies and increasing fuel uptake, and an increase of 32 MMB/D through economic growth)</p>
+<p class="text-component">2 MMB/D*</p>
+<p class="text-component">The share of electricity in the energy consumption mix grows to </p>
+<p class="text-component">by 2050 (from 19% today). Hydrogen represents 40% of the growth in power demand from 2035 to 2050</p>
+<p class="text-component">30%</p>
+<p class="text-component">Global coal demand peaked in 2014 and continues to decline by almost 40% from 2019 to 2050. Under increasing regulatory and financial pressure, coal’s role in the power sector diminishes, contributing to the overall decline in demand </p>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/94c4bc20d4dc3ba35de9887ebe22a9b8/timeline1-01-full.png" alt=""  class="image-component"/>
+<img src="media/a835be226870d678ad67964cd385e9fb/wave-separator.svg" alt=""  class="image-component"/>
+<p class="text-component">Download the summary</p>
+<p class="text-component"><   Back</p>
+<p class="text-component">Next  ></p>
+<p class="text-component"><   Back</p>
+<p class="text-component">Next  ></p>
+<p class="text-component">02–04</p>
+<p class="text-component">03–04</p>
+<p class="text-component">04–04</p>
+<p class="text-component">01–04</p>
+<img src="media/ff324ae12c21e9823ef51aa8210e2180/peaklineicon-01-full.png" alt=""  class="image-component"/>
+<img src="media/ff324ae12c21e9823ef51aa8210e2180/peaklineicon-01-full.png" alt=""  class="image-component"/>
+<img src="media/ff324ae12c21e9823ef51aa8210e2180/peaklineicon-01-full.png" alt=""  class="image-component"/>
+<img src="media/c6700e83e2a29d03b690b9277fe9fc9d/blue-cloud.svg" alt=""  class="image-component"/>
+<p class="text-component">Energy efficiency </p>
+<p class="text-component">Regions of growth</p>
+<p class="text-component">Regions of growth</p>
+<p class="text-component">Electrification</p>
+<p class="text-component">Electrification</p>
+<p class="text-component">Behavioral shifts due to 
+COVID-19</p>
+<p class="text-component">Behavioral shifts due to 
+COVID-19</p>
+<img src="media/373d0506eccc371d413e6edd74d53e47/iconsforshifts-1-energy-full.png" alt=""  class="image-component"/>
+<img src="media/5eb9cde7a7fd2bdfaa5f809b444d4146/iconsforshifts-2-regions-full.png" alt=""  class="image-component"/>
+<img src="media/abe034d46f02c05cb83e3b4a5408a56e/iconsforshifts-3-electric-full.png" alt=""  class="image-component"/>
+<img src="media/928ca7d5717d21aa8a40df0edb7e5420/iconsforshifts-4-covid-full.png" alt=""  class="image-component"/>
+<p class="text-component">Contact us</p>
+<p class="text-component">Download the summary</p>
+<img src="media/7ed1f6c4bee74d7e08bdc9aca134f8ef/peakicons-oil-full.png" alt=""  class="image-component"/>
+<img src="media/a356926599ec5d201ff8496ebaae24bb/peakslinechart-individual-coal-full.png" alt=""  class="image-component"/>
+<img src="media/9332de6b4e9cd2c1ea68fd1f617838b0/peakslinechart-individual-oil-full.png" alt=""  class="image-component"/>
+<img src="media/e3382e53ae593a821907684530bd6035/peakslinechart-individual-gas-full.png" alt=""  class="image-component"/>
+<p class="text-component">*Including Africa, ASEAN (Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, the Philippines, Singapore, Thailand, and Vietnam), India, and Latin America.</p>
+<p class="text-component">thousand TWh</p>
+<p class="text-component">24</p>
+<p class="text-component">26</p>
+<p class="text-component">29</p>
+<p class="text-component">32</p>
+<p class="text-component">36</p>
+<p class="text-component">41</p>
+<p class="text-component">47</p>
+<p class="text-component">54</p>
+<img src="media/4d0682813536d38f90fbd8c5fc34057b/timeline-arrows-back-arrow-eb-full.png" alt=""  class="image-component"/>
+<img src="media/aac14276f20e8a15dcd6b4d6e5231144/timeline-arrows-back-arrow-light-full.png" alt=""  class="image-component"/>
+<img src="media/f24a83d8c20b239bf366a5c68838ab9f/timeline-arrows-front-arrow-eb-full.png" alt=""  class="image-component"/>
+<img src="media/599d775a24981ff8ef73d3f865a7b427/timeline-arrows-front-arrow-light-full.png" alt=""  class="image-component"/>
+<img src="media/24b97db911b50dd34660c560336e041a/peakicons-coal-full.png" alt=""  class="image-component"/>
+<img src="media/ebd7b2ba07cecd25281fe8fff97b454e/stacked-bars-for-timeline3-2015-full.png" alt=""  class="image-component"/>
+<img src="media/1eb8726dd21a66ba4d32ddb3ae274fe2/stacked-bars-for-timeline3-2020-full.png" alt=""  class="image-component"/>
+<img src="media/aae93c2f9557a77e800378798cf85fd2/stacked-bars-for-timeline3-2025-full.png" alt=""  class="image-component"/>
+<img src="media/a83c0729545863af7f593ee67d0ffc6e/stacked-bars-for-timeline3-2030-full.png" alt=""  class="image-component"/>
+<img src="media/df3c85cfda94cf3953d724f7dc6aefd7/stacked-bars-for-timeline3-2035-full.png" alt=""  class="image-component"/>
+<img src="media/26c1ce7057f20cfc1413b39759e9c2b3/stacked-bars-for-timeline3-2040-full.png" alt=""  class="image-component"/>
+<img src="media/3184f4bf3fcdd6662dde1e1a163b3f31/stacked-bars-for-timeline3-2045-full.png" alt=""  class="image-component"/>
+<img src="media/c901cb088438972aa9c9d772cd0d9946/stacked-bars-for-timeline3-2050-full.png" alt=""  class="image-component"/>
+<img src="media/24f425f7d82379238aad1fb4de05ded5/pathways-1-5-line-charts-timeline-full.png" alt=""  class="image-component"/>
+<img src="media/45de8029c6c30d250cd0811d255118f2/pathways-1-5-line-charts-y-axis-full.png" alt=""  class="image-component"/>
+<img src="media/516b58e33325783b1bc88f6da0343ecd/pathways-1-5-line-charts-bottom-line-full.png" alt=""  class="image-component"/>
+<img src="media/b68b4bb5dd833d2309219be8194d1f1c/pathways-1-5-line-charts-top-line-full.png" alt=""  class="image-component"/>
+<img src="media/8a94620dcaf22fe2d5ecfe383418e5c2/blue-gradient-full.png" alt=""  class="image-component"/>
+<img src="media/3fc11383fbee0df1ef5f9f4c2b780e5e/globe-image-full.png" alt=""  class="image-component"/>
+<img src="media/dbdd9a7f49d03f0edbd3a15db7a2bc4f/peakicons-gas-full.png" alt=""  class="image-component"/>
+<p class="text-component">Power generation mix,</p>
+<p class="text-component"></p>
+<p class="text-component">Gross energy-related emissions,</p>
+<p class="text-component">billion tCO   equivalent</p>
+<p class="text-component">Fossil-fuel demand, </p>
+<p class="text-component">million TJ</p>
+<p class="text-component">0</p>
+<p class="text-component">250</p>
+<img src="media/c6700e83e2a29d03b690b9277fe9fc9d/blue-cloud.svg" alt=""  class="image-component"/>
+<img src="media/c6700e83e2a29d03b690b9277fe9fc9d/blue-cloud.svg" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<img src="media/d63bf91a3f6591549dd3c1a4ee494e72/section1-chart-key-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">*Million barrels per day.</p>
+<p class="text-component"></p>
+<img src="media/6c6ecb6046070ba04b538109a96e84fe/charts-for-section-1-v2-electricity-full.png" alt=""  class="image-component"/>
+<img src="media/29e437596afcdaf3762437ea9f409dcf/charts-for-section-1-v2-oil-full.png" alt=""  class="image-component"/>
+<img src="media/16861d70820e8d82aa1f587941899c92/charts-for-section-1-v2-natural-gas-full.png" alt=""  class="image-component"/>
+<img src="media/54b40b1d1c56913fe144a568dba2f412/charts-for-section-1-v2-natural-gas-copy-full.png" alt=""  class="image-component"/>
+<img src="media/ebc16bb4f1444bc11c557d6f39add678/article1-image2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Global gas outlook 
+to 2050</p>
+<p class="text-component">While we saw high levels of volatility in 2020, the outlook for gas and LNG shows strong growth, resilience, and changing expectations for emissions amid widespread carbon-neutrality aspirations.
+</p>
+<img src="media/87a3bd6ef9c153730b7efb8cb06847fc/arrow.svg" alt=""  class="image-component"/>
+<img src="media/ecbe0cc14b809502c05d41babdd85287/article-2-image2-full.png" alt=""  class="image-component"/>
+<img src="media/c04e015c10202fb2ae023d865e6d2c23/peakstimeline-01-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    <script type="text/javascript">
+	function loadScript(src, callback)
+	{
+		var s, r, t;
+		r = false;
+		s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = src;
+		s.onload = s.onreadystatechange = function() {
+			if ( !r && (!this.readyState || this.readyState == 'complete') )
+			{
+				r = true;
+				callback();
+			}
+		};
+		t = document.getElementsByTagName('script')[0];
+		t.parentNode.insertBefore(s, t);
+	}
+	loadScript('//assets.adobedtm.com/31d0cc0e4278bee6dc9b353b467120decd1519fd/satelliteLib-7f174c9b3b254630ecc3bec11e94362f56a7bd43.js', function(){_satellite.pageBottom();})
+</script>
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

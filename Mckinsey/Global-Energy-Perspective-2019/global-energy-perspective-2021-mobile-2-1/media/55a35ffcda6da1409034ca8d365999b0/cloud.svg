@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="52px" viewBox="0 0 164 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Cloud</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-Jan-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="energy-interactive-design_V1b" transform="translate(-1345.000000, -296.000000)" fill="#FFFFFF">
+            <g id="Group-30" transform="translate(0.000000, 80.000000)">
+                <g transform="translate(-1.000000, 0.000000)" id="Group-24">
+                    <g transform="translate(0.072569, 0.000000)">
+                        <g id="Group-9" transform="translate(1346.224964, 216.981818)">
+                            <path d="M163.1923,50.7865006 C163.438187,49.0350919 163.514938,47.2270924 163.391284,45.3791893 C162.539916,32.6332287 152.292951,22.4033765 139.793913,21.7953895 C136.70824,21.6452066 133.740535,22.0696366 130.981764,22.9721853 C125.067676,24.908602 118.711558,22.4505354 115.419794,17.073696 C109.144692,6.82062703 97.994481,0 85.277982,0 C73.9728481,0 63.9049683,5.39280084 57.3996128,13.7950646 C53.4696788,18.8700871 46.6793498,20.3617591 40.9983565,17.4959495 C36.6441602,15.3005216 31.659611,14.2093373 26.3971948,14.5822554 C12.3851678,15.5754942 1.03597321,27.1664247 0.0694794878,41.4722564 C-0.149402913,44.706631 0.154758345,47.837256 0.898816378,50.7865006 L163.1923,50.7865006 Z" id="Cloud"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

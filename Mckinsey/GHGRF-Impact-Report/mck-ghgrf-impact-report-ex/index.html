@@ -1,0 +1,431 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-ghgrf-impact-report',
+            issueAliasSlug: 'mck-ghgrf-impact-report-ex',
+            issue: {"id":751937,"projectId":110945,"slug":"experience-63fe39ea38d28","name":"McK GHGRF Impact Report Ex","status":"published","creationDate":"2023-02-28T17:29:14.000Z","lastModifiedDate":"2023-03-27T19:55:50.000Z","deletionDate":null,"firstPublishedDate":"2023-03-20T20:57:03.000Z","wipExperienceVersionId":3002230,"publishedExperienceVersionId":3069066,"createdByMemberId":14154,"primaryIssueAliasId":1060339,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-63fe39e705b21.jpg","importLinkShared":0,"lastPublishedDate":"2023-03-27T19:56:17.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"63fe39ea-cb71202baa160","title":"McK GHGRF Impact Report Ex"},
+            docVersion: {"id":3069066,"experienceId":751937,"slug":"experience-version-6421f4e100a88","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-6421f4e100a88.js","themingBackgroundImageUri":null,"seoTitleKeywords":"McK GHGRF Impact Report","seoMetaKeywords":"","seoMetaDescription":"McK GHGRF Impact Report","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-6421f4e100aa3","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/27\/f2f88bec8f2001ff2dc12b93f2e09023\/page-thumbnail.jpg?imageOpt=1&crop=683,816,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6421f4e107fae","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/27\/d78bbfa1edb15c11cd8c741f5580f622\/page-thumbnail.jpg?imageOpt=1&crop=683,816,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6421f4e11001e","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/27\/6159a705e30d246beedca60eddcc66f5\/page-thumbnail.jpg?imageOpt=1&crop=683,816,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6421f4e116cbf","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/27\/501f08657addc043f5269978882901eb\/page-thumbnail.jpg?imageOpt=1&crop=683,816,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6421f4e11c619","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/27\/7effe2e693d6cd2e96530ca703baf0b0\/page-thumbnail.jpg?imageOpt=1&crop=683,816,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6421f4e1229da","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/03\/27\/85e7157c32d57b1894699e5bf71ee1d1\/page-thumbnail.jpg?imageOpt=1&crop=683,816,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-63fe39ea38d28-03-27-2023-1956.cde","exportAppVersion":"8.7.1","creationDate":"2023-03-27T19:56:17.000Z","modificationDate":"2023-04-27T20:58:58.000Z","publishedDate":"2023-03-27T19:56:17.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-63fe39ea38d28-03-27-2023-1956.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Light","familyGuid":"Uploaded|363cb0be-34c9-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|363d0d58-34c9-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Light-No-VplYhhY4","cssFileURL":"fonts\/48742f12-6a1e-406f-8d97-54b706bfda97\/mckinseysans-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Light-Norma-AxPRkJpr","cssFileURL":"fonts\/87f3cab9-783a-46dd-8a5e-56c3fb6a53e8\/theinhardt-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|9835d995-4abb-11eb-8f81-1211e90532b6","variantName":"Italic","cssFamilyName":"McKinsey Sans Medium-I-63FFQQOT","cssFileURL":"fonts\/061bac42-6f2f-4acd-8f27-c7db556b767f\/mckinseysans-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6":{"familyName":"McKinsey Sans Medium","familyGuid":"Uploaded|983588d3-4abb-11eb-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a11137dc-4abb-11eb-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"McKinsey Sans Medium-N-f9cPRz3F","cssFileURL":"fonts\/049f0573-4072-4a9d-afeb-eca67f9653ee\/mckinseysans-medium.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>McK GHGRF Impact Report Ex McK GHGRF Impact Report</title>
+
+
+
+        <meta name="description" content="McK GHGRF Impact Report"/>
+
+    <meta property="og:title" content="McK GHGRF Impact Report Ex"/>
+        <meta property="og:image" content="media/f2f88bec8f2001ff2dc12b93f2e09023/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="McK GHGRF Impact Report Ex">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/f2f88bec8f2001ff2dc12b93f2e09023/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6421f4e100a88.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_6421f4e100a88",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Investing $1 trillion in 11 key technologies over ten years yields significant impacts both within and outside disadvantaged communities.</p>
+<p class="text-component">Cumulative investment need 2023–2032,¹</p>
+<p class="text-component">Note: Figures are rounded.
+¹Estimated; for Inflation Reduction Act incentive–eligible deployment only.
+²Includes battery storage.
+³Electric-vehicle.</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">$ billion</p>
+<p class="text-component">Household and community decarbonization</p>
+<p class="text-component">Residential rooftop solar²</p>
+<p class="text-component">Residential heat pumps</p>
+<p class="text-component">Heat pump water heaters</p>
+<p class="text-component">Community solar</p>
+<p class="text-component">Business decarbonization </p>
+<p class="text-component">Commercial heat pumps</p>
+<p class="text-component">Commercial rooftop solar²</p>
+<p class="text-component">Fleet depot EV³ chargers</p>
+<p class="text-component">Energy system transformation</p>
+<p class="text-component">Transmission</p>
+<p class="text-component">Offshore wind</p>
+<p class="text-component">Energy storage</p>
+<p class="text-component">Coal conversion</p>
+<p class="text-component">$42 billion</p>
+<p class="text-component">for DAC</p>
+<p class="text-component">$215 billion</p>
+<p class="text-component">total</p>
+<p class="text-component">$19 billion</p>
+<p class="text-component">for DAC</p>
+<p class="text-component">$100 billion</p>
+<p class="text-component">total</p>
+<p class="text-component">$135 billion</p>
+<p class="text-component">for DAC</p>
+<p class="text-component">$700 billion</p>
+<p class="text-component">total</p>
+<p class="text-component">Cumulative investment needed</p>
+<p class="text-component">Community decarbonization impacts</p>
+<p class="text-component">Cumulative investment needed</p>
+<p class="text-component">Community decarbonization impacts</p>
+<p class="text-component">Community decarbonization outcomes, assuming $1 billion investment per technology (2023–2032)</p>
+<p class="text-component">Note: Figures are rounded.
+¹Includes battery storage.
+²Electric-vehicle.
+³The health impact of reducing fossil-fuel peaker plants is high in the surrounding area of the plants.
+⁴Inflation Reduction Act incentives are included in calculations (except for fleet depot chargers).
+⁵Cost and emissions reductions are from heating, not cooling.
+⁶Enabled impact (all others are direct impact).
+⁷Greenhouse-gas.
+⁸Metric megatons of carbon dioxide equivalent.</p>
+<p class="text-component">Jobs supported,</p>
+<p class="text-component">thousands</p>
+<p class="text-component">Cost savings,⁴</p>
+<p class="text-component">$ millions</p>
+<p class="text-component">GHG⁷ emissions </p>
+<p class="text-component">reduction, </p>
+<p class="text-component">MtCO₂e⁸</p>
+<p class="text-component">Health improvements</p>
+<img src="media/d52c7b8e1266f05ca8cf1c3431c56daa/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/8dbc523e428b4632833242583699bc84/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/1b4acc557ba56da0a078115795928dee/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/a85354d993f8fb225a1907ed7b536a0d/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/aa610b75229cb2db802a940809a14c34/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/e2954b872dd76a4fc2d0914cc5afcc9c/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/7fb624ca4e961b56033cd3268072e189/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/93b53dbee01f0501d5dcefac955b66c6/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/fefd3a30708c3a453f5dec5980bd1b14/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/122c7e8e06dce6d17a35e3332aa7f1bd/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/f238ed8db8e6a0677f55bc915398691f/processed-svg-image.svg" alt=""  class="image-component"/>
+<p class="text-component">1.0</p>
+<p class="text-component">0.1⁵</p>
+<p class="text-component">0.5</p>
+<p class="text-component">4.5</p>
+<p class="text-component">0.2⁵</p>
+<p class="text-component">1.5</p>
+<p class="text-component">20.0⁶</p>
+<p class="text-component">10.0⁶</p>
+<p class="text-component">2.5</p>
+<p class="text-component">0.1</p>
+<p class="text-component">115.0⁶</p>
+<p class="text-component">70</p>
+<p class="text-component">100</p>
+<p class="text-component">16</p>
+<p class="text-component">30</p>
+<p class="text-component">42</p>
+<p class="text-component">50</p>
+<p class="text-component">12</p>
+<p class="text-component">90</p>
+<p class="text-component">20</p>
+<p class="text-component">100</p>
+<p class="text-component">500</p>
+<p class="text-component">Household and community decarbonization</p>
+<p class="text-component">Residential rooftop solar¹</p>
+<p class="text-component">Residential heat pumps</p>
+<p class="text-component">Heat pump water heaters</p>
+<p class="text-component">Community solar</p>
+<p class="text-component">Business decarbonization </p>
+<p class="text-component">Commercial heat pumps</p>
+<p class="text-component">Commercial rooftop solar¹</p>
+<p class="text-component">Fleet depot EV² chargers</p>
+<p class="text-component">Energy system transformation</p>
+<p class="text-component">Transmission</p>
+<p class="text-component">Offshore wind</p>
+<p class="text-component">Energy storage³</p>
+<p class="text-component">Coal conversion</p>
+<p class="text-component">N/A</p>
+<p class="text-component">N/A</p>
+<p class="text-component">N/A</p>
+<p class="text-component">N/A</p>
+<p class="text-component">4</p>
+<p class="text-component">4</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<p class="text-component">3</p>
+<p class="text-component">5</p>
+<p class="text-component">6</p>
+<p class="text-component">4</p>
+<p class="text-component">6</p>
+<p class="text-component">6</p>
+<p class="text-component">320</p>
+<p class="text-component">250⁵</p>
+<p class="text-component">360</p>
+<p class="text-component">1,600</p>
+<p class="text-component">120⁵</p>
+<p class="text-component">850</p>
+<p class="text-component">10,000⁶</p>
+<p class="text-component">6</p>
+<p class="text-component">Community decarbonization impacts</p>
+<p class="text-component">Cumulative investment needed</p>
+<p class="text-component">Disadvantaged communities (DAC)</p>
+<p class="text-component">Rest of population</p>
+<img src="media/124230ac173980ef0d11612d633847ea/processed-svg-image.svg" alt=""  class="image-component"/>
+<img src="media/09c2ba56504620969a4cb1d77f27926a/processed-svg-image.svg" alt=""  class="image-component"/>
+<p class="text-component">Lesser</p>
+<p class="text-component">Greater</p>
+<p class="text-component">Disadvantaged communities (DAC)</p>
+<p class="text-component">Rest of population</p></div>
+            <div class="page"><p class="text-component">Agtech start-ups typically spend 15 to 20 months between funding rounds, with levels growing from a median of $3.5 million in the seed round to $65.0 million in series C.</p>
+<p class="text-component">Click on each category to learn more</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">C&A Pillar</p>
+<p class="text-component">Selected Pillar Company Measure</p>
+<p class="text-component">All other companies</p>
+<p class="text-component">Median</p>
+<img src="media/28ee00fbec3c0efccb8b7344323a2687/alt-protein-full.png" alt=""  class="image-component"/>
+<img src="media/83e5d7095fd548028a024f9123eeae50/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Source: PitchBook, McKinsey analysis</p>
+<p class="text-component">Overall</p>
+<p class="text-component">Alternative proteins</p>
+<p class="text-component">Bio/sustainable materials</p>
+<p class="text-component">Controlled-environment agriculture</p>
+<p class="text-component">Digital and precision agriculture</p>
+<p class="text-component">Sustainable inputs </p></div>
+            <div class="page"><p class="text-component">Agtech start-ups typically spend 15 to 20 months between funding rounds, with levels growing from a median of $3.5 million in the seed round to $65.0 million in series C.</p>
+<p class="text-component">Click on each category to learn more</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Selected Pillar Company Measure</p>
+<p class="text-component">All other companies</p>
+<p class="text-component">Median</p>
+<img src="media/a5ec3737fc51ef4863fc690c864361a4/bio-material-full.png" alt=""  class="image-component"/>
+<img src="media/83e5d7095fd548028a024f9123eeae50/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Source: PitchBook, McKinsey analysis</p>
+<p class="text-component">C&A Pillar</p>
+<p class="text-component">Overall</p>
+<p class="text-component">Alternative proteins</p>
+<p class="text-component">Bio/sustainable materials</p>
+<p class="text-component">Controlled-environment agriculture</p>
+<p class="text-component">Digital and precision agriculture</p>
+<p class="text-component">Sustainable inputs </p></div>
+            <div class="page"><p class="text-component">Agtech start-ups typically spend 15 to 20 months between funding rounds, with levels growing from a median of $3.5 million in the seed round to $65.0 million in series C.</p>
+<p class="text-component">Click on each category to learn more</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Selected Pillar Company Measure</p>
+<p class="text-component">All other companies</p>
+<p class="text-component">Median</p>
+<img src="media/d1766be687730d3d74b91dbfcd695359/controlled-ag-full.png" alt=""  class="image-component"/>
+<img src="media/83e5d7095fd548028a024f9123eeae50/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Source: PitchBook, McKinsey analysis</p>
+<p class="text-component">C&A Pillar</p>
+<p class="text-component">Overall</p>
+<p class="text-component">Alternative proteins</p>
+<p class="text-component">Bio/sustainable materials</p>
+<p class="text-component">Controlled-environment agriculture</p>
+<p class="text-component">Digital and precision agriculture</p>
+<p class="text-component">Sustainable inputs </p></div>
+            <div class="page"><p class="text-component">Agtech start-ups typically spend 15 to 20 months between funding rounds, with levels growing from a median of $3.5 million in the seed round to $65.0 million in series C.</p>
+<p class="text-component">Click on each category to learn more</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">C&A Pillar</p>
+<p class="text-component">Selected Pillar Company Measure</p>
+<p class="text-component">All other companies</p>
+<p class="text-component">Median</p>
+<img src="media/f318c33b5f3e31daa5ffe476a0e23457/digital-ag-full.png" alt=""  class="image-component"/>
+<img src="media/83e5d7095fd548028a024f9123eeae50/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Source: PitchBook, McKinsey analysis</p>
+<p class="text-component">Overall</p>
+<p class="text-component">Alternative proteins</p>
+<p class="text-component">Bio/sustainable materials</p>
+<p class="text-component">Controlled-environment agriculture</p>
+<p class="text-component">Digital and precision agriculture</p>
+<p class="text-component">Sustainable inputs </p></div>
+            <div class="page"><p class="text-component">Agtech start-ups typically spend 15 to 20 months between funding rounds, with levels growing from a median of $3.5 million in the seed round to $65.0 million in series C.</p>
+<p class="text-component">Click on each category to learn more</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">C&A Pillar</p>
+<p class="text-component">Selected Pillar Company Measure</p>
+<p class="text-component">All other companies</p>
+<p class="text-component">Median</p>
+<img src="media/6c7c9d1a13741749c9b08bc9c007678b/sustainable-full.png" alt=""  class="image-component"/>
+<img src="media/83e5d7095fd548028a024f9123eeae50/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Source: PitchBook, McKinsey analysis</p>
+<p class="text-component">Overall</p>
+<p class="text-component">Alternative proteins</p>
+<p class="text-component">Bio/sustainable materials</p>
+<p class="text-component">Controlled-environment agriculture</p>
+<p class="text-component">Digital and precision agriculture</p>
+<p class="text-component">Sustainable inputs </p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
