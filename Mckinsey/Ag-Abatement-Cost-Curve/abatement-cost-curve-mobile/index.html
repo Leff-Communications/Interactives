@@ -1,0 +1,823 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-ag-abatement-cost-curve',
+            issueAliasSlug: 'abatement-cost-curve-mobile',
+            issue: {"id":319800,"projectId":50455,"slug":"experience-5e5fc5996ad75","name":"Abatement Cost Curve mobile","status":"published","creationDate":"2020-03-04T15:13:29.000Z","lastModifiedDate":"2020-04-15T03:30:21.000Z","deletionDate":null,"firstPublishedDate":"2020-04-15T03:31:31.000Z","wipExperienceVersionId":1045802,"publishedExperienceVersionId":1103040,"createdByMemberId":6387,"primaryIssueAliasId":434334,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5e5fc5996ffe0.jpg","importLinkShared":0,"lastPublishedDate":"2020-04-15T03:31:31.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p823ec53a5811","title":"Abatement Cost Curve mobile"},
+            docVersion: {"id":1103040,"experienceId":319800,"slug":"experience-version-5e96801250c4c","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5e96801250c4c.js","themingBackgroundImageUri":null,"seoTitleKeywords":null,"seoMetaKeywords":null,"seoMetaDescription":null,"canonicalUrlOverride":null,"editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e96801250c59","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/d9bcd813ac906001f900bf8e6726f8ce\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012563fe","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/c16fa6f91a52474c310a785711283334\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680125c4d1","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/aa69f034b8cb3c0dbf80ae4372ea117b\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012624c6","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/d6093806a88a1f726d5b7a38ef005ca6\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e96801267b8d","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/150b4bdde6da1d48e45c2dbb71b203a0\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680126db8e","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/b9f3ba7cdc4a8b73aeb035425cba9de9\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e96801273d64","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/1ae6e5137b11b3ec7abc5c1b969872b8\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e96801279add","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/9458a3d221bc258606df5a60998a2489\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680127fde5","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/de8ddfbe87fb941693e6c8c9a27e4b3a\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e96801286423","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/321fdcc1ce12aaaa7c7191a768e39a8b\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680128bcfb","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/a2b557faa376c1c27bdffd12c8881c44\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680129187b","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/9758684e0d4c4fcb66a1522fd2eca16d\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680129957a","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/beff2dcdd11e7f30c63192d01cefe155\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e9680129fbd1","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/3a4529af5def34a3a6679e76707cb2a4\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012a5a70","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/6c59accaba1240f8d2b2a5428a14ee92\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012ab1af","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/e08ba22d76f5cee89e25c02b9e4274c7\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012b16bc","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/13346dd5b3e1b1bb41009f1156c24634\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012b8c6e","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/111a5eda07332de6ba8a7dc8eafb3289\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012beba4","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/0ab3ab1406e107206e04bf69d794e3d6\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012c5312","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/5fdc8a78d64647e8b8190e03e64bbd63\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012caf58","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/54df2e9738d6e4928dd383b7b80160f7\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5e968012d0756","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/04\/14\/c324e35df7c6f2daa898a46c4d554d2a\/page-thumbnail.jpg?imageOpt=1&crop=544,808,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5e5fc5996ad75-04-15-2020-0331.cde","exportAppVersion":"8.7.1","creationDate":"2020-04-15T03:31:31.000Z","modificationDate":"2023-04-27T21:17:52.000Z","publishedDate":"2020-04-15T03:31:30.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":null,"ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5e5fc5996ad75-04-15-2020-0331.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|68ef50b5-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|68ef50b5-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Medium-Ital-vdDnfj5s","cssFileURL":"fonts\/9755340f-5f53-4694-9c48-13dce01cd94b\/theinhardt-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Medium-Norm-2YcZ2E8f","cssFileURL":"fonts\/96e789a5-4c16-4b2b-bc11-5792733382ff\/theinhardt-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|7d4482c4-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7d4482c4-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan Light-I-ydHmW4zd","cssFileURL":"fonts\/97d46f34-778a-413a-b078-275f9f4d0dfd\/theinhardtpan-lightitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Light-N-WI9zSQsD","cssFileURL":"fonts\/c51e5b12-7097-4ed8-b6b8-b7b1af6838ec\/theinhardtpan-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|7d04bb80-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan","familyGuid":"Uploaded|7d048f23-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7d04bb80-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan-Italic-31w4g4T2","cssFileURL":"fonts\/d286279e-5793-4b45-8b8a-f289da49f01e\/theinhardtpan-italic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e3e987e-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan","familyGuid":"Uploaded|7d048f23-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e3e987e-36de-11e9-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Theinhardt Pan-Regular-sohePRVv","cssFileURL":"fonts\/7f94575a-34d0-46ef-9c09-63bae342aeba\/theinhardtpan-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e025e95-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Medium","familyGuid":"Uploaded|7e0226c9-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e025e95-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Medium--MwExwR5A","cssFileURL":"fonts\/fbfb36d2-eddd-4378-9dd8-13f82ab6395a\/theinhardtpan-medium.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Abatement Cost Curve mobile</title>
+
+
+
+
+    <meta property="og:title" content="Abatement Cost Curve mobile"/>
+        <meta property="og:image" content="media/d9bcd813ac906001f900bf8e6726f8ce/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Abatement Cost Curve mobile">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/d9bcd813ac906001f900bf8e6726f8ce/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5e96801250c4c.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5e96801250c4c",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Zero-emissions 
+on-farm machinery and equipment</p>
+<p class="text-component">–229</p>
+<img src="media/0365897a26b0ff1a6bfff1becbcbff51/20-year-graphs-energy-04-full.png" alt=""  class="image-component"/>
+<img src="media/aff2a10df42c63f233931288ba8ab7df/100-year-graphs-energy-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">Zero-emissions 
+on-farm machinery and equipment</p>
+<p class="text-component">–236</p>
+<p class="text-component">Scroll through the cost curve by clicking on the arrow</p></div>
+            <div class="page"><p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Variable rate 
+fertilization</p>
+<p class="text-component">–176</p>
+<p class="text-component">Variable rate 
+fertilization</p>
+<p class="text-component">–176</p>
+<p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<img src="media/6b7a63cd1e9b4bb17d100ab08b6486e4/20-year-graphs-2-variableratefert-2-full.png" alt=""  class="image-component"/>
+<img src="media/0758251d273e7d7a1f80b34a9080c811/100-year-graphs-2-variableratefert-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Reduced N over-application in China and India</p>
+<p class="text-component">–97</p>
+<p class="text-component">Reduced N over-application in China and India</p>
+<p class="text-component">–97</p>
+<img src="media/eb7ead98527591a82b4a7450e11340b6/20-year-graphs-3-nrate-full.png" alt=""  class="image-component"/>
+<img src="media/12ade7fc0805f4535ed835781f12aaa9/100-year-graphs-3-nrate-full.png" alt=""  class="image-component"/>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Dry direct seeding</p>
+<p class="text-component">–41</p>
+<p class="text-component">Dry direct seeding</p>
+<p class="text-component">–123</p>
+<img src="media/c1b3b4b786e87e92dca7665a12269475/20-year-graphs-4-dryseeding-full.png" alt=""  class="image-component"/>
+<img src="media/5c9dce858a15a8c4784afeb8afeadac7/100-year-graphs-4-dryseeding-full.png" alt=""  class="image-component"/>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Low-/no-tillage</p>
+<p class="text-component">–41</p>
+<p class="text-component">Low-/no-tillage</p>
+<p class="text-component">–43</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/2e82ddeab054c9e922187df337592d26/20-year-graphs-5-lowtilage-full.png" alt=""  class="image-component"/>
+<img src="media/a43b91f1ed074ec0ad64d0949abfcd9c/100-year-graphs-5-lowtilage-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved equipment maintenance</p>
+<p class="text-component">–34</p>
+<p class="text-component">Improved equipment maintenance</p>
+<p class="text-component">–34</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/424d179e8637f7bb3ed7109c0e937ff3/20-year-graphs-6-improvedequipment-full.png" alt=""  class="image-component"/>
+<img src="media/bdc0eefbeabe0495f7453c3acd442f5a/100-year-graphs-6-improvedequipment-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved fuel efficiency of fishing vessels</p>
+<p class="text-component">–12</p>
+<p class="text-component">Improved fuel efficiency of fishing vessels</p>
+<p class="text-component">–12</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/3eb13429a676140d14a9b50e4a18363f/20-year-graphs-7-fishingvessels-full.png" alt=""  class="image-component"/>
+<img src="media/6a9b225e38a20671be35fe3713b66176/100-year-graphs-7-fishingvessels-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved rice paddy water management</p>
+<p class="text-component">–12</p>
+<p class="text-component">Improved rice paddy water management</p>
+<p class="text-component">–35</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/d739c702faebe5af323cba4c1c048a0b/20-year-graphs-8-ricepaddy-artboard-7-rice-paddy-full.png" alt=""  class="image-component"/>
+<img src="media/ecd2f420b5e0eaeaa8f12f1dfa08c558/100-year-graphs-8-ricepaddy-artboard-7-rice-paddy-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved rice straw management</p>
+<p class="text-component">–8</p>
+<p class="text-component">Improved rice straw management</p>
+<p class="text-component">–26</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/992998b3ec5c9f4869898c369977ccd4/20-year-graphs-9-ricestraw-full.png" alt=""  class="image-component"/>
+<img src="media/cd7a746146a87126e5f00be57b45cc43/100-year-graphs-9-ricestraw-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved animal health monitoring and illness prevention</p>
+<p class="text-component">–5</p>
+<p class="text-component">Improved animal health monitoring and illness prevention</p>
+<p class="text-component">–5</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/c76354c1b6961390638021773a308ea9/20-year-graphs-10-animalhealth-full.png" alt=""  class="image-component"/>
+<img src="media/c96cadb52dadfa7d86d06583504f649d/100-year-graphs-10-animalhealth-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Feed grain processing for digestibility</p>
+<p class="text-component">–3</p>
+<p class="text-component">Feed grain processing for digestibility</p>
+<p class="text-component">–8</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/4fd07fca003d1f9d4e723309fb75b21e/20-year-graphs-11-feedgrain-full.png" alt=""  class="image-component"/>
+<img src="media/1a0eb8c1ea4d79b09bf821f04a03273f/100-year-graphs-11-feedgrain-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">GHG-focused breeding and genetic selection</p>
+<p class="text-component">0</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<p class="text-component">GHG-focused breeding and genetic selection</p>
+<p class="text-component">0</p>
+<p class="text-component">Livestock nutrient 
+use efficiency</p>
+<p class="text-component">0</p>
+<p class="text-component">Livestock nutrient use efficiency</p>
+<p class="text-component">0</p>
+<p class="text-component">Nitrogen-fixing rotations</p>
+<p class="text-component">0</p>
+<p class="text-component">Nitrogen-fixing rotations</p>
+<p class="text-component">0</p>
+<img src="media/d6c26bb960fab36428022e2fc3ded46f/20-year-graphs-12-zeros-artboard-11-zeros-full.png" alt=""  class="image-component"/>
+<img src="media/a376b620a78ca3f299e5904e197a704c/100-year-graphs-12-zeros-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved fertilization of rice</p>
+<p class="text-component">3</p>
+<p class="text-component">Improved fertilization of rice</p>
+<p class="text-component">9</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/99f6ce7bfce304affb43788aa899bbf3/20-year-graphs-13-ricefert-full.png" alt=""  class="image-component"/>
+<img src="media/e75cb584741e684f4b175e261a733a3f/100-year-graphs-13-ricefert-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">N-Inhibitors on pasture</p>
+<p class="text-component">15</p>
+<p class="text-component">N-Inhibitors on pasture</p>
+<p class="text-component">15</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/a194a01bcd32b453bbf599c648e15078/20-year-graphs-14-n-inhibitors-artboard-13-full.png" alt=""  class="image-component"/>
+<img src="media/ad03970a5fa337b249bd0916d0f9aff1/100-year-graphs-14-n-inhibitors-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved fertilization timing</p>
+<p class="text-component">40</p>
+<p class="text-component">Improved fertilization timing</p>
+<p class="text-component">40</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/7d9fc0c52e6d3ea8fbaebf31215c092e/20-year-graphs-15-ferttiming-full.png" alt=""  class="image-component"/>
+<img src="media/771ae69452807abd1a4c7890a5685c1d/100-year-graphs-15-ferttiming-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Controlled release and stabilized fertilizers</p>
+<p class="text-component">65</p>
+<p class="text-component">Controlled release and stabilized fertilizers</p>
+<p class="text-component">65</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/a186fd6c84c4610b7e80a86a82f6bb08/20-year-graphs-16-stablefert-full.png" alt=""  class="image-component"/>
+<img src="media/2fd858ba01447f15131e94ab77f050bb/100-year-graphs-16-stablefert-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Animal feed additives</p>
+<p class="text-component">88</p>
+<p class="text-component">Animal feed additives</p>
+<p class="text-component">263</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/ae81f73b18814ac59ec8092a8171eb30/20-year-graphs-17-animaladd-full.png" alt=""  class="image-component"/>
+<img src="media/1c3585c8c519dddf5e1fdceca1fdd7c5/100-year-graphs-17-animaladd-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Anaerobic manure digestion</p>
+<p class="text-component">92</p>
+<p class="text-component">Anaerobic manure digestion</p>
+<p class="text-component">277</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/fc320eea228b3eb72b533c12c0e15137/20-year-graphs-18-manure-full.png" alt=""  class="image-component"/>
+<img src="media/c19da259c29873ca43e2510cc0f2f401/100-year-graphs-18-manure-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Technologies that increase livestock production efficiencies</p>
+<p class="text-component">119</p>
+<p class="text-component">Technologies that increase livestock production efficiencies</p>
+<p class="text-component">119</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/cc99081ad8c5cc67de1400bc4983a356/20-year-graphs-19-tech-full.png" alt=""  class="image-component"/>
+<img src="media/2bcd53e8cb4b4dff693b3ed508ffb564/100-year-graphs-19-tech-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Animal feed mix optimization</p>
+<p class="text-component">131</p>
+<p class="text-component">Animal feed mix optimization</p>
+<p class="text-component">131</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/d6f6abfb06ae91b37defbd49cfa4906a/20-year-graphs-20-feedopt-full.png" alt=""  class="image-component"/>
+<img src="media/c304075bd65726c4cd671bccd5167922/100-year-graphs-20-feedopt-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Conversion from flood to drip/sprinkler irrigation</p>
+<p class="text-component">147</p>
+<p class="text-component">Conversion from flood to drip/sprinkler irrigation</p>
+<p class="text-component">146</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/124c6039382bf1c53d41e0a66585ad22/20-year-graphs-21-sprinkler-full.png" alt=""  class="image-component"/>
+<img src="media/e40c7576b9cdfb08c89645de38cc8e0e/100-year-graphs-21-sprinkler-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Speciality crop nutrition amendments</p>
+<p class="text-component">523</p>
+<p class="text-component">Speciality crop nutrition amendments</p>
+<p class="text-component">521</p>
+<p class="text-component">Notes</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential for each lever; the vertical axis displays 
+the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into 
+crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<img src="media/4ed9e5907765c0fe8c8464f6c1aed113/20-year-graphs-22-cropnut-full.png" alt=""  class="image-component"/>
+<img src="media/8f8e2997f95bc197821d952def05ee31/100-year-graphs-22-cropnut-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
