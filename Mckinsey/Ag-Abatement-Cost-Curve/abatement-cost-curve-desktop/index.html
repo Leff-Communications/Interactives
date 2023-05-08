@@ -1,0 +1,406 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-ag-abatement-cost-curve',
+            issueAliasSlug: 'abatement-cost-curve-desktop',
+            issue: {"id":311093,"projectId":50455,"slug":"experience-5e3f259c35e28","name":"Abatement Cost Curve desktop","status":"published","creationDate":"2020-02-08T21:18:20.000Z","lastModifiedDate":"2021-10-22T22:52:11.000Z","deletionDate":null,"firstPublishedDate":"2020-03-04T22:40:09.000Z","wipExperienceVersionId":1012518,"publishedExperienceVersionId":1134625,"createdByMemberId":6387,"primaryIssueAliasId":422758,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5e3f259c3a975.jpg","importLinkShared":0,"lastPublishedDate":"2020-05-05T21:57:24.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p0dd5fb8313c2","title":"Abatement Cost Curve desktop"},
+            docVersion: {"id":1134625,"experienceId":311093,"slug":"experience-version-5eb1e14473a6d","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5eb1e14473a6d.js","themingBackgroundImageUri":null,"seoTitleKeywords":null,"seoMetaKeywords":null,"seoMetaDescription":null,"canonicalUrlOverride":null,"editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5eb1e14473a84","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/05\/05\/db01cdceb39d67d5c6ac2b08cb2af1f3\/page-thumbnail.jpg?imageOpt=1&crop=683,574,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5e3f259c35e28-05-05-2020-2157.cde","exportAppVersion":"8.7.1","creationDate":"2020-05-05T21:57:24.000Z","modificationDate":"2023-04-27T21:18:16.000Z","publishedDate":"2020-05-05T21:57:24.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":null,"ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-5e3f259c35e28-05-05-2020-2157.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|7d4482c4-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7d4482c4-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan Light-I-ydHmW4zd","cssFileURL":"fonts\/97d46f34-778a-413a-b078-275f9f4d0dfd\/theinhardtpan-lightitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Light-N-WI9zSQsD","cssFileURL":"fonts\/c51e5b12-7097-4ed8-b6b8-b7b1af6838ec\/theinhardtpan-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|7d04bb80-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan","familyGuid":"Uploaded|7d048f23-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7d04bb80-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan-Italic-31w4g4T2","cssFileURL":"fonts\/d286279e-5793-4b45-8b8a-f289da49f01e\/theinhardtpan-italic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e3e987e-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan","familyGuid":"Uploaded|7d048f23-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e3e987e-36de-11e9-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Theinhardt Pan-Regular-sohePRVv","cssFileURL":"fonts\/7f94575a-34d0-46ef-9c09-63bae342aeba\/theinhardtpan-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e08d3ac-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Medium","familyGuid":"Uploaded|7e0226c9-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e08d3ac-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan Medium--4RVT7TiE","cssFileURL":"fonts\/8b5fbae5-4c45-49ce-b65b-d9481c81112d\/theinhardtpan-mediumitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e025e95-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Medium","familyGuid":"Uploaded|7e0226c9-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e025e95-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Medium--MwExwR5A","cssFileURL":"fonts\/fbfb36d2-eddd-4378-9dd8-13f82ab6395a\/theinhardtpan-medium.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Abatement Cost Curve desktop</title>
+
+
+
+
+    <meta property="og:title" content="Abatement Cost Curve desktop"/>
+        <meta property="og:image" content="media/db01cdceb39d67d5c6ac2b08cb2af1f3/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Abatement Cost Curve desktop">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/db01cdceb39d67d5c6ac2b08cb2af1f3/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5eb1e14473a6d.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5eb1e14473a6d",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Agriculture abatement cost curve</p>
+<p class="text-component">Notes</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<p class="text-component">Select type
+of production practice</p>
+<p class="text-component">Animal 
+protein</p>
+<p class="text-component">Crops</p>
+<p class="text-component">Rice</p>
+<p class="text-component">Energy</p>
+<img src="media/b522ea62dd2a1d203be74e107582a5cc/cow-db-01-full.png" alt=""  class="image-component"/>
+<img src="media/3dd0d6c1611de31a60a2352412e75c2b/cow-light-01-full.png" alt=""  class="image-component"/>
+<img src="media/4947102e295d750be6fc063b965078ce/corn-db-02-full.png" alt=""  class="image-component"/>
+<img src="media/de638b4585087fedd75be6807456c0c5/corn-light-02-full.png" alt=""  class="image-component"/>
+<img src="media/54472ce8673a89ed202aeac97bd60078/rice-db-03-full.png" alt=""  class="image-component"/>
+<img src="media/fba7db67c3c92727de5637066451a506/rice-light-03-full.png" alt=""  class="image-component"/>
+<img src="media/3a2f4f4f6ea13307e8236745520cc18b/energy-db-04-full.png" alt=""  class="image-component"/>
+<img src="media/923cc6acf89161197495961c6d0d882e/energy-light-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 20 year)</p>
+<p class="text-component">500</p>
+<p class="text-component">–250</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 20 year)</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">Animal protein</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Improved fuel efficiency of fishing vessels</p>
+<p class="text-component">–12</p>
+<p class="text-component">Improved animal health monitoring and illness prevention</p>
+<p class="text-component">–5</p>
+<p class="text-component">Feed grain processing for digestibility</p>
+<p class="text-component">–3</p>
+<p class="text-component">GHG-focused breeding and genetic selection</p>
+<p class="text-component">0</p>
+<p class="text-component">Livestock 
+nutrient use efficiency</p>
+<p class="text-component">0</p>
+<p class="text-component">N-Inhibitors on pasture</p>
+<p class="text-component">15</p>
+<p class="text-component">Animal feed additives</p>
+<p class="text-component">88</p>
+<p class="text-component">Technologies that increase livestock production efficiencies</p>
+<p class="text-component">119</p>
+<p class="text-component">Anaerobic manure digestion</p>
+<p class="text-component">92</p>
+<p class="text-component">Animal feed mix optimization</p>
+<p class="text-component">131</p>
+<p class="text-component">Crops</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Variable rate fertilization</p>
+<p class="text-component">–176</p>
+<p class="text-component">Reduced N over-application in 
+China and India</p>
+<p class="text-component">–97</p>
+<p class="text-component">Low or no 
+tillage</p>
+<p class="text-component">–41</p>
+<p class="text-component">Improved equipment maintenance</p>
+<p class="text-component">–34</p>
+<p class="text-component">Nitrogen-fixing rotations</p>
+<p class="text-component">0</p>
+<p class="text-component">Controlled-release and stabilized fertilizers</p>
+<p class="text-component">65</p>
+<p class="text-component">Improved 
+fertilization 
+timing</p>
+<p class="text-component">40</p>
+<p class="text-component">Conversion from flood to drip/sprinkler irrigation</p>
+<p class="text-component">147</p>
+<p class="text-component">Speciality crop nutrition amendments </p>
+<p class="text-component">523</p>
+<p class="text-component">Rice</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Improved rice straw management</p>
+<p class="text-component">–8</p>
+<p class="text-component">Dry direct seeding</p>
+<p class="text-component">–41</p>
+<p class="text-component">Improved fertilization 
+of rice</p>
+<p class="text-component">3</p>
+<p class="text-component">Improved rice paddy water management</p>
+<p class="text-component">–12</p>
+<p class="text-component">Energy</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Zero-emissions 
+on-farm machinery and equipment</p>
+<p class="text-component">–229</p>
+<p class="text-component">Select type
+of production practice</p>
+<img src="media/b522ea62dd2a1d203be74e107582a5cc/cow-db-01-full.png" alt=""  class="image-component"/>
+<img src="media/3dd0d6c1611de31a60a2352412e75c2b/cow-light-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Animal 
+protein</p>
+<img src="media/4947102e295d750be6fc063b965078ce/corn-db-02-full.png" alt=""  class="image-component"/>
+<img src="media/de638b4585087fedd75be6807456c0c5/corn-light-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Crops</p>
+<img src="media/54472ce8673a89ed202aeac97bd60078/rice-db-03-full.png" alt=""  class="image-component"/>
+<img src="media/fba7db67c3c92727de5637066451a506/rice-light-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">Rice</p>
+<img src="media/3a2f4f4f6ea13307e8236745520cc18b/energy-db-04-full.png" alt=""  class="image-component"/>
+<img src="media/923cc6acf89161197495961c6d0d882e/energy-light-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">Energy</p>
+<p class="text-component">Estimated cost of GHG abatement, $/t CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">Technical GHG mitigation potential, MMT CO2 eq (GWP AR5 100 year)</p>
+<p class="text-component">500</p>
+<img src="media/2191fb50dc149e03d8c3da5805701196/dottedline-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">100</p>
+<p class="text-component">–250</p>
+<p class="text-component">Improved fuel efficiency of fishing vessels</p>
+<p class="text-component">–12</p>
+<p class="text-component">Animal protein</p>
+<p class="text-component">Feed grain processing for digestibility </p>
+<p class="text-component">–8</p>
+<p class="text-component">Improved animal health monitoring and illness prevention</p>
+<p class="text-component">–5</p>
+<p class="text-component">Livestock nutrient use efficiency</p>
+<p class="text-component">0</p>
+<p class="text-component">GHG-focused breeding 
+and genetic selection</p>
+<p class="text-component">0</p>
+<p class="text-component">N-inhibitors on pasture</p>
+<p class="text-component">15</p>
+<p class="text-component">Animal feed mix optimization</p>
+<p class="text-component">131</p>
+<p class="text-component">Technologies that increase livestock production efficiencies</p>
+<p class="text-component">119</p>
+<p class="text-component">Animal feed additives</p>
+<p class="text-component">263</p>
+<p class="text-component">Anaerobic manure digestion</p>
+<p class="text-component">277</p>
+<p class="text-component">Crops</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Variable rate fertilization</p>
+<p class="text-component">–176</p>
+<p class="text-component">Reduced N over-application in China and India</p>
+<p class="text-component">–97</p>
+<p class="text-component">Low-/no-tillage</p>
+<p class="text-component">–43</p>
+<p class="text-component">Improved equipment maintenance</p>
+<p class="text-component">–34</p>
+<p class="text-component">Nitrogen-fixing rotations</p>
+<p class="text-component">0</p>
+<p class="text-component">Improved fertilization timing </p>
+<p class="text-component">40</p>
+<p class="text-component">Controlled release and stabilized fertilizers</p>
+<p class="text-component">65</p>
+<p class="text-component">Conversion from 
+flood to drip/sprinkler irrigation</p>
+<p class="text-component">146</p>
+<p class="text-component">Specialty crop nutrition amendments</p>
+<p class="text-component">521</p>
+<p class="text-component">Rice</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Improved rice straw management</p>
+<p class="text-component">–26</p>
+<p class="text-component">Dry direct seeding</p>
+<p class="text-component">–123</p>
+<p class="text-component">Improved rice paddy water management</p>
+<p class="text-component">–35</p>
+<p class="text-component">Improved fertilization 
+of rice</p>
+<p class="text-component">9</p>
+<p class="text-component">Energy</p>
+<p class="text-component">Technical appendix (PDF)</p>
+<p class="text-component">Zero-emissions 
+on-farm machinery and equipment</p>
+<p class="text-component">–236</p>
+<p class="text-component">The horizontal axis reflects greenhouse gas mitigation potential 
+for each lever; the vertical axis displays the average abatement cost ($/tCO2 equivalent) for each lever.
+
+Elsewhere in our emissions reduction accounting throughout this article, energy is folded into crop and livestock agriculture (~65% in crop, ~35% in livestock).</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Technical appendix (PDF)</p>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/6a3cbc4ff3eeb43db1fce21184b34a12/download-icon.svg" alt=""  class="image-component"/>
+<img src="media/cb6816d901a93dfe673fb7d5bc75d6d3/20-year-graphs-animal-01-full.png" alt=""  class="image-component"/>
+<img src="media/0b4504ceb2b103d1e9eb36189d864868/20-year-graphs-crops-02-full.png" alt=""  class="image-component"/>
+<img src="media/00d981ace0c358382a5b505952c2ef93/20-year-graphs-rice-03-full.png" alt=""  class="image-component"/>
+<img src="media/0365897a26b0ff1a6bfff1becbcbff51/20-year-graphs-energy-04-full.png" alt=""  class="image-component"/>
+<img src="media/072560baae3187de30df10fca816faff/100-year-graphs-anmal-01-full.png" alt=""  class="image-component"/>
+<img src="media/bf295925af09e8603ade894e39251fec/100-year-graphs-crops-02-full.png" alt=""  class="image-component"/>
+<img src="media/ade1575b3c63256add34c4db992f07bd/100-year-graphs-rice-03-full.png" alt=""  class="image-component"/>
+<img src="media/aff2a10df42c63f233931288ba8ab7df/100-year-graphs-energy-04-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
