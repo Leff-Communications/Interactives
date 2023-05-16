@@ -1,0 +1,502 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.3',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mck-rila-interactive',
+            issueAliasSlug: 'retail-speaks-seven-imperatives-for-the-industry-mobile-1',
+            issue: {"id":453472,"projectId":70316,"slug":"experience-60494f28e8f2b","name":"Retail speaks: Seven imperatives for the industry (Mobile)","status":"published","creationDate":"2021-03-10T22:58:48.000Z","lastModifiedDate":"2021-03-11T22:22:34.000Z","deletionDate":null,"firstPublishedDate":"2021-03-11T22:04:15.000Z","wipExperienceVersionId":1608842,"publishedExperienceVersionId":1611237,"createdByMemberId":14154,"primaryIssueAliasId":622737,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-60494f2858d3e.jpg","importLinkShared":0,"lastPublishedDate":"2021-03-11T22:24:32.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pc56e3e89ddf2","title":"Retail speaks: Seven imperatives for the industry (Mobile)"},
+            docVersion: {"id":1611237,"experienceId":453472,"slug":"experience-version-604a98a0ab74e","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-604a98a0ab74e.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Retail speaks: Seven imperatives for the industry","seoMetaKeywords":"","seoMetaDescription":"Retail speaks: Seven imperatives for the industry","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-604a98a0ab770","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/03\/11\/d0e9c956d3bc51779e9274775f049aba\/page-thumbnail.jpg?imageOpt=1&crop=459,816,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-60494f28e8f2b-03-11-2021-2224.cde","exportAppVersion":"8.7.2","creationDate":"2021-03-11T22:24:32.000Z","modificationDate":"2023-05-08T06:11:05.000Z","publishedDate":"2021-03-11T22:24:32.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/leff-communications\/issue-export\/experience-60494f28e8f2b-03-11-2021-2224.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Bower Bold","familyGuid":"Uploaded|5f5f3495-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1050,"ascent":840,"variantGuid":"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Bower Bold-Normal-IjUkOdL9","cssFileURL":"fonts\/b54def70-852a-418e-ac9f-c219271262b8\/bower-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6732f44b-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Light-Norma-AxPRkJpr","cssFileURL":"fonts\/87f3cab9-783a-46dd-8a5e-56c3fb6a53e8\/theinhardt-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|6a9c6be9-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Light","familyGuid":"Uploaded|6732c576-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6a9c6be9-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Light-Itali-SRN6RMzx","cssFileURL":"fonts\/98d88cfc-430f-491b-97af-fa02600f7d52\/theinhardt-lightitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Medium","familyGuid":"Uploaded|67cdeebc-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|67ce1b7c-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Medium-Norm-2YcZ2E8f","cssFileURL":"fonts\/96e789a5-4c16-4b2b-bc11-5792733382ff\/theinhardt-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|6a9eb215-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt","familyGuid":"Uploaded|68fc2ed5-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|6a9eb215-36de-11e9-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Theinhardt-Regular-Yl8PyLlh","cssFileURL":"fonts\/ff6babd4-d0bf-470c-a95a-6447ea8a7c24\/theinhardt-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|d52807e2-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Helvetica Neue LT Std","familyGuid":"Uploaded|d3acd5a3-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":714,"variantGuid":"Uploaded|d52807e2-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Bd","cssFamilyName":"Helvetica Neue LT Std--R2ytO5c9","cssFileURL":"fonts\/5dfdbc60-4336-4d1d-994c-0f0bbb946c1d\/helveticaneueltstd-bd.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Retail speaks: Seven imperatives for the industry (Mobile) Retail speaks: Seven imperatives for the industry</title>
+
+
+
+        <meta name="description" content="Retail speaks: Seven imperatives for the industry"/>
+
+    <meta property="og:title" content="Retail speaks: Seven imperatives for the industry (Mobile)"/>
+        <meta property="og:image" content="media/d0e9c956d3bc51779e9274775f049aba/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Retail speaks: Seven imperatives for the industry (Mobile)">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/d0e9c956d3bc51779e9274775f049aba/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-604a98a0ab74e.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_604a98a0ab74e",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b303444c919028d54c1707a24db28ccb/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Retail speaks: 
+Seven imperatives for the industry</p>
+<p class="text-component">After a year like no other, 
+the US retail industry 
+faces a still-uncertain 
+future. Our latest research highlights seven 
+imperatives that will position retailers for success—
+regardless of what is next.</p>
+<p class="text-component">This interactive was a collaborative effort by Praveen Adhi, Manik Aryapadi, Steven Begley, Becca Coggins, Sajal Kohli, and Hannah Yankelevich</p>
+<p class="text-component">Every retailer, to some degree, has long had a sense of what the future of retail could look like: consumers shopping from anywhere at any time 
+on their computers or mobile devices, stores morphing into showrooms or fulfillment centers, products being shipped out for home delivery at ever-increasing speeds, digitization everywhere.
+
+But the future came early. In March 2020, 
+COVID-19 shut down retail locations across the country, forcing US consumers to change their buying behaviors. Trends that had been on a multiyear trajectory saw dramatic acceleration.
+
+What has set the top performers apart? And how 
+can retailers thrive in 2021 and beyond, even in 
+the midst of continuing uncertainty? The answers aren’t trivial: as the nation’s largest private-sector employer, the retail industry affects the lives and livelihoods of millions. 
+
+In this report, we present research findings from 
+the Retail Industry Leaders Association (RILA), with McKinsey & Company as a knowledge partner.</p>
+<img src="media/57601d4b4ff48bac164fac6cbaf18c14/seven-imperatives-full.png" alt=""  class="image-component"/>
+<p class="text-component">The changing competitive landscape will require retailers to pursue seven imperatives. The first four will be familiar to retailers, so their challenge will be to accelerate progress. The next three imperatives represent additional strategies and efforts that will be increasingly critical in the coming years. 
+
+The ideal recipe will vary by retailer, so executives should review these imperatives based on their organization’s starting point, business strategy, and the approach that fits best with their brand’s DNA. </p>
+<p class="text-component">Select one of the imperatives to learn more</p>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<p class="text-component">6</p>
+<p class="text-component">7</p>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<p class="text-component">6</p>
+<p class="text-component">7</p>
+<p class="text-component">Become omnipotent on omnichannel</p>
+<p class="text-component">This time (and all the time), it's personal</p>
+<p class="text-component">Turbocharge delivery</p>
+<p class="text-component">Take a stand or take a seat</p>
+<p class="text-component">Recalibrate talent strategies</p>
+<p class="text-component">Pursue an eco(system)-friendly strategy</p>
+<p class="text-component">Take 
+productivity from foundational to transformational</p>
+<img src="media/88aca4d812131f3ea867c37632bdbac0/down-arrow.svg" alt=""  class="image-component"/>
+<p class="text-component">Download the report</p>
+<p class="text-component">Download the report</p>
+<p class="text-component">1. Become omnipotent on omnichannel </p>
+<img src="media/9a34671cd3fa329ad28782220ea232b6/imperative-1-full.png" alt=""  class="image-component"/>
+<img src="media/72aae20ea98f63b67645f35bcd3a1b3f/image.svg" alt=""  class="image-component"/>
+<p class="text-component">2/3</p>
+<p class="text-component">of survey respondents cited the growth of omnichannel and digital shopping as the industry’s most significant trend—and greatest challenge. </p>
+<img src="media/72263e3bfd267090d1686d5a04dd57ab/image.svg" alt=""  class="image-component"/>
+<p class="text-component">65%</p>
+<p class="text-component">of retailers base store decisions on brick-and-mortar performance, with just 35% considering how such moves affect omnichannel.</p>
+<p class="text-component">Given the impact of digital shifts on the customer journey, how can you upgrade your e-commerce capabilities and rethink your store network?</p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">2. This time (and all the time), it’s personal</p>
+<img src="media/a2692790a5aa91595c9dc034fedb04d9/imperative-2-full.png" alt=""  class="image-component"/>
+<img src="media/7815780adfd410ba4acd250c8d568892/image.svg" alt=""  class="image-component"/>
+<p class="text-component">76%</p>
+<p class="text-component">of consumers changed stores, brands, or channels in 2020. </p>
+<img src="media/90e45a8c81d623b59f2ab402f8934b7d/image.svg" alt=""  class="image-component"/>
+<p class="text-component">100%</p>
+<p class="text-component">of top-quartile¹ retailers cited omnichannel personalization as a top 5 priority, but only 
+15% of retailers have fully implemented it across all channels.</p>
+<p class="text-component">1</p>
+<p class="text-component">Top-quartile retailers defined by those in the top quartile of revenue growth from 2019 to 2020.</p>
+<p class="text-component">Where is your company in its omnichannel personalization journey?</p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<img src="media/94dd28bc1063fc325b4aadc982061af4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">3. Turbocharge 
+delivery</p>
+<img src="media/0670df6b37329f0ffb4dafbefffc0544/imperative-3-full.png" alt=""  class="image-component"/>
+<img src="media/9f02511b6e29282ba9d36dad8f09e96d/image.svg" alt=""  class="image-component"/>
+<p class="text-component">>90%</p>
+<p class="text-component">of consumers see 
+2- to 3-day delivery as the baseline, 
+and 30% expect same-day delivery.</p>
+<img src="media/9e10dc1758d0db1e126b893ce0cfb8a4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">>75%</p>
+<p class="text-component">of the specialty retail supply chain leaders have made 2-day delivery a priority, and 42% are aiming for same-day delivery 
+by 2022.</p>
+<p class="text-component">How are you planning to accelerate delivery to meet rising consumer expectations? </p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<img src="media/94dd28bc1063fc325b4aadc982061af4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">4. Take a stand or 
+take a seat</p>
+<img src="media/7965eec55cbff6dbdaaa14be1ab33809/imperative-4-full.png" alt=""  class="image-component"/>
+<img src="media/9d1f4042a14242ec578b00c5e3148de3/image.svg" alt=""  class="image-component"/>
+<p class="text-component">1/3</p>
+<p class="text-component">of survey respondents² stopped using a 
+brand based on its social actions.</p>
+<p class="text-component">2</p>
+<p class="text-component">Survey reference.</p>
+<img src="media/32c4eb8c21819e81490c1371d0e6704a/image.svg" alt=""  class="image-component"/>
+<p class="text-component">71%</p>
+<p class="text-component">indicated they would 
+lose trust in a brand forever if it placed profits over people.</p>
+<p class="text-component">What steps are you taking to actively support 
+ESG principles?</p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<img src="media/94dd28bc1063fc325b4aadc982061af4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">5. Recalibrate 
+talent strategies</p>
+<img src="media/14c92f020f8cbc845f3452382136f8e4/imperative-5-full.png" alt=""  class="image-component"/>
+<img src="media/e1b220fb94873999a57d5b8779e02600/image.svg" alt=""  class="image-component"/>
+<p class="text-component">70%</p>
+<p class="text-component">of survey respondents plan to rely more heavily on flexible labor over the next 
+3 years.</p>
+<img src="media/9ed1f8e4833d94e2e447ef9b23bce6ec/image.svg" alt=""  class="image-component"/>
+<p class="text-component">increase workforce diversity.</p>
+<p class="text-component">Leading retailers 
+have committed to </p>
+<p class="text-component">How will you adapt your talent strategy take advantage of nontraditional labor and remote work while building a diverse workforce?</p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<img src="media/94dd28bc1063fc325b4aadc982061af4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">6. Pursue an eco(system)-friendly strategy</p>
+<img src="media/222e70afcb47e332e020208e1132f09a/imperative-6-full.png" alt=""  class="image-component"/>
+<img src="media/df8260f4d2fcc440a5a9b2795e322538/image.svg" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<p class="text-component">of the 7 largest companies by market cap participate in ecosystems.</p>
+<img src="media/aafd2d42fd7abf4ecec62d3071d23f97/image.svg" alt=""  class="image-component"/>
+<p class="text-component">12</p>
+<p class="text-component">sectors could reinvent themselves as ecosystems and function as a $60 trillion economy by 2025.</p>
+<p class="text-component">3</p>
+<p class="text-component">3</p>
+<p class="text-component">Violet Chung, Miklós Dietz, Istvan Rab, and Zac Townsend, “Ecosystems 2.0: Climbing to the next level,” McKinsey.com, September 11, 2020. </p>
+<p class="text-component">Do you have an ecosystem strategy in place? 
+How will you participate, compete, or coexist with ecosystems? </p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<img src="media/94dd28bc1063fc325b4aadc982061af4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">7. Take productivity from foundational 
+to transformational</p>
+<img src="media/b5d1eaedf08c6026f93fc17d897a972d/imperative-7-full.png" alt=""  class="image-component"/>
+<img src="media/ccdb8c0c4dedd01c1b4981132201b8ed/image.svg" alt=""  class="image-component"/>
+<p class="text-component">20%</p>
+<p class="text-component">of sales, but fulfillment networks are built to handle half that volume.</p>
+<p class="text-component">E-commerce is forecast to exceed</p>
+<img src="media/9e329ea792f455575b4f90b9acdc1f5c/image.svg" alt=""  class="image-component"/>
+<p class="text-component">20–30%</p>
+<p class="text-component">of time can be freed 
+up by automating repetitive tasks across G&A functions.</p>
+<p class="text-component">What steps have you taken to deploy analytics and automation across the P&L?</p>
+<img src="media/25bd568545acceaf3e16b34a4ea6da3f/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Few if any retailers will be able to address all of these imperatives at scale and at the same time—the 
+overall cost and complexity will be too high. Retailers that can accelerate their progress with targeted investments, embrace new approaches to talent and ecosystems, and free up resources to support promising ventures have the potential to become leaders in the industry for years to come.</p>
+<p class="text-component">Becca Coggins</p>
+<p class="text-component">Sajal Kohli</p>
+<p class="text-component">is a partner in McKinsey’s Chicago office, where </p>
+<p class="text-component">are senior partners; Manik Aryapadi</p>
+<p class="text-component">and</p>
+<p class="text-component">Praveen Adhi</p>
+<p class="text-component">We wish to thank the following for their contributions to this report:</p>
+<p class="text-component">Brian Cornell Chairman and CEO, Target
+Jess Dankert VP, Supply Chain, RILA
+Mary Dillon CEO, Ulta Beauty
+Brian Dodge President, RILA
+Alex Gourlay Co-COO, Walgreens Boots Alliance
+Kevin Holt CEO, Ahold Delhaize USA
+Craig Menear Chairman and CEO, The Home Depot
+Erik Nordstrom CEO, Nordstrom
+Javier Quiñones President and CSO, IKEA US
+Todd Vasos CEO, Dollar General</p>
+<p class="text-component">Recommended reading</p>
+<img src="media/2cc56678cd9a2c8726b7bb165ea82cef/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Article</p>
+<p class="text-component">DTC e-commerce: How consumer brands can get it right</p>
+<img src="media/2c8e31bb870636bd7c2cb0a1aaead1d3/image.svg" alt=""  class="image-component"/>
+<img src="media/4bad61610655fb9eb891ef91ef95ad6b/article-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Article</p>
+<p class="text-component">Think fast: How to accelerate e-commerce growth</p>
+<img src="media/2c8e31bb870636bd7c2cb0a1aaead1d3/image.svg" alt=""  class="image-component"/>
+<img src="media/2bfa416ad1d359ac172dd89ad9272d87/article-2-full.png" alt=""  class="image-component"/>
+<img src="media/94dd28bc1063fc325b4aadc982061af4/image.svg" alt=""  class="image-component"/>
+<p class="text-component">is a partner in the Cleveland office; Steven Begley is a partner in the New Jersey office; and Hannah Yankelevich is an associate partner in the Minneapolis office.</p>
+<p class="text-component">Download the report</p>
+<p class="text-component">Download the report</p>
+<p class="text-component">Determine where to play in omnichannel based on your DNA and the categories you play in.
+
+Identify the unique value of each store in the context of a market strategy.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<p class="text-component">Increasing value at the store level to raise the performance of each link in the network.
+
+Continue to invest in detailed and real-time customer analytics.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/99444aeba6ba7efb1dd8bcb893e27c01/image.svg" alt=""  class="image-component"/>
+<img src="media/1cee800ac5c468b28756e6439667b679/image.svg" alt=""  class="image-component"/>
+<img src="media/99444aeba6ba7efb1dd8bcb893e27c01/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Define the right moments in the customer 
+journey where you can provide the greatest customer benefit.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/1cee800ac5c468b28756e6439667b679/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Double down on measurement methodologies to inform decision making. 
+
+Expand to the upper and lower parts of 
+the funnel. 
+
+Actively solicit crew and customer feedback 
+to generate new ideas and improve the current customer journey.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/99444aeba6ba7efb1dd8bcb893e27c01/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Identify the customer’s North Star. 
+
+Quantify the business case and create 
+the road map.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/1cee800ac5c468b28756e6439667b679/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Build a fit-for-purpose network by rethinking the end-to-end supply chain.
+
+Foster ecosystem collaboration with marketplace providers and suppliers. </p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/99444aeba6ba7efb1dd8bcb893e27c01/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Develop a credible purpose story and ESG priorities, backed by societal commitments.
+
+Proactively take a stand on issues by tailoring external engagement and communications to highlight the company’s values.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/1cee800ac5c468b28756e6439667b679/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Measure the impact of doing good by setting performance targets and defining metrics aligned with purpose goals. 
+
+Establish bold, measurable ESG goals to guide the company and track progress. </p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/99444aeba6ba7efb1dd8bcb893e27c01/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Develop a road map to close the major 
+talent gaps.
+
+Provide attractive development opportunities, clear career paths, and competitive salaries 
+and benefits.
+
+Define and commit to a bold D&I aspiration, both internally and externally.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/1cee800ac5c468b28756e6439667b679/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Build capabilities that provide access to upskilling opportunities.
+
+Consider how (or if?) your organization could take advantage of on-demand labor models and remote working. </p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/99444aeba6ba7efb1dd8bcb893e27c01/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Explore nontraditional retail partnerships.
+
+Analyze and learn from successful 
+ecosystem players.</p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<img src="media/1cee800ac5c468b28756e6439667b679/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Decide what role the company will play in the ecosystem—orchestrator, service provider, 
+or participant. 
+
+Choose a business model that will create shareholder value without compromising the brand’s integrity. </p>
+<p class="text-component">How to get started</p>
+<p class="text-component">If you’re on the journey, how to accelerate</p>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/699216e670f2791b5887b34da9f8bab8/up-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Evaluate technology options that balance level 
+of investment and high fidelity.</p>
+<p class="text-component">Stand up lean pilots with a cross-functional team.</p>
+<p class="text-component">Coordinate corporate efforts with store teams.</p>
+<p class="text-component">Rapidly get customer feedback and iterate. </p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
