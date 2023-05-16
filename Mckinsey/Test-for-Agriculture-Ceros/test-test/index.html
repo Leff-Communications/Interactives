@@ -1,0 +1,277 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.7.3',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'test-for-agriculture-ceros',
+            issueAliasSlug: 'test-test',
+            issue: {"id":281512,"projectId":45670,"slug":"experience-5dbb28c3098f3","name":"Test test","status":"published","creationDate":"2019-10-31T18:32:35.000Z","lastModifiedDate":"2019-10-31T21:59:05.000Z","deletionDate":null,"firstPublishedDate":"2023-05-16T19:11:37.000Z","wipExperienceVersionId":897043,"publishedExperienceVersionId":3188444,"createdByMemberId":6387,"primaryIssueAliasId":383089,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5dbb28c30d577.jpg","importLinkShared":0,"lastPublishedDate":"2023-05-16T19:11:37.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p3a68405ba87a","title":"Test test"},
+            docVersion: {"id":3188444,"experienceId":281512,"slug":"experience-version-6463d5695fd88","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-6463d5695fd88.js","themingBackgroundImageUri":null,"seoTitleKeywords":null,"seoMetaKeywords":null,"seoMetaDescription":null,"canonicalUrlOverride":null,"editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-6463d5695fd99","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/05\/16\/54b58b42c593681cb9855ae429004a1a\/page-thumbnail.jpg?imageOpt=1&crop=683,612,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6463d5696de3b","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/05\/16\/d0ba4e19d6830aa3879613259ca49166\/page-thumbnail.jpg?imageOpt=1&crop=683,612,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6463d56980dc3","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/05\/16\/7164c81afc83cae2b62fa498de5b0525\/page-thumbnail.jpg?imageOpt=1&crop=683,612,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6463d56996cff","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/05\/16\/d04e85ba0fb92b6930431d8fba49340d\/page-thumbnail.jpg?imageOpt=1&crop=683,612,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6463d569a6222","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/05\/16\/5691f22f0e5a6ac031e977ef17395a71\/page-thumbnail.jpg?imageOpt=1&crop=683,612,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2023-05-16T19:11:37.000Z","modificationDate":"2023-05-16T19:11:37.000Z","publishedDate":"2023-05-16T19:11:37.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":null,"ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Bower Bold","familyGuid":"Uploaded|5f5f3495-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1050,"ascent":840,"variantGuid":"Uploaded|5f5f6514-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Bower Bold-Normal-IjUkOdL9","cssFileURL":"fonts\/b54def70-852a-418e-ac9f-c219271262b8\/bower-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|7d4482c4-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7d4482c4-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan Light-I-ydHmW4zd","cssFileURL":"fonts\/97d46f34-778a-413a-b078-275f9f4d0dfd\/theinhardtpan-lightitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Light","familyGuid":"Uploaded|7cf83d9b-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7cf86aec-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Light-N-WI9zSQsD","cssFileURL":"fonts\/c51e5b12-7097-4ed8-b6b8-b7b1af6838ec\/theinhardtpan-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|7d04bb80-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan","familyGuid":"Uploaded|7d048f23-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7d04bb80-36de-11e9-88f3-0e55d9bc9e68","variantName":"Italic","cssFamilyName":"Theinhardt Pan-Italic-31w4g4T2","cssFileURL":"fonts\/d286279e-5793-4b45-8b8a-f289da49f01e\/theinhardtpan-italic.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e3e987e-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan","familyGuid":"Uploaded|7d048f23-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e3e987e-36de-11e9-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Theinhardt Pan-Regular-sohePRVv","cssFileURL":"fonts\/7f94575a-34d0-46ef-9c09-63bae342aeba\/theinhardtpan-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|7e025e95-36de-11e9-88f3-0e55d9bc9e68":{"familyName":"Theinhardt Pan Medium","familyGuid":"Uploaded|7e0226c9-36de-11e9-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":724,"variantGuid":"Uploaded|7e025e95-36de-11e9-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Theinhardt Pan Medium--MwExwR5A","cssFileURL":"fonts\/fbfb36d2-eddd-4378-9dd8-13f82ab6395a\/theinhardtpan-medium.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Genie":false,"App Switcher":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Test test</title>
+
+
+
+
+    <meta property="og:title" content="Test test"/>
+        <meta property="og:image" content="media/54b58b42c593681cb9855ae429004a1a/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Test test">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/54b58b42c593681cb9855ae429004a1a/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6463d5695fd88.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_6463d5695fd88",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.33a5e09f633eb1f8b43b366211d0a843.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.a10f0750a85c7e5a16e0db35735f930d.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Name of interactive here</p>
+<p class="text-component">Introduction to the agriculture cost curve. A few sentences here and more. Introduction to the agriculture cost curve and more. A few sentences here and more. Introduction to the agriculture cost curve. A few sentences here and more. 
+
+Choose the cost curve you would like to explore:</p>
+<p class="text-component">20 year</p>
+<p class="text-component">100 year</p></div>
+            <div class="page"><p class="text-component">20 year cost curve would be here</p>
+<p class="text-component">Go to technical specifics</p>
+<p class="text-component">Go to 100 year</p>
+<img src="media/ce35bb46ca913f5c03dfe8dfede422fb/arrow-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">100 year cost curve would be here</p>
+<p class="text-component">Go to technical specifics</p>
+<p class="text-component">Go to 20 year</p>
+<img src="media/ce35bb46ca913f5c03dfe8dfede422fb/arrow-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">20 year: Animal protein</p>
+<img src="media/d1e45591d5f3efb40873361e170399fe/back-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">~165 Mt CO2eq, at zero cost
+
+Genetic selection and breeding programs focused on reducing CH4 emissions per ruminant could significantly reduce emissions by 2050. Leading experts assert that about 20 percent of a ruminant’s CH4 emissions rate stems from genetics alone. In single herds, intentional breeding for CH4 efficiency has achieved variation in CH4 production of about 20 percent. Today, some available commercial genetics reduce emissions by 5 percent or more per unit. Assuming other factors, for example, productivity, remain steady, applying such commercial genetics in the United States could reduce CH4 emissions from enteric fermentation from about 53kg per cow to about 42kg. 
+
+A major challenge to uptake and investment in such genetics today is the lack of economic incentive, given that there are no market payments or credits for CH4. The immaturity and lack of breed-specificity of genetics programs—especially outside of dairy and, more broadly, in low- and middle-income markets—will also inhibit implementation at scale. But new breeding techniques, such as CRISPR or Cas9, could lower barriers to entry for new innovators and allow for more specificity in genetics programs. Targeted investment by majors in the animal genetics space could accelerate innovation.
+
+
+
+</p>
+<p class="text-component">Employing GHG-focused breeding and genetic selection
+</p>
+<p class="text-component">~162 Mt CO2eq, at negative cost (~$5 / t CO2eq)
+
+By expanding and advancing animal health solutions, farmers could improve productivity and reduce animal mortality. In North America today, some such solutions are reducing cattle productivity by a weighted average of about 8 percent per head. In low- and middle-income regions that have less access to animal health products and clinical resources, impact is likely to be significantly higher. The ability to meet the projected protein demand with fewer, healthier cows could reduce methane and nitrous oxide emissions from enteric fermentation, manure left on pasture, and manure management proportional to aggregate productivity gains. 
+
+There are, however, significant challenges to achieving this potential. Health challenges vary greatly depending on region and species, meaning there is unlikely to be one, or even a few, silver bullets, from a technology standpoint. Innovation from animal health product manufacturers, expansion of distribution and advisory networks, and public health promotion strategies may unlock implementation at greater scale.
+
+
+
+
+</p>
+<p class="text-component">Improving animal health monitoring and illness prevention</p></div>
+            <div class="page"><p class="text-component">100 year: Animal protein</p>
+<img src="media/d1e45591d5f3efb40873361e170399fe/back-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">~165 Mt CO2eq, at zero cost
+
+Genetic selection and breeding programs focused on reducing CH4 emissions per ruminant could significantly reduce emissions by 2050. Leading experts assert that about 20 percent of a ruminant’s CH4 emissions rate stems from genetics alone. In single herds, intentional breeding for CH4 efficiency has achieved variation in CH4 production of about 20 percent. Today, some available commercial genetics reduce emissions by 5 percent or more per unit. Assuming other factors, for example, productivity, remain steady, applying such commercial genetics in the United States could reduce CH4 emissions from enteric fermentation from about 53kg per cow to about 42kg. 
+
+A major challenge to uptake and investment in such genetics today is the lack of economic incentive, given that there are no market payments or credits for CH4. The immaturity and lack of breed-specificity of genetics programs—especially outside of dairy and, more broadly, in low- and middle-income markets—will also inhibit implementation at scale. But new breeding techniques, such as CRISPR or Cas9, could lower barriers to entry for new innovators and allow for more specificity in genetics programs. Targeted investment by majors in the animal genetics space could accelerate innovation.
+
+
+
+</p>
+<p class="text-component">Employing GHG-focused breeding and genetic selection
+</p>
+<p class="text-component">~162 Mt CO2eq, at negative cost (~$5 / t CO2eq)
+
+By expanding and advancing animal health solutions, farmers could improve productivity and reduce animal mortality. In North America today, some such solutions are reducing cattle productivity by a weighted average of about 8 percent per head. In low- and middle-income regions that have less access to animal health products and clinical resources, impact is likely to be significantly higher. The ability to meet the projected protein demand with fewer, healthier cows could reduce methane and nitrous oxide emissions from enteric fermentation, manure left on pasture, and manure management proportional to aggregate productivity gains. 
+
+There are, however, significant challenges to achieving this potential. Health challenges vary greatly depending on region and species, meaning there is unlikely to be one, or even a few, silver bullets, from a technology standpoint. Innovation from animal health product manufacturers, expansion of distribution and advisory networks, and public health promotion strategies may unlock implementation at greater scale.
+
+
+
+
+</p>
+<p class="text-component">Improving animal health monitoring and illness prevention</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

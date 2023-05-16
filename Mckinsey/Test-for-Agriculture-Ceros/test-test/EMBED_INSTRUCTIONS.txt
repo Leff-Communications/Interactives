@@ -1,0 +1,5 @@
+Scrolling - For an experience that expands to the size of the container you include it in and scrolls on overheight pages, use this embed code:
+
+<div style='position: relative;width: auto;padding: 0 0 89.55%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none' id="experience-5dbb28c3098f3" data-aspectRatio="1.11666667"><iframe allowfullscreen src='test-test/index.html' style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 100%;width: 100%' frameborder='0' class='ceros-experience' title='Test test'></iframe></div><script type="text/javascript" src="test-test/assets/scroll-proxy.min.js" data-ceros-origin-domains=""></script>
+
+For additional security set the data-ceros-origin-domains attribute on the above script tag to the domain that will serve Ceros experiences on this page (or a comma-separated list if multiple domains).
