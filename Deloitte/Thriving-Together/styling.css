@@ -26,7 +26,7 @@ p {
 }
 
 #background {
-    position: absolute;
+    position: fixed;
     top: -100px;
     right: -550px;
     z-index: -1;
@@ -275,4 +275,244 @@ dialog {
 
 .modal-text>p>a {
     color: #FFF;
+}
+
+@media screen and (max-height: 750px) {
+    p {
+        margin-block-start: .5em;
+        margin-block-end: .5em;
+        font-size: .75em;
+    }
+
+    .modal-text>h2 {
+        font-size: 1.2em;
+    }
+
+    .modal-text>p {
+        font-size: .8em;
+    }
+
+
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    }
+
+    .header>p {
+        max-width: 100%;
+    }
+
+    #tile-1 {
+        grid-column: 1;
+        grid-row: 1;
+        border-color: #012169;
+    }
+    
+    #tile-1-hover {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #012169;
+        border-color: #012169;
+    }
+    #tile-2-hover {
+        grid-column: 2;
+        grid-row: 1;
+        background-color: #0076a8;
+        border-color: #0076a8;
+    }
+    
+    #tile-3-hover {
+        grid-column: 3;
+        grid-row: 1;
+        background-color: #00a3e0;
+        border-color: #00a3e0;
+    }
+    #tile-4-hover {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #0097a9;
+        border-color: #0097a9;
+    }
+    
+    #tile-5-hover {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: #2c5234;
+        border-color: #2c5234;
+    }
+    
+    #tile-2 {
+        grid-column: 2;
+        grid-row: 1;
+        border-color: #0076a8;
+    }
+    
+    #tile-3 {
+        grid-column: 3;
+        grid-row: 1;
+        border-color: #00a3e0;
+    }
+    
+    #tile-4 {
+        grid-column: 1;
+        grid-row: 2;
+        border-color: #0097a9;
+    }
+    
+    #tile-5 {
+        grid-column: 2;
+        grid-row: 2;
+        border-color: #2c5234;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid {grid-template-columns: repeat(2, 1fr);}
+
+    #tile-1 {
+        grid-column: 1;
+        grid-row: 1;
+        border-color: #012169;
+    }
+    
+    #tile-1-hover {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #012169;
+        border-color: #012169;
+    }
+    #tile-2-hover {
+        grid-column: 2;
+        grid-row: 1;
+        background-color: #0076a8;
+        border-color: #0076a8;
+    }
+    
+    #tile-3-hover {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #00a3e0;
+        border-color: #00a3e0;
+    }
+    #tile-4-hover {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: #0097a9;
+        border-color: #0097a9;
+    }
+    
+    #tile-5-hover {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: #2c5234;
+        border-color: #2c5234;
+    }
+    
+    #tile-2 {
+        grid-column: 2;
+        grid-row: 1;
+        border-color: #0076a8;
+    }
+    
+    #tile-3 {
+        grid-column: 1;
+        grid-row: 2;
+        border-color: #00a3e0;
+    }
+    
+    #tile-4 {
+        grid-column: 2;
+        grid-row: 2;
+        border-color: #0097a9;
+    }
+    
+    #tile-5 {
+        grid-column: 1;
+        grid-row: 3;
+        border-color: #2c5234;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {grid-template-columns: repeat(1, 1fr);}
+
+    #tile-1 {
+        grid-column: 1;
+        grid-row: 1;
+        border-color: #012169;
+    }
+    
+    #tile-1-hover {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #012169;
+        border-color: #012169;
+    }
+    #tile-2-hover {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #0076a8;
+        border-color: #0076a8;
+    }
+    
+    #tile-3-hover {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: #00a3e0;
+        border-color: #00a3e0;
+    }
+    #tile-4-hover {
+        grid-column: 1;
+        grid-row: 4;
+        background-color: #0097a9;
+        border-color: #0097a9;
+    }
+    
+    #tile-5-hover {
+        grid-column: 1;
+        grid-row: 5;
+        background-color: #2c5234;
+        border-color: #2c5234;
+    }
+    
+    #tile-2 {
+        grid-column: 1;
+        grid-row: 2;
+        border-color: #0076a8;
+    }
+    
+    #tile-3 {
+        grid-column: 1;
+        grid-row: 3;
+        border-color: #00a3e0;
+    }
+    
+    #tile-4 {
+        grid-column: 1;
+        grid-row: 4;
+        border-color: #0097a9;
+    }
+    
+    #tile-5 {
+        grid-column: 1;
+        grid-row: 5;
+        border-color: #2c5234;
+    }
+
+    body {
+        overflow-y: auto;
+    }
 }
