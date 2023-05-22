@@ -23,10 +23,36 @@ const openModal3 = document.querySelector('#tile-3-hover');
 const openModal4 = document.querySelector('#tile-4-hover');
 const openModal5 = document.querySelector('#tile-5-hover');
 
+function nav1() {
+    modal5.close();
+    modal2.close();
+    modal1.showModal();
+}
 
+function nav2() {
+    modal1.close();
+    modal3.close();
+    modal2.showModal();
+}
 
+function nav3() {
+    modal2.close();
+    modal4.close();
+    modal3.showModal();
+}
 
+function nav4() {
+    modal3.close();
+    modal5.close();
+    modal4.showModal();
+}
 
+function nav5() {
+    console.log('clicked');
+    modal4.close();
+    modal1.close();
+    modal5.showModal();
+}
 
 
 openModal1.addEventListener('click', function (event) {
@@ -42,7 +68,7 @@ openModal3.addEventListener('click', function (event) {
 })
 
 openModal4.addEventListener('click', function (event) {
-    modal4.showModal();dal4.close();
+    modal4.showModal();
 })
 
 openModal5.addEventListener('click', function (event) {

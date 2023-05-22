@@ -200,6 +200,87 @@ p {
     transform: rotate(45deg) translateY(10px);
 }
 
+.carousel-nav {
+    position: absolute;
+    bottom: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.selected-item {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.unselected-item {
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.left-arrow {
+    background-color: #ffffff00;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    position: relative;
+}
+
+.left-arrow-1 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    min-width: 20px;
+    height: 0;
+    border: 1px solid #FFF;
+    transform: rotateZ(-45deg);
+}
+
+.left-arrow-2 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    min-width: 20px;
+    height: 0;
+    border: 1px solid #FFF;
+    transform: rotateZ(45deg) translate(10px, 10px);
+}
+
+.right-arrow {
+    background-color: #ffffff00;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    position: relative;
+}
+
+.right-arrow-1 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    min-width: 20px;
+    height: 0;
+    border: 1px solid #FFF;
+    transform: rotateZ(45deg);
+}
+
+.right-arrow-2 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    min-width: 20px;
+    height: 0;
+    border: 1px solid #FFF;
+    transform: rotateZ(-45deg) translate(-10px, 10px);
+}
+
 dialog {
     padding: 0;
     border-radius: 1em;
