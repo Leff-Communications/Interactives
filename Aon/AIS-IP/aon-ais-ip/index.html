@@ -1,0 +1,325 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-ais-ip',
+            issueAliasSlug: 'aon-ais-ip',
+            issue: {"id":263847,"projectId":42860,"slug":"experience-5d76aa3105cd1","name":"AIS IP","status":"published","creationDate":"2019-09-09T19:38:25.000Z","lastModifiedDate":"2019-09-16T15:52:28.000Z","deletionDate":null,"firstPublishedDate":"2019-09-16T15:54:04.000Z","wipExperienceVersionId":831894,"publishedExperienceVersionId":840089,"createdByMemberId":14154,"primaryIssueAliasId":359927,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5d76aa30a3d2d.jpg","importLinkShared":0,"lastPublishedDate":"2019-09-16T15:54:04.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pf08a64b8507b","title":"AIS IP"},
+            docVersion: {"id":840089,"experienceId":263847,"slug":"experience-version-5d7fb01cb985f","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5d7fb01cb985f.js","themingBackgroundImageUri":null,"seoTitleKeywords":"AIS IP","seoMetaKeywords":"","seoMetaDescription":"AIS IP","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5d7fb01cb991c","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/09\/16\/f613e86ca666581fa81155e3cf5418cd\/page-thumbnail.jpg?imageOpt=1&crop=765,765,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-09-16T15:54:04.000Z","modificationDate":"2019-09-16T15:54:04.000Z","publishedDate":"2019-09-16T15:54:04.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|03c99cd0-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Sm","familyGuid":"Uploaded|03c9642c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|03c99cd0-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Bd","cssFamilyName":"Stone Sans II ITC Pro -Sdj3SCAs","cssFileURL":"fonts\/66285362-0153-40f6-91e6-c79281684e7b\/stonesansiiitcpro-smbd.css","api":"Uploaded","woffFileURL":null},"Uploaded|1bbc9056-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Md","familyGuid":"Uploaded|1bbc605f-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|1bbc9056-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -syWueEJA","cssFileURL":"fonts\/7c8c14a9-1a14-42ba-bb5c-910ad3e2ba02\/stonesansiiitcpro-md.css","api":"Uploaded","woffFileURL":null},"Uploaded|ad2d1fe6-f80d-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Md","familyGuid":"Uploaded|1bbc605f-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|ad2d1fe6-f80d-11e8-88f3-0e55d9bc9e68","variantName":"It","cssFamilyName":"Stone Sans II ITC Pro -mPlStdSp","cssFileURL":"fonts\/56b13937-5713-4a27-8f6e-f0dab3930da9\/stonesansiiitcpro-mdit.css","api":"Uploaded","woffFileURL":null},"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -I40Fixvq","cssFileURL":"fonts\/fc3a8e37-86ab-4896-bf29-8b8872b3b353\/stonesansiiitcpro-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|a9256e2c-f80d-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a9256e2c-f80d-11e8-88f3-0e55d9bc9e68","variantName":"It","cssFamilyName":"Stone Sans II ITC Pro -Er7zU9Jy","cssFileURL":"fonts\/edc69ca7-6e87-480a-bbe5-b0db13c77f62\/stonesansiiitcpro-bkit.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>AIS IP AIS IP</title>
+
+
+
+        <meta name="description" content="AIS IP"/>
+
+    <meta property="og:title" content="AIS IP"/>
+        <meta property="og:image" content="media/f613e86ca666581fa81155e3cf5418cd/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AIS IP">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/f613e86ca666581fa81155e3cf5418cd/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d7fb01cb985f.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5d7fb01cb985f",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Select each year to toggle data</p>
+<p class="text-component">Tangible Vs. Intangible Assets for S&P 500 Companies, 1975–2018</p>
+<p class="text-component">The S&P 500 & Intangible Assets </p>
+<img src="media/b28ac8d2acaaffbb6a19c9f47aa9d7c6/asset-1-full.png" alt=""  class="image-component"/>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">$</p>
+<img src="media/7eee4018bf66f61b411f1b84c59fb5fd/intangible-assets-1975-full.png" alt=""  class="image-component"/>
+<img src="media/288aab3ecb083f09d64fe915eea84427/intangible-assets-1985-full.png" alt=""  class="image-component"/>
+<img src="media/e22a2ba1362487062050db4cce02f949/intangible-assets-1995-full.png" alt=""  class="image-component"/>
+<img src="media/8c803f5530baf41bac7f6c4342052d68/intangible-assets-2005-full.png" alt=""  class="image-component"/>
+<img src="media/29433bcbc33ea29f7b49b6593a0043ef/intangible-assets-2018-full.png" alt=""  class="image-component"/>
+<img src="media/e31e5b4e77825b26fd980b4e6fe37273/tangible-assets-1975-full.png" alt=""  class="image-component"/>
+<img src="media/c6854abf56ce937fc2524912a6bcb5c0/tangible-assets-1985-full.png" alt=""  class="image-component"/>
+<img src="media/b112e19bf12e7012de27dc62649a70f6/tangible-assets-1995-full.png" alt=""  class="image-component"/>
+<img src="media/66b6051da721d89e534d3fd32c8ff4ae/tangible-assets-2005-full.png" alt=""  class="image-component"/>
+<img src="media/f039b01a8686b5d10f269770f80837d7/tangible-assets-2018-full.png" alt=""  class="image-component"/>
+<p class="text-component">*Five Largest Global Companies by Market Cap as of December 31, 2018.</p>
+<p class="text-component">1975</p>
+<p class="text-component">1985</p>
+<p class="text-component">1995</p>
+<p class="text-component">2005</p>
+<p class="text-component">2018</p>
+<p class="text-component">Show all</p>
+<p class="text-component">Five largest global companies by market cap</p>
+<p class="text-component">IBM 
+
+Exxon Mobil
+
+Procter & Gamble
+
+GE
+
+3M</p>
+<p class="text-component">IBM 
+
+Exxon Mobil
+
+GE
+
+Schlumberger
+
+Chevron</p>
+<p class="text-component">GE
+
+Exxon Mobil
+
+Coca-Cola
+
+Attria
+
+Walmart</p>
+<p class="text-component">GE
+
+Exxon Mobil
+
+Microsoft
+
+Citigroup
+
+Walmart</p>
+<p class="text-component">Apple
+
+Alphabet
+
+Microsoft
+
+Amazon
+
+Facebook</p>
+<p class="text-component">Tangible Assets</p>
+<p class="text-component">•Easy to value
+
+•Thick and efficient
+  secondary markets
+
+•Insurable</p>
+<p class="text-component">Intangible Assets</p>
+<p class="text-component">• Difficult to value
+
+• Thin and inefficient    secondary markets
+
+• Difficult to Insure</p>
+<p class="text-component">1975</p>
+<p class="text-component">1985</p>
+<p class="text-component">1995</p>
+<p class="text-component">2005</p>
+<p class="text-component">2018</p>
+<p class="text-component">Show all</p>
+<p class="text-component">1975</p>
+<p class="text-component">1985</p>
+<p class="text-component">1995</p>
+<p class="text-component">2005</p>
+<p class="text-component">2018</p>
+<p class="text-component">25.03T</p>
+<p class="text-component">11.6T</p>
+<p class="text-component">4.59T</p>
+<p class="text-component">1.5T</p>
+<p class="text-component">715B</p>
+<p class="text-component">122B</p>
+<p class="text-component">594B</p>
+<p class="text-component">482B</p>
+<p class="text-component">1.02T</p>
+<p class="text-component">3.12T</p>
+<p class="text-component">1.47T</p>
+<p class="text-component">9.28T</p>
+<p class="text-component">2.32T</p>
+<p class="text-component">21.03T</p>
+<p class="text-component">4.00T</p>
+<p class="text-component">Source: Ponemon Institute 2019 Intangible Assets Financial Statement Impact Comparison Report</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

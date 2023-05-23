@@ -1,0 +1,322 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-silk-road',
+            issueAliasSlug: 'aon-silk-road-2',
+            issue: {"id":186332,"projectId":30022,"slug":"experience-5c06dcb58e861","name":"AON Silk Road (Chart-2)","status":"published","creationDate":"2018-12-04T19:59:49.000Z","lastModifiedDate":"2018-12-19T17:06:53.000Z","deletionDate":null,"firstPublishedDate":"2018-12-11T22:07:34.000Z","wipExperienceVersionId":552469,"publishedExperienceVersionId":558179,"createdByMemberId":6387,"primaryIssueAliasId":257175,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5c06dcb554473.jpg","importLinkShared":0,"lastPublishedDate":"2018-12-11T22:07:34.000Z","lastModifiedByMemberId":6384,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p3ddb356bd23f","title":"AON Silk Road (Chart-2)"},
+            docVersion: {"id":558179,"experienceId":186332,"slug":"experience-version-5c103525e0f61","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5c103525e0f61.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5c103525e1041","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2018\/12\/11\/7b2e5920b40dad0a7d07072edb4d1149\/page-thumbnail.jpg?imageOpt=1&crop=765,646,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2018-12-11T22:07:34.000Z","modificationDate":"2018-12-11T22:07:34.000Z","publishedDate":"2018-12-11T22:07:33.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -I40Fixvq","cssFileURL":"fonts\/fc3a8e37-86ab-4896-bf29-8b8872b3b353\/stonesansiiitcpro-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|3ef6f0b7-b605-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|3ef6f0b7-b605-11e8-88f3-0e55d9bc9e68","variantName":"StoneSansIIITCPro Bd","cssFamilyName":"Stone Sans II ITC Pro -Eft5y3CD","cssFileURL":"fonts\/46c370ab-c640-40bc-b033-006c4e042d77\/stonesansiiitcpro-bd.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>AON Silk Road (Chart-2)</title>
+
+
+
+
+    <meta property="og:title" content="AON Silk Road (Chart-2)"/>
+        <meta property="og:image" content="media/7b2e5920b40dad0a7d07072edb4d1149/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AON Silk Road (Chart-2)">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/7b2e5920b40dad0a7d07072edb4d1149/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5c103525e0f61.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5c103525e0f61",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Some countries involved with the BRI are physically situated on the trade routes while others have signed on as participants or merely expressed interest in trade agreements. The five largest economies are China, Germany, India, Italy and Russia.</p>
+<p class="text-component">Top Imports and Exports Within the BRI</p>
+<img src="media/b28ac8d2acaaffbb6a19c9f47aa9d7c6/asset-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Sources: World's Top Exports; Fung Business Intelligence </p>
+<p class="text-component">Rollover and select one of the five countries for more information about their top imports and exports.</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<img src="media/7a50edac248bcd214fe6ae6de50cabc8/map2-full.png" alt=""  class="image-component"/>
+<img src="media/4ef3651282f7fc59ed3db13ca645089c/china-full.png" alt=""  class="image-component"/>
+<img src="media/f1e5184a251a602458c520b3feb78c5d/china2-full.png" alt=""  class="image-component"/>
+<img src="media/630fef4ff72a72f3a6e98dd788252e82/germany-full.png" alt=""  class="image-component"/>
+<img src="media/eb81e98de9b5cb396cc0838b559b339c/germany2-full.png" alt=""  class="image-component"/>
+<img src="media/be84238729f6ff15de0c7d4b171184e9/india-full.png" alt=""  class="image-component"/>
+<img src="media/d2f25eb488a275373e2537945cfb1480/india2-full.png" alt=""  class="image-component"/>
+<img src="media/4d44bb9f36729058f6e2ea85cc6fb6f6/italy-full.png" alt=""  class="image-component"/>
+<img src="media/693eb3f571672496b94fa89c3f770d58/italy2-full.png" alt=""  class="image-component"/>
+<img src="media/3a4167c32a69b6eea4f51c987778f2e9/russia1-1-full.png" alt=""  class="image-component"/>
+<img src="media/aef965f6656d3d7684b0f299079f2d83/russia2-2-full.png" alt=""  class="image-component"/>
+<img src="media/65e2bf5c5428054a396ffa76f14adc80/pop-up-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">China</p>
+<p class="text-component">2017 GDP</p>
+<p class="text-component">$12.24 trillion</p>
+<p class="text-component">Top 5 Imports
+1. Electrical machinery, equipment
+2. Mineral fuels, including oil
+3. Machinery, including computers
+4. Ores, stag, ash
+5. Optical, technical, medical apparatuses</p>
+<p class="text-component">Top 5 Exports
+1. Electrical machinery, equipment
+2. Machinery, including computers
+3. Furniture, bedding, lighting, signs,             prefabricated buildings
+4. Clothing, accessories
+5. Knit or crocheted clothing, accessories</p>
+<img src="media/65e2bf5c5428054a396ffa76f14adc80/pop-up-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">Germany</p>
+<p class="text-component">2017 GDP</p>
+<p class="text-component">$3.677 trillion</p>
+<p class="text-component">Top 5 Imports
+1. Machinery, including computers
+2. Electrical machinery, equipment
+3. Vehicles
+4. Mineral fuels, including oil
+5. Pharmaceuticals
+</p>
+<p class="text-component">Top 5 Exports
+1. Vehicles
+2. Machinery, including computers
+3. Electrical machinery, equipment
+4. Pharmaceuticals
+5. Optical, technical, medical apparatuses </p>
+<img src="media/65e2bf5c5428054a396ffa76f14adc80/pop-up-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">India</p>
+<p class="text-component">2017 GDP</p>
+<p class="text-component">$2.597 trillion</p>
+<p class="text-component">Top 5 Imports
+1. Mineral fuels, including oil
+2. Gems, precious metals
+3. Electrical machinery, equipment
+4. Machinery, including computers
+5. Organic chemicals
+</p>
+<p class="text-component">Top 5 Exports
+1. Gems, precious metals
+2. Mineral fuels, including oil
+3. Machinery, including computers
+4. Vehicles
+5. Organic chemicals</p>
+<img src="media/65e2bf5c5428054a396ffa76f14adc80/pop-up-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">Italy</p>
+<p class="text-component">2017 GDP</p>
+<p class="text-component">$1.935 trillion</p>
+<p class="text-component">Top 5 Imports
+1. Mineral fuels, including oil
+2. Vehicles
+3. Machinery, including computers
+4. Electrical machinery, equipment
+5. Pharmaceuticals
+</p>
+<p class="text-component">Top 5 Exports
+1. Machinery, including computers
+2. Vehicles
+3. Electrical machinery, equipment
+4. Pharmaceuticals
+5. Plastics, plastic articles</p>
+<img src="media/65e2bf5c5428054a396ffa76f14adc80/pop-up-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">Russia</p>
+<p class="text-component">2017 GDP</p>
+<p class="text-component">$1.578 trillion</p>
+<p class="text-component">Top 5 Imports
+1. Machinery, including computers
+2. Electrical machinery, equipment
+3. Vehicles
+4. Pharmaceuticals
+5. Plastics, plastic articles
+</p>
+<p class="text-component">Top 5 Exports
+1. Mineral fuels, including oil
+2. Iron, steel
+3. Gems, precious metals
+4. Machinery, including computers
+5. Wood
+</p>
+<img src="media/f1e5184a251a602458c520b3feb78c5d/china2-full.png" alt=""  class="image-component"/>
+<img src="media/eb81e98de9b5cb396cc0838b559b339c/germany2-full.png" alt=""  class="image-component"/>
+<img src="media/d2f25eb488a275373e2537945cfb1480/india2-full.png" alt=""  class="image-component"/>
+<img src="media/693eb3f571672496b94fa89c3f770d58/italy2-full.png" alt=""  class="image-component"/>
+<img src="media/aef965f6656d3d7684b0f299079f2d83/russia2-2-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

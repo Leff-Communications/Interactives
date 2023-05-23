@@ -1,0 +1,315 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-mtcor-new-path-for-business',
+            issueAliasSlug: 'new-path-for-business-french',
+            issue: {"id":437173,"projectId":68048,"slug":"experience-60146f1809644","name":"New Path for Business (French version)","status":"published","creationDate":"2021-01-29T20:24:56.000Z","lastModifiedDate":"2021-02-02T22:50:25.000Z","deletionDate":null,"firstPublishedDate":"2021-02-01T19:20:48.000Z","wipExperienceVersionId":1539781,"publishedExperienceVersionId":1545557,"createdByMemberId":14154,"primaryIssueAliasId":598625,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-60146f17345c0.jpg","importLinkShared":0,"lastPublishedDate":"2021-02-02T22:50:33.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p7f5c997304ac","title":"New Path for Business (French version)"},
+            docVersion: {"id":1545557,"experienceId":437173,"slug":"experience-version-6019d738c60ee","loadLowRes":0,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-6019d738c60ee.js","themingBackgroundImageUri":null,"seoTitleKeywords":"New Path for Business (French version)","seoMetaKeywords":"","seoMetaDescription":"New Path for Business (French version)","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-6019d738c610f","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/02\/02\/bd949df8e2c02312544c7d5d754c24ce\/page-thumbnail.jpg?imageOpt=1&crop=765,659,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-02-02T22:50:33.000Z","modificationDate":"2021-02-02T22:50:33.000Z","publishedDate":"2021-02-02T22:50:32.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"mobile"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>New Path for Business (French version) New Path for Business (French version)</title>
+
+
+
+        <meta name="description" content="New Path for Business (French version)"/>
+
+    <meta property="og:title" content="New Path for Business (French version)"/>
+        <meta property="og:image" content="media/bd949df8e2c02312544c7d5d754c24ce/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="New Path for Business (French version)">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/bd949df8e2c02312544c7d5d754c24ce/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6019d738c60ee.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_6019d738c60ee",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">La nouvelle voie pour la continuité des activités </p>
+<p class="text-component">La COVID-19 a bouleversé la façon dont les entreprises abordent la prévention des menaces et la reprise des activités. </p>
+<p class="text-component">Même pour les entreprises qui ont les plans de continuité des activités les plus robustes, la pandémie de COVID-19 a révélé des points faibles dans l’évaluation et l’atténuation traditionnelles des risques. Les exercices de simulation ne pouvaient prédire les efforts de planification du gouvernement à l’échelle fédérale ou provinciale, et même la planification la plus solide en fonction du pire scénario ne permettait pas de prévoir la durée de la pandémie de COVID-19. Il est possible d’estimer les pertes liées à des dommages aux immeubles de bureaux causés par des incendies ou des ouragans. Mais comment une entreprise peut-elle élaborer un plan pour un virus qui se propage à travers les régions et le temps?
+
+Parallèlement, les autres facteurs (en anglais) qui  déclencheraient habituellement des changements en matière de continuité des activités – fusions et acquisitions, modifications réglementaires, planification de la relève – n’ont pas disparu et, dans certains cas, sont devenus plus urgents. Les chaînes d’approvisionnement juste-à-temps, qui ont généralement aidé les entreprises à demeurer concurrentielles sur le plan des marges, représentent maintenant un fardeau opérationnel puisque les perturbations mondiales font en sorte que certaines entreprises ne disposent que d’un petit stock de fournitures. Pour certaines entreprises, l’embauche et le recrutement ont été complètement interrompus, tandis que d’autres se précipitent pour augmenter leur effectif afin de répondre à de nouveaux besoins imprévus. 
+
+Si l’on prend en considération l’ensemble de ces facteurs, la plupart des organisations n’ont jamais eu à faire face à autant de variables en même temps. Par conséquent, les conseillers en continuité des activités ont réécrit leurs listes de vérification pour l’évaluation et l’atténuation des risques. La liste de vérification ci-dessous fournit des directives sur la façon dont les organisations peuvent soutenir l’analyse de leurs plans de continuité des activités dans le contexte actuel et au-delà.</p>
+<p class="text-component">SIMPLIFIER LA CONTINUITÉ DES ACTIVITÉS </p>
+<img src="media/34e38b3c49258e25755389249b681b60/image.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">La première tâche à accomplir pour comprendre et atténuer le risque dans une situation en pleine évolution est de déterminer ce qui est essentiel à sa mission. Si par exemple vous exploitez une chaîne de restauration de hamburgers, ce qui est essentiel, au bout du compte, c’est de continuer à servir des hamburgers aux clients.</p>
+<p class="text-component">Êtes-vous en mesure de déterminer la partie la plus importante de votre entreprise, de votre produit et de votre service et de laisser toutes les autres fonctions de côté? </p>
+<p class="text-component">Pendant combien de temps ces éléments essentiels peuvent-ils être inaccessibles avant que leur perte n’ait une incidence négative sur l’entreprise?</p>
+<p class="text-component">Votre service des TI peut-il rétablir le matériel informatique et les logiciels essentiels dans un délai suffisant pour répondre aux besoins de l’entreprise? </p>
+<p class="text-component">Comment définissez-vous les actifs essentiels, comme les bases de données et les dossiers vitaux? </p>
+<p class="text-component">FORMER UNE ÉQUIPE D’INTERVENTION</p>
+<img src="media/34e38b3c49258e25755389249b681b60/image.svg" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">Lorsqu’on a demandé aux répondants d’un sondage mondial d’Aon qui était responsable de la gestion des risques, ce qui comprend la continuité des activités en tant que sous-ensemble essentiel, plus des deux tiers ont répondu qu’il s’agissait du chef de la direction ou du chef des finances. Un autre tiers a déclaré que cette responsabilité tombait dans la catégorie 
+« autre », ce qui a amené certains conseillers à conclure que trop d’organisations positionnent le rôle de gestionnaire de risques trop bas dans la chaîne de gestion. </p>
+<p class="text-component">Pouvez-vous déterminer aujourd’hui qui devrait faire partie du processus d’intervention en cas de catastrophe naturelle ou de menace importante? </p>
+<p class="text-component">Si oui, ces personnes savent-elles qu’elles font partie des employés essentiels et comprennent-elles leur rôle lorsqu’il s’agit d’aider l’entreprise à poursuivre ses activités dans des circonstances anormales? </p>
+<p class="text-component">Des mécanismes sont-ils en place pour soutenir un centre virtuel des opérations d’urgence et augmenter rapidement les capacités de téléconférence? </p>
+<p class="text-component">ÉVALUER LA LOGISTIQUE </p>
+<img src="media/34e38b3c49258e25755389249b681b60/image.svg" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">Lorsqu’une menace émerge, il est important que les entreprises envisagent de redéfinir les priorités d’approvisionnement de leur gamme de produits afin de faire face aux aléas du marché, d’augmenter les niveaux d’approvisionnement de fournitures essentielles et de modifier les chaînes d’approvisionnement, au besoin. </p>
+<p class="text-component">Avez-vous déterminé et quantifié la résilience de votre chaîne d’approvisionnement, tant sur le plan interne qu’externe? </p>
+<p class="text-component">Avez-vous préapprouvé d’autres fournisseurs au cas où certains fournisseurs principaux ne seraient pas disponibles? </p>
+<p class="text-component">Avez-vous un mécanisme en place qui permet aux fournisseurs et aux principaux clients de discuter ouvertement des répercussions sur leurs activités? </p>
+<p class="text-component">ÉTABLIR DES POLITIQUES ET DES PROCÉDURES</p>
+<img src="media/34e38b3c49258e25755389249b681b60/image.svg" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">L’emplacement de travail des employés est devenu une préoccupation principale pendant la pandémie de COVID-19 et demeurera probablement un enjeu majeur pour les années à venir. Les entreprises doivent établir des lignes directrices claires pour que les employés se rendent au travail ou continuent de travailler efficacement à distance, ce qui constitue un élément clé de la continuité 
+des activités.</p>
+<p class="text-component">Avez-vous élaboré des politiques pour aider les employés à se sentir à l’aise de travailler au bureau, à la maison ou selon un modèle hybride (au bureau et à la maison)? </p>
+<p class="text-component">Une équipe est-elle en place pour fournir aux employés des renseignements factuels et à jour sur les politiques? </p>
+<p class="text-component">Avez-vous mis en place un plan vous permettant de passer rapidement à l’action si les employés commencent à présenter des symptômes de la COVID-19 au travail ou si une évacuation est nécessaire?</p>
+<img src="media/015f3cc24a34344f6df4fba0281a2027/image.svg" alt=""  class="image-component"/>
+<img src="media/889d2951ef86986bf3d76f7fd4890b99/hexagon-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/04dc4f3a8a79cd954ca5b7272fb31427/hexagon-image-2-full.png" alt=""  class="image-component"/>
+<img src="media/38713e32ab3004aafff85bd2858af99e/hexagon-image-3-full.png" alt=""  class="image-component"/>
+<img src="media/272f1456593258e2e28f1d2ac37cd9f9/hexagon-image-4-full.png" alt=""  class="image-component"/>
+<img src="media/2a636ff8bde68e4fb2deda478954626d/hexagon-image-5-full.png" alt=""  class="image-component"/>
+<img src="media/603e4d289375b14062b106d5e6d022a9/hexagon-image-6-full.png" alt=""  class="image-component"/>
+<img src="media/348bb399f530bb52451c685aedd51c4d/hexagon-image-7-full.png" alt=""  class="image-component"/>
+<img src="media/98802cf7e8743d3c7847a3ee58915e61/hexagon-image-8-full.png" alt=""  class="image-component"/>
+<img src="media/7cf1c0db874fbe29e8d4c5524811657f/hexagon-image-9-full.png" alt=""  class="image-component"/>
+<img src="media/d899b627d93fe84b3b78400b6a9afaa8/hexagon-image-11-full.png" alt=""  class="image-component"/>
+<img src="media/0d68305229e345398b1ec99b0223a137/hexagon-image-12-full.png" alt=""  class="image-component"/>
+<img src="media/d2f9c2781e1e284d0f6bd076f4f2ced1/image.svg" alt=""  class="image-component"/>
+<img src="media/d2f9c2781e1e284d0f6bd076f4f2ced1/image.svg" alt=""  class="image-component"/>
+<img src="media/d2f9c2781e1e284d0f6bd076f4f2ced1/image.svg" alt=""  class="image-component"/>
+<img src="media/d2f9c2781e1e284d0f6bd076f4f2ced1/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Retour en haut</p>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/14e189f7d7cc64b6ff758582cbbafec9/image.svg" alt=""  class="image-component"/>
+<img src="media/0a58068f39a2d5458d92d40773d40ffd/image.svg" alt=""  class="image-component"/>
+<img src="media/de564b2b866d3b4960c3b69f9bf5570e/image-1a-full.png" alt=""  class="image-component"/>
+<img src="media/f4d2efa7d66d7396c470ba004099dc88/image-1b-full.png" alt=""  class="image-component"/>
+<img src="media/4de7b9424ce8a4e96a98dc841a287cb1/image-1c-full.png" alt=""  class="image-component"/>
+<img src="media/f08e9ad77f3335330fd595c9adf0d441/image-1d-full.png" alt=""  class="image-component"/>
+<img src="media/6a2691cfa24adf8a6ac1a71d1494ccf5/image-2a-full.png" alt=""  class="image-component"/>
+<img src="media/4fc366b90f7fbe3750215aea5f098ff0/image-2b-full.png" alt=""  class="image-component"/>
+<img src="media/ede39fdaf9038db2e5d224efa2fb65c8/image-2c-full.png" alt=""  class="image-component"/>
+<img src="media/d8d5cd9694487bfc78192a86d9d30a90/image-2d-full.png" alt=""  class="image-component"/>
+<img src="media/a5b95dc3b086a5b73629fc257e3e7cc9/image-3a-full.png" alt=""  class="image-component"/>
+<img src="media/9e334cbe7d3a4264421b70648edfe082/image-3c-full.png" alt=""  class="image-component"/>
+<img src="media/3c640aab588a50bb0debba1d768094d2/image-3d-full.png" alt=""  class="image-component"/>
+<img src="media/75e8fc2ecf9f8e94cec14bd720ec894d/image-3e-full.png" alt=""  class="image-component"/>
+<img src="media/54d3c2459c2aedd56b07f1e2c8eefd2b/image-3b-full.png" alt=""  class="image-component"/>
+<img src="media/ee9db8ba1a199879ec622def683a11c7/image-4a-full.png" alt=""  class="image-component"/>
+<img src="media/9fd41ca49a67d5b89a931decf7619771/image-4b-full.png" alt=""  class="image-component"/>
+<img src="media/d52b58a697c0d42b4122b757feb710b7/image-4c-full.png" alt=""  class="image-component"/>
+<img src="media/dfbf760231867ad67ee2acd9c6054fac/image-4d-full.png" alt=""  class="image-component"/>
+<img src="media/e791d78232050e7439dfecc33bd62bf1/image-4e-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

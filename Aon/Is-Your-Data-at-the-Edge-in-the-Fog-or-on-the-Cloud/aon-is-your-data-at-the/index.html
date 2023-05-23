@@ -1,0 +1,343 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'new-1',
+            issueAliasSlug: 'aon-is-your-data-at-the',
+            issue: {"id":213569,"projectId":34509,"slug":"experience-5c9a634991bee","name":"Is Your Data At The Edge, In The Fog Or On \nThe Cloud?","status":"published","creationDate":"2019-03-26T17:37:13.000Z","lastModifiedDate":"2019-03-27T17:45:41.000Z","deletionDate":null,"firstPublishedDate":"2019-03-27T14:46:53.000Z","wipExperienceVersionId":650607,"publishedExperienceVersionId":652411,"createdByMemberId":6387,"primaryIssueAliasId":293503,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5c9a6348dfd23.jpg","importLinkShared":0,"lastPublishedDate":"2019-03-27T17:45:47.000Z","lastModifiedByMemberId":6420,"lastPublishedByMemberId":6420,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-ped2a4af0c4cd","title":"Is Your Data At The Edge, In The Fog Or On \nThe Cloud?"},
+            docVersion: {"id":652411,"experienceId":213569,"slug":"experience-version-5c9bb6cb2c140","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5c9bb6cb2c140.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Is Your Data At The Edge, In The Fog Or On  The Cloud?","seoMetaKeywords":"","seoMetaDescription":"Is Your Data At The Edge, In The Fog Or On  The Cloud?","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5c9bb6cb2c214","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/03\/27\/59a391adae47b886fecd7e7d2fed3e52\/page-thumbnail.jpg?imageOpt=1&crop=765,765,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-03-27T17:45:47.000Z","modificationDate":"2019-03-27T17:45:47.000Z","publishedDate":"2019-03-27T17:45:47.000Z","committedByMemberId":6420,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|1bbc9056-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Md","familyGuid":"Uploaded|1bbc605f-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|1bbc9056-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -syWueEJA","cssFileURL":"fonts\/7c8c14a9-1a14-42ba-bb5c-910ad3e2ba02\/stonesansiiitcpro-md.css","api":"Uploaded","woffFileURL":null},"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -I40Fixvq","cssFileURL":"fonts\/fc3a8e37-86ab-4896-bf29-8b8872b3b353\/stonesansiiitcpro-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|a9256e2c-f80d-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a9256e2c-f80d-11e8-88f3-0e55d9bc9e68","variantName":"It","cssFamilyName":"Stone Sans II ITC Pro -Er7zU9Jy","cssFileURL":"fonts\/edc69ca7-6e87-480a-bbe5-b0db13c77f62\/stonesansiiitcpro-bkit.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Is Your Data At The Edge, In The Fog Or On 
+The Cloud? Is Your Data At The Edge, In The Fog Or On  The Cloud?</title>
+
+
+
+        <meta name="description" content="Is Your Data At The Edge, In The Fog Or On  The Cloud?"/>
+
+    <meta property="og:title" content="Is Your Data At The Edge, In The Fog Or On 
+The Cloud?"/>
+        <meta property="og:image" content="media/59a391adae47b886fecd7e7d2fed3e52/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Is Your Data At The Edge, In The Fog Or On 
+The Cloud?">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/59a391adae47b886fecd7e7d2fed3e52/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5c9bb6cb2c140.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5c9bb6cb2c140",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b28ac8d2acaaffbb6a19c9f47aa9d7c6/asset-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Is Your Data At The Edge, In The Fog Or In 
+The Cloud?</p>
+<p class="text-component">Select red devices to see where certain data is processed.</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<img src="media/54dfba7a6d3f5a16fd48897e5a08faba/fog-full.png" alt=""  class="image-component"/>
+<img src="media/77d40ff3459040a7c277e439eff6f80f/gray-1-full.png" alt=""  class="image-component"/>
+<img src="media/4f9e180703df9ad59a5ef7014f148f23/gray-2-full.png" alt=""  class="image-component"/>
+<img src="media/3646cac85b138f7e89e7d91d7baea3ec/gray-4-full.png" alt=""  class="image-component"/>
+<img src="media/ea4057ed03ce8443e200f17bfa886910/gray-5-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/fe25fb03eebd4b6460987a4dae88b6fa/red-1-full.png" alt=""  class="image-component"/>
+<img src="media/4dd1ac12f19c0b2dcf4f138daaa2b62f/red-2-full.png" alt=""  class="image-component"/>
+<img src="media/3a3595672be44d23c363106334a663b7/red-3-full.png" alt=""  class="image-component"/>
+<img src="media/36e75f4dde2519dd6251f78be5b22d1b/red-4-full.png" alt=""  class="image-component"/>
+<img src="media/ba8b57608ee56698ee2dc729fc11c658/red-5-full.png" alt=""  class="image-component"/>
+<img src="media/4c172a73ce1b80c486fd1beb10ed48a3/speech-bubble-1-full.png" alt=""  class="image-component"/>
+<img src="media/25231ff62412d6ff17f3ae0f1a92b826/speech-bubble-2-full.png" alt=""  class="image-component"/>
+<img src="media/da0f32d3d2633bf87738ad0104e88c48/speech-bubble-3-full.png" alt=""  class="image-component"/>
+<img src="media/8e7c88759dd582c4a489a31ac45d23b6/speech-bubble-5-full.png" alt=""  class="image-component"/>
+<img src="media/1a50c07a0ddc45f794e21c459f6e35a6/text-box-1-full.png" alt=""  class="image-component"/>
+<img src="media/0d3fa178cdcb8759ccd0b87ffe578b90/text-box-3-full.png" alt=""  class="image-component"/>
+<img src="media/a45430047a8e4648350ad9f6004d6830/text-box-5-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<p class="text-component">Fog</p>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Play rock music”</p>
+<p class="text-component">If you ask your device to play a song, the data are transmitted 
+to and processed in the cloud.</p>
+<img src="media/ed8ef2b53b4368fff797acea8f8b255f/red-circle-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/ed8ef2b53b4368fff797acea8f8b255f/red-circle-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/ed8ef2b53b4368fff797acea8f8b255f/red-circle-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/ed8ef2b53b4368fff797acea8f8b255f/red-circle-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/ed8ef2b53b4368fff797acea8f8b255f/red-circle-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Change the channel      to national news”</p>
+<p class="text-component">If you ask your device to change the channel on your television, the data are likely processed on the edge.</p>
+<img src="media/609c6465bcdc2761f70fea7111ee3757/text-box-2-full.png" alt=""  class="image-component"/>
+<img src="media/da0f32d3d2633bf87738ad0104e88c48/speech-bubble-3-full.png" alt=""  class="image-component"/>
+<img src="media/083bb3e514c66ec7e90bcce700a78f19/risk-icon-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/ed8ef2b53b4368fff797acea8f8b255f/red-circle-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Navigate to   HOME”</p>
+<p class="text-component">In a self-driving car, monitoring and responding to tire pressure, fuel economy and the surrounding environment will likely be done at the edge, while efficient route directions will likely be calculated in the cloud.</p>
+<p class="text-component">LOW 
+tire pressure</p>
+<img src="media/abbfa5d04581b2a8dc2d86d5cb0e034d/speech-bubble-4-full.png" alt=""  class="image-component"/>
+<img src="media/3bcf105d094c905bea83e07c4a36de4c/text-box-4-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/083bb3e514c66ec7e90bcce700a78f19/risk-icon-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Some home security devices perform routine scans for motion and recognition of family members at the edge, sending data 
+to the cloud only if they determine something unusual.</p>
+<p class="text-component">STEPS
+8,942 today</p>
+<p class="text-component">Wearable devices will likely monitor health and fitness data at the edge and periodically share data in the cloud to more deeply analyze health trends. If the device detects a health situation requiring urgent attention, a caregiver can intervene.</p>
+<img src="media/083bb3e514c66ec7e90bcce700a78f19/risk-icon-full.png" alt=""  class="image-component"/>
+<img src="media/e3d2c2bc79be760a349bb90d1577bcc3/wifi-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/0ffc6f2b0ff477d383ab11f58ecaaa58/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/ea4057ed03ce8443e200f17bfa886910/gray-5-full.png" alt=""  class="image-component"/>
+<img src="media/3646cac85b138f7e89e7d91d7baea3ec/gray-4-full.png" alt=""  class="image-component"/>
+<img src="media/4105cee3849e30df3a8840cf8651e909/gray-3-full.png" alt=""  class="image-component"/>
+<img src="media/4105cee3849e30df3a8840cf8651e909/gray-3-full.png" alt=""  class="image-component"/>
+<img src="media/4f9e180703df9ad59a5ef7014f148f23/gray-2-full.png" alt=""  class="image-component"/>
+<img src="media/77d40ff3459040a7c277e439eff6f80f/gray-1-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/d344e7e9601d3075fc311653928583fe/red-circle-full.png" alt=""  class="image-component"/>
+<img src="media/eaffbcab4b04cd02e8069560bb2793d3/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Diginomica
+G2 Digital Trends
+Medical Design & Outsourcing
+IoT for all
+Information Age
+Winsystems
+Network World
+</p>
+<p class="text-component">Eric Boyum, managing director and practice leader of U.S. Technology & Communications at Aon</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Sources</p>
+<img src="media/aa8680933b503334d35ef87ef3a09422/edge-computing-full.png" alt=""  class="image-component"/>
+<p class="text-component">Cloud computing</p>
+<p class="text-component">Edge computing</p>
+<p class="text-component">Local processing</p>
+<img src="media/52ce5744623251cf0c72d6e40cc7fbb1/the-cloud-full.png" alt=""  class="image-component"/>
+<p class="text-component">Between the “edge” and the “cloud” is the “fog,” which determines at which level data processing takes place. The fog can also link multiple edge devices in a single process, such as an IoT-enabled manufacturing line. Many tasks can be accomplished much faster and with less bandwidth demand when processing takes place nearer the source of the data, either at the edge or in the fog.
+
+While edge or fog environments could offer increased data security and user privacy protection, the risks in data transmission and storage become more complex. Indeed, data processing, transmission and storage all present different risk environments. Thus, each phase requires a different risk mitigation plan, influenced by how the edge, fog and cloud are designed to work together. </p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

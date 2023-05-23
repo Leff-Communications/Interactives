@@ -1,0 +1,312 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'mtcor-future-of-the-workplace-desktop',
+            issueAliasSlug: 'future-of-the-workplace-french',
+            issue: {"id":444520,"projectId":68937,"slug":"experience-602d7200a70bf","name":"Future of the workplace (French)","status":"published","creationDate":"2021-02-17T19:44:00.000Z","lastModifiedDate":"2021-02-22T22:12:26.000Z","deletionDate":null,"firstPublishedDate":"2021-02-17T20:45:46.000Z","wipExperienceVersionId":1569738,"publishedExperienceVersionId":1584294,"createdByMemberId":14154,"primaryIssueAliasId":609176,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-602d720016594.jpg","importLinkShared":0,"lastPublishedDate":"2021-02-25T19:50:05.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p83fb64c3f1b2","title":"Future of the workplace (French)"},
+            docVersion: {"id":1584294,"experienceId":444520,"slug":"experience-version-6037ff6cf09b2","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-6037ff6cf09b2.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Future of the workplace (French)","seoMetaKeywords":"","seoMetaDescription":"Future of the workplace (French)","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-6037ff6cf09e0","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/02\/25\/1e127a894bb4ce6741a49dcdd509d8df\/page-thumbnail.jpg?imageOpt=1&crop=765,553,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-02-25T19:50:05.000Z","modificationDate":"2021-02-25T19:50:05.000Z","publishedDate":"2021-02-25T19:50:04.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|0f545667-a50d-11ea-8f81-1211e90532b6":{"familyName":"Prelo Slab Light","familyGuid":"Uploaded|0f5386ff-a50d-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|0f545667-a50d-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Prelo Slab Light-Norma-E20kuTSS","cssFileURL":"fonts\/6497ee10-29f5-499b-abfa-f7c4b3ae4c7a\/prelo-slab-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Future of the workplace (French) Future of the workplace (French)</title>
+
+
+
+        <meta name="description" content="Future of the workplace (French)"/>
+
+    <meta property="og:title" content="Future of the workplace (French)"/>
+        <meta property="og:image" content="media/1e127a894bb4ce6741a49dcdd509d8df/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Future of the workplace (French)">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/1e127a894bb4ce6741a49dcdd509d8df/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6037ff6cf09b2.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_6037ff6cf09b2",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">L’avenir du travail : 
+une nouvelle vision pour le milieu de travail</p>
+<p class="text-component">De même, les attentes des employés ont changé. D’après un sondage, les employés qui reçoivent régulièrement des communications de leur employeur ont moins d’inquiétudes quant à leur sécurité d’emploi et font davantage confiance à leur employeur. Ces changements transforment le monde des affaires et, par conséquent, redéfinissent l’avenir du travail à long terme. Les entreprises doivent se préparer dès maintenant pour limiter les perturbations et atténuer les risques, et miser sur ces changements pour accroitre leur valeur, leur avantage concurrentiel et leur incidence sociale. </p>
+<p class="text-component">La pandémie de la COVID-19 a modifié nos façons de faire et notre lieu de travail. En moins d’un an, les organisations se sont réorientées pour répondre aux besoins de leurs employés et de leurs clients. Dans un sondage éclair mené plus tôt cette année, Aon a constaté que 84 % des entreprises explorent des modèles de travail autres que le travail à distance, notamment les semaines de travail de quatre jours et les horaires flexibles. </p>
+<p class="text-component">Choisissez les zones en surbrillance pour en savoir plus</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Les entreprises peuvent réutiliser les bureaux sur leurs plans d’étages en tant qu’espaces individuels en aménageant des plus petites salles fermées, adaptées à notre nouvelle réalité, plutôt que des espaces de travail à aire ouverte, afin de limiter autant que possible les préoccupations en matière de santé. Elles doivent aussi songer à réorganiser les cuisines et les toilettes pour tenir compte des mesures de sécurité et du niveau de confiance des locataires. </p>
+<p class="text-component">Immobilier</p>
+<img src="media/041ad2bf2ab6562e82abc7568bf9af0a/image.svg" alt=""  class="image-component"/>
+<img src="media/015f3cc24a34344f6df4fba0281a2027/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Retour en haut</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">De plus, le retour au bureau entraînera une forte demande des nouvelles technologies dans le secteur immobilier, comme l’enregistrement sans contact dans les immeubles et l’automatisation des surfaces fréquemment touchées. Les gestionnaires d’immeubles doivent commencer à examiner les investissements qu’ils devront faire pour devenir plus concurrentiels à cet égard. </p>
+<p class="text-component">Immobilier</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Les avantages du travail à distance, comme l’élimination des déplacements quotidiens qui peuvent se compter en heures et la hausse de la productivité des personnes qui travaillent à la maison, entraînent également des conséquences inattendues. Les entreprises doivent décloisonner leurs activités afin de permettre aux gestionnaires de surveiller les employés pour s’assurer qu’ils ne sont pas submergés par le volume de projets et qu’ils sont encouragés à prendre des pauses adéquates.</p>
+<p class="text-component">Mieux-être</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Il est recommandé que les employeurs mettent en place un programme de vérification et de dépistage efficace. Les mesures peuvent comprendre des vérifications de température, des tests de dépistage de la COVID-19, des recherches des contacts et des attestations de la part des employés. </p>
+<p class="text-component">Santé et Sécurité</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Comme plus de 50 % des organisations utilisent déjà des outils de recrutement et d’intégration virtuels 
+(en anglais), 
+la façon dont les entreprises attirent, acquièrent et fidélisent les talents évolue. Dans ce nouvel environnement, il faut également faire preuve d’innovation et de souplesse dans la gestion du rendement au moment où les employés s’adaptent aux changements et concilient leurs engagements. </p>
+<p class="text-component">Talent</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Mieux-être</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Les entreprises doivent suivre l’évolution des normes de TI établies par des experts, comme l’Organisation internationale de normalisation (ISO), afin de s’assurer que leur équipement et leurs approches sont conformes aux dernières lignes directrices. L’ISO révise généralement les normes dans un domaine donné tous les cinq ans. En 2017, par exemple, elle a publié des principes directeurs et un cadre sur le domaine de l’économie du partage.</p>
+<p class="text-component">TECHNOLOGIES 
+DE L’INFORMATION (TI)</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Les entreprises doivent envisager d’élaborer une approche axée sur les données dans le cadre de leurs stratégies liées aux talents afin de déterminer ce qui fonctionne et ce qui ne fonctionne pas. Les employeurs, alors qu’ils effectuent de nouveaux investissements dans les talents, doivent trouver des moyens 
+de mesurer le rendement de leurs investissements et la valeur qu’ils procurent aux employés, et des façons de suivre l’attrition et le roulement du personnel afin de renforcer l’agilité et la résilience. </p>
+<p class="text-component">Talent</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Fournir un accès à des technologies qui peuvent aider les employés à comprendre leur bien-être financier
+Organiser des séances 
+en ligne ou par l’intermédiaire de Webex sur le bien-être financier dans le cadre des interactions sociales
+Mettre une plateforme 
+de rabais et d’offres à la disposition des employés</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Il est primordial que les entreprises qui encouragent le retour au bureau assurent la sécurité et la santé de leurs employés. De nombreux employeurs choisissent notamment de modifier leurs politiques en matière de congés de maladie payés ou d’absences. Le développement et la distribution des vaccins influeront également sur les approches des entreprises. </p>
+<p class="text-component">Santé et Sécurité</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Il est recommandé que les entreprises adoptent une approche de mieux-être efficace sur tous les plans : émotionnel, financier et physique, ainsi qu’en matière d’inclusion et de pratiques de travail. Les employeurs peuvent adopter un certain nombre d’approches concrètes (en anglais) pour soutenir leurs employés :
+
+Bien-être financier :</p>
+<p class="text-component">En raison du nombre accru de gens qui travaillent à distance, les immeubles à usage commercial et mixte sont réaffectés et les entreprises qui détiennent des baux à long terme envisagent de les renégocier. Les espaces vacants d’immeubles de bureaux sont utilisés comme entrepôts ou centres de distribution ou réaffectés à des initiatives de santé et de mieux-être.</p>
+<p class="text-component">Immobilier</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">La recherche des contacts s’est d’ailleurs avérée très prometteuse pour réduire la propagation du virus. Dans certaines populations, elle peut réduire l’infectivité 
+de 85 %.  L’un des plus grands défis auquel les entreprises seront confrontées est de trouver le juste équilibre entre la protection de leurs employés et leur droit à la vie privée.</p>
+<p class="text-component">Santé et Sécurité</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">1. Ferretti L, Wymant C, Kendall M et coll. Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing. (En anglais seulement) Science. 2020</p>
+<p class="text-component">Mieux-être</p>
+<p class="text-component">Fournir un accès à des technologies qui peuvent renforcer la santé émotionnelle des employés 
+Mobiliser le réseau de secours en santé mentale de l’entreprise pour favoriser la santé, le bien-être et la résilience
+Offrir l’accès à des services de consultation et de deuil au cas où les employés auraient besoin de soutien supplémentaire
+Offrir des services de soutien supplémentaires ciblés aux employés, comme du soutien aux parents ou des services d’orientation professionnelle 
+</p>
+<p class="text-component">Il est recommandé que les entreprises adoptent une approche de mieux-être efficace sur tous les plans : émotionnel, financier et physique, ainsi qu’en matière d’inclusion et de pratiques de travail. Les employeurs peuvent adopter un certain nombre d’approches concrètes (en anglais) pour soutenir leurs employés :
+
+Bien-être émotionnel :</p>
+<p class="text-component">Mieux-être</p>
+<p class="text-component">Proposer aux employés des séances d’entraînement en ligne ou des défis santé à l’échelle de l’entreprise 
+Fournir aux employés un accès à des outils numériques, comme une aide au sommeil ou un entraîneur personnel virtuel, ainsi qu’à des applications de physiothérapie
+Faire appel à un fournisseur de soins de santé au travail pour appuyer les évaluations de l’ergonomie des postes de travail pour les employés qui travaillent 
+à domicile
+Offrir aux employés des rabais sur l’abonnement 
+à des services de paniers d’aliments sains</p>
+<p class="text-component">Il est recommandé que les entreprises adoptent une approche de mieux-être efficace sur tous les plans : émotionnel, financier et physique, ainsi qu’en matière d’inclusion et de pratiques de travail. Les employeurs peuvent adopter un certain nombre d’approches concrètes (en anglais) pour soutenir leurs employés :
+
+Bien-être physique : </p>
+<img src="media/78467216646e35cdea5b769015599b8a/temperature-people-02-full.png" alt=""  class="image-component"/>
+<img src="media/287e596b46c3ce2d7ce821876ebd7b80/temperature-people-01-full.png" alt=""  class="image-component"/>
+<img src="media/0290587c156755655c7a9109dc0caa6e/jd-future-workplace-final-1-full.png" alt=""  class="image-component"/>
+<img src="media/75eee63dcce3c72f047714d3ee6c2597/kitchen-full.png" alt=""  class="image-component"/>
+<img src="media/359759ddc410f74d66342ad138ad4a8d/handprint-full.png" alt=""  class="image-component"/>
+<img src="media/a2d8e828b2a0b200255d2572c5c5e783/dogwalker-full.png" alt=""  class="image-component"/>
+<img src="media/a2cfee7d65226ce6dc07dcdfc86589de/dogwalker-person-01-full.png" alt=""  class="image-component"/>
+<img src="media/d7e2fa191b3f051af5974ca356e61b49/temperature-full.png" alt=""  class="image-component"/>
+<img src="media/ce1862cf2968da82eca219514d409f59/wheelchair-person-full.png" alt=""  class="image-component"/>
+<img src="media/655044e8181f2d6e6b4143962ef07378/manager-at-home-full.png" alt=""  class="image-component"/>
+<img src="media/0f1846cbe62d1c1cfdef81cb5aa8e7c3/it-guy-full.png" alt=""  class="image-component"/>
+<img src="media/6c8570e417073ae88b93d157c8663acb/kid-full.png" alt=""  class="image-component"/>
+<img src="media/9331f3fd1bb233e4de84098eab2dc3ed/talent-charts-full.png" alt=""  class="image-component"/>
+<img src="media/3dae36135eb035242f23d7fea30abf86/food-delivery-full.png" alt=""  class="image-component"/>
+<img src="media/9a6d7f11f334935ba628c123d29a8da7/food-delivery-people-01-full.png" alt=""  class="image-component"/>
+<img src="media/c34bdff6b5b09deb12efa7cba9791041/food-delivery-people-02-full.png" alt=""  class="image-component"/>
+<img src="media/f40da21f2445783da5ba7b17e91dc175/vaccine-full.png" alt=""  class="image-component"/>
+<img src="media/ac8c6df198286d76188c4c032a2b3616/workout-full.png" alt=""  class="image-component"/>
+<img src="media/c2c881ee55e7a99bced81984b026bb66/conference-room-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

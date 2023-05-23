@@ -1,0 +1,350 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'ano-future-of-mobility',
+            issueAliasSlug: 'aon-future-of-mobility',
+            issue: {"id":254461,"projectId":41348,"slug":"experience-5d4d8451a2100","name":"Future of Mobility","status":"published","creationDate":"2019-08-09T14:33:53.000Z","lastModifiedDate":"2020-06-02T17:18:24.000Z","deletionDate":null,"firstPublishedDate":"2019-08-14T20:14:59.000Z","wipExperienceVersionId":796141,"publishedExperienceVersionId":802438,"createdByMemberId":14154,"primaryIssueAliasId":347293,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5d4d84513d1df.jpg","importLinkShared":0,"lastPublishedDate":"2019-08-14T22:06:15.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-paa569d3c1cd2","title":"Future of Mobility"},
+            docVersion: {"id":802438,"experienceId":254461,"slug":"experience-version-5d5485d6d3c34","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5d5485d6d3c34.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Future of Mobility","seoMetaKeywords":"","seoMetaDescription":"Future of Mobility","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5d5485d6d3d0b","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/08\/14\/35b0d07e8fcfe4c6d26b3834df119618\/page-thumbnail.jpg?imageOpt=1&crop=765,659,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-08-14T22:06:15.000Z","modificationDate":"2019-08-14T22:06:15.000Z","publishedDate":"2019-08-14T22:06:14.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|a9256e2c-f80d-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|a9256e2c-f80d-11e8-88f3-0e55d9bc9e68","variantName":"It","cssFamilyName":"Stone Sans II ITC Pro -Er7zU9Jy","cssFileURL":"fonts\/edc69ca7-6e87-480a-bbe5-b0db13c77f62\/stonesansiiitcpro-bkit.css","api":"Uploaded","woffFileURL":null},"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -I40Fixvq","cssFileURL":"fonts\/fc3a8e37-86ab-4896-bf29-8b8872b3b353\/stonesansiiitcpro-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|3ef6f0b7-b605-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|3ef6f0b7-b605-11e8-88f3-0e55d9bc9e68","variantName":"StoneSansIIITCPro Bd","cssFamilyName":"Stone Sans II ITC Pro -Eft5y3CD","cssFileURL":"fonts\/46c370ab-c640-40bc-b033-006c4e042d77\/stonesansiiitcpro-bd.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Future of Mobility Future of Mobility</title>
+
+
+
+        <meta name="description" content="Future of Mobility"/>
+
+    <meta property="og:title" content="Future of Mobility"/>
+        <meta property="og:image" content="media/35b0d07e8fcfe4c6d26b3834df119618/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Future of Mobility">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/35b0d07e8fcfe4c6d26b3834df119618/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d5485d6d3c34.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5d5485d6d3c34",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Sources</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Trains</p>
+<p class="text-component">The Aon team wish to thank expert Jillian Syfield for her contributions.
+Illustration by Vic Kulihin.</p>
+<p class="text-component">https://www.forbes.com/sites/forbestechcouncil/2018/11/06/how-maas-public-transit-is-changing-the-world/#270ce1de7518
+https://www.wired.com/story/transit-center-census-americans-public-transportation/
+https://www.citylab.com/transportation/2018/09/the-global-mass-transit-revolution/570883/
+https://techcrunch.com/2019/01/24/whim-the-all-in-one-mobility-app-for-ride-sharing-public-transit-and-rentals-is-coming-to-the-us/
+</p>
+<img src="media/eaffbcab4b04cd02e8069560bb2793d3/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Click red circles to learn more about each type of transportation mode</p>
+<p class="text-component">From electric scooters to ride-hailing apps, technology is rapidly changing how we get around our cities. Learn more by clicking through the city below.</p>
+<p class="text-component">How Tech Is Reshaping Transportation</p>
+<img src="media/b28ac8d2acaaffbb6a19c9f47aa9d7c6/asset-1-full.png" alt=""  class="image-component"/>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Trains</p>
+<p class="text-component">Benefits
+Better accessibility: urban areas are easier to visit, boosting the economy
+
+Large footprint: many different urban neighborhoods and suburbs are connected
+
+Eco-friendly: trains produce lower carbon emissions</p>
+<p class="text-component">Considerations
+Security concerns: accidents and crime are common across many mass transit systems
+
+Inconsistent service: punctuality of trains can be unpredictable
+
+Aging infrastructure: train systems have aged in certain areas</p>
+<p class="text-component">Self-driving Cars</p>
+<p class="text-component">As the adoption of self-driving cars grows, ride-sharing companies may start offering fully autonomous vehicles via their apps. Car manufacturers could also enter the ride-share space for self-driving cars, changing the way people own and use their cars. </p>
+<p class="text-component">Benefits
+Accident reduction: increased sensors in vehicles can communicate with each other to improve driver and pedestrian safety </p>
+<p class="text-component">Improved traffic flow: increased connectivity 
+could lead to better route planning</p>
+<p class="text-component">Considerations
+Liability concerns: there is uncertainty as to whether liability falls to the technology or the manufacturer</p>
+<p class="text-component">Inconsistent regulation: varies by country </p>
+<p class="text-component">Shaky safety: AV technology functions well in testing environments but road performance still unproven </p>
+<p class="text-component">Autonomous Buses</p>
+<p class="text-component">Along with other autonomous vehicles, self-driving buses employ technology including sensors, radar and cameras that allow them to drive, park and maneuver – all without a human driver. </p>
+<p class="text-component">Benefits
+Decreased operating costs: autonomous buses don’t rely on drivers, resulting in significant cost reduction </p>
+<p class="text-component">Eco-friendly option: buses produce lower emissions than cars</p>
+<p class="text-component">Considerations
+Nascent technology: 
+various tech errors could cause accidents</p>
+<p class="text-component">Security issues: no driver means less security on buses</p>
+<p class="text-component">Improved safety: potential to reduce road risks and accidents</p>
+<p class="text-component">Bike-sharing</p>
+<p class="text-component">In metropolitan areas around the world, riders can rent bikes through a mobile app, picking them up from, and returning them to, docking stations located throughout the cities and towns.</p>
+<p class="text-component">Benefits
+Eco-friendly option: bikes produce zero carbon emissions</p>
+<p class="text-component">Increased access: bikes provide an easy and economical way to move around cities</p>
+<p class="text-component">Considerations
+Inconsistent regulation: rider safety standards vary by country and even by city </p>
+<p class="text-component">Liability concerns: rider or third-party accidents have no clear answer on liability</p>
+<p class="text-component">Electric Scooters</p>
+<p class="text-component">Look along the sidewalk of any big town or city and you’re likely to spot a cluster of free-standing electric scooters. These scooters, which can travel up to 30 miles per hour, are playing a larger role in the urban transportation landscape, especially in addressing the “last mile” of transit. </p>
+<p class="text-component">Benefits
+Increased accessibility: inexpensive and convenient renting makes public transit more accessible</p>
+<p class="text-component">Considerations
+Accidents and injury coverage: typically not covered by standard auto, homeowners’ or renters’ policies </p>
+<p class="text-component">Rider and pedestrian safety: danger to pedestrians when ridden on sidewalks; no enforcement of rider safety standards </p>
+<p class="text-component">Cost efficiency: scooters are cheaper to fuel than cars and buses</p>
+<p class="text-component">Carbon footprint: associated with charging, maintenance and recycling of the lithium ion battery</p>
+<p class="text-component">https://www.forbes.com/sites/danielaraya/2019/01/29/the-challenges-with-regulating-self-driving-cars/#e572ab3b2602
+https://theonebrief.com/the-fast-lane-what-driverless-cars-mean-for-innovation-and-risk/
+https://www.nytimes.com/2019/07/17/business/self-driving-autonomous-cars.html
+</p>
+<p class="text-component">Self-driving Cars</p>
+<p class="text-component">https://www.forbes.com/sites/michaelgoldstein/2018/05/09/uber-and-lyft-the-cost-and-benefits-of-disruption/#5d412fc0dfcb 
+https://www.businessinsider.com/uber-ipo-company-warns-cyber-attacks-could-cripple-its-business-2019-4
+https://theonebrief.com/the-fast-lane-what-driverless-cars-mean-for-innovation-and-risk/
+</p>
+<p class="text-component">Ride-sharing</p>
+<p class="text-component">https://www.cbsnews.com/news/electric-scooter-backlash-leads-to-new-laws-and-scooter-rage-july-2019/ 
+https://www.wired.com/story/e-scooter-micromobility-infographics-cost-emissions/
+https://riskandinsurance.com/insurers-approaching-electric-scooter-industry/ 
+https://www.bbc.com/news/uk-48106617 
+https://www.illinoispolicy.org/lightfoot-moves-to-reform-infamous-chicago-workers-comp-program/
+</p>
+<p class="text-component">Electric Scooters</p>
+<p class="text-component">https://www.forbes.com/sites/forbestechcouncil/2018/11/06/how-maas-public-transit-is-changing-the-world/#270ce1de7518
+https://www.cnbc.com/2019/03/20/uks-first-self-driving-bus-begins-trials.html
+</p>
+<p class="text-component">Autonomous Buses</p>
+<p class="text-component">Ride-sharing</p>
+<p class="text-component">Commuters are already hailing rides through any number of ride-sharing service platforms such as Uber or Lyft. Most ride-sharing companies currently rely on independent contractors to either drive their own cars or lease them from the company itself. </p>
+<p class="text-component">Benefits
+Increased access: ride-hailing provides transport to more rural areas, especially to commuters not on public-transit routes and those with restricted ability to drive such as the elderly or disabled </p>
+<p class="text-component">Decreased cost: 
+ride-sharing services can be 
+less expensive than taking a taxi, for example, offering more transport options to riders across socioeconomic classes </p>
+<p class="text-component">Improved regulations: jurisdictions around the world have employed standard protections for riders </p>
+<p class="text-component">Considerations
+Liability concerns: a variety of scenarios have no clear answer on liability</p>
+<p class="text-component">Cyber security issues: technology platforms could leave passenger and driver information vulnerable to cyber attacks </p>
+<p class="text-component">Decreased traffic congestion: greater driver pick-up and drop-off efficiency could lead to declines in road congestion </p>
+<p class="text-component">Required maintenance: general upkeep of bicycles, including disposal of broken or damaged bikes, is needed</p>
+<p class="text-component">General liability: few, if any, ridership laws restrict who can ride a scooter</p>
+<img src="media/eae2bb841bccd1f3ca8f53000894bc70/trainscene-01-full.png" alt=""  class="image-component"/>
+<img src="media/65380e7f272475917e3539256c08189a/ridesharingscene-01-full.png" alt=""  class="image-component"/>
+<img src="media/ea2ea2c390f43ab959fabf4af6e47857/peoplegettingontrain-08-full.png" alt=""  class="image-component"/>
+<img src="media/5234453bc73cbea69f1d9a5fbc00bca9/peoplegettingontrain-01-full.png" alt=""  class="image-component"/>
+<img src="media/440b4a2fcf83aa4fbe17d42c87bc2026/peoplegettingontrain-02-full.png" alt=""  class="image-component"/>
+<img src="media/79a28126b071f10cc6cb99a67970a4ae/peoplegettingontrain-03-full.png" alt=""  class="image-component"/>
+<img src="media/321ca3b0fd590fa4662a160d4d661bdb/peoplegettingontrain-04-full.png" alt=""  class="image-component"/>
+<img src="media/ceb55d358fe6d0b54edbb6879fa5bfeb/peoplegettingontrain-07-full.png" alt=""  class="image-component"/>
+<img src="media/5df252b828dad0f8a483621c9f3699ad/peoplegettingontrain-06-full.png" alt=""  class="image-component"/>
+<img src="media/89a2db432f21e3f3f3e32aa4bdf42e52/peopleridesharing-01-full.png" alt=""  class="image-component"/>
+<img src="media/9cee91e242f12ee594438c1d13ba61a3/peopleridesharing-02-full.png" alt=""  class="image-component"/>
+<img src="media/5b1964050e9e131b39c4762b98c37f33/peopleridesharing-03-full.png" alt=""  class="image-component"/>
+<img src="media/921e4042885179276bfbc0b6ce3a7cdf/peopleridesharing-04-full.png" alt=""  class="image-component"/>
+<img src="media/c2d2c70dc4e07599e6d89f3b26c5a78c/selfdrivingcarsscene-01-full.png" alt=""  class="image-component"/>
+<img src="media/66400d836ab103f50c7a27f35c617b1d/selfdrivingcars-01-full.png" alt=""  class="image-component"/>
+<img src="media/675c98ec4dc9602ac54a2449c8466221/selfdrivingcars-02-full.png" alt=""  class="image-component"/>
+<img src="media/ef015d8a6992019d006af1f660add46f/selfdrivingbusscene-01-full.png" alt=""  class="image-component"/>
+<img src="media/d6b665bfd3a2651efc52e40e210001a2/selfdrivingbusses-05-full.png" alt=""  class="image-component"/>
+<img src="media/ab3a2d54054a044f1cbae189bc1ab7ba/selfdrivingbusses-01-full.png" alt=""  class="image-component"/>
+<img src="media/93546fb2bc2da9b7aae5bf5d2a8abe34/selfdrivingbusses-02-full.png" alt=""  class="image-component"/>
+<img src="media/11a6436239ea8747831d7d2e4ab965ad/selfdrivingbusses-03-full.png" alt=""  class="image-component"/>
+<img src="media/9250a9a6e7532b5cf219e3fe30b1c4b0/selfdrivingbusses-04-full.png" alt=""  class="image-component"/>
+<img src="media/726cee8bf40283b6417585c6fceada27/bikes-01-full.png" alt=""  class="image-component"/>
+<img src="media/c5b432df8d8f31772be1aa03d5720975/bikes-02-full.png" alt=""  class="image-component"/>
+<img src="media/eb67a12e4ec46f7eab14fcb7731e5054/bikes-03-full.png" alt=""  class="image-component"/>
+<img src="media/f1e76722c0735366bc08ab7d430f143e/scooterscene-01-full.png" alt=""  class="image-component"/>
+<img src="media/552afa685adbd8c754a1c6060000fac7/scooters-01-full.png" alt=""  class="image-component"/>
+<img src="media/3a974288134c08172d48cb3931242e32/scooters-02-full.png" alt=""  class="image-component"/>
+<img src="media/5f24b34b546338c160ba0e4516d285a2/scooters-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">Reset</p>
+<img src="media/c096bbb46e401076d8d5167228560c53/future-of-mobility-final-cropped-illio-01-full.png" alt=""  class="image-component"/>
+<img src="media/448fee441e9858eb24ab79c4967acc17/bikescene-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">In an attempt to stay relevant to customers, train companies are integrating their systems with transport-planning apps and ticket sites. Helsinki was one of the first cities to pilot mobility as a service (MaaS) with a centralized, subscription-based transit app where subscribers can plan, reserve and pay for their trips on the city’s trains as well as shared bikes, cars and scooters. </p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

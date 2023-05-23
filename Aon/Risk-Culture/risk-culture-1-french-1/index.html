@@ -1,0 +1,335 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-risk-culture',
+            issueAliasSlug: 'risk-culture-1-french-1',
+            issue: {"id":536939,"projectId":68857,"slug":"experience-6158cc71d946a","name":"Risk culture (French) Copy","status":"published","creationDate":"2021-10-02T21:17:37.000Z","lastModifiedDate":"2023-05-23T06:01:07.000Z","deletionDate":null,"firstPublishedDate":"2021-10-04T21:29:26.000Z","wipExperienceVersionId":1977675,"publishedExperienceVersionId":1980448,"createdByMemberId":6387,"primaryIssueAliasId":741207,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-6158cc716663e.jpg","importLinkShared":0,"lastPublishedDate":"2021-10-04T21:29:26.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p23115456a66a","title":"Risk culture (French) Copy"},
+            docVersion: {"id":1980448,"experienceId":536939,"slug":"experience-version-615b7235d59dd","loadLowRes":0,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-615b7235d59dd.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-615b7235d59fc","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/10\/04\/99f4447d61a56d13af7821fe7b3f28b6\/page-thumbnail.jpg?imageOpt=1&crop=765,659,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-10-04T21:29:26.000Z","modificationDate":"2021-10-04T21:29:26.000Z","publishedDate":"2021-10-04T21:29:25.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|0f545667-a50d-11ea-8f81-1211e90532b6":{"familyName":"Prelo Slab Light","familyGuid":"Uploaded|0f5386ff-a50d-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|0f545667-a50d-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Prelo Slab Light-Norma-E20kuTSS","cssFileURL":"fonts\/6497ee10-29f5-499b-abfa-f7c4b3ae4c7a\/prelo-slab-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Risk culture (French) Copy</title>
+
+
+
+
+    <meta property="og:title" content="Risk culture (French) Copy"/>
+        <meta property="og:image" content="media/99f4447d61a56d13af7821fe7b3f28b6/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Risk culture (French) Copy">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/99f4447d61a56d13af7821fe7b3f28b6/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-615b7235d59dd.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_615b7235d59dd",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">La décision à prendre en matière de gestion des risques dès maintenant : instaurer une culture de gestion des risques</p>
+<p class="text-component">Avec la pandémie qui se poursuit, les organisations révisent leurs manuels sur la façon d’anticiper et de gérer les vulnérabilités et de renforcer la résilience au risque. </p>
+<p class="text-component">Les entreprises font face à des conditions difficiles depuis les 18 à 
+24 derniers mois, car la COVID-19 n’a pas dit son dernier mot. Les leaders ont dû prendre des décisions difficiles en matière de dotation en personnel, d’exploitation et de bilans, et ce, en temps opportuns et à distance. De nombreuses décisions difficiles ont dû être réexaminées bien après le début de 2021. La pandémie est toujours présente et a forcé de nombreuses entreprises à repenser ou à modifier leurs plans de retour au bureau. </p>
+<img src="media/015f3cc24a34344f6df4fba0281a2027/image.svg" alt=""  class="image-component"/>
+<img src="media/041ad2bf2ab6562e82abc7568bf9af0a/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Retour en haut</p>
+<p class="text-component">L’évolution rapide, importante et constante de la situation a incité les entreprises à envisager le risque sous un angle nouveau. D’après un rapport récent, 68 % des cadres supérieurs sondés ont déclaré que la pandémie avait fait ressortir des vulnérabilités et des risques nouveaux qui leur demandaient de modifier considérablement leur vision de l’avenir.  
+
+Dans cette optique, les entreprises doivent notamment se concentrer davantage sur la création d’une culture de gestion des risques, un point à l’ordre du jour auquel bon nombre d’entre elles accordent encore peu d’importance. Dans le cadre d’une enquête mondiale sur la gestion des risques  effectuée en 2019, seulement 20 % des gestionnaires des risques ont déclaré utiliser la modélisation des risques et 10 % ont affirmé ne pas avoir mis en place de processus officiel d’identification des risques . 
+
+Les organisations peuvent mesurer leur maturité à l’égard des risques au moyen de paramètres précis afin de déterminer les domaines auxquels elles doivent accorder la priorité. Il s’agit d’une étape cruciale pour les organisations qui exécutent leurs activités dans un environnement où la gestion des coûts est essentielle. L’analyse de la maturité peut également aider les entreprises à comprendre leurs lacunes et le rôle que doit jouer chaque membre de leur organisation dans la culture de gestion des risques. Les avantages de cette approche sont indéniables : les études ont montré qu’il existe une corrélation solide entre l’indice de maturité à l’égard du risque d’une organisation et son rendement. Par exemple, les organisations qui présentent un indice plus élevé de maturité à l’égard du risque constatent généralement un meilleur rendement du cours de l’action, une réduction de sa volatilité au fil du temps ainsi qu’un rendement supérieur des capitaux propres. </p>
+<p class="text-component">Les entreprises peuvent élaborer un cadre d’intervention axé sur quelques domaines fondamentaux :</p>
+<img src="media/186eb463ad76c1af1b464e7de104044c/framework-graphic-pieces-up-red-full.png" alt=""  class="image-component"/>
+<img src="media/6018a72e9422c0e160d6d28c8fb876f5/framework-graphic-pieces-up-gray-full.png" alt=""  class="image-component"/>
+<img src="media/5163eca066b7f9c0f3a45deafb11aef9/framework-graphic-pieces-icon-circle-people-red-full.png" alt=""  class="image-component"/>
+<img src="media/72b354dbbb0cd5f1f20dd06e7244afda/framework-graphic-pieces-icon-circle-people-gray-full.png" alt=""  class="image-component"/>
+<img src="media/aa13fab991faec225333d124081a854e/framework-graphic-pieces-people-icon-grey-full.png" alt=""  class="image-component"/>
+<img src="media/3f1b6c22f2b4ac6dc7c64ae99937b24e/framework-graphic-pieces-people-icon-black-full.png" alt=""  class="image-component"/>
+<img src="media/b5d72eeda78a675d1a98a9d14dd17710/framework-graphic-pieces-down-gray-full.png" alt=""  class="image-component"/>
+<img src="media/7138b67c6b1984b920982b3182d3a60f/framework-graphic-pieces-icon-circle-process-grey-full.png" alt=""  class="image-component"/>
+<img src="media/a44c0e96153c6c8a73464a1615466f1c/framework-graphic-pieces-process-icon-gray-full.png" alt=""  class="image-component"/>
+<img src="media/6018a72e9422c0e160d6d28c8fb876f5/framework-graphic-pieces-up-gray-full.png" alt=""  class="image-component"/>
+<img src="media/186eb463ad76c1af1b464e7de104044c/framework-graphic-pieces-up-red-full.png" alt=""  class="image-component"/>
+<img src="media/40812bf210c6c5f14e9a7f5daba08242/framework-graphic-pieces-icon-circle-information-grey-full.png" alt=""  class="image-component"/>
+<img src="media/baad5ff50409f439ad4ed919823be3c1/framework-graphic-pieces-icon-circle-information-red-full.png" alt=""  class="image-component"/>
+<p class="text-component">Cliquez sur les icônes pour plus d'informations</p>
+<img src="media/df7afabc4a01a891ff00e015ce79fb38/framework-graphic-pieces-information-icon-grey-full.png" alt=""  class="image-component"/>
+<img src="media/ed5dca8c8cfa0e239aa2e73965ef1c90/framework-graphic-pieces-information-icon-red-full.png" alt=""  class="image-component"/>
+<img src="media/b5d72eeda78a675d1a98a9d14dd17710/framework-graphic-pieces-down-gray-full.png" alt=""  class="image-component"/>
+<img src="media/f1ae88dc39a014cd5d8a4a2ee9659baa/framework-graphic-pieces-down-red-full.png" alt=""  class="image-component"/>
+<img src="media/53b99e788cc272ca1abdc44d4bbbc93c/framework-graphic-pieces-icon-circle-influence-grey-full.png" alt=""  class="image-component"/>
+<img src="media/0fad83da822fe733dabf1d3c73a1fbf9/framework-graphic-pieces-icon-circle-influence-red-full.png" alt=""  class="image-component"/>
+<img src="media/6c196f53acbcb9e0be5999213eb2b186/framework-graphic-pieces-influence-icon-grey-full.png" alt=""  class="image-component"/>
+<img src="media/db47f70be26e030a883225765df036f1/framework-graphic-pieces-influence-icon-red-full.png" alt=""  class="image-component"/>
+<p class="text-component">Personnel</p>
+<p class="text-component">Personnel</p>
+<p class="text-component">Processus</p>
+<p class="text-component">Reneseignements</p>
+<p class="text-component">Reneseignements</p>
+<p class="text-component">Influence</p>
+<p class="text-component">Influence</p>
+<p class="text-component">Les cadres supérieurs doivent participer à la gestion des risques et les gestionnaires des risques doivent communiquer avec eux pour comprendre la stratégie d’affaires et lier les objectifs et les résultats escomptés à la stratégie de gestion des risques. Les cadres supérieurs doivent également contribuer à l’exécution des principaux processus de gestion des risques.</p>
+<p class="text-component">Discussions avec la haute direction </p>
+<p class="text-component">En plus des cadres supérieurs, un groupe d’intéressés clés, composé de membres du conseil d’administration et d’employés de différentes unités fonctionnelles, doit participer à l’élaboration des stratégies, des processus et des politiques de gestion des risques afin d’assurer une prise en charge et une responsabilisation à l’échelle de l’entreprise. Les rencontres régulières avec les intéressés assureront une meilleure communication et une plus grande visibilité sur les enjeux liés aux risques. De plus, il est important que les responsables de la gestion des risques indiquent clairement le type de risques qui touchent chacune des unités fonctionnelles de l’entreprise afin d’assurer l’adhésion et la participation de tous les employés de l’organisation.</p>
+<p class="text-component">Participation des intéressés </p>
+<p class="text-component">La plupart des plans de gestion des risques des entreprises ne tiennent pas la route, car le degré de prise en charge et de responsabilisation n’est pas suffisant, tant au niveau de la direction que des employés de première ligne. Tous les employés doivent comprendre leur rôle dans la gestion des risques. Les responsables de la gestion des risques doivent offrir régulièrement des formations, des sommets sur les risques et des séances d’information aux employés afin de favoriser une compréhension commune des risques et des attentes. </p>
+<p class="text-component">Implication des employés de première ligne </p>
+<p class="text-component">Il est important d’adopter un état d’esprit axé sur la gestion des risques et de promouvoir les comportements exemplaires à cet égard dans toute l’organisation. En d’autres mots, tous les employés doivent être en mesure de prendre des décisions en fonction des risques. Comme de nombreuses entreprises échouent en raison d’un manque de responsabilisation à l’échelle de l’organisation, il est essentiel d’encourager continuellement l’adoption d’une telle mentalité. Pour y parvenir, les entreprises peuvent offrir, dans le cadre de leur structure organisationnelle, des récompenses et des primes d’encouragement liées à la conformité et une formation continue aux employés. De nombreuses organisations adoptent des processus de gestion du changement, comme le modèle fondé sur l’influence en quatre volets, pour accroître leurs chances de modifier les mentalités et les comportements des employés.</p>
+<p class="text-component">Mentalités et comportements </p>
+<p class="text-component">Prise de décision axée sur le risque </p>
+<p class="text-component">Les entreprises doivent tenir compte des risques dans leur prise de décisions et leur gouvernance. Elles doivent utiliser des données sur les risques financiers, opérationnels et d’atteinte à la réputation pour bien comprendre l’incidence de leurs décisions d’affaires. Il est également recommandé d’utiliser des approches fondées sur des scénarios pour mieux distinguer les prévisions ou résultats escomptés des comportements ou résultats réels. Les entreprises peuvent ainsi veiller à ce que les perceptions du risque, par rapport au degré de risque réel, n’embrouillent pas la prise de décisions. </p>
+<p class="text-component">Communication des risques </p>
+<p class="text-component">La transparence est essentielle à la réussite d’une culture de gestion des risques. Il est important d’encourager la tenue de conversations sur les risques à divers niveaux, et sur les différents types de risques qui touchent l’organisation. La direction doit aussi fournir des commentaires honnêtes sur les risques et la façon dont ils sont gérés. Les renseignements sur les risques doivent être communiqués dans une langue courante, en évitant le jargon. De plus, les entreprises doivent élaborer une stratégie de communication réfléchie et ciblée, en déterminant les canaux qui conviennent le mieux à chaque auditoire de l’entreprise. Par exemple, les employés plus âgés préfèrent peut-être les rencontres en personne alors que les milléniaux privilégient les messages textes et les courriels. Cela permet de garantir que les communications sur les risques parviennent aux employés et les mobilisent.</p>
+<p class="text-component">Plus</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Profil de risque optimisé </p>
+<p class="text-component">Une mesure à prendre pour favoriser une culture solide de gestion des risques est de passer d’une approche axée sur la prévention et l’atténuation des risques à des solutions fondées sur les risques et leur gestion, susceptibles d’extraire de la valeur et de renforcer la résilience. Autrement dit, les risques font partie intégrante des activités courantes. En vertu de cette stratégie de gestion proactive des risques, les organisations doivent disposer d’une approche sophistiquée et générale de gestion des risques, et les principes clés d’une culture de gestion des risques leur permettent de la concrétiser. Lorsqu’une entreprise délaisse son plan de gestion réactive des risques, qui consiste à gérer uniquement les risques après coup, pour adopter un plan en vertu duquel elle actualise ses pratiques afin d’atténuer les risques avant la survenance d’un sinistre, elle gagne du respect et de la crédibilité auprès de ses clients et de ses pairs. </p>
+<p class="text-component">Production de rapports </p>
+<p class="text-component">Les entreprises qui ont une culture solide de gestion des risques mesurent les résultats et la responsabilisation, et produisent régulièrement des rapports sur les risques. Il est recommandé que ces derniers soient diffusés à l’échelle de l’organisation pour assurer une meilleure transparence. En plus de rendre compte de ce qui a été fait et de quantifier les risques atténués, les rapports doivent indiquer les occasions d’amélioration et de consolidation de la stratégie en matière de risque. Les entreprises peuvent utiliser différents outils de production de rapports pour personnaliser leurs rapports, de sorte à recueillir plus rapidement et méthodiquement les renseignements dont elles ont besoin.</p>
+<p class="text-component">Plus</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Surveillance et adaptation agiles </p>
+<p class="text-component">Les risques varient selon leurs types; une approche axée sur les catastrophes naturelles, par exemple, est très différente d’une approche axée sur la cybersécurité. Ainsi, plus les entreprises peuvent s’adapter au contexte actuel, mieux c’est. Par exemple, de nombreuses entreprises ont dû tenir compte dans leurs modèles de cyber-risque de l’immense vague d’employés qui ont soudainement commencé à travailler à distance en 2020. Les entreprises doivent adopter une approche agile en ce qui concerne les risques, puisqu’ils évoluent sans cesse. Pour ce faire, elles doivent mettre en place un processus de surveillance continue, fondé sur des données de sources diverses, et un mécanisme de gestion des risques flexible qui permet aux leaders de changer rapidement de cap, au besoin.</p>
+<p class="text-component">Retour</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Retour</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">À mesure que l’environnement de risque évolue, les entreprises doivent mettre en œuvre une approche stratégique de gestion des risques qui les aide à atténuer les risques et à créer de la valeur. Toutes les entreprises, pour concrétiser une telle approche, doivent se concentrer sur l’établissement d’une culture solide de gestion des risques en misant sur l’adhésion et le soutien à tous les niveaux de la hiérarchie. </p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Données et analyses </p>
+<p class="text-component">Les entreprises doivent adopter une approche axée sur les données pour identifier les risques existants et émergents. Elles peuvent utiliser des données internes et externes pour surveiller les perturbations pouvant survenir dans un certain nombre de domaines. Il peut s’agir, notamment, d’utiliser des modèles de gestion des risques de catastrophes pour comprendre l’exposition aux risques climatiques, et des outils d’intelligence artificielle pour surveiller les données relatives aux plaintes des clients. De telles données permettent également aux entreprises de déterminer leur appétit pour le risque et de mettre en œuvre des outils de quantification des risques. Les entreprises doivent investir dans des capacités et des plateformes de données et d’analyses qui les aident à recueillir des renseignements.</p>
+<p class="text-component">Approche fondée sur des scénarios </p>
+<p class="text-component">Les entreprises doivent également utiliser des renseignements fondés sur des scénarios. Cela leur permet de mettre les données en contexte au moyen de divers scénarios sur la façon dont le risque pourrait se présenter. Par exemple, si un bureau se trouve dans une plaine inondable, les scénarios peuvent comprendre le déménagement du bureau, l’adoption d’un programme de prévention des inondations ou l’absence de mesures, ce qui pourrait éventuellement entraîner la reconstruction du bureau en cas de sinistre.</p>
+<p class="text-component">Structure de gouvernance</p>
+<p class="text-component">Les cultures de gestion des risques sont plus efficaces lorsqu’une structure solide de gouvernance et de responsabilisation est en place et intégrée dans le cadre général d’organisation et de gestion de l’entreprise. Il doit y avoir un degré d’influence et de responsabilisation approprié à tous les niveaux. Voici un exemple de structure: </p>
+<p class="text-component">Conseil d’administration</p>
+<p class="text-component">• Examine et confirme   la                   politique et les objectifs de             gestion des risques</p>
+<p class="text-component">Équipe de direction</p>
+<p class="text-component">• Détermine l’appétit pour   le           risque conformément aux             plans d’exploitation et 
+  aux mesures</p>
+<p class="text-component">Employés de première ligne</p>
+<p class="text-component">• Supervisent la mise en œuvre      de la gestion des risques</p>
+<p class="text-component">• Examine et confirme le profil       de risque et l’appétit pour   le          risque de l’organisation</p>
+<p class="text-component">• Harmonise la gouvernance du     risque avec la stratégie globale   et les attentes des actionnaires</p>
+<p class="text-component">• Accepte la responsabilité                 ultime de superviser   la                   gouvernance du risque
+</p>
+<p class="text-component">• Définit les responsabilités en       matière de gestion des risques</p>
+<p class="text-component">• Affecte les ressources et                 surveille le rendement en               matière de gestion des risques</p>
+<p class="text-component">• Communique les principaux          risques et le rendement en            matière de gestion des risques</p>
+<p class="text-component">• Confirment les résultats   de la      gestion des risques</p>
+<p class="text-component">• Déterminent et mettent 
+  en œuvre des pratiques                     exemplaires</p>
+<p class="text-component">• Assurent la surveillance,                  l’expertise et la formation à          l’interne</p>
+<img src="media/f1ae88dc39a014cd5d8a4a2ee9659baa/framework-graphic-pieces-down-red-full.png" alt=""  class="image-component"/>
+<img src="media/94f40869e76c2cebe51b65eb94f71152/framework-graphic-pieces-icon-circle-process-red-full.png" alt=""  class="image-component"/>
+<img src="media/ad598a02f2111fe39164e06180af9b8e/framework-graphic-pieces-process-icon-red-full.png" alt=""  class="image-component"/>
+<p class="text-component">Processus</p>
+<img src="media/186eb463ad76c1af1b464e7de104044c/framework-graphic-pieces-up-red-full.png" alt=""  class="image-component"/>
+<img src="media/5163eca066b7f9c0f3a45deafb11aef9/framework-graphic-pieces-icon-circle-people-red-full.png" alt=""  class="image-component"/>
+<img src="media/3f1b6c22f2b4ac6dc7c64ae99937b24e/framework-graphic-pieces-people-icon-black-full.png" alt=""  class="image-component"/>
+<p class="text-component">Personnel</p>
+<img src="media/6018a72e9422c0e160d6d28c8fb876f5/framework-graphic-pieces-up-gray-full.png" alt=""  class="image-component"/>
+<img src="media/72b354dbbb0cd5f1f20dd06e7244afda/framework-graphic-pieces-icon-circle-people-gray-full.png" alt=""  class="image-component"/>
+<img src="media/aa13fab991faec225333d124081a854e/framework-graphic-pieces-people-icon-grey-full.png" alt=""  class="image-component"/>
+<p class="text-component">Personnel</p>
+<p class="text-component">Plus</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Retour</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/83bfa337039f66403d888d368e8da330/art-cubes-01-full.png" alt=""  class="image-component"/>
+<img src="media/e9ddabe563b0810daea0ed29ae66e696/art-cubes-02-full.png" alt=""  class="image-component"/>
+<img src="media/05e39ead8f679bc5406add1b82032377/art-cubes-03-full.png" alt=""  class="image-component"/>
+<img src="media/7d1f9227f4ac58efe71dae5d151ead83/art-cubes-04-full.png" alt=""  class="image-component"/>
+<img src="media/4a773e58051884bdd80ca80b3257e279/art-cubes-05-full.png" alt=""  class="image-component"/>
+<img src="media/3b10856b12004d23f95d7d1881379e66/art-cubes-06-full.png" alt=""  class="image-component"/>
+<img src="media/6fe65921edf1609a571938742666dbf0/art-cubes-07-full.png" alt=""  class="image-component"/>
+<img src="media/1e661fcf5a0866c4be2550661ed37fb5/art-cubes-08-full.png" alt=""  class="image-component"/>
+<img src="media/cde2aa3ed5f7cd17289a8efa4445a854/art-cubes-09-full.png" alt=""  class="image-component"/>
+<img src="media/311b76a9b26595b86d61500df3d30ec8/art-cubes-10-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

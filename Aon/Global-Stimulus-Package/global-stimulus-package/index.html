@@ -1,0 +1,354 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-global-stimulus-package',
+            issueAliasSlug: 'global-stimulus-package',
+            issue: {"id":350435,"projectId":56647,"slug":"experience-5ed6856305171","name":"Global stimulus package","status":"published","creationDate":"2020-06-02T16:59:15.000Z","lastModifiedDate":"2020-06-03T20:56:25.000Z","deletionDate":null,"firstPublishedDate":"2020-06-03T20:56:38.000Z","wipExperienceVersionId":1171857,"publishedExperienceVersionId":1174233,"createdByMemberId":14154,"primaryIssueAliasId":476411,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5ed685630ef91.jpg","importLinkShared":0,"lastPublishedDate":"2020-06-03T20:56:38.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p957ead6cf83d","title":"Global stimulus package"},
+            docVersion: {"id":1174233,"experienceId":350435,"slug":"experience-version-5ed80e85d7b55","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5ed80e85d7b55.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Global stimulus package","seoMetaKeywords":null,"seoMetaDescription":"Global stimulus package","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5ed80e85d7b63","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/06\/03\/6fcba287d155979fa0fa4bc9ecf4de62\/page-thumbnail.jpg?imageOpt=1&crop=870,673,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-06-03T20:56:37.000Z","modificationDate":"2020-06-03T20:56:37.000Z","publishedDate":"2020-06-03T20:56:37.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto|500|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":500,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|500|normal","variantName":"Medium","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto|700|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":700,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|700|normal","variantName":"Bold","cssFamilyName":"Roboto","api":"Google"},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Global stimulus package Global stimulus package</title>
+
+
+
+        <meta name="description" content="Global stimulus package"/>
+
+    <meta property="og:title" content="Global stimulus package"/>
+        <meta property="og:image" content="media/6fcba287d155979fa0fa4bc9ecf4de62/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Global stimulus package">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/6fcba287d155979fa0fa4bc9ecf4de62/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5ed80e85d7b55.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5ed80e85d7b55",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b28ac8d2acaaffbb6a19c9f47aa9d7c6/asset-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Governments Confront COVID-19’s Economic Toll</p>
+<p class="text-component">Select red countries to learn more</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Explore how several countries are mobilizing 
+to support their citizens and businesses.</p>
+<p class="text-component">All data updated as of June 1, 2020</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Sources</p>
+<img src="media/ff7d60e726414e0c87980de6756899a1/germany-full.png" alt=""  class="image-component"/>
+<img src="media/95f7901bbe0fdaeb8cf2a3554610afb1/japan-full.png" alt=""  class="image-component"/>
+<img src="media/4fcf569cf69df422f46f70f2e83e4624/map-full.png" alt=""  class="image-component"/>
+<img src="media/13cb630c0fa411512b8aef627d3a7e46/united-kingdom-full.png" alt=""  class="image-component"/>
+<img src="media/040f64cac3377f910827153c0113f70a/canada-full.png" alt=""  class="image-component"/>
+<img src="media/36163db007604e5f3b0578ed0b170ca3/united-states-full.png" alt=""  class="image-component"/>
+<p class="text-component">Japan</p>
+<p class="text-component">Total Government Aid: 234 trillion yen ($2.18 trillion)</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Japan entered a recession in May 2020, hit hard by falling exports due to COVID-19 and further challenged by delay of the Olympic Games. Prime Minister Shinzo Abe recently announced further funding for Japan’s largest ever stimulus package. The current package puts Japan's spend at around 40% of its gross domestic product.</p>
+<p class="text-component">Businesses</p>
+<p class="text-component">Individuals</p>
+<p class="text-component">In the latest package, the</p>
+<p class="text-component">117 trillion yen</p>
+<p class="text-component">($1.1 trillion) will be distributed to various business sectors and individuals, including:
+
+Corporate funding
+11.6 trillion yen ($107 billion) in loans to small and mid-sized firms
+
+Medical support 
+About 3 trillion yen ($27 billion) to doctors and nurses treating coronavirus patients; medical supplies and vaccine development</p>
+<p class="text-component">Households</p>
+<p class="text-component">13 trillion yen</p>
+<p class="text-component">($120 billion) Including one-time payouts of 100,000 yen per resident</p>
+<img src="media/d55e227e3a4e149200091cd9eae81768/yen-business-full.png" alt=""  class="image-component"/>
+<img src="media/8bf0978a570e715a821f922c5a208e32/yen-individual-full.png" alt=""  class="image-component"/>
+<p class="text-component">United States</p>
+<p class="text-component">Total Government Aid: $2.4 trillion</p>
+<p class="text-component">Businesses</p>
+<p class="text-component">The Paycheck Protection Program had distributed approximately $500 billion in small-business loans by mid-May.
+
+Additional stimulus funding includes:
+• $25 billion for passenger airlines
+• $4 billion for cargo/air carriers
+• $17 billion for national security providers
+• $454 billion for direct lending
+• Cannot be used for stock buybacks
+• Businesses signing up for the loans must     agree to retain up to 90 percent of their         workforce</p>
+<p class="text-component">Individuals</p>
+<p class="text-component">The United States’ approach has been a combination of different stimulus policies. The Coronavirus Aid, Relief, and Economic Security (CARES) Act was signed into law on March 27.
+
+Among its provisions:</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Stimulus payouts for the general public
+• Individuals earning less than $75,000      receive $1,200
+• Married couples earning less than           $150,000 receive $2,400
+• Families receive an additional $500       per child
+
+Retirement plan changes for individuals diagnosed with COVID-19 or financially hurt by the pandemic
+• Limits on loans from qualified                 retirement plans are increased from       $50,000 to $100,000 or 100 percent of   the plan participants vested account       balance, whichever is less. Loans             must be made within 180 days of the     enactment of the CARES Act
+• Provides relief from the 10 percent         additional tax on early distributions for   coronavirus-related distributions of up   to $100,000</p>
+<p class="text-component">Expands some aspects of health coverage
+• Group health plans must cover testing
+  for COVID-19 without cost-sharing,                 prior authorization or medical management
+• Plans must provide cost-free coverage of     any “qualifying coronavirus preventive             service”
+
+Changes to state-run unemployment insurance system:
+• $600 increase to the weekly benefit
+• 13-week extension of eligibility, to 
+  39 weeks total
+• COVID-19 is added as a reason for                 benefit eligibility
+
+Student loan support
+• Expands Section 127 of the Internal               Revenue Code to allow employers to               provide student loan repayment                       benefits to employees, excluded from             employee’s income. Payments cannot             exceed $5,250 and must be made by             December 31, 2020.</p>
+<img src="media/88db8f279116596949070e45a94da69c/us-icons-full.png" alt=""  class="image-component"/>
+<p class="text-component">United Kingdom</p>
+<p class="text-component">Total Government Aid: £123 billion ($150 billion)</p>
+<p class="text-component">Businesses</p>
+<p class="text-component">The Future Fund is a £1.25 billion ($1.5 billion) government business support package
+
+£500 million investment fund for 
+high-growth companies impacted by the crisis, made up of funding from government and the private sector.
+
+Small and medium-size enterprises focusing on research and development will also benefit from £750 million of grants and loans.</p>
+<p class="text-component">Self-Employed Individuals</p>
+<p class="text-component">The U.K.’s pandemic relief efforts cover businesses, their employees and self-employed individuals. As of May 2020, the U.K. government is paying the wages of a quarter of the U.K. workforce.</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">The Coronavirus Job Retention Scheme (CJRS) extends to end of October 2020
+
+Under CJRS, the government will cover 80 percent of a worker’s wages, up to £2,500 a month, if they are not working but kept on the payroll.</p>
+<p class="text-component">A £10 billion ($12 billion) grant program allows self-employed workers to apply for one-off grants of up to £7,500</p>
+<img src="media/f21ada913055767412a9efc2e37b9735/uk-business-full.png" alt=""  class="image-component"/>
+<img src="media/c3ce8935814a3c82eab447bdc687f21b/uk-individuals-full.png" alt=""  class="image-component"/>
+<img src="media/0d881248e75543655ad99e6ef49a4341/uk-piechart-full.png" alt=""  class="image-component"/>
+<p class="text-component">Germany</p>
+<p class="text-component">Total Government Aid: €750 billion (~ $815 billion)</p>
+<p class="text-component">Large Corporations</p>
+<p class="text-component">($110 billion) to recapitalize and buy stakes in corporations affected by the virus</p>
+<p class="text-component">($55 billion) in grants for those affected by the pandemic, with direct payments of up to €15,000</p>
+<p class="text-component">Small Businesses & Self-Employed Individuals </p>
+<p class="text-component">Germany's economic strategy has included direct measures to recapitalize and buy stakes in corporations affected by the virus, as well as direct grants to smaller businesses. In addition, the government is taking a long-term approach, granting more government power to veto foreign purchases and provide funding for new and fast-growing industries such as artificial intelligence and clean energy.</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">€100 billion</p>
+<p class="text-component">€50 billion</p>
+<img src="media/e1632dc998a799cc912baf1d9ae2a280/germany-largecorp-full.png" alt=""  class="image-component"/>
+<img src="media/6efedd53e98b8a692f493a84cd910c23/germany-smallbusiness-full.png" alt=""  class="image-component"/>
+<p class="text-component">Canada</p>
+<p class="text-component">Total Government Aid: CA$145.6 billion ($105.7 billion)</p>
+<p class="text-component">Businesses</p>
+<p class="text-component">Government loans available for medium-size to large companies with annual revenues of</p>
+<p class="text-component">($1,459) monthly stimulus payouts for four months</p>
+<p class="text-component">Individuals</p>
+<p class="text-component">The Canadian government’s response has been focused on four fronts: avoiding layoffs, deferring payments, access  to credit and supporting financial stability.</p>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">CA$300 million</p>
+<p class="text-component">CA$2,000 </p>
+<p class="text-component">($219 million) providing they commit to publish annual climate-related disclosure reports</p>
+<img src="media/f50553920473c8119c698382b82e15cd/canada-icon-full.png" alt=""  class="image-component"/>
+<img src="media/f50553920473c8119c698382b82e15cd/canada-icon-full.png" alt=""  class="image-component"/>
+<img src="media/f50553920473c8119c698382b82e15cd/canada-icon-full.png" alt=""  class="image-component"/>
+<img src="media/f50553920473c8119c698382b82e15cd/canada-icon-full.png" alt=""  class="image-component"/>
+<img src="media/37352642c96ce6944a7d5460eed84883/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">https://www.nytimes.com/reuters/2020/05/27/world/asia/27reuters-health-coronavirus-japan-stimulus.html
+https://finance.yahoo.com/news/factbox-key-spending-japans-second-053033441.html</p>
+<p class="text-component">Japan</p>
+<p class="text-component">https://rewards.aon.com/en-us/insights/articles/2020/how-companies-should-prepare-for-expanded-unemployment-health-benefits-in-cares-act
+https://www.bruegel.org/publications/datasets/covid-national-dataset</p>
+<p class="text-component">United States</p>
+<p class="text-component">https://www.bloomberg.com/news/articles/2020-03-24/u-k-virus-stimulus-exceeds-fiscal-boost-during-financial-crisis
+https://www.newsweek.com/heres-how-us-coronavirus-stimulus-package-compares-other-countries-around-world-1497360
+https://www.gov.uk/government/news/billion-pound-support-package-for-innovative-firms-hit-by-coronavirus
+https://www.theguardian.com/money/2020/apr/20/fears-of-flood-as-uks-covid-19-furlough-scheme-opens
+https://www.bruegel.org/publications/datasets/covid-national-dataset</p>
+<p class="text-component">United Kingdom</p>
+<p class="text-component">https://www.theweek.in/news/biz-tech/2020/05/12/how-does-modis-economic-package-compare-to-spending-by-other-countries.html
+https://www.bloombergquint.com/business/germany-s-merkel-is-seizing-chance-to-revolutionize-economy</p>
+<p class="text-component">Germany</p>
+<p class="text-component">https://www.cbc.ca/news/politics/covid-19-economic-programs-1.5543092</p>
+<p class="text-component">Canada</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

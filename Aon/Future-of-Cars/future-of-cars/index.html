@@ -1,0 +1,341 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-future-of-cars',
+            issueAliasSlug: 'future-of-cars',
+            issue: {"id":154385,"projectId":24253,"slug":"experience-5b50f45d66a00","name":"Future of Cars","status":"published","creationDate":"2018-07-19T20:28:13.000Z","lastModifiedDate":"2021-02-09T20:37:16.000Z","deletionDate":null,"firstPublishedDate":"2018-07-25T16:50:24.000Z","wipExperienceVersionId":441361,"publishedExperienceVersionId":445421,"createdByMemberId":6387,"primaryIssueAliasId":214933,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5b50f45d0f8fc.jpg","importLinkShared":0,"lastPublishedDate":"2018-07-25T16:50:24.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-peee25291bf93","title":"Future of Cars"},
+            docVersion: {"id":445421,"experienceId":154385,"slug":"experience-version-5b58aa50654e2","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v12\/experience-version-5b58aa50654e2.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Future of Cars","seoMetaKeywords":"","seoMetaDescription":"Future of Cars","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5b58aa50655ae","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2018\/07\/25\/8998b7c2fd429e9651dcf4b43efc85ff\/page-thumbnail-crop.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2018-07-25T16:50:24.000Z","modificationDate":"2018-07-25T16:50:24.000Z","publishedDate":"2018-07-25T16:50:24.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|03c99cd0-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Sm","familyGuid":"Uploaded|03c9642c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|03c99cd0-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Bd","cssFamilyName":"Stone Sans II ITC Pro -Sdj3SCAs","cssFileURL":"fonts\/66285362-0153-40f6-91e6-c79281684e7b\/stonesansiiitcpro-smbd.css","api":"Uploaded","woffFileURL":null},"Uploaded|119303cf-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Black","familyGuid":"Uploaded|1192cd43-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|119303cf-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Black-Norma-HfEZkGb9","cssFileURL":"fonts\/aeee2fa5-c94b-481d-9021-8b5d223bbdc4\/prelo-slab-black.css","api":"Uploaded","woffFileURL":null},"Uploaded|1bbc9056-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Md","familyGuid":"Uploaded|1bbc605f-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|1bbc9056-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -syWueEJA","cssFileURL":"fonts\/7c8c14a9-1a14-42ba-bb5c-910ad3e2ba02\/stonesansiiitcpro-md.css","api":"Uploaded","woffFileURL":null},"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68":{"familyName":"Stone Sans II ITC Pro Bk","familyGuid":"Uploaded|34d6e68c-85f5-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|34d712fb-85f5-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Stone Sans II ITC Pro -I40Fixvq","cssFileURL":"fonts\/fc3a8e37-86ab-4896-bf29-8b8872b3b353\/stonesansiiitcpro-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Future of Cars Future of Cars</title>
+
+
+
+        <meta name="description" content="Future of Cars"/>
+
+    <meta property="og:title" content="Future of Cars"/>
+        <meta property="og:image" content="media/8998b7c2fd429e9651dcf4b43efc85ff/page-thumbnail-crop.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Future of Cars">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/8998b7c2fd429e9651dcf4b43efc85ff/page-thumbnail-crop.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5b58aa50654e2.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5b58aa50654e2",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Sources</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Technologies of a fully autonomous car: </p>
+<p class="text-component">Levels of automation: </p>
+<p class="text-component">Illustration by Vic Kulihin </p>
+<p class="text-component">“Self-Driving Autonomous cars,” Automotive technologies; “When Driverless Cars Call For Backup” Automotive News, February 18, 2017; The Wired Guide To Self-Driving Cars, Wired, February 2, 2018. </p>
+<p class="text-component">The 6 Levels of Autonomous Driving: Autoweek Explains, Autoweek, September 25, 2017; Self-driving Vehicles: What Are The Six Levels Of Autonomy?, New Atlas, June 7, 2017; What Are Autonomous Car Levels? Levels 1 To 5 Of Driverless Vehicle Tech Explained, Car Magazine, March 23, 2018.</p>
+<img src="media/eaffbcab4b04cd02e8069560bb2793d3/x-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Backup systems</p>
+<p class="text-component">Backup systems for the brakes, steering, sensors and computer chips allow self-driving vehicles to safely pull over in case of equipment failure.</p>
+<p class="text-component">Central computer</p>
+<p class="text-component">The central computer analyzes information from the GPS, sensors and cameras and understands the formal and informal rules of the road. With this information, it decides on  actions such as steering, accelerating and braking. </p>
+<p class="text-component">GPS (global
+ positioning system)</p>
+<p class="text-component">The GPS uses satellites to triangulate the vehicle’s position and combines its readings with those from tachometers, altimeters and gyroscopes for increased accuracy. </p>
+<p class="text-component">Ultrasonic sensors</p>
+<p class="text-component">Ultrasonic sensors assist with tasks such as parking, reversing and maneuvering through traffic by collecting close-range data and determining the velocity and proximity of nearby objects. </p>
+<p class="text-component">Infrared sensors</p>
+<p class="text-component">Infrared sensors help detect lane markings, pedestrians, bikes and other obstacles that might be hard to see in low light or certain weather conditions such as rain or fog.</p>
+<p class="text-component">Radar sensors</p>
+<p class="text-component">Radar sensors use radio waves to determine the distance between obstacles and detect possible collisions. They process this information and can send signals to the car’s central computer to take action such as to brake, accelerate or swerve.</p>
+<p class="text-component">Lidar (light imaging, detection and ranging) </p>
+<p class="text-component">Lidar (or LIDAR, LiDAR, or LADAR) is a surveying method used to measure the distance to a target. It sends out pulses of infrared light and measures how long the pulses take to reflect or travel back after hitting a target. By sending out millions of these pulses per second and compiling the results, lidar creates a 3-D map of its surroundings, essentially in real time. By generating hard data that is fed into a car’s central computer, lidar helps autonomous vehicles predict the behavior of surrounding objects and therefore aids navigation. </p>
+<p class="text-component">Cameras</p>
+<p class="text-component">Cameras take 2-D images and run them through the central computer to build a composite picture of the vehicle’s surroundings. These cameras read traffic lights; recognize lane markings and road signs; detect peripheral movement such as from pedestrians and other objects; and, like the human eye, can gauge depths. </p>
+<img src="media/7e03624b6fe361a33ca470efe3812d7d/asset-11-full.png" alt=""  class="image-component"/>
+<img src="media/d4f7d17b41189f5ff9332a3e225538ed/asset-12-full.png" alt=""  class="image-component"/>
+<img src="media/0bbb48f0edbbb179dd1f2243dfd7015b/asset-10-full.png" alt=""  class="image-component"/>
+<img src="media/a6994a4c052d336b053318e3c6ccfa99/asset-13-full.png" alt=""  class="image-component"/>
+<img src="media/ea349ead922a982b856ed07c199444c1/asset-8-full.png" alt=""  class="image-component"/>
+<img src="media/25637456c8eaf19d4cc7fa442e20174f/asset-7-full.png" alt=""  class="image-component"/>
+<img src="media/b8e4b4d04e297c01852e359773eba698/asset-9-full.png" alt=""  class="image-component"/>
+<img src="media/dd831acf73ac80a41730c6e8cc8cb0c9/asset-5-full.png" alt=""  class="image-component"/>
+<img src="media/a9d6df8c4aa793b5b31c5dce4bb48a20/asset-6-full.png" alt=""  class="image-component"/>
+<img src="media/a9d6df8c4aa793b5b31c5dce4bb48a20/asset-6-full.png" alt=""  class="image-component"/>
+<img src="media/a9d6df8c4aa793b5b31c5dce4bb48a20/asset-6-full.png" alt=""  class="image-component"/>
+<img src="media/a9d6df8c4aa793b5b31c5dce4bb48a20/asset-6-full.png" alt=""  class="image-component"/>
+<img src="media/a9d6df8c4aa793b5b31c5dce4bb48a20/asset-6-full.png" alt=""  class="image-component"/>
+<img src="media/a9d6df8c4aa793b5b31c5dce4bb48a20/asset-6-full.png" alt=""  class="image-component"/>
+<img src="media/608ac6e9e2571efeb5e6a5d038679d7c/camera-range-full.png" alt=""  class="image-component"/>
+<img src="media/e9845f5daa835b08ff880ae300e20d4f/front-sensors-full.png" alt=""  class="image-component"/>
+<img src="media/0a71cfd519668d3f71887eb387d18fac/1frontmost-background-car-full.png" alt=""  class="image-component"/>
+<img src="media/85fc0fed50e54fb03640bbd170d12b0e/1main-car-full.png" alt=""  class="image-component"/>
+<img src="media/ef9138bc30594a1fe92d07bea8443e77/back-sensors-behind-car-full.png" alt=""  class="image-component"/>
+<img src="media/7726ffdff44351e39d46e4173d6d4bdd/backmost-cars-full.png" alt=""  class="image-component"/>
+<img src="media/cf5cf7131295a1b175133c65a6f9e909/asset-lidar2-full.png" alt=""  class="image-component"/>
+<img src="media/088ea5f4d07fac6fe4dc22aa9881e199/asset-lidar-full.png" alt=""  class="image-component"/>
+<img src="media/a20f99db9c095e4ab84547aa4b98dd15/road-stripes-full.png" alt=""  class="image-component"/>
+<p class="text-component">Click here for sensor ranges</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Click here for camera range</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Click here for LIDAR range</p>
+<img src="media/303d7a93cf6ee45bd6308cb7565edc10/asset-10-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Select red areas on car for more information</p>
+<p class="text-component">—Mike Stankard, Automotive Practice Leader, Aon</p>
+<p class="text-component">“The data within the black-box technology of these vehicles will bring more certainty in determining each vehicle’s contribution to a crash event, which can considerably accelerate claim resolution and reduce unnecessary legal costs.”</p>
+<p class="text-component">Technologies for fully autonomous car diagram</p>
+<p class="text-component">Full automation</p>
+<p class="text-component">5</p>
+<img src="media/5d52abc65fa6361cd6cc98c731fab94b/asset-6-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">High automation</p>
+<p class="text-component">4</p>
+<img src="media/01e79cfbef8e456000df6de3919ed45a/asset-5-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Conditional automation </p>
+<p class="text-component">3</p>
+<img src="media/1171f73c6df182d1288499bba398bf9f/asset-4-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Partial automation</p>
+<p class="text-component">2</p>
+<img src="media/52dc87a04dd36f2120b1628ba853e3b5/asset-3-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Driver assistance </p>
+<p class="text-component">1</p>
+<img src="media/d5e3773b2a771bb52bc0ec42d8423af8/asset-2-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">No automation </p>
+<p class="text-component">0</p>
+<img src="media/e7e326f548d4092fb34c701b1ed6d44b/asset-1-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Vehicle fully automated; no human driver needed</p>
+<p class="text-component">Full automation</p>
+<img src="media/5d52abc65fa6361cd6cc98c731fab94b/asset-6-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Vehicle can fully drive itself and stop and park; humans can drive if desired, and human assistance might be needed in certain situations</p>
+<p class="text-component">High automation</p>
+<img src="media/01e79cfbef8e456000df6de3919ed45a/asset-5-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Vehicle can fully control some modes such as steering, speed, and road monitoring; human driver only needed when system requires assistance</p>
+<p class="text-component">Conditional automation </p>
+<img src="media/1171f73c6df182d1288499bba398bf9f/asset-4-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">In certain conditions, vehicle can control multiple tasks simultaneously such as speed and steering; otherwise human fully responsible</p>
+<p class="text-component">Partial automation</p>
+<img src="media/52dc87a04dd36f2120b1628ba853e3b5/asset-3-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Vehicle assists with certain tasks one at a time, such as steering, speed, or park assist; otherwise humans fully responsible </p>
+<p class="text-component">Driver assistance </p>
+<img src="media/d5e3773b2a771bb52bc0ec42d8423af8/asset-2-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Humans fully responsible for vehicle </p>
+<p class="text-component">No automation </p>
+<img src="media/e7e326f548d4092fb34c701b1ed6d44b/asset-1-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">The future</p>
+<img src="media/bcfeac2b552faf81cc919d3377e9f8f3/asset-8-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Where we are today</p>
+<img src="media/be1fe83f00490564f1685839de855452/asset-7-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Full automation</p>
+<p class="text-component">5</p>
+<img src="media/5d52abc65fa6361cd6cc98c731fab94b/asset-6-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">High automation</p>
+<p class="text-component">4</p>
+<img src="media/01e79cfbef8e456000df6de3919ed45a/asset-5-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Conditional automation </p>
+<p class="text-component">3</p>
+<img src="media/1171f73c6df182d1288499bba398bf9f/asset-4-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Partial automation</p>
+<p class="text-component">2</p>
+<img src="media/52dc87a04dd36f2120b1628ba853e3b5/asset-3-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Driver assistance </p>
+<p class="text-component">1</p>
+<img src="media/d5e3773b2a771bb52bc0ec42d8423af8/asset-2-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">No automation </p>
+<p class="text-component">0</p>
+<img src="media/e7e326f548d4092fb34c701b1ed6d44b/asset-1-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Click levels for more information</p>
+<p class="text-component">—Jillian Slyfield, Digital Economy Practice Leader, Risk Consulting and Insurance Services, Aon </p>
+<p class="text-component">“We’re not looking at an overnight change to driverless cars. Human drivers will likely 
+intermix with autonomous vehicles on the road, and there will be various stages toward full autonomy.” </p>
+<p class="text-component">Levels of automation</p>
+<p class="text-component">An overview of autonomous cars</p>
+<img src="media/b28ac8d2acaaffbb6a19c9f47aa9d7c6/asset-1-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

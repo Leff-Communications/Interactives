@@ -1,0 +1,362 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.0',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'aon-risk-culture',
+            issueAliasSlug: 'risk-culture-1-english',
+            issue: {"id":443983,"projectId":68857,"slug":"experience-602c2087876f7","name":"Risk culture","status":"published","creationDate":"2021-02-16T19:44:07.000Z","lastModifiedDate":"2021-09-29T04:35:49.000Z","deletionDate":null,"firstPublishedDate":"2021-02-16T19:44:40.000Z","wipExperienceVersionId":1567414,"publishedExperienceVersionId":1568181,"createdByMemberId":14154,"primaryIssueAliasId":608315,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-602c2086b6071.jpg","importLinkShared":0,"lastPublishedDate":"2021-02-16T23:34:55.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p80fb409a2d28","title":"Risk culture"},
+            docVersion: {"id":1568181,"experienceId":443983,"slug":"experience-version-602c569f9db72","loadLowRes":0,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-602c569f9db72.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Risk culture","seoMetaKeywords":"","seoMetaDescription":"Risk culture","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-602c569f9db9d","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/02\/16\/23c065ff967418049ca5292179afbaf4\/page-thumbnail.jpg?imageOpt=1&crop=765,659,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-02-16T23:34:55.000Z","modificationDate":"2021-02-16T23:34:55.000Z","publishedDate":"2021-02-16T23:34:55.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|0f545667-a50d-11ea-8f81-1211e90532b6":{"familyName":"Prelo Slab Light","familyGuid":"Uploaded|0f5386ff-a50d-11ea-8f81-1211e90532b6","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|0f545667-a50d-11ea-8f81-1211e90532b6","variantName":"Normal","cssFamilyName":"Prelo Slab Light-Norma-E20kuTSS","cssFileURL":"fonts\/6497ee10-29f5-499b-abfa-f7c4b3ae4c7a\/prelo-slab-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Bold","familyGuid":"Uploaded|e771871d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|e771ad90-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Bold-Normal-Xh5QvLxW","cssFileURL":"fonts\/82692fd8-d2b4-427e-9749-50911118169d\/prelo-slab-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68":{"familyName":"Prelo Slab Book","familyGuid":"Uploaded|f32c111d-85f4-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":750,"variantGuid":"Uploaded|f32c5f3e-85f4-11e8-88f3-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Prelo Slab Book-Normal-v4hLrvUR","cssFileURL":"fonts\/86998572-74b8-42ba-90e6-17ef2494edf1\/prelo-slab-book.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":false,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Risk culture Risk culture</title>
+
+
+
+        <meta name="description" content="Risk culture"/>
+
+    <meta property="og:title" content="Risk culture"/>
+        <meta property="og:image" content="media/23c065ff967418049ca5292179afbaf4/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Risk culture">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/23c065ff967418049ca5292179afbaf4/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-602c569f9db72.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_602c569f9db72",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd693181f1768946a1d497b9c1b8aa8e.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">The Risk Management Move to Make Right 
+Now: Building a Risk Culture</p>
+<p class="text-component">Amid the chaos of 2020, organizations are rewriting their playbooks for how to anticipate and manage vulnerabilities. </p>
+<p class="text-component">Ask workplace professionals about how 2020 treated 
+their firms, and chances are their answer will include the word “exhaustion.” Businesses, like individuals, have been put through the ringer over the past year as the COVID-19 pandemic raged. Leaders made hard decisions on staffing, operations and balance sheets in quick – and not to mention remote – situations. </p>
+<img src="media/015f3cc24a34344f6df4fba0281a2027/image.svg" alt=""  class="image-component"/>
+<img src="media/041ad2bf2ab6562e82abc7568bf9af0a/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<p class="text-component">The swift and significant shifts of 2020 have pushed companies to think differently about risk. In a recent report, 68% of senior leaders surveyed said that the pandemic exposed new risks and vulnerabilities that require a significant change in how they think about the future.  
+
+One of those changes should be a deeper focus on building a risk culture – an area many companies still view as a low-priority agenda item. In a 2019 global risk management survey, only 20% of risk managers said they use risk modeling, and 10% said they have no formalized process in place to identify risks.  
+
+Organizations can measure their risk maturity across specific parameters to understand which areas they should prioritize — a crucial step for organizations operating in an environment where cost management is critical. Analyzing maturity can also help firms understand where their gaps are and what roles each person in an organization should play in risk culture. By doing this, the payoff is clear: Research has shown there are strong relationships between an organization’s Risk Maturity Rating and its performance. Organizations with higher risk maturity generally see stronger stock-price performance, reduced-stock price volatility over time and stronger return-on-equity performance. </p>
+<p class="text-component">Companies can create a framework for action focused on several core areas:
+</p>
+<img src="media/186eb463ad76c1af1b464e7de104044c/framework-graphic-pieces-up-red-full.png" alt=""  class="image-component"/>
+<img src="media/6018a72e9422c0e160d6d28c8fb876f5/framework-graphic-pieces-up-gray-full.png" alt=""  class="image-component"/>
+<img src="media/5163eca066b7f9c0f3a45deafb11aef9/framework-graphic-pieces-icon-circle-people-red-full.png" alt=""  class="image-component"/>
+<img src="media/72b354dbbb0cd5f1f20dd06e7244afda/framework-graphic-pieces-icon-circle-people-gray-full.png" alt=""  class="image-component"/>
+<img src="media/aa13fab991faec225333d124081a854e/framework-graphic-pieces-people-icon-grey-full.png" alt=""  class="image-component"/>
+<img src="media/3f1b6c22f2b4ac6dc7c64ae99937b24e/framework-graphic-pieces-people-icon-black-full.png" alt=""  class="image-component"/>
+<img src="media/b5d72eeda78a675d1a98a9d14dd17710/framework-graphic-pieces-down-gray-full.png" alt=""  class="image-component"/>
+<img src="media/7138b67c6b1984b920982b3182d3a60f/framework-graphic-pieces-icon-circle-process-grey-full.png" alt=""  class="image-component"/>
+<img src="media/a44c0e96153c6c8a73464a1615466f1c/framework-graphic-pieces-process-icon-gray-full.png" alt=""  class="image-component"/>
+<img src="media/6018a72e9422c0e160d6d28c8fb876f5/framework-graphic-pieces-up-gray-full.png" alt=""  class="image-component"/>
+<img src="media/186eb463ad76c1af1b464e7de104044c/framework-graphic-pieces-up-red-full.png" alt=""  class="image-component"/>
+<img src="media/40812bf210c6c5f14e9a7f5daba08242/framework-graphic-pieces-icon-circle-information-grey-full.png" alt=""  class="image-component"/>
+<img src="media/baad5ff50409f439ad4ed919823be3c1/framework-graphic-pieces-icon-circle-information-red-full.png" alt=""  class="image-component"/>
+<p class="text-component">Click icons for more information</p>
+<img src="media/df7afabc4a01a891ff00e015ce79fb38/framework-graphic-pieces-information-icon-grey-full.png" alt=""  class="image-component"/>
+<img src="media/ed5dca8c8cfa0e239aa2e73965ef1c90/framework-graphic-pieces-information-icon-red-full.png" alt=""  class="image-component"/>
+<img src="media/b5d72eeda78a675d1a98a9d14dd17710/framework-graphic-pieces-down-gray-full.png" alt=""  class="image-component"/>
+<img src="media/f1ae88dc39a014cd5d8a4a2ee9659baa/framework-graphic-pieces-down-red-full.png" alt=""  class="image-component"/>
+<img src="media/53b99e788cc272ca1abdc44d4bbbc93c/framework-graphic-pieces-icon-circle-influence-grey-full.png" alt=""  class="image-component"/>
+<img src="media/0fad83da822fe733dabf1d3c73a1fbf9/framework-graphic-pieces-icon-circle-influence-red-full.png" alt=""  class="image-component"/>
+<img src="media/6c196f53acbcb9e0be5999213eb2b186/framework-graphic-pieces-influence-icon-grey-full.png" alt=""  class="image-component"/>
+<img src="media/db47f70be26e030a883225765df036f1/framework-graphic-pieces-influence-icon-red-full.png" alt=""  class="image-component"/>
+<p class="text-component">People</p>
+<p class="text-component">People</p>
+<p class="text-component">Process</p>
+<p class="text-component">Information</p>
+<p class="text-component">Information</p>
+<p class="text-component">Influence</p>
+<p class="text-component">Influence</p>
+<p class="text-component">Risk needs to have a seat in the C-suite. Risk managers should liaise with executives to understand business strategy and connect objectives and desired outcomes to risk strategy. Senior executives should also help facilitate key risk management processes. </p>
+<p class="text-component">Executive-leadership discussions
+</p>
+<p class="text-component">In addition to senior executives, a mix of key stakeholders, such as board members and employees from different business units, should participate in developing risk management strategies, processes and policies to ensure ownership and accountability exists across the business. Setting regular times for stakeholders to convene will facilitate better communication and provide greater visibility into risk issues. It’s also important that risk leaders make clear which risks affect each business function so that buy-in and participation come from across the organization. </p>
+<p class="text-component">Stakeholder participation</p>
+<p class="text-component">Most companies’ risk plans break down because there isn’t enough ownership and accountability both at the leadership level and on the frontline. All employees need to understand their role in risk management. Risk leaders should provide regular trainings, risk summits and briefings to employees to create a shared understanding of risk and expectations. </p>
+<p class="text-component">Frontline involvement</p>
+<p class="text-component">Creating a risk management mindset and promoting best practice risk management behaviors across the organization is important – every employee should be able to make decisions through the lens of risk. Because many companies fail when there isn’t accountability across the organization, continually reinforcing those mindsets is critical. To that end, companies should have rewards and incentives for compliance built into their organizational structure, and provide ongoing training and education for employees. Many companies turn to change management processes, including this four-part influence model, to help increase the likelihood of success in changing mindsets and behaviors.   </p>
+<p class="text-component">Mindsets and behaviors</p>
+<p class="text-component">Risk-based decision making</p>
+<p class="text-component">Companies need to incorporate risk considerations into decision making and governance. They should use data on financial, operational, and reputational risks to fully understand the impact of their business decisions. They should also use scenario-based approaches to help separate predictions or intended outcomes from actual behaviors or outcomes. This will help ensure that risk perceptions, versus actual degree of risk, don’t cloud decision making. </p>
+<p class="text-component">Risk communication</p>
+<p class="text-component">Transparency is a key to a successful risk culture. Conversations about risks at various levels and how different types of risk impact the organization should be encouraged. Leadership should provide honest commentary about risk and how the company addresses it. All communication related to risk should avoid jargon and use everyday language. Companies should also be thoughtful and targeted in their communications strategy, identifying the appropriate channels to connect with audiences across their organization — for instance, older employees may prefer face-to-face contact, while millennials may prefer text or email. Doing so will help ensure risk communication reaches and engages employees.</p>
+<p class="text-component">More</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Frontline involvement</p>
+<p class="text-component">One element of a strong risk culture is the move from focusing on risk prevention and mitigation to leveraging risk and risk management options that extract value and help build resilience. Simply put, risk is part of everyday business. This proactive, strategic risk strategy requires a sophisticated enterprise risk management approach, and key tenets of risk culture can help bring it to life. When a company moves from having a reactive risk plan that results in only addressing risk after the fact, to one in which they upgrade practices to reduce exposure before a loss occurs, it can build respect and credibility with customers and peers.  </p>
+<p class="text-component">Reporting</p>
+<p class="text-component">In a strong risk culture, companies measure outcomes and accountability, and put routine risk reporting in place. The reporting should be shared throughout the organization for greater transparency. In addition to reporting on what has been done and quantifying mitigated risk, the reporting should unveil areas for improvement and opportunity to strengthen the risk strategy. Companies can use a number of reporting tools that provide customizable reports to gather the information they need more quickly and methodically.</p>
+<p class="text-component">More</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Monitor and move with agility</p>
+<p class="text-component">Risks vary in terms of types; an approach to natural disasters, for example, looks 
+very different from an approach to cybersecurity. As such, the more firms can calibrate to the current environment, the better. For example, cyber risk models may be 
+up-to-date, but many companies haven’t factored in the giant work-from-home sweep that abruptly took place in 2020. Companies need to have an agile posture when it comes to risks, which are constantly evolving. To achieve that, they should have a continuous monitoring process, pulling data from a number of sources, and a flexible risk management operation that allows leaders to shift course quickly when needed.</p>
+<p class="text-component">Back</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">As the risk environment changes, companies should implement a strategic enterprise risk management approach that helps them mitigate risk and create value. To make that a reality, all companies should focus on building a strong risk culture with buy-in and support from the top down.  </p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Data and analytics</p>
+<p class="text-component">Companies should take a data-driven approach to identifying existing and emerging risks. They can use both internal and external data to monitor potential disruption in a number of areas. Some examples include using catastrophe models to understand exposure to climate risks and AI-based tools to monitor customer-complaint data. Such data will also help firms determine their risk appetite and implement risk-quantification tools. Companies should invest both in data and analytics capabilities and platforms that aid in uncovering insights.</p>
+<p class="text-component">Scenario-based approach</p>
+<p class="text-component">Firms should also rely on scenario-based information, which can provide context to data by developing different scenarios as to how risk could play out. For example, if an office is in a floodplain, scenarios could include moving the office, reinforcing it with flood-proofing, or doing nothing and potentially needing to rebuild the office in the event of a loss.</p>
+<p class="text-component">Governance structure </p>
+<p class="text-component">Risk cultures are most effective when there is a strong governance and accountability structure in place, built into the overall organizational and managerial structure. There should be appropriate influence and responsibility at each level. A sample structure could look like this: </p>
+<p class="text-component">Board of directors</p>
+<p class="text-component">• Reviews and confirms risk   
+   management policy and 
+   objectives
+</p>
+<p class="text-component">Leadership team</p>
+<p class="text-component">• Develops risk appetite 
+  consistent with operating 
+  plans, metrics</p>
+<p class="text-component">Frontline employees</p>
+<p class="text-component">• Oversee risk management 
+  implementation</p>
+<p class="text-component">• Reviews and confirms 
+  organization’s risk profile 
+  and risk appetite
+
+</p>
+<p class="text-component">• Aligns risk governance with
+   overall strategy and
+   shareholder expectations
+
+</p>
+<p class="text-component">• Accepts ultimate 
+  responsibility for overseeing 
+  risk governance
+</p>
+<p class="text-component">• Determines risk management
+  responsibilities</p>
+<p class="text-component">• Allocates resources and 
+  monitors risk management
+  performance</p>
+<p class="text-component">• Discloses key risks and risk
+  management performance</p>
+<p class="text-component">• Confirm risk management 
+  results</p>
+<p class="text-component">• Identify and implement 
+  best practices</p>
+<p class="text-component">• Provide internal oversight, 
+  expertise and training</p>
+<img src="media/f1ae88dc39a014cd5d8a4a2ee9659baa/framework-graphic-pieces-down-red-full.png" alt=""  class="image-component"/>
+<img src="media/94f40869e76c2cebe51b65eb94f71152/framework-graphic-pieces-icon-circle-process-red-full.png" alt=""  class="image-component"/>
+<img src="media/ad598a02f2111fe39164e06180af9b8e/framework-graphic-pieces-process-icon-red-full.png" alt=""  class="image-component"/>
+<p class="text-component">Process</p>
+<img src="media/186eb463ad76c1af1b464e7de104044c/framework-graphic-pieces-up-red-full.png" alt=""  class="image-component"/>
+<img src="media/5163eca066b7f9c0f3a45deafb11aef9/framework-graphic-pieces-icon-circle-people-red-full.png" alt=""  class="image-component"/>
+<img src="media/3f1b6c22f2b4ac6dc7c64ae99937b24e/framework-graphic-pieces-people-icon-black-full.png" alt=""  class="image-component"/>
+<p class="text-component">People</p>
+<img src="media/6018a72e9422c0e160d6d28c8fb876f5/framework-graphic-pieces-up-gray-full.png" alt=""  class="image-component"/>
+<img src="media/72b354dbbb0cd5f1f20dd06e7244afda/framework-graphic-pieces-icon-circle-people-gray-full.png" alt=""  class="image-component"/>
+<img src="media/aa13fab991faec225333d124081a854e/framework-graphic-pieces-people-icon-grey-full.png" alt=""  class="image-component"/>
+<p class="text-component">People</p>
+<p class="text-component">More</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back</p>
+<img src="media/e2cec50695d2c8e61e56c5000127f24a/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/83bfa337039f66403d888d368e8da330/art-cubes-01-full.png" alt=""  class="image-component"/>
+<img src="media/e9ddabe563b0810daea0ed29ae66e696/art-cubes-02-full.png" alt=""  class="image-component"/>
+<img src="media/05e39ead8f679bc5406add1b82032377/art-cubes-03-full.png" alt=""  class="image-component"/>
+<img src="media/7d1f9227f4ac58efe71dae5d151ead83/art-cubes-04-full.png" alt=""  class="image-component"/>
+<img src="media/4a773e58051884bdd80ca80b3257e279/art-cubes-05-full.png" alt=""  class="image-component"/>
+<img src="media/3b10856b12004d23f95d7d1881379e66/art-cubes-06-full.png" alt=""  class="image-component"/>
+<img src="media/6fe65921edf1609a571938742666dbf0/art-cubes-07-full.png" alt=""  class="image-component"/>
+<img src="media/1e661fcf5a0866c4be2550661ed37fb5/art-cubes-08-full.png" alt=""  class="image-component"/>
+<img src="media/cde2aa3ed5f7cd17289a8efa4445a854/art-cubes-09-full.png" alt=""  class="image-component"/>
+<img src="media/311b76a9b26595b86d61500df3d30ec8/art-cubes-10-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
