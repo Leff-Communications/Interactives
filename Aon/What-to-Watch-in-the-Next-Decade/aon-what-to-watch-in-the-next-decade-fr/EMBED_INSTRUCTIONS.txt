@@ -1,0 +1,10 @@
+Scrolling - For an experience that expands to the size of the container you include it in and scrolls on overheight pages, use this embed code:
+
+<div style='position: relative;width: auto;padding: 0 0 52.78%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none' id="experience-617313c00306e" data-aspectRatio="1.89473684" data-mobile-aspectRatio="0.84375"><iframe allowfullscreen src='aon-what-to-watch-in-the-next-decade-fr/index.html' style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 100%;width: 100%' frameborder='0' class='ceros-experience' title='What to Watch in the Next Decade-FR'></iframe></div><script type="text/javascript" src="aon-what-to-watch-in-the-next-decade-fr/assets/scroll-proxy.min.js" data-ceros-origin-domains=""></script>
+
+
+Full height - For an experience that expands to the height of overheight pages and does not scroll, use this embed code:
+
+<div style='position: relative;width: auto;padding: 0 0 111.11%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none' id="experience-617313c00306e" data-aspectRatio="0.9" data-mobile-aspectRatio="0.14025974"><iframe allowfullscreen src='aon-what-to-watch-in-the-next-decade-fr/index.html?heightOverride=1000&mobileHeightOverride=3850' style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 1px;width: 1px;min-height: 100%;min-width: 100%' frameborder='0' class='ceros-experience' title='What to Watch in the Next Decade-FR' scrolling='no'></iframe></div><script type="text/javascript" src="aon-what-to-watch-in-the-next-decade-fr/assets/scroll-proxy.min.js" data-ceros-origin-domains=""></script>
+
+For additional security set the data-ceros-origin-domains attribute on the above script tag to the domain that will serve Ceros experiences on this page (or a comma-separated list if multiple domains).
