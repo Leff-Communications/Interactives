@@ -1,0 +1,907 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-trend-report',
+            issueAliasSlug: 'midyear-trend-report-2021',
+            issue: {"id":502374,"projectId":77682,"slug":"experience-60e5b916af450","name":"Midyear trend report 2021","status":"published","creationDate":"2021-07-07T14:24:22.000Z","lastModifiedDate":"2023-03-14T02:28:00.000Z","deletionDate":null,"firstPublishedDate":"2021-07-19T22:22:49.000Z","wipExperienceVersionId":1821522,"publishedExperienceVersionId":1841362,"createdByMemberId":14154,"primaryIssueAliasId":695895,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-60e5b9162d428.jpg","importLinkShared":0,"lastPublishedDate":"2021-07-19T22:22:49.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pb056a9e5b6c9","title":"Midyear trend report 2021"},
+            docVersion: {"id":1841362,"experienceId":502374,"slug":"experience-version-60f5fb3910787","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-60f5fb3910787.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Leff midyear trend report 2021","seoMetaKeywords":"","seoMetaDescription":"Leff midyear trend report 2021","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb391079f","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/2295e86fa50b796386634f8fc81017ea\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb39186a5","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/56b07028cf2452499e19193bf666ca5c\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb3921f07","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/016fb9b9ab70310e7305989dfed3609b\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb392c1ad","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/d7b15af1ff959c4b094685d4f047cd61\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb39360ad","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/9552bbe7ccd3e86f22d4cd82d62b9f9e\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb394131b","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/6a491255e0e5ec0003070645bb6bb9e2\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-60f5fb394b18e","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/07\/19\/6b178e630c9313a7a0334c1e85a3738f\/page-thumbnail.jpg?imageOpt=1&crop=870,764,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-07-19T22:22:49.000Z","modificationDate":"2021-07-19T22:22:49.000Z","publishedDate":"2021-07-19T22:22:49.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"mobile"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Montserrat|300|italic":{"familyName":"Montserrat","familyGuid":"Google|Montserrat","fontWeight":300,"fontStyle":"italic","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Montserrat|300|italic","variantName":"Light italic","cssFamilyName":"Montserrat","api":"Google"},"Google|Montserrat|300|normal":{"familyName":"Montserrat","familyGuid":"Google|Montserrat","fontWeight":300,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Montserrat|300|normal","variantName":"Light","cssFamilyName":"Montserrat","api":"Google"},"Google|Montserrat|400|normal":{"familyName":"Montserrat","familyGuid":"Google|Montserrat","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Montserrat|400|normal","variantName":"Normal","cssFamilyName":"Montserrat","api":"Google"},"Google|Montserrat|500|italic":{"familyName":"Montserrat","familyGuid":"Google|Montserrat","fontWeight":500,"fontStyle":"italic","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Montserrat|500|italic","variantName":"Medium italic","cssFamilyName":"Montserrat","api":"Google"},"Google|Montserrat|500|normal":{"familyName":"Montserrat","familyGuid":"Google|Montserrat","fontWeight":500,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Google|Montserrat|500|normal","variantName":"Medium","cssFamilyName":"Montserrat","api":"Google"},"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d38f7e06-df30-11eb-89a1-0ea95f2d8915":{"familyName":"Landmark","familyGuid":"Uploaded|d38f4938-df30-11eb-89a1-0ea95f2d8915","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|d38f7e06-df30-11eb-89a1-0ea95f2d8915","variantName":"Regular","cssFamilyName":"Landmark-Regular-cP1SxA2T","cssFileURL":"fonts\/e8a61445-07f1-47e9-a792-bc7cbd00f950\/landmark-regular.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Midyear trend report 2021 Leff midyear trend report 2021</title>
+
+
+
+        <meta name="description" content="Leff midyear trend report 2021"/>
+
+    <meta property="og:title" content="Midyear trend report 2021"/>
+        <meta property="og:image" content="media/2295e86fa50b796386634f8fc81017ea/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Midyear trend report 2021">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/2295e86fa50b796386634f8fc81017ea/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-60f5fb3910787.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_60f5fb3910787",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/258d62b75fb96361073063643d859b29/leff-tr2021-storytelling-icon-small-v2-full.png" alt=""  class="image-component"/>
+<img src="media/d0821fbd6a014dc6d24e4ccb59d2030e/leff-tr2021-currency-icon-small-v2-full.png" alt=""  class="image-component"/>
+<img src="media/308f517d1bff4585eaa6bcc0e8fadc91/leff-tr2021-infrastructure-icon-small-v2-full.png" alt=""  class="image-component"/>
+<img src="media/ee6f3ac7824908a43ed6117683449388/leff-tr2021-esg-icon-small-v2-full.png" alt=""  class="image-component"/>
+<img src="media/266b078515d988caf55a8e7c251fd7f7/leff-tr2021-gamer-icon-small-v2-full.png" alt=""  class="image-component"/>
+<img src="media/395bc4146622fd9577537d039888a3ed/leff-tr2021-work-icon-tall-v2-full.png" alt=""  class="image-component"/>
+<img src="media/b8dc8ad4e3f05eb7ad07d60f7a55743f/leff-strategy-studio-full.png" alt=""  class="image-component"/>
+<p class="text-component">2021 MIDYEAR</p>
+<p class="text-component">Welcome to our inaugural Leff Trend Report. In this interactive forecast, we’ve highlighted notable trends shaping the business conversation, outstanding content from thought leaders, and several potential story angles to explore. We hope this report helps you elevate your content strategy and advance the conversation in unique and provocative ways.</p>
+<p class="text-component">Elevating Infrastructure</p>
+<p class="text-component">Digital Currency</p>
+<p class="text-component">ESG</p>
+<p class="text-component">How We Work</p>
+<p class="text-component">Everyone’s a Gamer</p>
+<p class="text-component">Corporate Storytelling</p>
+<p class="text-component">TREND
+REPORT</p>
+<img src="media/308f517d1bff4585eaa6bcc0e8fadc91/leff-tr2021-infrastructure-icon-small-v2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Elevating Infrastructure</p>
+<img src="media/d0821fbd6a014dc6d24e4ccb59d2030e/leff-tr2021-currency-icon-small-v2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Digital Currency</p>
+<img src="media/ee6f3ac7824908a43ed6117683449388/leff-tr2021-esg-icon-small-v2-full.png" alt=""  class="image-component"/>
+<p class="text-component">ESG</p>
+<img src="media/395bc4146622fd9577537d039888a3ed/leff-tr2021-work-icon-tall-v2-full.png" alt=""  class="image-component"/>
+<p class="text-component">How We Work</p>
+<img src="media/266b078515d988caf55a8e7c251fd7f7/leff-tr2021-gamer-icon-small-v2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Everyone’s a Gamer</p>
+<img src="media/258d62b75fb96361073063643d859b29/leff-tr2021-storytelling-icon-small-v2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Corporate Storytelling</p>
+<img src="media/b8dc8ad4e3f05eb7ad07d60f7a55743f/leff-strategy-studio-full.png" alt=""  class="image-component"/>
+<p class="text-component">BACK TO TOP</p>
+<img src="media/cb4ae39fb7f1b3a7ce490993d512d8fa/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">2021 MIDYEAR</p>
+<p class="text-component">TREND
+REPORT</p>
+<p class="text-component">Welcome to our inaugural Leff Trend Report. In this interactive forecast, we’ve highlighted notable trends shaping the business conversation, outstanding content from thought leaders, and several potential story angles to explore. We hope this report helps you elevate your content strategy and advance the conversation in unique and provocative ways.</p></div>
+            <div class="page"><img src="media/2811f153f16992f8ec3e25d38b998e17/elevating-infrastructure-title-card-full.png" alt=""  class="image-component"/>
+<p class="text-component">It’s About Time: Elevating Infrastructure</p>
+<img src="media/9725f6c17e74a0a9a82bf1b6eb3668eb/elevating-infrastructure-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">No one would argue that infrastructure is a particularly tantalizing topic. It’s simply a necessity for societies and businesses. Your municipal water system? Glad it works, but unless you’re a water company looking to win a government bid, chances are that system wasn’t on your content radar.  
+
+That might not be the case now, as companies watch thought leadership on infrastructure spill over from technical, niche spaces into mainstream topics of conversation. In the first half of 2021 alone, three major infrastructure-related events generated a lot of buzz:</p>
+<p class="text-component">In February, Winter Storm Uri crippled the Texas power grid, leaving millions without power and causing a scarcity of water, food, and heat. The aging electricity grid was just one issue; the uneven distribution of help and resources was another. </p>
+<p class="text-component">•</p>
+<p class="text-component">We're hoping more companies will put a stake in the ground on how to approach infrastructure with an inclusive, equitable mindset. </p>
+<p class="text-component">About a month later, President Joe Biden unveiled a $2 trillion infrastructure plan that redefines the meaning of infrastructure. It’s not just bridges and highways; it’s the care economy, access to digital technology and broadband, and efforts to address climate change. While the agreement between Biden and US senators that’s expected to hit the Senate floor later in July is smaller than the original proposal—$1.2 trillion over eight years, with about $600 billion in new spending—it shows a modern approach to infrastructure that will have massive implications for the workforce, societal norms, education, and jobs. 
+
+In May, the Colonial Pipeline ransomware attack exposed the vulnerability of infrastructure and how such attacks could be the next big global threat. Hackers already have the ability to shut down water systems, roads, and energy grids, and as infrastructure becomes more tech-driven, those risks will only intensify. </p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">A TEXAS TIGHTROPE</p>
+<p class="text-component">Google search volume popularity  in the United States for the ten-day Texas power crisis in February 2021</p>
+<img src="media/2e5f8167c9a8073adc9fea14299c8329/elevating-infrastructure-exhibit-full.png" alt=""  class="image-component"/>
+<p class="text-component">Google Trends ranks search volume on a scale of 0 to 100, where 0 = too low to gain traction and 100 = peak popularity.</p>
+<p class="text-component">1</p>
+<img src="media/427fd1d22ceb82878e509c4647811ebc/elevating-infrastructure-standouts-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">McKinsey’s Global
+Infrastructure Initiative:
+2021 GII Summit report </p>
+<p class="text-component">A comprehensive synthesis of a meeting of the minds.</p>
+<p class="text-component">KPMG: The changing
+shape of ransomware</p>
+<p class="text-component">An in-depth look at ransomware, expressed primarily through infographics.</p>
+<p class="text-component">World Economic Forum:
+Video: Accessibility &
+Inclusion for All</p>
+<p class="text-component">How infrastructure and mobility design can help the one billion people globally who live with disabilities. </p>
+<p class="text-component">Given the growing role infrastructure plays in our lives, and what appears to be an imminent infrastructure deal, we’re hoping more companies will put a stake in the ground on actionable guidance and analysis on how to approach infrastructure with an inclusive, equitable mindset. Companies can advance the conversation in several ways: </p>
+<p class="text-component">Redefine infrastructure to reflect and support the 21st-century business landscape—digital, global, and increasingly shaped by advances in mobility. 
+
+Weigh in on the implications of the G7's commitment to invest in infrastructure programs to rival China’s One Belt, One Road initiative.
+
+Examine in detail the digital threat to infrastructure and the steps stakeholders must take to future-proof new infrastructure projects.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<img src="media/cfe98cfe0f31f89f583769f16d5e0d74/elevating-infrastructure-next-full.png" alt=""  class="image-component"/>
+<img src="media/62c735c24667fe87a06578bd010edd43/elevating-infrastructure-previous-full.png" alt=""  class="image-component"/>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Previous Trend</p>
+<p class="text-component">Corporate Storytelling</p>
+<p class="text-component">Next Trend</p>
+<p class="text-component">Digital Currency</p>
+<img src="media/6dde895e82867d14cc57e5de3ea610a2/how-to-stay-warm-full.png" alt=""  class="image-component"/>
+<img src="media/943117c3f0e6aaa71e125cef78d1c09e/how-to-thaw-frozen-pipes-full.png" alt=""  class="image-component"/>
+<img src="media/97862afaa872ee787e34845b0f9c42c1/texas-gas-prices-full.png" alt=""  class="image-component"/>
+<img src="media/4f354260065eb7b0ad2f3eda55f887e8/texas-power-grid-failure-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<img src="media/381abecef9e8b859ea844f359a592745/leff-tr2021-infrastructure-desktop-flushright-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<p class="text-component">It’s About Time: Elevating Infrastructure</p>
+<img src="media/a89b2813b7456dc58a32dad51ac02f02/leff-tr2021-infrastructure-mobile-centered-full.png" alt=""  class="image-component"/>
+<img src="media/9725f6c17e74a0a9a82bf1b6eb3668eb/elevating-infrastructure-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">No one would argue that infrastructure is a particularly tantalizing topic. It’s simply 
+a necessity for societies and businesses. Your municipal water system? Glad it works, but unless you’re a water company looking to win a government bid, 
+chances are that system wasn’t on your content radar.  
+
+That might not be the case now, as companies watch thought leadership on infrastructure spill over from technical, niche spaces into mainstream topics of conversation. In the first half of 2021 alone, three major infrastructure-related events generated a lot of buzz:</p>
+<p class="text-component">In February, Winter Storm Uri crippled the Texas power grid, leaving millions without power and causing a scarcity of water, food, and heat. The aging electricity grid was just one issue; the uneven distribution of help and resources was another. </p>
+<p class="text-component">•</p>
+<p class="text-component">We're hoping more companies will put a stake in the ground on how to approach infrastructure with an inclusive, equitable mindset. </p>
+<p class="text-component">About a month later, President Joe Biden unveiled a $2 trillion infrastructure plan that redefines the meaning of infrastructure. It’s not just bridges and highways; it’s the care economy, access to digital technology and broadband, and efforts to address climate change. While the agreement between Biden and U.S. senators that’s expected to hit the Senate floor later in July is smaller than the original proposal—$1.2 trillion over eight years, with about $600 billion in new spending—it shows a modern approach to infrastructure that will have massive implications for the workforce, societal norms, education, and jobs. 
+
+In May, the Colonial Pipeline ransomware attack exposed the vulnerability of infrastructure and how such attacks could be the next big global threat. Hackers already have the ability to shut down water systems, roads and energy grids, and as infrastructure becomes more tech-driven, those risks will only intensify. </p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">A TEXAS TIGHTROPE</p>
+<p class="text-component">Google search volume popularity in the United States for the 10-day Texas power crisis in February 2021</p>
+<p class="text-component">1</p>
+<img src="media/2e5f8167c9a8073adc9fea14299c8329/elevating-infrastructure-exhibit-full.png" alt=""  class="image-component"/>
+<img src="media/6dde895e82867d14cc57e5de3ea610a2/how-to-stay-warm-full.png" alt=""  class="image-component"/>
+<img src="media/943117c3f0e6aaa71e125cef78d1c09e/how-to-thaw-frozen-pipes-full.png" alt=""  class="image-component"/>
+<img src="media/97862afaa872ee787e34845b0f9c42c1/texas-gas-prices-full.png" alt=""  class="image-component"/>
+<img src="media/4f354260065eb7b0ad2f3eda55f887e8/texas-power-grid-failure-full.png" alt=""  class="image-component"/>
+<p class="text-component">Google Trends ranks search volume on a scale of 0 to 100, where 0 = too low to gain traction and 100 = peak popularity.</p>
+<p class="text-component">1</p>
+<p class="text-component">The Standouts</p>
+<p class="text-component">McKinsey’s Global Infrastructure Initiative:
+2021 GII Summit report </p>
+<p class="text-component">A comprehensive synthesis of a meeting of the minds.</p>
+<p class="text-component">KPMG: The changing shape of ransomware</p>
+<p class="text-component">An in-depth look at ransomware, expressed primarily through infographics.</p>
+<p class="text-component">World Economic Forum: Video: Accessibility &
+Inclusion for All</p>
+<p class="text-component">How infrastructure and mobility design can help the one billion people globally who live with disabilities. </p>
+<p class="text-component">Given the growing role infrastructure plays in our lives, and what appears to be an imminent infrastructure deal, we’re hoping more companies will put a stake in the ground on actionable guidance and analysis on how to approach infrastructure with an inclusive, equitable mindset. Companies can advance the conversation in several ways: </p>
+<p class="text-component">Redefine infrastructure to reflect and support the 21st-century business landscape—digital, global, and increasingly shaped by advances in mobility. 
+
+Weigh in on the implications of the 
+G-7’s commitment to invest in infrastructure programs to rival China’s One Belt, One Road initiative.
+
+Examine in detail the digital threat to infrastructure and the steps stakeholders must take to future-proof new infrastructure projects.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<img src="media/bf5a46a537875f04f6204cb88e09e893/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/07e899f7677a80634d108745887ccf47/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<img src="media/bf5a46a537875f04f6204cb88e09e893/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/07e899f7677a80634d108745887ccf47/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/016350a582bf980ee5770a49c449d96f/gamer-title-card-full.png" alt=""  class="image-component"/>
+<p class="text-component">Digital currency:
+fad or future?</p>
+<img src="media/8a8b2be09596f81143221fa57258c9a5/gamer-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Just a few years ago, blockchain was heralded as a game-changing technology on par with email. While many of the industry-specific applications have been slower to materialize than anticipated, cryptocurrency and other digital investment products have stepped in to provide a consistent stream of breaking news and, at times, soap opera–style back-and-forth. 
+
+Depending on the week, headlines either reinforce or undermine the legitimacy and staying power of cryptocurrency, often in head-snapping fashion. Bitcoin went from a digital darling in February—when Elon Musk announced that Tesla would accept it for auto purchases—to a digital devil in May when Musk reversed that decision, because of concerns about the environmental toll of cryptocurrency. (He later split the difference, agreeing to accept bitcoin when miners use clean energy.)</p>
+<img src="media/e8f83f6b9ee51bb0ed27e108f54a7eb8/gamer-previous-full.png" alt=""  class="image-component"/>
+<img src="media/ebaf6bbf9fda285439a412a537e625a1/gamer-next-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Previous Trend</p>
+<p class="text-component">Elevating Infrastructure</p>
+<p class="text-component">Next Trend</p>
+<p class="text-component">ESG</p>
+<p class="text-component">BITCOIN OR BUST</p>
+<p class="text-component">Bitcoin share prices from January 12 through May 22, 2021, $</p>
+<p class="text-component">Overall, cryptocurrencies can feel like a new gold rush. Coinbase has dropped steadily since its debut in April (down about 23 percent by mid-July) while Dogecoin, a meme-based cryptocurrency, has nearly tripled during that same period. Discussions about the future of fiat-based currencies and whether crypto will supplant them raise potentially far-reaching implications. Some large banks, such as JPMorgan Chase and Morgan Stanley, are dipping their toe into the pool, while others have remained on the sidelines. 
+
+To muddy the waters further, NFTs (nonfungible tokens) have arrived on the scene. As a one-of-a-kind digital property, NFTs reside at the intersection of pop culture and speculative investing. Some bands have released new albums as NFTs, Jack Dorsey raised $2.9 million with the sale of his first tweet as an NFT, and the digital artist Beeple set a record with a collage of 5,000 pieces of art for $69 million. People from all corners are seeking to get on the train before it leaves the station—a sign that no one knows whether NFTs are built to last or just the latest fad.</p>
+<img src="media/17ba2beb2f545858e3a65f6f93c7dab5/bitcoin-or-bust-full.png" alt=""  class="image-component"/>
+<img src="media/27b6ccb813f1e76853ac9bd3b2064da5/bitcoin-or-bust-line-full.png" alt=""  class="image-component"/>
+<img src="media/c4e0b45275dc467694f4e1a85bbb8517/bitcoin-or-bust-1-full.png" alt=""  class="image-component"/>
+<img src="media/8fb56155d28d88c775518edd4cf5ba23/bitcoin-or-bust-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">February 8: Tesla announces Bitcoin acceptance</p>
+<p class="text-component">May 13: Elon Musk says Tesla will no longer accept Bitcoin</p>
+<img src="media/4d317be3cb13e63af977beb17e6cb73f/gamer-standouts-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">KPMG: The Balancing
+Act to Securely Sharing
+Content with NFTs </p>
+<p class="text-component">A timely look at considerations for selling NFTs and their futures. </p>
+<p class="text-component">Andreessen Horowitz:
+a16z Podcast: All about NFTs</p>
+<p class="text-component">An episode that breaks down NFTs with the help of a colorful cast of experts. </p>
+<p class="text-component">PwC: China and the race for the
+future of money</p>
+<p class="text-component">A global look at how digital currency could upend the global financial landscape. </p>
+<p class="text-component">These developments highlight the challenges companies face in writing about emerging technologies and their potential value for businesses. Take a positive, boosterish stance and events could quickly prove you wrong. Dismiss the potential and you might appear as if you don’t grasp the power of future applications. To develop relevant pieces that age well, companies can do the following:</p>
+<p class="text-component">Convene expert voices from financial services and central banks to discuss the future of cryptocurrency and define different scenarios for its adoption. 
+
+Put cryptocurrency in perspective by discussing the history and evolution of currency, the gold standard, and the ways in which governments and business have adapted. 
+
+Acknowledge the ambiguity around emerging tech and discuss how uncertainty should be factored into risk management and longer-term strategy.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<img src="media/1a21d4226edff980ab2bcdcf46585edb/leff-tr2021-currency-desktop-flushright-full.png" alt=""  class="image-component"/>
+<p class="text-component">Cryptocurrencies can feel like a new gold rush.</p>
+<p class="text-component">return to main page</p>
+<p class="text-component">Digital currency:
+fad or future?</p>
+<img src="media/ec19167944e1048fe5cba0a1919c6fe8/leff-tr2021-currency-mobile-centered-full.png" alt=""  class="image-component"/>
+<img src="media/8a8b2be09596f81143221fa57258c9a5/gamer-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Just a few years ago, blockchain was heralded as a game-changing technology on par with email. While many of the industry-specific applications have been slower to materialize than anticipated, cryptocurrency and other digital investment products have stepped in to provide a consistent stream of breaking news and, at times, soap opera–style back-and-forth. 
+
+Depending on the week, headlines 
+either reinforce or undermine the legitimacy and staying power of cryptocurrency, often in head-snapping fashion. Bitcoin went from a digital darling in February—when Elon Musk announced that Tesla would accept it for auto purchases—to a digital devil in May when Musk reversed that decision, due to concerns about the environmental toll of
+cryptocurrency. (He later split the difference, agreeing to accept bitcoin when miners use clean energy.)</p>
+<p class="text-component">BITCOIN OR BUST</p>
+<p class="text-component">Bitcoin share prices from January 12 through May 22, 2021, $</p>
+<img src="media/17ba2beb2f545858e3a65f6f93c7dab5/bitcoin-or-bust-full.png" alt=""  class="image-component"/>
+<img src="media/27b6ccb813f1e76853ac9bd3b2064da5/bitcoin-or-bust-line-full.png" alt=""  class="image-component"/>
+<img src="media/c4e0b45275dc467694f4e1a85bbb8517/bitcoin-or-bust-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">February 8: Tesla announces Bitcoin acceptance</p>
+<img src="media/8fb56155d28d88c775518edd4cf5ba23/bitcoin-or-bust-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">May 13: Elon Musk says Tesla will no longer accept Bitcoin</p>
+<img src="media/32cabe299f27e15d10fc91e1151b5b3c/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Cryptocurrencies can feel like a new gold rush.</p>
+<p class="text-component">Overall, cryptocurrencies can feel like a new gold rush. Coinbase has dropped steadily since its debut in April (down about 23 percent by mid-July) while Dogecoin, a meme-based cryptocurrency, has nearly tripled during that same
+period. Discussions about the future of fiat-based currencies and whether crypto will supplant them raise potentially far-reaching implications. Some large banks, such as JPMorgan Chase and Morgan Stanley, are dipping their toe into the pool, while others have remained on the sidelines. 
+
+To muddy the waters further, NFTs (nonfungible tokens) have arrived on the scene. As a one-of-a-kind digital property, NFTs reside at the intersection of pop culture and speculative investing. Some bands have released new albums as NFTs, Jack Dorsey raised $2.9 million with the sale of his first tweet as an NFT, and the digital artist Beeple set a record with a collage of 5,000 pieces of art for $69 million. People from all corners are seeking to get on the train before it leaves the station—a sign that no one knows whether NFTs are built to last or just the latest fad.</p>
+<img src="media/c6dc60060213a9f52f68980ba1b29b56/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">KPMG: The Balancing Act to Securely Sharing
+Content with NFTs</p>
+<p class="text-component">A timely look at considerations for selling NFTs and their futures. </p>
+<p class="text-component">Andreessen Horowitz: a16z Podcast: All about NFTs</p>
+<p class="text-component">An episode that breaks down NFTs with the help of a colorful cast of experts. </p>
+<p class="text-component">PwC: China and the race for the future of money</p>
+<p class="text-component">A global look at how digital currency could upend the global financial landscape. </p>
+<p class="text-component">These developments highlight the challenges companies face in writing about emerging technologies and their potential value for businesses. Take a positive, boosterish stance and events could quickly prove you wrong. Dismiss the potential and you might appear as if you don’t grasp the power of future applications. To develop relevant pieces that age well, companies can:</p>
+<p class="text-component">Convene expert voices from financial services and central banks to discuss the future of cryptocurrency and define different scenarios for its adoption. 
+
+Put cryptocurrency in perspective by discussing the history and evolution of currency, the gold standard, and the ways in which governments and business have adapted. 
+
+Acknowledge the ambiguity around emerging tech and discuss how uncertainty should be factored into risk management and longer-term strategy.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">return to main page</p>
+<img src="media/3c9faef0e406234c19ad61cdacb1afbe/digital-currency-image-2-full.png" alt=""  class="image-component"/>
+<img src="media/fc1e7757e9776318e08dcace4335a33d/digital-currency-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/9ffa8aa650ae9cc423229dc85f27857e/digital-currency-title-card-full.png" alt=""  class="image-component"/>
+<p class="text-component">THE BANDWAGON:
+ESG</p>
+<img src="media/44bc800c2ed601db75b64b9a4c9ac4e5/digital-currency-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/6e64685843b2d13dc9b3775ed00ab9d9/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">It wasn’t long ago that corporate social responsibility and ESG (environmental, social, and governance) initiatives moved from a check-the-box exercise to a foundational element in high-performing companies. By 2019, 93 percent of the world’s largest companies reported on their ESG activities, and investment titans such as BlackRock’s Larry Fink noted that “climate risk is investment risk” in annual letters to shareholders. What’s more, an S&P 500 analysis found that 19 ESG exchange-traded and mutual funds beat out the S&P 500 during the pandemic, further reinforcing the real financial benefits of companies that prioritize ESG activities. </p>
+<p class="text-component">Relegating the discussion of ESG to an annual report is a missed opportunity. </p>
+<p class="text-component">It’s no wonder, then, that the first half of this year brought a slew of ESG headlines. The Biden administration’s goal of reducing greenhouse-gas emissions by 50 percent by 2030 will force many executives to think more expansively about business performance and risk management in relation to sustainability over the long term. 
+
+On the social front, the Black Lives Matter movement and growing recognition of systemic racism spurred companies to champion diversity, equity, and inclusion—within their own walls and beyond. General Motors, for example, upped its commitment to spend 8 percent of its ad budget with Black-owned ad agencies by 2025 (up from 2 percent this year), and JPMorgan Chase announced a $30 billion initiative aimed at closing the racial wealth gap. 
+
+Regarding governance, the notice has been served: activist investors are scrutinizing everything from executive compensation to investment strategies in an effort to ensure companies define success by more than just the bottom line. Executives and boards now recognize that they increasingly will answer for their decisions—and often in public forums.
+</p>
+<p class="text-component">REPORTING RAMPS UP</p>
+<p class="text-component">Percentage of S&P 500 Index companies issuing sustainability or responsibility reports</p>
+<p class="text-component">Source: Governance & Accountability Institute </p>
+<img src="media/113392d6498f9832e20b4c804aedbf36/digital-currency-standouts-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">PwC: Are you ready for the
+ESG revolution?</p>
+<p class="text-component">A step-by-step approach companies can take to transform the way they approach ESG.</p>
+<p class="text-component">BCG: Rich Lesser’s LinkedIn
+posts</p>
+<p class="text-component">For his transparent, approachable, and accessible discussion of ESG topics 
+that many CEOs don’t touch. </p>
+<p class="text-component">Deloitte: Measuring the business
+value of corporate social impact</p>
+<p class="text-component">Principles to help companies create a social impact scorecard. </p>
+<p class="text-component">Relegating the discussion of ESG to an annual report is a missed opportunity. If ESG is truly part of an organization’s DNA, it must be omnipresent in content—informing not only the selection of topics but also the way in which they are discussed. Potential angles to explore include the following:</p>
+<p class="text-component">From proclamations to performance: The steps companies should take to translate ESG messaging into action and results. 
+
+The ESG factor in talent: Establishing a link between ESG efforts and talent attraction and retention, with a spotlight on companies that have excelled in this area. 
+
+When ESG has become table stakes, companies can truly distinguish their efforts from the pack by focusing on results and measuring—and reporting—progress.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<img src="media/4c1b8f1667f60132286c20519e70c250/digital-currency-previous-full.png" alt=""  class="image-component"/>
+<img src="media/d4ea5106d9d98751cd7865000f6f460e/digital-currency-next-full.png" alt=""  class="image-component"/>
+<img src="media/6e64685843b2d13dc9b3775ed00ab9d9/back-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/79a07c5ca73aeade5dece20437fa537a/forward-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Previous Trend</p>
+<p class="text-component">Digital Currency</p>
+<p class="text-component">Next Trend</p>
+<p class="text-component">How We Work</p>
+<img src="media/b8fc16648d1b1e4372b20b436eae124f/esg-20-full.png" alt=""  class="image-component"/>
+<img src="media/bafdd29cf9977b04e5f8b9a10d62c9ed/esg-72-full.png" alt=""  class="image-component"/>
+<img src="media/e38e134edf8a8ae7cb109f0671d029eb/esg-81-full.png" alt=""  class="image-component"/>
+<img src="media/e77f736f8e018b4e93ccee64f183fd7b/esg-85-full.png" alt=""  class="image-component"/>
+<img src="media/d3f33a121efeef758055d6460bfbdb52/esg-90-full.png" alt=""  class="image-component"/>
+<p class="text-component">2011</p>
+<p class="text-component">2013</p>
+<p class="text-component">2015</p>
+<p class="text-component">2017</p>
+<p class="text-component">2019</p>
+<p class="text-component">Done right, ESG can be an invaluable pillar in business strategy, content strategy, and brand building.</p>
+<img src="media/b10b602e5c281c4ce853a3fa0c5051e5/leff-tr2021-esg-desktop-flushright-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<p class="text-component">THE BANDWAGON:
+ESG</p>
+<img src="media/805cd26af361fd254531867b90c510a4/leff-tr2021-esg-mobile-centered-full.png" alt=""  class="image-component"/>
+<img src="media/44bc800c2ed601db75b64b9a4c9ac4e5/digital-currency-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/6e64685843b2d13dc9b3775ed00ab9d9/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">It wasn’t long ago that corporate social responsibility and ESG (environmental, social, and governance) initiatives moved from a check-the-box exercise to a foundational element in high-performing companies. By 2019, 93 percent of the
+world’s largest companies reported on their ESG activities, and investment titans such as BlackRock’s Larry Fink noted that “climate risk is investment risk” in annual letters to shareholders. What’s more, an S&P 500 analysis found that 19 ESG exchange-traded and mutual funds beat out the S&P 500 during the pandemic, further reinforcing the real financial benefits of companies that prioritize 
+ESG activities. </p>
+<p class="text-component">REPORTING RAMPS UP</p>
+<p class="text-component">Percentage of S&P 500 Index companies issuing sustainability or responsibility reports</p>
+<img src="media/b8fc16648d1b1e4372b20b436eae124f/esg-20-full.png" alt=""  class="image-component"/>
+<p class="text-component">2011</p>
+<p class="text-component">2013</p>
+<p class="text-component">2015</p>
+<p class="text-component">2017</p>
+<p class="text-component">2019</p>
+<img src="media/bafdd29cf9977b04e5f8b9a10d62c9ed/esg-72-full.png" alt=""  class="image-component"/>
+<img src="media/e38e134edf8a8ae7cb109f0671d029eb/esg-81-full.png" alt=""  class="image-component"/>
+<img src="media/e77f736f8e018b4e93ccee64f183fd7b/esg-85-full.png" alt=""  class="image-component"/>
+<img src="media/d3f33a121efeef758055d6460bfbdb52/esg-90-full.png" alt=""  class="image-component"/>
+<p class="text-component">Source: Governance & Accountability Institute </p>
+<img src="media/32cabe299f27e15d10fc91e1151b5b3c/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">It’s no wonder, then, that the first half of this year brought a slew of ESG headlines. The Biden administration’s goal of reducing greenhouse-gas emissions by 50 percent by 2030 will force many executives to think more expansively about business performance and risk management in relation to sustainability over the long term. 
+
+On the social front, the Black Lives Matter movement and growing recognition of systemic racism spurred companies to champion diversity, equity, and inclusion—within their own walls and beyond. General Motors, for example, upped its commitment to spend 8 percent of its ad budget with Black-owned ad agencies by 2025 (up from 2 percent this year), and JPMorgan Chase announced a $30 billion initiative aimed at closing the racial wealth gap. 
+
+Regarding governance, the notice has been served: activist investors are scrutinizing everything from executive compensation to investment strategies in an effort to ensure companies define success by more than just the bottom line. Executives and boards now recognize that they increasingly will answer for their decisions—and often in public forums.
+</p>
+<img src="media/c6dc60060213a9f52f68980ba1b29b56/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">PwC: Are you ready for the ESG revolution?</p>
+<p class="text-component">A step-by-step approach companies 
+can take to transform the way they approach ESG.</p>
+<p class="text-component">BCG: Rich Lesser’s LinkedIn posts</p>
+<p class="text-component">For his transparent, approachable, and accessible discussion of ESG topics 
+that many CEOs don’t touch. </p>
+<p class="text-component">Deloitte: Measuring the business value of
+corporate social impact</p>
+<p class="text-component">Principles to help companies create a social impact scorecard. </p>
+<p class="text-component">Relegating the discussion of ESG to an annual report is a missed opportunity. 
+If ESG is truly part of an organization’s DNA, it must be omnipresent in content—informing not only the selection of topics but also the way in which they are discussed. Potential angles to explore include the following:</p>
+<p class="text-component">From proclamations to performance: The steps companies should take to translate ESG messaging into action and results. 
+
+The ESG factor in talent: Establishing a link between ESG efforts and talent attraction and retention, with a spotlight on companies that have excelled in this area. 
+
+When ESG has become table stakes, companies can truly distinguish their efforts from the pack by focusing on results and measuring—and reporting—progress.</p>
+<p class="text-component">Done right, ESG can be an invaluable pillar in business strategy, content strategy, and brand building.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">return to main page</p>
+<img src="media/a597315e9f2c7350488a520c417e0242/esg-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/c60b014989e5a7aa91e4b9f781e34000/esg-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Cryptocurrencies can feel like a new gold rush.</p>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/cd1bfaa3943aa6f2538b497a21378ed5/esg-title-card-full.png" alt=""  class="image-component"/>
+<p class="text-component">gone viral:
+how we work</p>
+<img src="media/e74552ea730bc19da0112185e6c35ada/esg-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Once primarily in the wheelhouse of organizational consultants and career coaches, where, how, and when we work has become more than a hot topic; it’s now a national obsession and, in many ways, a reflection of the nuances and complications of American society as a whole.  
+
+The pandemic-induced work-from-home phenomenon brought issues to the forefront that had previously been relegated to the shadows: the lack of care for children or parents was a factor in female workforce participation hitting a 33-year low in January; the growing wage gap that’s left blue-collar and middle-class workers behind; the burnout and mental health issues that workers are facing; and the collision of beliefs and life experiences that having five generations, from Gen Z to traditionalists, in the workforce creates. </p>
+<p class="text-component">ON LOCATION</p>
+<img src="media/a553ae7a88578c787e2e5ffb08b9c885/esg-standouts-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">Korn Ferry: Help! What to
+do when your employees
+are not OK. </p>
+<p class="text-component">A visual, provocative read on what is becoming known as a “psychological pandemic.” </p>
+<p class="text-component">Thrive Global: Small Ways
+Workplaces Are Prioritizing
+Employee Well-being</p>
+<p class="text-component">Tangible advice for how to make teams continue to stay productive and feel recharged. </p>
+<p class="text-component">McKinsey: What We Lose When
+We Lose Women in the Workforce</p>
+<p class="text-component">A thoughtful Q&A confronts the crisis that’s facing many working women.</p>
+<img src="media/3bbe64e644ff571ccc4f982714e3a9ba/esg-previous-full.png" alt=""  class="image-component"/>
+<img src="media/1d8a234889d2e770e8831696e0e575b5/esg-next-full.png" alt=""  class="image-component"/>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Previous Trend</p>
+<p class="text-component">ESG</p>
+<p class="text-component">Next Trend</p>
+<p class="text-component">Everyone's a Gamer</p>
+<p class="text-component">2021 monthly average for ranked search of remote-work terms  on a scale of 0 to 100, where 0 = too low to gain traction and 100 = peak popularity.</p>
+<p class="text-component">Based on search interest relative to the highest ranking term for a selected region and time.</p>
+<img src="media/ac4972e705bb4c713fc3a4a5d1d607bd/how-we-work-key-full.png" alt=""  class="image-component"/>
+<img src="media/f1d29fb7b87c794ecb79a4382d57d5b8/exhibit-bar-dates-full.png" alt=""  class="image-component"/>
+<img src="media/fab73a3f0252414b99f936779c46cd53/how-we-work-april-full.png" alt=""  class="image-component"/>
+<img src="media/5695fdf674a02c03c7af862a7cb06d8d/how-we-work-february-full.png" alt=""  class="image-component"/>
+<img src="media/79bbd48afdccae6bbddf7a76105c5392/how-we-work-january-full.png" alt=""  class="image-component"/>
+<img src="media/a5e760110d19a9a1c28955d5512e4262/how-we-work-march-full.png" alt=""  class="image-component"/>
+<img src="media/0be6706fc0b8d06b01f99a6cf4ca5cdf/how-we-work-may-full.png" alt=""  class="image-component"/>
+<p class="text-component">If there's anything we've learned about work during the pandemic, it's that for the foreseeable future the boundaries between work and life will become even more blurry.</p>
+<p class="text-component">And yet there were moments of work life to celebrate, too. Zoom, for all its fanfare and then fatigue, was a lifesaver for many organizations, providing a vehicle for inclusivity by leveling the playing field and giving more people a voice. Connections and creativity that we all feared would fall by the wayside by not meeting face to face held up surprisingly well. And the literal pause of some daily habits that the pandemic forced upon us led some workers to reevaluate their entire professional path to embrace a YOLO economy.
+
+Companies must consider these issues as they move forward. When Apple announced earlier this year that it expected most employees to work in the office three days a week, dozens of employees signed a protest letter that said, “It feels like there is a disconnect between how the executive team thinks about remote/location-flexible work and the lived experiences of many of Apple’s employees.”</p>
+<p class="text-component">All of this is to say that when it comes to content surrounding the postcrisis work environment, companies must provide unique angles on an oversaturated but equally overly sought-after topic. Story ideas that could move the conversation forward include the following:</p>
+<p class="text-component">A customizable checklist to help explore the pros and cons of working at home versus going back to the office.
+
+Promoting stories of work paths that are successful but not cookie-cutter: the newly appointed executive who took ten years off to raise her children, or the manager who asked for a four-day workweek after becoming the primary caregiver for his father.
+
+Solidifying soft skills: Never before have skills such as emotional intelligence and communication been so valuable. Learning how to develop and enhance this skillset will be crucial for the leaders of today and tomorrow. </p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">If there’s anything we’ve learned about work during the pandemic, it’s that for the foreseeable future the boundaries between work and life will become even more blurry.</p>
+<img src="media/b32d8b0168e4499a54cae8cff77fa69c/leff-tr2021-work-desktop-flushright-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<p class="text-component">1</p>
+<p class="text-component">1</p>
+<p class="text-component">gone viral:
+how we work</p>
+<img src="media/97defec61eb3e5735b27719a2d3214f6/leff-tr2021-work-mobile-centered-full.png" alt=""  class="image-component"/>
+<img src="media/e74552ea730bc19da0112185e6c35ada/esg-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Once primarily in the wheelhouse of organizational consultants and career coaches, where, how, and when we work has become more than a hot topic; it’s now a national obsession and, in many ways, a reflection of the nuances and complications of American society as 
+a whole.  
+
+The pandemic-induced work-from-home phenomenon brought issues to the forefront that had previously been relegated to the shadows: the lack of care for children or parents was a factor in female workforce participation hitting a 33-year low in January; the growing wage gap that’s left blue-collar and middle-class workers behind; the burnout and mental health issues that workers are facing; and the collision of beliefs and life experiences that having five generations, from Gen Z to traditionalists, in the workforce creates. </p>
+<p class="text-component">ON LOCATION</p>
+<p class="text-component">2021 monthly average for ranked search of remote-work terms  on a scale of 0 to 100, where 0 = too low to gain traction and 100 = peak popularity.</p>
+<img src="media/ac01dc970d34fa7aa6142142610b1b09/how-we-work-key-full.png" alt=""  class="image-component"/>
+<img src="media/f1d29fb7b87c794ecb79a4382d57d5b8/exhibit-bar-dates-full.png" alt=""  class="image-component"/>
+<img src="media/79bbd48afdccae6bbddf7a76105c5392/how-we-work-january-full.png" alt=""  class="image-component"/>
+<img src="media/5695fdf674a02c03c7af862a7cb06d8d/how-we-work-february-full.png" alt=""  class="image-component"/>
+<img src="media/a5e760110d19a9a1c28955d5512e4262/how-we-work-march-full.png" alt=""  class="image-component"/>
+<img src="media/fab73a3f0252414b99f936779c46cd53/how-we-work-april-full.png" alt=""  class="image-component"/>
+<img src="media/0be6706fc0b8d06b01f99a6cf4ca5cdf/how-we-work-may-full.png" alt=""  class="image-component"/>
+<p class="text-component">Based on search interest relative to the highest ranking term for a selected region and time.</p>
+<p class="text-component">1</p>
+<p class="text-component">1</p>
+<p class="text-component">And yet there were moments of work life to celebrate, too. Zoom, for all its fanfare and then fatigue, was a life saver for many organizations, providing a vehicle for inclusivity by leveling the playing field and giving more people a voice. Connections and creativity that we all feared would fall by the wayside by not meeting face to face held up surprisingly well. And the literal pause of some daily habits that the pandemic forced upon us led some workers to reevaluate their entire professional path to embrace a YOLO economy.
+
+Companies must consider these issues as they move forward. When Apple announced earlier this year that it expected most employees to work in the office three days a week, dozens of employees signed a protest letter that said, “It feels like there is a disconnect between how the executive team thinks about remote/location-flexible work and the lived experiences of many of Apple's employees.”</p>
+<img src="media/32cabe299f27e15d10fc91e1151b5b3c/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/c6dc60060213a9f52f68980ba1b29b56/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">Korn Ferry: Help! What to do when your employees
+are not OK. </p>
+<p class="text-component">A visual, provocative read on what is becoming known as a “psychological pandemic.” </p>
+<p class="text-component">Thrive Global: Small Ways Workplaces are
+Prioritizing Employee Well-being</p>
+<p class="text-component">Tangible advice for how to make teams continue to stay productive and feel recharged. </p>
+<p class="text-component">McKinsey: What We Lose When We Lose
+Women in the Workforce</p>
+<p class="text-component">A thoughtful Q&A confronts the crisis that’s facing many working women.</p>
+<p class="text-component">All of this is to say that when it comes to content surrounding the post-crisis work environment, companies must provide unique angles on an oversaturated but equally overly sought-after topic. Story ideas that could move the conversation forward include:</p>
+<p class="text-component">A customizable checklist to help explore the pros and cons of working at home versus going back to the office.
+
+Promoting stories of work paths that are successful but not cookie-cutter: the newly appointed executive who took ten years off to raise her children, or the manager who asked for a four-day workweek after becoming the primary caregiver for his father.
+
+Solidifying soft skills: Never before have skills such as emotional intelligence and communication been so valuable. Learning how to develop and enhance this skillset will be crucial for the leaders of today and tomorrow. </p>
+<p class="text-component">If there’s anything we’ve learned about work during the pandemic, it’s that for the foreseeable future the boundaries between work and life will become even more blurry.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">return to main page</p>
+<img src="media/fa359b1211df68db9ea3a45912ef14ce/how-we-work-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/e15558bc542537612474d3b50475cbbd/how-we-work-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">If there's anything we've learned about work during the pandemic, it's that for the foreseeable future the boundaries between work and life will become even more blurry.</p>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/6264ceacb3b0af569e25d4eceeed282f/how-we-work-title-card-full.png" alt=""  class="image-component"/>
+<p class="text-component">under the radar: everyone’s a gamer</p>
+<img src="media/68a534f1e8ff5693a8e2f8d56594ad01/how-we-work-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/6e64685843b2d13dc9b3775ed00ab9d9/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Pop quiz: What’s the highest-grossing media of all time in the United States?
+A) Star Wars
+B) Avatar
+C) Grand Theft Auto V
+
+If you answered C, you’re correct. Since its release in 2013, Grand Theft Auto V has raked in more than $6 billion, dwarfing the $3 billion grossed by the original Star Wars and $2.8 billion by Avatar. Today, one out of every three people on the planet is a gamer, and that number is only expected to rise. Part of the appeal comes in the accessibility of gaming; once reserved for middle-class households that could afford $500 consoles, the rise of mobile games, which can be played on cheap smartphones, has made the genre more inclusive. It’s no surprise that China, therefore, is responsible for nearly two-thirds of the entire mobile-gaming market.</p>
+<p class="text-component">Today, one out of every three people on the planet are gamers.</p>
+<p class="text-component">Of course, as this sector has heated up, so has the debate over the concentration of economics. Antitrust watchers and gamers alike are anxiously awaiting the high-profile verdict in Fortnite-maker Epic Games’s lawsuit against Apple, which accuses the tech giant of having a monopoly on the way in which revenues from mobile games are processed. The outcome could have significant ramifications on Apple’s app store and payment and distribution of mobile games in general.</p>
+<p class="text-component">GAME ON</p>
+<p class="text-component">Global gaming revenue now eclipses global film industry revenues. Here’s a look at where much of that growth is happening. </p>
+<p class="text-component">Source: Newzoo</p>
+<img src="media/8917e92d1c47bf4bad3f4a3c1ca3ae96/how-we-work-standouts-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">McKinsey: The Netflix of
+Gaming? Why subscription
+video-game services face
+an uphill battle.</p>
+<p class="text-component">A look at why video games aren’t suited for subscription models. </p>
+<p class="text-component">Ark Invest: For Your
+Innovation Podcast: Competitive
+Mobile Gaming</p>
+<p class="text-component">Skillz Inc. founder Andrew Paradise breaks down the monetization of mobile games and the rise of esports. </p>
+<p class="text-component">Even if brands don’t consider gaming a content channel for now, the appeal of gamification is something they should explore. We’ve seen some dynamic examples of simple but engaging games—such as this task-oriented game of navigating office spaces after the pandemic from Reuters or this drag-and-drop election scenario from the New York Times. Even if you don’t get the appeal of Candy Crush, you likely can see how mobile gaming represents a shift in how a large part of the world consumes content. And that shift could be on par with Netflix’s recommendation algorithm or the rise of TikTok—meaning companies should consider doing the following:</p>
+<p class="text-component">Pilot a content project that incorporates gamification.
+
+Keep a list of paid media or content that’s worked well when sprinkled into games. 
+
+Reassess your internal content team or vendors to ensure they have editorial, design, and coding skills—or can learn them—so they’ll be ready to bring gamification into the fold.
+</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<img src="media/e9b7680d141dbac2eb4f8f54964a38cd/how-we-work-previous-full.png" alt=""  class="image-component"/>
+<img src="media/aba3e10bc94cd65d5b3ac44d6bbe40a4/how-we-work-next-full.png" alt=""  class="image-component"/>
+<img src="media/6e64685843b2d13dc9b3775ed00ab9d9/back-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/79a07c5ca73aeade5dece20437fa537a/forward-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Previous Trend</p>
+<p class="text-component">How We Work</p>
+<p class="text-component">Next Trend</p>
+<p class="text-component">Corporate Storytelling</p>
+<p class="text-component">UNITED STATES</p>
+<p class="text-component">GERMANY</p>
+<p class="text-component">CHINA</p>
+<p class="text-component">SOUTH KOREA</p>
+<p class="text-component">JAPAN</p>
+<img src="media/a793b0d82e72af4a3994676af4d568bc/gamer-map-full.png" alt=""  class="image-component"/>
+<img src="media/cd706ffd97bf0c063280b63feee6d653/us-map-full.png" alt=""  class="image-component"/>
+<img src="media/9f8fecfbf7c557368f1550c580b3441c/german-map-full.png" alt=""  class="image-component"/>
+<img src="media/081447cc0a4a3c268e7aa14cea63ec10/china-map-full.png" alt=""  class="image-component"/>
+<img src="media/c08c667ed3fa1e34d5d3b817312d430c/sk-map-full.png" alt=""  class="image-component"/>
+<img src="media/2ec088307408b18652ce59a4daf8f52f/japan-map-full.png" alt=""  class="image-component"/>
+<img src="media/eae55055ee65f057d1da487591cc8967/us-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/7bad51df6f554df051b2f0e94d34297d/germany-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/51a561f98d1b144cc60964222c672dd5/china-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/692b5c9c544ec259d0ac2e365555d74e/sk-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/0b3efdaa76e71f2b7c681324f980b2da/japan-bubble-full.png" alt=""  class="image-component"/>
+<p class="text-component">At this point, you may be wondering … what does gaming have to do with my content strategy? Simply put, it’s a new avenue for dissemination. We’re already seeing games become the newest mode for advertising, with Linkin Park releasing a new song through a mobile game app and dating app Bumble creating a Team Bubble all-female esports team that competes in Fortnite. </p>
+<img src="media/122ac78dda4974d38e3b82457f90f1a7/leff-tr2021-gamer-desktop-flushright-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<p class="text-component">under the radar: everyone’s a gamer</p>
+<img src="media/33e7f3ddc611476c35e712971596b07f/leff-tr2021-gamer-mobile-centered-full.png" alt=""  class="image-component"/>
+<img src="media/68a534f1e8ff5693a8e2f8d56594ad01/how-we-work-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/6e64685843b2d13dc9b3775ed00ab9d9/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Pop quiz: What’s the highest-grossing media of all time in the U.S.?
+A) Star Wars
+B) Avatar
+C) Grand Theft Auto V
+
+If you answered C, you’re correct. Since its release in 2013, Grand Theft Auto V has raked in more than $6 billion, dwarfing the $3 billion grossed by the original Star Wars and $2.8 billion by Avatar. Today, one out of every three people on the planet are gamers, and that number is only expected to rise. Part of the appeal comes in the accessibility of gaming; once reserved for middle-class households that could afford $500 consoles, the rise of mobile games, which can be played 
+on cheap smartphones, has made the 
+genre more inclusive. It’s no surprise 
+that China, therefore, is responsible for nearly two-thirds of the entire mobile gaming market.</p>
+<img src="media/32cabe299f27e15d10fc91e1151b5b3c/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Of course, as this sector has heated up, so has the debate over the concentration of economics. Antitrust watchers and gamers alike are anxiously awaiting the high-profile verdict in Fortnite maker Epic Games’s lawsuit against Apple, which accuses the tech giant of having a monopoly on the way in which revenues from mobile games are processed. The outcome could have significant ramifications on Apple’s app store and payment and distribution of mobile games in general.</p>
+<p class="text-component">GAME ON</p>
+<p class="text-component">Global gaming revenue now eclipses global film industry revenues. Here’s a look at where much of that growth is happening. </p>
+<img src="media/a793b0d82e72af4a3994676af4d568bc/gamer-map-full.png" alt=""  class="image-component"/>
+<img src="media/cd706ffd97bf0c063280b63feee6d653/us-map-full.png" alt=""  class="image-component"/>
+<img src="media/9f8fecfbf7c557368f1550c580b3441c/german-map-full.png" alt=""  class="image-component"/>
+<img src="media/081447cc0a4a3c268e7aa14cea63ec10/china-map-full.png" alt=""  class="image-component"/>
+<img src="media/c08c667ed3fa1e34d5d3b817312d430c/sk-map-full.png" alt=""  class="image-component"/>
+<img src="media/2ec088307408b18652ce59a4daf8f52f/japan-map-full.png" alt=""  class="image-component"/>
+<img src="media/eae55055ee65f057d1da487591cc8967/us-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/7bad51df6f554df051b2f0e94d34297d/germany-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/51a561f98d1b144cc60964222c672dd5/china-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/692b5c9c544ec259d0ac2e365555d74e/sk-bubble-full.png" alt=""  class="image-component"/>
+<img src="media/0b3efdaa76e71f2b7c681324f980b2da/japan-bubble-full.png" alt=""  class="image-component"/>
+<p class="text-component">UNITED STATES</p>
+<p class="text-component">GERMANY</p>
+<p class="text-component">CHINA</p>
+<p class="text-component">SOUTH KOREA</p>
+<p class="text-component">JAPAN</p>
+<p class="text-component">Source: Newzoo</p>
+<p class="text-component">At this point, you may be wondering … what does gaming have to do with my content strategy? Simply put, it’s a new avenue for dissemination. We’re already seeing games become the newest mode for advertising, with Linkin Park releasing a new song through a mobile game app and dating app Bumble creating a Team Bubble all-female esports team that competes in Fortnite. </p>
+<img src="media/c6dc60060213a9f52f68980ba1b29b56/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">McKinsey: The Netflix of Gaming? Why
+subscription video-game services face an uphill
+battle.</p>
+<p class="text-component">A look at why video games aren’t suited for subscription models. </p>
+<p class="text-component">Ark Invest: For Your InnovationPodcast:
+Competitive Mobile Gaming</p>
+<p class="text-component">Skillz Inc. founder Andrew Paradise breaks down the monetization of mobile games and the rise of esports. </p>
+<p class="text-component">Given the growing role infrastructure plays in our lives, and what appears to be an imminent infrastructure deal, we’re hoping more compEven if brands don’t consider gaming a content channel for now, the appeal of gamification is something they should explore. We’ve seen some dynamic examples of simple but engaging games—such as this 
+task-oriented game of navigating office spaces after the pandemic from Reuters or this drag-and-drop election scenario from the New York Times. Even if you don’t get the appeal of Candy Crush, you likely can see how mobile gaming represents a shift in how a large part of the world consumes content. And that shift could be on par with Netflix’s recommendation algorithm or the rise of TikTok—meaning companies should:anies will put a stake in the ground on actionable guidance and analysis on how to approach infrastructure with an inclusive, equitable mindset. Companies can advance the conversation in several ways: </p>
+<p class="text-component">Pilot a content project that incorporates gamification.
+
+Keep a list of paid media or content that’s worked well when sprinkled into games. 
+
+Reassess your internal content team or vendors to ensure they have editorial, design, and coding skills—or can learn them—so they’ll be ready to bring gamification into the fold.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">return to main page</p>
+<img src="media/844b2db57aabe8e41a828c7fe96a23f2/gamer-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/febf780262e90bb930cce8ba88c5fc11/gamer-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">If there's anything we've learned about work during the pandemic, it's that for the foreseeable future the boundaries between work and life will become even more blurry.</p>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/2811f153f16992f8ec3e25d38b998e17/elevating-infrastructure-title-card-full.png" alt=""  class="image-component"/>
+<p class="text-component">the crowd 
+pleaser: the rise 
+of corporate 
+storytelling</p>
+<img src="media/9725f6c17e74a0a9a82bf1b6eb3668eb/elevating-infrastructure-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Earlier this year, Walgreens was hiring someone to lead its corporate storytelling. Domino’s Pizza was looking for a data journalist. Even storied VC firm Andreessen
+Horowitz looks more and more like a media company these days. 
+
+What do these moves tell us? The demand for content is rising, and some of the most unassuming players are responding with strategies that showcase their thinking. Consumers now expect content from all kinds of brands, including their preferred toilet paper (we see you, Charmin toilet paper roll art ideas) and credit card (who doesn’t want financial confidence tips from comedian Amanda Seales?). </p>
+<p class="text-component">Brands have realized they don’t need mainstream media or 
+legacy platforms to tell their own stories.</p>
+<p class="text-component">Brands, in turn, have realized they don’t need mainstream media or legacy platforms to tell their own stories. Take Adobe’s 99U, a creative career resource center. Through interviews, videos, articles, and other formats, Adobe uses stories to reaffirm its ability to help creatives do their best work—through software, of course, but also through content. </p>
+<img src="media/830dba42c39e81f72f99818df7db8ab0/corporate-storytelling-standouts-box-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">McKinsey: The Emotion Archive</p>
+<p class="text-component">An interactive that presents research with data visualization, video, and personal stories.</p>
+<p class="text-component">Bain: Four Ways to Build a
+More Inclusive Supplier Base</p>
+<p class="text-component">An infographic that links at the end to a related brief.</p>
+<p class="text-component">McKinsey: Inside a mining
+company’s AI transformation</p>
+<p class="text-component">Compelling moving hero images to pull the audience in, along with distinct illustrations.</p>
+<p class="text-component">These developments signal shifting expectations from brands. Companies should focus on providing utility: What does the audience really want to know, and where does the brand actually provide value? Take this article on how to be smart with
+downtime from 99U. It’s a topic that others have written about, but what makes it stand out is its sophistication and accessible advice. In a similar vein, organizations can amplify their own corporate narratives by creating content that does the following: </p>
+<p class="text-component">Takes well-performing content and repurposes it through a new format or refreshes it to extend shelf life.
+
+Revamp your approvals process to allow for a quicker publishing cadence that can react timely to pertinent news. 
+
+Goes back to the basics and considers a simple yet fascinating “How we made it” behind-the-scenes narrative for a new product or solution. </p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<img src="media/cfe98cfe0f31f89f583769f16d5e0d74/elevating-infrastructure-next-full.png" alt=""  class="image-component"/>
+<img src="media/62c735c24667fe87a06578bd010edd43/elevating-infrastructure-previous-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Previous Trend</p>
+<p class="text-component">Everyone's a Gamer</p>
+<p class="text-component">Next Trend</p>
+<p class="text-component">Elevating Infrastructure</p>
+<p class="text-component">Companies can go in a number of different directions when it comes to corporate storytelling, but the key is to start with a thoughtful strategy that considers what value they provide, what the audience wants, where competitors have already staked a claim, and what formats will be most powerful.</p>
+<img src="media/6e0f82f89a78790a9b88457129eed46a/leff-tr2021-storytelling-desktop-flushright-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<p class="text-component">the crowd 
+pleaser: the rise 
+of corporate 
+storytelling</p>
+<img src="media/f6acfdec186a8e506f32bb4410095129/leff-tr2021-storytelling-mobile-centered-full.png" alt=""  class="image-component"/>
+<img src="media/9725f6c17e74a0a9a82bf1b6eb3668eb/elevating-infrastructure-return-to-main-page-full.png" alt=""  class="image-component"/>
+<p class="text-component">return to main page</p>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">Earlier this year, Walgreens was hiring someone to lead its corporate storytelling. Domino’s Pizza was looking for a data
+journalist. Even storied VC firm Andreessen Horowitz looks more and more like a media company these days. 
+
+What do these moves tell us? The demand for content is rising, and some of the most unassuming players are responding with strategies that showcase their thinking. Consumers now expect content from all kinds of brands, including their preferred toilet paper (we see you, Charmin toilet paper roll art ideas) and credit card (who doesn’t want financial
+confidence tips from comedian Amanda Seales?). </p>
+<img src="media/32cabe299f27e15d10fc91e1151b5b3c/elevating-infrastructure-image-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Brands, in turn, have realized they don’t need mainstream media or legacy platforms to tell their own stories. Take Adobe’s 99u, a creative career resource center. Through interviews, videos, articles, and other formats, Adobe uses stories to reaffirm its ability to help creatives do their best work—through software, of course, but also through content. </p>
+<img src="media/c6dc60060213a9f52f68980ba1b29b56/elevating-infrastructure-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Standouts</p>
+<p class="text-component">McKinsey: The Emotion Archive</p>
+<p class="text-component">An interactive that presents research with data visualization, video, and personal stories.</p>
+<p class="text-component">Bain: Four Ways to Build a More Inclusive
+Supplier Base</p>
+<p class="text-component">An infographic that links at the end to a related brief.</p>
+<p class="text-component">McKinsey: Inside a mining company’s AI
+transformation</p>
+<p class="text-component">Compelling moving hero images to pull the audience in, along with distinct illustrations.</p>
+<p class="text-component">These developments signal shifting expectations from brands. Companies should focus on providing utility: what does the audience really want to know, and where does the brand actually provide value? Take this article on how to be smart with downtime from 99u. It’s a topic that others have written about, but what makes it stand out is its sophistication and accessible advice. In a similar vein, organizations can amplify their own corporate narratives by creating content that: </p>
+<p class="text-component">Takes well-performing content and repurposes it through a new format or refreshes it to extend shelf life.
+
+Revamp your approvals process to allow for a quicker publishing cadence that can react timely to pertinent news. 
+
+Goes back to the basics and considers a simple yet fascinating “How we made it” behind-the-scenes narrative for a new product or solution. </p>
+<p class="text-component">Companies can go in a number of different directions when it comes to corporate storytelling, but the key is to start with a thoughtful strategy that considers what value they provide, what the audience wants, where competitors have already staked a claim, and what formats will be most powerful.</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">•</p>
+<p class="text-component">return to main page</p>
+<img src="media/b4e42a1143dc2c013d2774ffabc544be/corporate-storytelling-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/b4e42a1143dc2c013d2774ffabc544be/corporate-storytelling-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/b4e42a1143dc2c013d2774ffabc544be/corporate-storytelling-image-1-full.png" alt=""  class="image-component"/>
+<img src="media/072fd4d75d386e17253939d0e05d1903/corporate-storytelling-image-3-full.png" alt=""  class="image-component"/>
+<img src="media/f5d042b65e2c512f78312c8e8f445964/corporate-storytelling-image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">Today, one out of every three people on the planet are gamers.</p>
+<img src="media/f5d042b65e2c512f78312c8e8f445964/corporate-storytelling-image-2-full.png" alt=""  class="image-component"/>
+<img src="media/1b5d5180513d79158f7d855d02bce5f0/forward-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b0fdfb9fb6f31f6fb7a667316cf07861/back-arrow-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Scrolling - For an experience that expands to the size of the container you include it in and scrolls on overheight pages, use this embed code:
+
+<div style='position: relative;width: auto;padding: 0 0 87.85%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none' id="experience-60e5b916af450" data-aspectRatio="1.13833333" data-mobile-aspectRatio="0.5625"><iframe allowfullscreen src='midyear-trend-report-2021/index.html' style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 100%;width: 100%' frameborder='0' class='ceros-experience' title='Midyear trend report 2021'></iframe></div><script type="text/javascript" src="midyear-trend-report-2021/assets/scroll-proxy.min.js" data-ceros-origin-domains=""></script>
+
+For additional security set the data-ceros-origin-domains attribute on the above script tag to the domain that will serve Ceros experiences on this page (or a comma-separated list if multiple domains).

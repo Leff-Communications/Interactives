@@ -1,0 +1,343 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'typography-blog',
+            issueAliasSlug: 'typographyblog-desktop',
+            issue: {"id":109775,"projectId":18148,"slug":"experience-5a622b55ddaa8","name":"Typography blogâ€”desktop","status":"published","creationDate":"2018-01-19T17:31:01.000Z","lastModifiedDate":"2020-02-24T20:59:14.000Z","deletionDate":null,"firstPublishedDate":"2018-02-01T16:29:21.000Z","wipExperienceVersionId":315561,"publishedExperienceVersionId":322737,"createdByMemberId":6387,"primaryIssueAliasId":164854,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5a622b55ded66.jpg","importLinkShared":0,"lastPublishedDate":"2018-02-01T17:57:34.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":null,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p020a85568e72","title":"Typography blogâ€”desktop"},
+            docVersion: {"id":322737,"experienceId":109775,"slug":"experience-version-5a73550e78d00","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v14\/experience-version-5a73550e78d00.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Typography blog","seoMetaKeywords":null,"seoMetaDescription":"Typography blog","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5a73550e78de1","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2018\/02\/01\/a3658efd01ffe758fa9412537f2d1ad4\/page-thumbnail-crop.jpg"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2018-02-01T17:57:34.000Z","modificationDate":"2018-02-01T17:57:34.000Z","publishedDate":"2018-02-01T17:57:34.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d596a589-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Md","familyGuid":"Uploaded|d3c5a2d0-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a589-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Md","cssFamilyName":"ITC Avant Garde Std Md-BkzPxfqt","cssFileURL":"fonts\/457e52c5-e66c-4326-97c1-cf3a21b0fc6f\/itc-itcavantgardestd-md.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5a247d2-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Md","familyGuid":"Uploaded|d3c5a2d0-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5a247d2-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-MdObl","cssFamilyName":"ITC Avant Garde Std Md-aQNhHl3x","cssFileURL":"fonts\/12810bf3-864b-47e9-8345-e46855bb9a70\/itc-itcavantgardestd-mdobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Typography blogâ€”desktop Typography blog</title>
+
+
+
+        <meta name="description" content="Typography blog"/>
+
+    <meta property="og:title" content="Typography blogâ€”desktop"/>
+        <meta property="og:image" content="media/a3658efd01ffe758fa9412537f2d1ad4/page-thumbnail-crop.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Typography blogâ€”desktop">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/a3658efd01ffe758fa9412537f2d1ad4/page-thumbnail-crop.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5a73550e78d00.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5a73550e78d00",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Full screen</p>
+<p class="text-component">old style figures</p>
+<p class="text-component">lining figures</p>
+<p class="text-component">italics</p>
+<p class="text-component">ampersand</p>
+<p class="text-component">ligatures</p>
+<p class="text-component">swash</p>
+<img src="media/138f7e82a05e5f626f176675f1c0dd54/46-full.png" alt=""  class="image-component"/>
+<img src="media/f9f497d8a8a9636f79fd5e38a7cfa083/45-full.png" alt=""  class="image-component"/>
+<img src="media/32104d7feb79dddb26c3efdacc7e7d21/44-full.png" alt=""  class="image-component"/>
+<img src="media/8fceb3da1ff65ead73c713058d4882bc/43-full.png" alt=""  class="image-component"/>
+<img src="media/2c9f2e2db3942250e7fb6352d36f28b1/42-full.png" alt=""  class="image-component"/>
+<img src="media/16bd35b953a30f9493d5878fed21fd46/41-full.png" alt=""  class="image-component"/>
+<img src="media/e42468fbc89c2f15b8e8f5e58b308557/40-full.png" alt=""  class="image-component"/>
+<img src="media/c051d04eae16b28e4d668e576c40182f/fi-full.png" alt=""  class="image-component"/>
+<p class="text-component">type
+size</p>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<img src="media/b300b1fbfe4480b91ae8399ce8612e28/cap-height-full.png" alt=""  class="image-component"/>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<img src="media/b300b1fbfe4480b91ae8399ce8612e28/cap-height-full.png" alt=""  class="image-component"/>
+<p class="text-component">diagonal stroke</p>
+<p class="text-component">hairline</p>
+<p class="text-component">arm</p>
+<p class="text-component">vertex</p>
+<p class="text-component">bracket</p>
+<p class="text-component">leg</p>
+<p class="text-component">arc of stem</p>
+<p class="text-component">hook</p>
+<p class="text-component">diacritic mark</p>
+<p class="text-component">tail</p>
+<img src="media/08f5219eaec0a5943db7e473caa335f9/39-full.png" alt=""  class="image-component"/>
+<img src="media/a707fab914e0aa70b2a6a1a773c844e1/38-full.png" alt=""  class="image-component"/>
+<img src="media/7bfc9ae0fe8a0ec102ef1fd9cbe63153/37-full.png" alt=""  class="image-component"/>
+<img src="media/21ef1590fd52e69b0adf1cc48828121e/36-full.png" alt=""  class="image-component"/>
+<img src="media/7e0f4ba2561f1e4c53aaf84590e2297f/34-full.png" alt=""  class="image-component"/>
+<img src="media/7c4166ca9a50af7b1e1b35bacd7e2e01/33-full.png" alt=""  class="image-component"/>
+<img src="media/e5d3bf85b06810d73c523f99cc9eb262/32-full.png" alt=""  class="image-component"/>
+<img src="media/4b301bb458ae473bb9cf3bef469b738b/31-full.png" alt=""  class="image-component"/>
+<img src="media/7f7d1770e40c78ddd801c9d5603d6c1a/30-full.png" alt=""  class="image-component"/>
+<img src="media/a9dee5a576d9429b0d8f293808e963da/qafjk-full.png" alt=""  class="image-component"/>
+<img src="media/66a33fd0d6173848b1b9a6db6f8279b6/35-full.png" alt=""  class="image-component"/>
+<p class="text-component">cross stroke</p>
+<p class="text-component">finial</p>
+<p class="text-component">stem</p>
+<p class="text-component">beak</p>
+<p class="text-component">spine</p>
+<p class="text-component">ball terminal</p>
+<p class="text-component">eye</p>
+<p class="text-component">head serif</p>
+<img src="media/e73ecc35d8ed355017feb91f0f2c4a72/29-full.png" alt=""  class="image-component"/>
+<img src="media/26e24efced0e094cd6abafba49175998/28-full.png" alt=""  class="image-component"/>
+<img src="media/8cf937b4b934a68c1e612407fb81ec97/27-full.png" alt=""  class="image-component"/>
+<img src="media/c86919b90d3a22ece4ef901175b2711c/26-full.png" alt=""  class="image-component"/>
+<img src="media/5cd5bb46f6257b34d6c97ac960733fd2/25-full.png" alt=""  class="image-component"/>
+<img src="media/043b6bd57cee80e083401a2ee489c591/24-full.png" alt=""  class="image-component"/>
+<img src="media/1159bad6d30403676a4b4e8e7d5c8a5c/22-full.png" alt=""  class="image-component"/>
+<img src="media/5f4de521016820b302ca9df25e78112e/cheatsheet-full.png" alt=""  class="image-component"/>
+<img src="media/723ca07508069336e239673e4fe2dc58/23-full.png" alt=""  class="image-component"/>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<img src="media/b300b1fbfe4480b91ae8399ce8612e28/cap-height-full.png" alt=""  class="image-component"/>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<img src="media/b300b1fbfe4480b91ae8399ce8612e28/cap-height-full.png" alt=""  class="image-component"/>
+<p class="text-component">crotch</p>
+<p class="text-component">arc</p>
+<p class="text-component">axis</p>
+<p class="text-component">lowercase letter</p>
+<p class="text-component">spur</p>
+<p class="text-component">shoulder</p>
+<p class="text-component">crossbar</p>
+<p class="text-component">apex</p>
+<p class="text-component">counter
+(opened)/
+aperture</p>
+<p class="text-component">tittle</p>
+<p class="text-component">serif</p>
+<p class="text-component">bowl</p>
+<p class="text-component">bilateral serif</p>
+<p class="text-component">terminal
+(teardrop)</p>
+<p class="text-component">ear</p>
+<p class="text-component">loop</p>
+<p class="text-component">neck</p>
+<p class="text-component">counter
+(closed)</p>
+<p class="text-component">descender</p>
+<p class="text-component">uppercase/
+capital letter</p>
+<img src="media/3f64fea4480b22287b9f42c08da86f22/21-full.png" alt=""  class="image-component"/>
+<img src="media/7934c1691ba9d582dab0b3ca9ce38b5f/20-full.png" alt=""  class="image-component"/>
+<img src="media/6e311e218efd87de550c21ef024d75ec/19-full.png" alt=""  class="image-component"/>
+<img src="media/c04a45c369dfba1a01c1d361456d67d0/18-full.png" alt=""  class="image-component"/>
+<img src="media/27b7685d5145a03f358751ab076fc531/17-full.png" alt=""  class="image-component"/>
+<img src="media/45e76824df5a93bb3009c796e2cd8b73/16-full.png" alt=""  class="image-component"/>
+<img src="media/5e945a6bec626dcfb971299e2e1f95a0/15-full.png" alt=""  class="image-component"/>
+<img src="media/64804cd2e9d90370ad130cb96e877f6b/14-full.png" alt=""  class="image-component"/>
+<img src="media/7096505f0aa36f937a2711d2b2e49621/12-full.png" alt=""  class="image-component"/>
+<img src="media/119b64a66de942d87e89b262fa0273a2/11-2-full.png" alt=""  class="image-component"/>
+<img src="media/bb44d409fad1157a19ea3d72d36a008d/10-full.png" alt=""  class="image-component"/>
+<img src="media/49d672dbd9b9c53c834c57f32eab175f/9-full.png" alt=""  class="image-component"/>
+<img src="media/cb6c3d4c4ab76452e40e636eee09b5d6/8-2-full.png" alt=""  class="image-component"/>
+<img src="media/75cfaedd8399a02461da6d54492507b4/7-full.png" alt=""  class="image-component"/>
+<img src="media/03be76d5e9c1c9ee01005c12ce98b0e4/6-full.png" alt=""  class="image-component"/>
+<img src="media/fe30f2183ddb00f34bb8b67fcff0f801/5-2-full.png" alt=""  class="image-component"/>
+<img src="media/2cb5f06794052108111c161d51f4ff8f/4-full.png" alt=""  class="image-component"/>
+<img src="media/233a04b32b32d64f359a5cb1a0672fb5/3-full.png" alt=""  class="image-component"/>
+<img src="media/2f0e08eb07a2b6696a00e22010eb68b9/2-full.png" alt=""  class="image-component"/>
+<img src="media/2c0f2fc6c1b628c9116213616e93659a/1-full.png" alt=""  class="image-component"/>
+<img src="media/7f35eef8ac2a09f31c95289e73b0fd1d/typographic-anatomy-full.png" alt=""  class="image-component"/>
+<img src="media/9498b313324ddadd5eb31af71309b7fb/13-full.png" alt=""  class="image-component"/>
+<p class="text-component">cap height</p>
+<p class="text-component">x-height</p>
+<p class="text-component">descender line</p>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<p class="text-component">baseline</p>
+<img src="media/b300b1fbfe4480b91ae8399ce8612e28/cap-height-full.png" alt=""  class="image-component"/>
+<p class="text-component">midline</p>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<p class="text-component">cap line</p>
+<img src="media/b300b1fbfe4480b91ae8399ce8612e28/cap-height-full.png" alt=""  class="image-component"/>
+<p class="text-component">ascender line</p>
+<img src="media/a3ee222ca97f43f5fc60240f7fd38daf/ascender-line-full.png" alt=""  class="image-component"/>
+<p class="text-component">Hide all terms</p>
+<p class="text-component">Show all terms</p>
+<p class="text-component">Click on the colored sections to toggle terms</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
