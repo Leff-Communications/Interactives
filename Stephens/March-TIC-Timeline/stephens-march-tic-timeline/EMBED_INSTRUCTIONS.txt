@@ -1,0 +1,7 @@
+
+
+Full height - For an experience that expands to the height of overheight pages and does not scroll, use this embed code:
+
+<div style='position: relative;width: auto;padding: 0 0 584.58%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none' id="experience-642368695e274" data-aspectRatio="0.17106383"><iframe allowfullscreen src='stephens-march-tic-timeline/index.html' style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 1px;width: 1px;min-height: 100%;min-width: 100%' frameborder='0' class='ceros-experience' title='Stephens March TIC Timeline' scrolling='no'></iframe></div><script type="text/javascript" src="stephens-march-tic-timeline/assets/scroll-proxy.min.js" data-ceros-origin-domains=""></script>
+
+For additional security set the data-ceros-origin-domains attribute on the above script tag to the domain that will serve Ceros experiences on this page (or a comma-separated list if multiple domains).

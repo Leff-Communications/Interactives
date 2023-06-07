@@ -1,0 +1,251 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'airglades-homepage-graphic',
+            issueAliasSlug: 'airglades-homepage-graphic',
+            issue: {"id":206088,"projectId":33290,"slug":"experience-5c76a6fb28779","name":"Airglades homepage graphic","status":"published","creationDate":"2019-02-27T15:04:27.000Z","lastModifiedDate":"2019-05-14T18:45:09.000Z","deletionDate":null,"firstPublishedDate":"2019-02-27T18:57:07.000Z","wipExperienceVersionId":621607,"publishedExperienceVersionId":705820,"createdByMemberId":6387,"primaryIssueAliasId":283520,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5c76a6faeac46.jpg","importLinkShared":0,"lastPublishedDate":"2019-05-14T18:45:35.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p876ca3590367","title":"Airglades homepage graphic"},
+            docVersion: {"id":705820,"experienceId":206088,"slug":"experience-version-5cdb0ccf4fe77","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5cdb0ccf4fe77.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5cdb0ccf4ff46","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/05\/14\/4bcc7a7da9f3f0c6e5c5f3d13512eb8a\/page-thumbnail.jpg?imageOpt=1&crop=765,735,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-05-14T18:45:35.000Z","modificationDate":"2019-05-14T18:45:35.000Z","publishedDate":"2019-05-14T18:45:35.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d55df3f1-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Open Sans","familyGuid":"Uploaded|d3b832df-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Uploaded|d55df3f1-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Bold","cssFamilyName":"Open Sans-Bold-6u1ElaB0","cssFileURL":"fonts\/9a3fb0d4-fed2-4dd6-b6f7-ada0e9792bc5\/opensans-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|d55dfce2-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"Open Sans","familyGuid":"Uploaded|d3b832df-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Uploaded|d55dfce2-3d30-11e8-88f3-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Open Sans-Regular-ZXSjLGNq","cssFileURL":"fonts\/5df0f7cc-ab34-438d-8a4c-f410cfe11715\/opensans-regular.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Airglades homepage graphic</title>
+
+
+
+
+    <meta property="og:title" content="Airglades homepage graphic"/>
+        <meta property="og:image" content="media/4bcc7a7da9f3f0c6e5c5f3d13512eb8a/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Airglades homepage graphic">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/4bcc7a7da9f3f0c6e5c5f3d13512eb8a/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5cdb0ccf4fe77.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5cdb0ccf4fe77",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b235d4c79d91a901427d7b40157161ab/line-shape-full.png" alt=""  class="image-component"/>
+<p class="text-component">Become a Major US–Latin America cargo hub</p>
+<p class="text-component">Have a unique location</p>
+<p class="text-component">Provide airfield services</p>
+<p class="text-component">Use available
+land to develop logistics hub</p>
+<p class="text-component">House modern perishable cargo handling facilities</p>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">5</p>
+<p class="text-component">4</p>
+<p class="text-component">3</p>
+<p class="text-component">An international cargo airport 85 miles north of Miami, Airglades will support the US–Latin America air cargo and perishables market
+
+South Florida is a perishable air cargo import hub, >65% of inbound US perishable air cargo
+
+Region handles ~90% of outbound non-belly air cargo (mainly non-perishable) to Latin America</p>
+<p class="text-component">Avoids congestion associated with urban centers and reduces overall transportation cost and times
+</p>
+<p class="text-component">The facility will offer the full range of aircraft maintenance, repair, overhaul, parking and bonded fuel services</p>
+<p class="text-component">Site and immediate surrounding area offers abundant affordable land to develop a greenfield logistics infrastructure footprint.
+
+Once in a generation opportunity to be a part of an efficient, optimized logistics footprint from the start
+</p>
+<p class="text-component">Will house a state of the art perishable cargo center 
+to provide efficient logistics processes</p>
+<p class="text-component">Hover over or click on images for more information</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Unlocking the potential of Airglades as a cargo hub—</p>
+<p class="text-component">making it the nation’s premier gateway for cargo and perishable goods to and from 
+Latin America—has the potential to improve efficiency, product quality, shelf life, and speed to market of all perishables.</p>
+<img src="media/1af2144feb8c40731d0ba4ac49332c91/1-full.png" alt=""  class="image-component"/>
+<img src="media/f27d2fa62248698c1f0aa2a605957311/5-full.png" alt=""  class="image-component"/>
+<img src="media/5710bee4f378ef2a7bbc275c3cd612a2/4-full.png" alt=""  class="image-component"/>
+<img src="media/534e936052b3d32a2c74677502dca319/2-full.png" alt=""  class="image-component"/>
+<img src="media/ed64a14a5479facfb8c44622c0b7bd8a/3-new-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

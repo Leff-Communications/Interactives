@@ -1,0 +1,7 @@
+
+
+Full height - For an experience that expands to the height of overheight pages and does not scroll, use this embed code:
+
+<div style='position: relative;width: auto;padding: 0 0 74.63%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none' id="experience-63d040dde7658" data-aspectRatio="1.34"><iframe allowfullscreen src='january-2023-social-exhibit-1-2/index.html' style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 1px;width: 1px;min-height: 100%;min-width: 100%' frameborder='0' class='ceros-experience' title='January 2023 social - Exhibit 8' scrolling='no'></iframe></div><script type="text/javascript" src="january-2023-social-exhibit-1-2/assets/scroll-proxy.min.js" data-ceros-origin-domains=""></script>
+
+For additional security set the data-ceros-origin-domains attribute on the above script tag to the domain that will serve Ceros experiences on this page (or a comma-separated list if multiple domains).

@@ -1,0 +1,286 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'stephens-january-2023-social',
+            issueAliasSlug: 'january-2023-social-exhibit-1',
+            issue: {"id":734440,"projectId":108771,"slug":"experience-63cf3d309831f","name":"January 2023 social - Exhibit 1","status":"published","creationDate":"2023-01-24T02:06:40.000Z","lastModifiedDate":"2023-01-24T21:30:42.000Z","deletionDate":null,"firstPublishedDate":"2023-01-24T19:57:50.000Z","wipExperienceVersionId":2917110,"publishedExperienceVersionId":2920003,"createdByMemberId":36346,"primaryIssueAliasId":1025815,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-63cf3d309ce27.jpg","importLinkShared":0,"lastPublishedDate":"2023-01-24T21:30:43.000Z","lastModifiedByMemberId":36346,"lastPublishedByMemberId":36346,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"63cf3d30-c04dc9f1d1be6","title":"January 2023 social - Exhibit 1"},
+            docVersion: {"id":2920003,"experienceId":734440,"slug":"experience-version-63d04e03a62c8","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-63d04e03a62c8.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":null,"seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-63d04e03a62df","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/01\/24\/5bdcb707571ece347c53e3d6ecc99cc4\/page-thumbnail.jpg?imageOpt=1&crop=683,748,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2023-01-24T21:30:43.000Z","modificationDate":"2023-01-24T21:30:43.000Z","publishedDate":"2023-01-24T21:30:43.000Z","committedByMemberId":36346,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af7666-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std XLt","familyGuid":"Uploaded|d3ccd64b-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af7666-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-XLt","cssFamilyName":"ITC Avant Garde Std XL-wdRFc3Du","cssFileURL":"fonts\/da78861d-2188-4c79-b95f-0b50e380f0ff\/itc-itcavantgardestd-xlt.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>January 2023 social - Exhibit 1</title>
+
+
+
+
+    <meta property="og:title" content="January 2023 social - Exhibit 1"/>
+        <meta property="og:image" content="media/5bdcb707571ece347c53e3d6ecc99cc4/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="January 2023 social - Exhibit 1">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/5bdcb707571ece347c53e3d6ecc99cc4/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-63d04e03a62c8.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_63d04e03a62c8",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Gross Domestic Product, Quarterly Change 2020 to Present.</p>
+<p class="text-component">% Change/Growth</p>
+<img src="media/5aba90e6f2ac07c768f60413b59c5ce0/asset-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">-4.6</p>
+<p class="text-component">-29.9</p>
+<p class="text-component">35.3</p>
+<p class="text-component">3.9</p>
+<p class="text-component">6.3</p>
+<p class="text-component">7.0</p>
+<p class="text-component">2.7</p>
+<p class="text-component">7.0</p>
+<p class="text-component">3.2</p>
+<p class="text-component"> -0.6</p>
+<p class="text-component"> -1.6</p>
+<p class="text-component">2020</p>
+<p class="text-component">2021</p>
+<p class="text-component">2022</p>
+<p class="text-component">Q1</p>
+<p class="text-component">Q1</p>
+<p class="text-component">Q1</p>
+<p class="text-component">Q2</p>
+<p class="text-component">Q2</p>
+<p class="text-component">Q2</p>
+<p class="text-component">Q3</p>
+<p class="text-component">Q3</p>
+<p class="text-component">Q3</p>
+<p class="text-component">Q4</p>
+<p class="text-component">Q4</p>
+<p class="text-component">Source: Federal Reserve of St. Louis. Federal Reserve Economic Database (FRED), extracted from the database on January 12, 2023.</p>
+<img src="media/19f29bb36f054a6f455c5fb721c49e26/processed-svg-stephens-logo-white.svg" alt=""  class="image-component"/>
+<img src="media/c8d1b5e28a9656fb775b316a549470cd/bar-top-1-full.png" alt=""  class="image-component"/>
+<img src="media/a0d6cc7c2a8c85c35ec803de3aa8151f/bar-bottom-1-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    <style>
+#63d04b8a64844>img {
+height: 190px;
+  animation-name: open;
+  animation-duration: 1s;
+}
+
+div#\36 3d04b8a64844>img {
+ height: 190px;
+  animation-name: open;
+  animation-duration: 3s;
+transform-origin: bottom  !important;
+}
+
+#63d04bb964845>img {
+height: 149px;
+  animation-name: open;
+  animation-duration: 1s;
+}
+
+div#\36 3d04bb964845>img {
+ height: 149px;
+  animation-name: open;
+  animation-duration: 3s;
+transform-origin: top  !important;
+}
+
+@keyframes open {
+    0% {
+        
+        transform: scaleY(0);
+-webkit-transform: scaleY(0);
+    }
+    100% {
+        
+        transform: scaleY(1);
+-webkit-transform: scaleY(1);
+    }
+}
+</style>
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
