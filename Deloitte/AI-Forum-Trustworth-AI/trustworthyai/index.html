@@ -1,0 +1,458 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'deloitte-ai-forum-trustworthy-ai',
+            issueAliasSlug: 'trustworthyai',
+            issue: {"id":417679,"projectId":65118,"slug":"experience-5fc93623d0b00","name":"Deloitte Trustworthy AI","status":"published","creationDate":"2020-12-03T19:01:55.000Z","lastModifiedDate":"2023-02-20T17:25:11.000Z","deletionDate":null,"firstPublishedDate":"2020-12-03T19:32:54.000Z","wipExperienceVersionId":1459694,"publishedExperienceVersionId":1459791,"createdByMemberId":14154,"primaryIssueAliasId":571232,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5fc9361f01e08.jpg","importLinkShared":0,"lastPublishedDate":"2020-12-03T19:32:54.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p6b1ed43b5e06","title":"Deloitte Trustworthy AI"},
+            docVersion: {"id":1459791,"experienceId":417679,"slug":"experience-version-5fc93d6594505","loadLowRes":0,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5fc93d6594505.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Deloitte Trustworthy AI","seoMetaKeywords":"","seoMetaDescription":"Deloitte Trustworthy AI","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d6594522","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/90bd88eb4f8d5c284da2420add4ec9de\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d659c6a4","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/fe8d42a3f28c5e175f6877bf3d419b64\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65aebf2","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/4bac9ba87e9e75c4db77fc413d7edcb8\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65b5b34","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/8bbddb00e95993a8314b740ee44021da\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65bc151","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/eb22f9dc59466630bddf57f0c062cf71\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65c2b08","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/749e05a686a39af2d100f37f0c78ddd2\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65c9154","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/c5dcdf3be529534776d74e7a3a0ba6be\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65cf53e","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/063d54254f1c7e7fb51f2694ad44be05\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65d55ea","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/0bebbaeca4274da42e3f99e2ada49429\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65dc18a","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/7a0a4355a931d013ea8056980498ce92\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65e27dc","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/301e6acff54b21c8b430f48aa0611342\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65ec17c","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/2e8a860851b6e3569fd488a883fb016f\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d65f3523","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/4d28fdb51c7700a57fdf21565900d1b1\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d660752b","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/f67db0319aae65c796a9a97805cb7d31\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d660fc7a","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/d70a416486ab143d87493fae210d6b9d\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d6621115","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/af58c5258c3f88cddcc727282f0bc105\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d6627d78","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/543c4ef18bec077cfba71dde99fc4e3a\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d662e909","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/0d7e5b35c59e92a60eb9a5dc992f0445\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d663571d","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/e6538377464b47110d020daba9354bc3\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc93d663d284","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/9e620644926c1649b56abcfbdbc99a8b\/page-thumbnail.jpg?imageOpt=1&crop=870,725,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-12-03T19:32:54.000Z","modificationDate":"2020-12-03T19:32:54.000Z","publishedDate":"2020-12-03T19:32:53.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Open Sans|400|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|400|normal","variantName":"Normal","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|600|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":600,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|600|normal","variantName":"Semi-Bold","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|700|italic":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":700,"fontStyle":"italic","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|700|italic","variantName":"Bold italic","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|700|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":700,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|700|normal","variantName":"Bold","cssFamilyName":"Open Sans","api":"Google"},"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Deloitte Trustworthy AI Deloitte Trustworthy AI</title>
+
+
+
+        <meta name="description" content="Deloitte Trustworthy AI"/>
+
+    <meta property="og:title" content="Deloitte Trustworthy AI"/>
+        <meta property="og:image" content="media/90bd88eb4f8d5c284da2420add4ec9de/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Deloitte Trustworthy AI">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/90bd88eb4f8d5c284da2420add4ec9de/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5fc93d6594505.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5fc93d6594505",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">How trustworthy is your AI?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/ed57a313d4931daba5e3ff9ab9a8237d/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/ed57a313d4931daba5e3ff9ab9a8237d/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/ed57a313d4931daba5e3ff9ab9a8237d/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">AI can help you draw relevant insights, make smarter decisions, and strengthen customer bonds. But without ethical safeguards it can erode trust—potentially damaging reputation and business performance.
+
+To see how trustworthy your AI is, answer six questions. </p>
+<p class="text-component">Tap a segment to start</p>
+<img src="media/742991b10e87e371db8d7aaaa70845db/all-main-ceros-assets-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Implementation with integrity</p>
+<img src="media/6e18823547f9fa8f91eca1f5b75ee92c/all-main-ceros-assets-03-full.png" alt=""  class="image-component"/>
+<img src="media/b1ecc37ae050e15a22ce01d6b613c9cb/all-main-ceros-assets-02-full.png" alt=""  class="image-component"/>
+<img src="media/5e0b95fb316a3b058bf35b01d93d7f34/all-main-ceros-assets-04-full.png" alt=""  class="image-component"/>
+<img src="media/0bd213a896a7927a33568dbd552a3023/all-main-ceros-assets-06-full.png" alt=""  class="image-component"/>
+<img src="media/0a8199fee9dff1e0136a4df27ed9665e/all-main-ceros-assets-08-full.png" alt=""  class="image-component"/>
+<img src="media/f0c8321ffbb82ad8377f6cc022452707/all-main-ceros-assets-10-full.png" alt=""  class="image-component"/>
+<img src="media/3bcd4c910c9f68347b8b97789c78c92c/all-main-ceros-assets-12-full.png" alt=""  class="image-component"/>
+<img src="media/cee9ff7014b0544b11940571a1a52bd8/all-main-ceros-assets-14-full.png" alt=""  class="image-component"/>
+<p class="text-component">Trustworthy
+AI</p>
+<p class="text-component">TM</p>
+<img src="media/6349cf7bc3fb873ae2a8530465e4b0ff/all-main-ceros-assets-05-full.png" alt=""  class="image-component"/>
+<img src="media/640c838e2b4f1923776b1d4f4acbabf7/all-main-ceros-assets-07-full.png" alt=""  class="image-component"/>
+<img src="media/1003e96b8b4fa3c3f44c37b53caa8317/all-main-ceros-assets-09-full.png" alt=""  class="image-component"/>
+<img src="media/825ee90028e14730fde5280d7e0006e4/all-main-ceros-assets-11-full.png" alt=""  class="image-component"/>
+<img src="media/cf2eb1975439029192645e4691949b44/all-main-ceros-assets-13-full.png" alt=""  class="image-component"/>
+<img src="media/f6ed32d025bf236da77702eb358a117b/all-main-ceros-assets-15-full.png" alt=""  class="image-component"/>
+<p class="text-component">Fair/Impartial</p>
+<p class="text-component">Robust/
+Reliable</p>
+<p class="text-component">Privacy/
+Respect</p>
+<p class="text-component">Safe/Secure</p>
+<p class="text-component">Responsible/
+Accountable</p>
+<p class="text-component">Transparent/
+Explainable</p>
+<img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Ready to start making your AI more trustworthy?
+Download Deloitte’s article on ethical, trustworthy AI.</p>
+<p class="text-component">Learn more</p>
+<p class="text-component">Deloitte is a leading global provider of audit and assurance, consulting, financial advisory, risk advisory, tax and related services. Our global network of member firms and related entities in more than 150 countries and territories (collectively, the “Deloitte organization”) serves four out of five Fortune Global 500® companies. Learn how Deloitte’s approximately 312,000 people make an impact that matters at www.deloitte.com.
+
+As used in this document, “Deloitte” means Deloitte Consulting LLP, a subsidiary of Deloitte LLP. Please see www.deloitte.com/us/about for a detailed description of our legal structure. Certain services may not be available to attest clients under the rules and regulations of public accounting. 
+
+This publication contains general information only and Deloitte is not, by means of this publication, rendering accounting, business, financial, investment, legal, tax, or other professional advice or services. This publication is not a substitute for such professional advice or services, nor should it be used as a basis for any decision or action that may affect your business. Before making any decision or taking any action that may affect your business, you should consult a qualified professional advisor. Deloitte shall not be responsible for any loss sustained by any person who relies on this publication. 
+
+Copyright © 2020 Deloitte Development LLC. All rights reserved.
+</p></div>
+            <div class="page"><p class="text-component">Fair with impartial.</p>
+<p class="text-component">Does your organization have established checks in place to identify potential areas of bias in AI models?</p>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/b609b17083062c3726329d464f292468/cropped-background-simplematrix-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Fair with impartial.</p>
+<p class="text-component">Does your organization have established checks in place to identify potential areas of bias in AI models?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">AI can't be trustworthy without rigorous internal and external checks that help ensure equitable application across participants. </p>
+<p class="text-component">Very good.</p>
+<p class="text-component">No</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<img src="media/4c3c1e435df568c5e1027094e2f2b5e8/pie-charts-individual-52-04-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Fair with impartial.</p>
+<p class="text-component">Does your organization have established checks in place to identify potential areas of bias in AI models?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<p class="text-component"></p>
+<p class="text-component">Consider starting by implementing rigorous internal and external checks to
+help ensure equitable application of AI across participants.</p>
+<p class="text-component">Get trustworthy.
+</p>
+<img src="media/4c3c1e435df568c5e1027094e2f2b5e8/pie-charts-individual-52-04-full.png" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Robust with reliable.</p>
+<p class="text-component">Are your organization’s AI systems learning and delivering 
+the desired responses and decisions from each new set of data?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/b609b17083062c3726329d464f292468/cropped-background-simplematrix-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Robust with reliable.</p>
+<p class="text-component">Are your organization’s AI systems learning and delivering 
+the desired responses and decisions from each new set of data?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Even the most carefully modeled algorithms can produce
+unintended results in real-world applications. </p>
+<p class="text-component">That's important.
+</p>
+<img src="media/429eda78fd7ef643b7df90ac3c0d177c/pie-charts-individual-50-04-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Robust with reliable.</p>
+<p class="text-component">Are your organization’s AI systems learning and delivering 
+the desired responses and decisions from each new set of data?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Consider creating systems and processes for AI to help provide reliable results at each run.</p>
+<p class="text-component">Get trustworthy.
+</p>
+<img src="media/429eda78fd7ef643b7df90ac3c0d177c/pie-charts-individual-50-04-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Privacy with respect.</p>
+<p class="text-component">Are there enough safeguards in place to help ensure all of your organization’s data is kept confidential and with integrity?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/b609b17083062c3726329d464f292468/cropped-background-simplematrix-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Privacy with respect.</p>
+<p class="text-component">Are there enough safeguards in place to help ensure all of your organization’s data is kept confidential and with integrity?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/2c71b7b50c8fa4913986fdc44bed12ca/pie-charts-icons-05-full.png" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Without proper safeguards, it’s easy 
+to inadvertently violate your consumers’ original consent and trust.</p>
+<p class="text-component">That's vital.
+</p></div>
+            <div class="page"><p class="text-component">Privacy with respect.</p>
+<p class="text-component">Are there enough safeguards in place to help ensure all of your organization’s data is kept confidential and with integrity?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/2c71b7b50c8fa4913986fdc44bed12ca/pie-charts-icons-05-full.png" alt=""  class="image-component"/>
+<p class="text-component">Adhere to intended and stated use, and allow consumers to opt in or out of sharing their data at any time.</p>
+<p class="text-component">Get trustworthy.
+</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Safe and secure.</p>
+<p class="text-component">Are you confident that your AI systems are protected against all foreseeable risks or breaches?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/b609b17083062c3726329d464f292468/cropped-background-simplematrix-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Safe and secure.</p>
+<p class="text-component">Are you confident that your AI systems are protected against all foreseeable risks or breaches?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/86d65e9f91dad100232501879600da84/pie-charts-icons-06-full.png" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Trustworthy AI systems are better protected from risks that can cause physical or digital harm to consumers.</p>
+<p class="text-component">Excellent.
+</p></div>
+            <div class="page"><p class="text-component">Safe and secure.</p>
+<p class="text-component">Are you confident that your AI systems are protected against all foreseeable risks or breaches?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<img src="media/86d65e9f91dad100232501879600da84/pie-charts-icons-06-full.png" alt=""  class="image-component"/>
+<p class="text-component">Focus first on risks that can cause physical or digital harm to employees or consumers, and work to protect your AI systems from those risks.</p>
+<p class="text-component">Get trustworthy.
+</p></div>
+            <div class="page"><p class="text-component">Responsible with accountable.</p>
+<p class="text-component">In your organization, do you know who is ultimately responsible 
+for each AI system’s decisions if something goes wrong?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/b609b17083062c3726329d464f292468/cropped-background-simplematrix-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Responsible with accountable.</p>
+<p class="text-component">In your organization, do you know who is ultimately responsible 
+for each AI system’s decisions if something goes wrong?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/7e2cf0004c3e621cbaacf35fd111709f/pie-charts-icons-07-full.png" alt=""  class="image-component"/>
+<p class="text-component">Trustworthy AI is accountable and includes policies to determine who is responsible for outcomes. </p>
+<p class="text-component">That's essential.
+
+</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Responsible with accountable.</p>
+<p class="text-component">In your organization, do you know who is ultimately responsible 
+for each AI system’s decisions if something goes wrong?
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<img src="media/7e2cf0004c3e621cbaacf35fd111709f/pie-charts-icons-07-full.png" alt=""  class="image-component"/>
+<p class="text-component">Consider putting governance policies in place to determine who is responsible for AI system decisions. </p>
+<p class="text-component">Get trustworthy.
+
+</p></div>
+            <div class="page"><p class="text-component">Transparent with explainable.</p>
+<p class="text-component">Do your stakeholders know how the AI is arriving at decisions?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/b609b17083062c3726329d464f292468/cropped-background-simplematrix-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Transparent with explainable.</p>
+<p class="text-component">Do your stakeholders know how the AI is arriving at decisions?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/67dc9368a20226d0592353da92d793b2/pie-charts-icons-08-full.png" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">For your AI to be trustworthy all participants need to know how AI systems use data to arrive at decisions.</p>
+<p class="text-component">Very good.
+</p></div>
+            <div class="page"><p class="text-component">Transparent with explainable.</p>
+<p class="text-component">Do your stakeholders know how the AI is arriving at decisions?</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Yes</p>
+<p class="text-component">No</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<img src="media/67dc9368a20226d0592353da92d793b2/pie-charts-icons-08-full.png" alt=""  class="image-component"/>
+<p class="text-component">Start by eliminating “black box” algorithms to help ensure transparency about data use.</p>
+<p class="text-component">Get trustworthy.
+
+</p></div>
+            <div class="page"><p class="text-component">Implementation with integrity.</p>
+<p class="text-component">Ready to start making your AI more trustworthy?
+Download Deloitte’s article on ethical, trustworthy AI.</p>
+<img src="media/91be6bbf4e56a40dceb14f3e59874a19/search-bar-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">www.deloitte.com/us/trustai</p>
+<p class="text-component">Deloitte is a leading global provider of audit and assurance, consulting, financial advisory, risk advisory, tax and related services. Our global network of member firms and related entities in more than 150 countries and territories (collectively, the “Deloitte organization”) serves four out of five Fortune Global 500® companies. Learn how Deloitte’s approximately 312,000 people make an impact that matters at www.deloitte.com.
+
+As used in this document, “Deloitte” means Deloitte Consulting LLP, a subsidiary of Deloitte LLP. Please see www.deloitte.com/us/about for a detailed description of our legal structure. Certain services may not be available to attest clients under the rules and regulations of public accounting. 
+
+This publication contains general information only and Deloitte is not, by means of this publication, rendering accounting, business, financial, investment, legal, tax, or other professional advice or services. This publication is not a substitute for such professional advice or services, nor should it be used as a basis for any decision or action that may affect your business. Before making any decision or taking any action that may affect your business, you should consult a qualified professional advisor. Deloitte shall not be responsible for any loss sustained by any person who relies on this publication. 
+
+Copyright © 2020 Deloitte Development LLC. All rights reserved.
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

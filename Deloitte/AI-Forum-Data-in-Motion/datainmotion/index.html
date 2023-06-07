@@ -1,0 +1,367 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'deloitte-ai-forum-data-in-motion',
+            issueAliasSlug: 'datainmotion',
+            issue: {"id":417080,"projectId":65753,"slug":"experience-5fc7e773bf51d","name":"Deloitte Data in Motion","status":"published","creationDate":"2020-12-02T19:13:55.000Z","lastModifiedDate":"2023-04-03T23:15:08.000Z","deletionDate":null,"firstPublishedDate":"2020-12-03T18:31:37.000Z","wipExperienceVersionId":1457085,"publishedExperienceVersionId":1459624,"createdByMemberId":14154,"primaryIssueAliasId":571159,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5fc7e7734631b.jpg","importLinkShared":0,"lastPublishedDate":"2020-12-03T18:31:55.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p4e375371c9a5","title":"Deloitte Data in Motion"},
+            docVersion: {"id":1459624,"experienceId":417080,"slug":"experience-version-5fc92f1b13e80","loadLowRes":0,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5fc92f1b13e80.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Deloitte Data in Motion","seoMetaKeywords":"","seoMetaDescription":"Deloitte Data in Motion","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92f1b13eba","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/8542dd1d1f2e10dbddac39c82f00bb08\/page-thumbnail.jpg?imageOpt=1&crop=870,644,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-12-03T18:31:55.000Z","modificationDate":"2020-12-03T18:31:55.000Z","publishedDate":"2020-12-03T18:31:55.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Open Sans|400|italic":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":400,"fontStyle":"italic","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|400|italic","variantName":"Normal italic","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|400|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|400|normal","variantName":"Normal","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|600|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":600,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|600|normal","variantName":"Semi-Bold","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|700|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":700,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|700|normal","variantName":"Bold","cssFamilyName":"Open Sans","api":"Google"},"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Deloitte Data in Motion Deloitte Data in Motion</title>
+
+
+
+        <meta name="description" content="Deloitte Data in Motion"/>
+
+    <meta property="og:title" content="Deloitte Data in Motion"/>
+        <meta property="og:image" content="media/8542dd1d1f2e10dbddac39c82f00bb08/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Deloitte Data in Motion">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/8542dd1d1f2e10dbddac39c82f00bb08/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5fc92f1b13e80.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5fc92f1b13e80",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Data in Motion:</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/ed57a313d4931daba5e3ff9ab9a8237d/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/ed57a313d4931daba5e3ff9ab9a8237d/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/ed57a313d4931daba5e3ff9ab9a8237d/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Business now moves at a rapid pace. Customers have higher expectations 
+for speed and connectivity. Manufacturers must respond quickly to market trends. Supply chains stretch around the world. The common thread for all of this: Data. 
+
+Companies are realizing the powerful benefits of data in motion—data generated from equipment, the movement of goods, customer transactions, and more. Through data, they can achieve Connected Operations and Connected Supply Chains to:</p>
+<p class="text-component">How data in motion works</p>
+<p class="text-component">Harness the power of data.</p>
+<img src="media/7236556ddb3870d926eb17dbe789f8e2/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Tap to explore</p>
+<p class="text-component">Read more about data in motion:</p>
+<p class="text-component">Back to top</p>
+<img src="media/8cf50615ef4452dcf3aa4ee7bb9e5f8d/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">“Data in Motion Drives Enterprise Change”</p>
+<img src="media/91be6bbf4e56a40dceb14f3e59874a19/search-bar-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">As used in this document, “Deloitte” means Deloitte Consulting LLP, a subsidiary of Deloitte LLP. Please see www.deloitte.com/us/about for a detailed description of our legal structure. Certain services may not be available to attest clients under the rules and regulations of public accounting. 
+
+This publication contains general information only and Deloitte is not, by means of this publication, rendering accounting, business, financial, investment, legal, tax, or other professional advice or services. This publication is not a substitute for such professional advice or services, nor should it be used as a basis for any decision or action that may affect your business. Before making any decision or taking any action that may affect your business, you should consult a qualified professional advisor. Deloitte shall not be responsible for any loss sustained by any person who relies on this publication. 
+
+Copyright © 2020 Deloitte Development LLC. All rights reserved.</p>
+<img src="media/f30b74a6462fb23532f8973a9a571b1e/image.svg" alt=""  class="image-component"/>
+<img src="media/d108cd621658d225673670bd14ce615d/image.svg" alt=""  class="image-component"/>
+<img src="media/d108cd621658d225673670bd14ce615d/image.svg" alt=""  class="image-component"/>
+<img src="media/d108cd621658d225673670bd14ce615d/image.svg" alt=""  class="image-component"/>
+<img src="media/d108cd621658d225673670bd14ce615d/image.svg" alt=""  class="image-component"/>
+<img src="media/6d883c54e44cf569877a1e0d2fb7ea7a/image.svg" alt=""  class="image-component"/>
+<img src="media/aa361b10851f3e1a8e509d1c9f4a89b8/image.svg" alt=""  class="image-component"/>
+<img src="media/4ef616af9e2ff84c45bd383b1e5e269a/image.svg" alt=""  class="image-component"/>
+<img src="media/324f261865e581658dd96938be6fd3d2/image.svg" alt=""  class="image-component"/>
+<img src="media/f6ab0b58f636040f1e1aaa3252cf7477/image.svg" alt=""  class="image-component"/>
+<img src="media/b6a954b95819150171f7412d5a128124/image.svg" alt=""  class="image-component"/>
+<img src="media/22341e7d241117a4db38ac797f532675/image.svg" alt=""  class="image-component"/>
+<img src="media/31585fe38046ff4d88a5b3a1bc553822/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Make better predictions and stop issues before they happen</p>
+<p class="text-component">Improve ROI, efficiency, and transparency </p>
+<p class="text-component">Strengthen customer experiences and speed to market</p>
+<p class="text-component">Build resilience and competitive advantage </p>
+<img src="media/6b3ad0ea8324e69240f4bbb9552732c5/image.svg" alt=""  class="image-component"/>
+<img src="media/5681a839263baf13f74d88619c468c76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/72811469616c12ef2d6771c2befff48c/image.svg" alt=""  class="image-component"/>
+<img src="media/e50ad869c1557926ffe325135dc55b59/image.svg" alt=""  class="image-component"/>
+<img src="media/9da44297e891fd6b8ecc7a603b809eef/image.svg" alt=""  class="image-component"/>
+<img src="media/41129243dd66cf7ebce14b96239b79f9/image.svg" alt=""  class="image-component"/>
+<img src="media/9bbe90247104fb9709f77f17cc8a713d/asset-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Automate and optimize</p>
+<p class="text-component">Connect</p>
+<p class="text-component">Predict and plan </p>
+<p class="text-component">Monitor and act </p>
+<img src="media/77e3483131f0702c1094e5506f122cbb/asset-3-full.png" alt=""  class="image-component"/>
+<img src="media/00fd20f7d173c210c5ea783f30d4ef94/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Connected Operations</p>
+<p class="text-component">Connected Supply Chains </p>
+<img src="media/44f9218d90f8936b10263931a575d188/image.svg" alt=""  class="image-component"/>
+<img src="media/8ee628cb9030f44f3d1761e7058951d9/asset-2-full.png" alt=""  class="image-component"/>
+<img src="media/7fa262a004d1142396390223f2304da3/image.svg" alt=""  class="image-component"/>
+<img src="media/c65f115740d4cc4db1703b2d00011e59/image.svg" alt=""  class="image-component"/>
+<p class="text-component">The transformation to Connected Operations and Connected Supply Chain prepares companies for the next era of digital, efficient, fast, and flexible businesses. Unlock more value through Data in Motion and achieve agility with speed. </p>
+<img src="media/73cfa8f0b6876361a2dd847868e51b29/ezgif-2-5d108d29f7d7-full.gif" alt=""  class="image-component"/>
+<p class="text-component">What is data in motion?</p>
+<p class="text-component">Data is flowing constantly, from our phones and sensors to the cloud and beyond. And that's only the beginning. It's estimated that this year, more than 750 million edge AI chips will be sold. Chips that perform or accelerate machine learning tasks on devices, rather than in a remote data center. Companies are harnessing this value by building strategies around data in motion.</p>
+<img src="media/840a8c9a850a63590db7b86969d43e96/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Connected Operations</p>
+<p class="text-component">Connected Supply Chains </p>
+<img src="media/a432235ed04a95e39f4f9ba16b9ac5f7/image.svg" alt=""  class="image-component"/>
+<img src="media/20e7f205034a8c9b01a193db39f6ac2a/image.svg" alt=""  class="image-component"/>
+<img src="media/3a862409c8b84179eaab32506b602b1e/image.svg" alt=""  class="image-component"/>
+<img src="media/5681a839263baf13f74d88619c468c76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Tap to explore</p>
+<img src="media/7236556ddb3870d926eb17dbe789f8e2/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/3a862409c8b84179eaab32506b602b1e/image.svg" alt=""  class="image-component"/>
+<img src="media/72811469616c12ef2d6771c2befff48c/image.svg" alt=""  class="image-component"/>
+<img src="media/77e3483131f0702c1094e5506f122cbb/asset-3-full.png" alt=""  class="image-component"/>
+<img src="media/e50ad869c1557926ffe325135dc55b59/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Automate and optimize</p>
+<img src="media/9da44297e891fd6b8ecc7a603b809eef/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Connect</p>
+<img src="media/41129243dd66cf7ebce14b96239b79f9/image.svg" alt=""  class="image-component"/>
+<p class="text-component">Predict and plan </p>
+<img src="media/9bbe90247104fb9709f77f17cc8a713d/asset-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Monitor and act </p>
+<img src="media/1652c034eb600fc696957d151a5af2ab/1-popupbg-full.png" alt=""  class="image-component"/>
+<img src="media/e6d3512557c5ff95596feb60701e2fdf/2-popupbg-full.png" alt=""  class="image-component"/>
+<img src="media/081473388aacc4b16046c503f4d949f8/3-popupbg-full.png" alt=""  class="image-component"/>
+<img src="media/cabf14df81087304e9073006139fefbf/4-popupbg-full.png" alt=""  class="image-component"/>
+<p class="text-component">Connect</p>
+<p class="text-component">Capture, apply, distribute, and securely store data 
+
+Connect multiple data sources to generate more powerful insights
+
+Build custom, cloud-based dashboards and hubs that enable better predictions and decision-making
+
+Impact: 
+In one instance, a multipurpose, world-class stadium sourced data from 10+ different systems and built 100+ data integration pipelines to process data in a cloud-based platform.</p>
+<p class="text-component">Predict and plan </p>
+<p class="text-component">Sensor data and predictive maintenance to identify potentially faulty equipment, reduce downtime, and prevent outages
+
+Just-in-time inventory signals go to suppliers for dynamic fulfillment of parts </p>
+<p class="text-component">Monitor and act </p>
+<p class="text-component">AI and machine learning (ML) monitor equipment after repairs to determine if they’re working as expected or further action is required 
+
+Early warning signals go to field reps for more informed customer interactions and support </p>
+<p class="text-component">Automate and optimize</p>
+<p class="text-component">Aggregated data about failure rate, inventory, and location is used by ML models to reduce repair time and decrease costs associated with emergency maintenance</p>
+<img src="media/505c675607e3f2a7dbe59654c0b4ff6c/5-popupbg-full.png" alt=""  class="image-component"/>
+<p class="text-component">Connect</p>
+<p class="text-component">Capture, apply, distribute, and securely store data 
+
+Connect multiple data sources to generate more powerful insights
+
+Build custom, cloud-based dashboards and hubs that enable better predictions and decision-making
+
+Impact: 
+In one instance, a multipurpose, world-class stadium sourced data from 10+ different systems and built 100+ data integration pipelines to process data in a cloud-based platform.</p>
+<img src="media/e30159a3ed7b4d9c9da409e3f4886549/6-popupbg-full.png" alt=""  class="image-component"/>
+<p class="text-component">Predict and plan </p>
+<p class="text-component">Predictive analytics determine when and how supplies will be available to improve production planning, minimize waste, and support proactive customer communication</p>
+<img src="media/6629576e51fee3ae47fd105c669e803b/7-popupbg-full.png" alt=""  class="image-component"/>
+<p class="text-component">Monitor and act </p>
+<p class="text-component">Smart factory sensors track and monitor component supplies along with equipment performance to enhance throughput and yield
+
+Sensors capture data such as temperature and humidity to provide real-time actionable insights and equipment adjustments and provide visibility into shipment location and progress</p>
+<img src="media/c6b38860e8b71727d506e38d1b8a9cf4/8-popupbg-full.png" alt=""  class="image-component"/>
+<p class="text-component">Automate and optimize</p>
+<p class="text-component">Automation, AI, and ML replace manual efforts in planning and highlight where bottlenecks are likely to occur
+
+Routes are optimized and companies make better real-time delivery decisions for transitioning goods </p>
+<img src="media/d0674ced95cb5e2cb05c04617d815d3d/image.svg" alt=""  class="image-component"/>
+<img src="media/d0674ced95cb5e2cb05c04617d815d3d/image.svg" alt=""  class="image-component"/>
+<img src="media/5681a839263baf13f74d88619c468c76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/5681a839263baf13f74d88619c468c76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/13e506a5c2202ae4034f8a5572ee4b76/image.svg" alt=""  class="image-component"/>
+<img src="media/73cfa8f0b6876361a2dd847868e51b29/ezgif-2-5d108d29f7d7-full.gif" alt=""  class="image-component"/>
+<img src="media/73cfa8f0b6876361a2dd847868e51b29/ezgif-2-5d108d29f7d7-full.gif" alt=""  class="image-component"/>
+<p class="text-component">data in motion</p>
+<img src="media/d76184082e841a130397caa5491d2c37/image.svg" alt=""  class="image-component"/>
+<img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

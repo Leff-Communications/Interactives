@@ -1,0 +1,1520 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'deloitte-ai-forum-executive-survey',
+            issueAliasSlug: 'aiexecutivesurvey',
+            issue: {"id":410771,"projectId":65200,"slug":"experience-5fb3eb5e93276","name":"Deloitte Executive survey","status":"published","creationDate":"2020-11-17T15:25:18.000Z","lastModifiedDate":"2021-11-16T19:38:41.000Z","deletionDate":null,"firstPublishedDate":"2020-12-03T18:29:47.000Z","wipExperienceVersionId":1431410,"publishedExperienceVersionId":1459619,"createdByMemberId":6387,"primaryIssueAliasId":567751,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5fb3eb5e1e1da.jpg","importLinkShared":0,"lastPublishedDate":"2020-12-03T18:29:47.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p8e9fa59d6af0","title":"Deloitte Executive survey"},
+            docVersion: {"id":1459619,"experienceId":410771,"slug":"experience-version-5fc92e993fbd2","loadLowRes":0,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5fc92e993fbd2.js","themingBackgroundImageUri":null,"seoTitleKeywords":"Deloitte Executive survey","seoMetaKeywords":"","seoMetaDescription":"Deloitte Executive survey","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e993fbf0","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/f59a3b7458ab3be01ba419d273daf39d\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9947bb4","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/66fedf95a1ad730943384872caf6bcbb\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e994ef3b","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/1daff3bfbd81b2d437e7c873930c2492\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99562c9","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/6ca722d442be4bbedf21387e1efd77a2\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e995dc4a","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/5d51d496ec67013edc93c1825a6591dc\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9965236","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/605e65f9694495cc4a8ec2cc20471b16\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e996cf4c","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/11f22009d3d2bb4e8062d190ee2b327c\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e997414f","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/b0f4917b46a01477dbf3faa94b38bba8\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e997e07b","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/c915ca08c3fb99e1be8f75350c7b6f10\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e998923e","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/b50476e6ef152cd0b700d9ef93984dab\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9992d42","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/dba67b949a5eade05ff2a9576f195f5b\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e999a520","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/5404dc6f9a8a11b5c1cd356a47c3e107\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99a202b","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/0560caba701fee4a6cd92323fba9b860\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99b8e55","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/6834600fa47c2139ee4d71d411d2a186\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99d46ef","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/8ce1d0ef80b41e9babdc473f8ff573c7\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99df635","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/297357036e768b662acf297a7453efc7\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99eae52","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/5f0c1f0fc48c279d42e1631680f7ec01\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e99f30bd","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/e52e790688c8a2bf3a6f30e8d26551f3\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9a06d44","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/0ff90d945d7000646e0c1274051293b2\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9a0ead5","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/370c4613335e174af39437fc31e100d5\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9a17403","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/a8d01fcaf5c21fa480576f695795ac37\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9a1f8f6","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/68934e20231ca6ecc41ac71bc2abdbc8\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9a27b76","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/645891040a1f67af0ea760f62e573cc0\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9a99781","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/4254248931095a4c4c2907aba379ba3f\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9aa1016","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/31c7f3b809a185d5632a8fe91907b4e4\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9aa8901","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/dbdfe8be8be70765dbe97f0b7df2ce5c\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9b12040","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/a83c36a6b1c8068ca8d5c64a120eb8aa\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9b198d7","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/5f3c963d44432e5a6f364b6ec36f1e8b\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9b211ec","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/5925d7b35c041c5ac8675a211f484c31\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9b28e8f","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/ba24e68e039074d92ac269d2d9236713\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9b30626","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/54e2ef86b5015e1f24194d159b63859c\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-5fc92e9b387b2","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/12\/03\/2a81f702e19e5883b61c8f206b4cb7c9\/page-thumbnail.jpg?imageOpt=1&crop=870,781,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-12-03T18:29:47.000Z","modificationDate":"2020-12-03T18:29:47.000Z","publishedDate":"2020-12-03T18:29:45.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":0,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Open Sans|400|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|400|normal","variantName":"Normal","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|600|italic":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":600,"fontStyle":"italic","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|600|italic","variantName":"Semi-Bold italic","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|600|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":600,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|600|normal","variantName":"Semi-Bold","cssFamilyName":"Open Sans","api":"Google"},"Google|Open Sans|700|normal":{"familyName":"Open Sans","familyGuid":"Google|Open Sans","fontWeight":700,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Open Sans|700|normal","variantName":"Bold","cssFamilyName":"Open Sans","api":"Google"},"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Deloitte Executive survey Deloitte Executive survey</title>
+
+
+
+        <meta name="description" content="Deloitte Executive survey"/>
+
+    <meta property="og:title" content="Deloitte Executive survey"/>
+        <meta property="og:image" content="media/f59a3b7458ab3be01ba419d273daf39d/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Deloitte Executive survey">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/f59a3b7458ab3be01ba419d273daf39d/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5fc92e993fbd2.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5fc92e993fbd2",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">Data with AI:</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Where do you stand?</p>
+<p class="text-component">Deloitte surveyed thousands of executives and IT leaders about discovering what’s possible with AI, evaluating and selecting the right technology providers, and tackling AI risks head-on.</p>
+<img src="media/5abf4eec7a85ec6ca492f76f13ef9ae4/square-panel2-titlescreennewa-full.gif" alt=""  class="image-component"/>
+<img src="media/92e8f71cdd221fa798bddee29dd4e8a2/rounded-corner-box-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Take two minutes to compare 
+your answers to theirs</p>
+<img src="media/bb56726f170409d125dbd1af9c9df2ef/triangle-icon.svg" alt=""  class="image-component"/>
+<img src="media/bb56726f170409d125dbd1af9c9df2ef/triangle-icon.svg" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/></div>
+            <div class="page"><p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your organization, where does your company have the greatest level of sophistication?</p>
+<p class="text-component">Selecting AI technologies and technology suppliers</p>
+<p class="text-component">Integrating AI technology into our existing IT environment</p>
+<p class="text-component">Identifying valuable applications for AI</p>
+<p class="text-component">Integrating AI technology into business processes</p>
+<p class="text-component">Managing and maintaining AI solutions</p>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Please select one task to compare to results</p>
+<p class="text-component">N = 2,737 
+Source: State of AI in the Enterprise, 3rd Edition, Deloitte
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your organization, where does your company have the greatest level of sophistication?</p>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/ae7534358fa3fe9a4b6268450d23aeac/brain-01-full.png" alt=""  class="image-component"/>
+<img src="media/a2d71c73d61f574ba13ccc6fde998b9b/arrow-boxes-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">Selecting AI technologies and suppliers</p>
+<p class="text-component">3</p>
+<p class="text-component">Identifying valuable applications for AI</p>
+<p class="text-component">5</p>
+<p class="text-component">Managing/maintaining 
+AI solutions</p>
+<p class="text-component">7</p>
+<p class="text-component">Building AI solutions</p>
+<p class="text-component">2</p>
+<p class="text-component">Integrating AI technology into existing IT</p>
+<p class="text-component">4</p>
+<p class="text-component">Integrating AI technology into business processes</p>
+<p class="text-component">6</p>
+<p class="text-component">Hiring/managing staff with AI skills</p>
+<p class="text-component">Your choice</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">st</p>
+<p class="text-component">rd</p>
+<p class="text-component">th</p>
+<p class="text-component">th</p>
+<p class="text-component">nd</p>
+<p class="text-component">th</p>
+<p class="text-component">th</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your organization, where does your company have the greatest level of sophistication?</p>
+<img src="media/ae7534358fa3fe9a4b6268450d23aeac/brain-01-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/6c9cf2ce92df7a8f8b07fdfe185374b2/arrow-boxes-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Selecting AI technologies and suppliers</p>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Integrating AI technology into existing IT</p>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Identifying valuable applications for AI</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Integrating AI technology into business processes</p>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Managing/maintaining 
+AI solutions</p>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Hiring/managing staff with AI skills</p>
+<p class="text-component">7</p>
+<p class="text-component">Building AI solutions</p>
+<p class="text-component">th</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your organization, where does your company have the greatest level of sophistication?</p>
+<img src="media/ae7534358fa3fe9a4b6268450d23aeac/brain-01-full.png" alt=""  class="image-component"/>
+<img src="media/a2d71c73d61f574ba13ccc6fde998b9b/arrow-boxes-03-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Selecting AI technologies and suppliers</p>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Integrating AI technology into existing IT</p>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Identifying valuable applications for AI</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Integrating AI technology into business processes</p>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Managing/maintaining 
+AI solutions</p>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Hiring/managing staff with AI skills</p>
+<p class="text-component">7</p>
+<p class="text-component">Building AI solutions</p>
+<p class="text-component">th</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your organization, where does your company have the greatest level of sophistication?</p>
+<img src="media/ae7534358fa3fe9a4b6268450d23aeac/brain-01-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/6c9cf2ce92df7a8f8b07fdfe185374b2/arrow-boxes-04-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Selecting AI technologies and suppliers</p>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Integrating AI technology into existing IT</p>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Identifying valuable applications for AI</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Integrating AI technology into business processes</p>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Managing/maintaining 
+AI solutions</p>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Hiring/managing staff with AI skills</p>
+<p class="text-component">7</p>
+<p class="text-component">Building AI solutions</p>
+<p class="text-component">th</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your organization, where does your company have the greatest level of sophistication?</p>
+<img src="media/ae7534358fa3fe9a4b6268450d23aeac/brain-01-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/a2d71c73d61f574ba13ccc6fde998b9b/arrow-boxes-03-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<img src="media/be621d016a642aa8c8f6346f9026b9d8/arrow-boxes-02-full.png" alt=""  class="image-component"/>
+<img src="media/bb865d8493985c9c07130b0de5f04a58/arrow-boxes-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Selecting AI technologies and suppliers</p>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Integrating AI technology into existing IT</p>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Identifying valuable applications for AI</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Integrating AI technology into business processes</p>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Managing/maintaining 
+AI solutions</p>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Hiring/managing staff with AI skills</p>
+<p class="text-component">7</p>
+<p class="text-component">Building AI solutions</p>
+<p class="text-component">th</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">There are several potential benefits or outcomes your organization may be trying to achieve with AI technologies—how do yours compare?</p>
+<p class="text-component">Please select one outcome to compare to results</p>
+<p class="text-component">Making processes more efficient</p>
+<p class="text-component">Enhancing existing products and services</p>
+<p class="text-component">Creating new products and services</p>
+<p class="text-component">Enhancing relationships with clients and customers</p>
+<p class="text-component">Improving decision making</p>
+<p class="text-component">N = 2,737 
+Source: State of AI in the Enterprise, 3rd Edition, Deloitte
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">There are several potential benefits or outcomes your organization may be trying to achieve with AI technologies—how do yours compare?</p>
+<img src="media/a26eafaf266ebbf21f40a7c30fda325d/round-boxes-q2-02-full.png" alt=""  class="image-component"/>
+<img src="media/d2ebf0f5d68d5032fa4487ca93f74e50/round-boxes-q2-03-full.png" alt=""  class="image-component"/>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Making processes more efficient</p>
+<p class="text-component">Enhancing existing products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Creating new products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Enhancing relationships with clients and customers</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Improving decision making</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Lowering costs</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">7</p>
+<p class="text-component">th</p>
+<p class="text-component">Making employees more productive</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">8</p>
+<p class="text-component">th</p>
+<p class="text-component">Enabling new business models</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">9</p>
+<p class="text-component">th</p>
+<p class="text-component">Discovering new insights</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">10</p>
+<p class="text-component">th</p>
+<p class="text-component">Reducing headcount</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">There are several potential benefits or outcomes your organization may be trying to achieve with AI technologies—how do yours compare?</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Enhancing existing products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Creating new products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Enhancing relationships with clients and customers</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Improving decision making</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Lowering costs</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">7</p>
+<p class="text-component">th</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">8</p>
+<p class="text-component">th</p>
+<p class="text-component">Enabling new business models</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">9</p>
+<p class="text-component">th</p>
+<p class="text-component">Discovering new insights</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">10</p>
+<p class="text-component">th</p>
+<p class="text-component">Reducing headcount</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a26eafaf266ebbf21f40a7c30fda325d/round-boxes-q2-02-full.png" alt=""  class="image-component"/>
+<img src="media/d2ebf0f5d68d5032fa4487ca93f74e50/round-boxes-q2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Making processes more efficient</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Making employees more productive</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">There are several potential benefits or outcomes your organization may be trying to achieve with AI technologies—how do yours compare?</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Making processes more efficient</p>
+<img src="media/d2ebf0f5d68d5032fa4487ca93f74e50/round-boxes-q2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Enhancing existing products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Creating new products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Enhancing relationships with clients and customers</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Improving decision making</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Lowering costs</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">7</p>
+<p class="text-component">th</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">8</p>
+<p class="text-component">th</p>
+<p class="text-component">Enabling new business models</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">9</p>
+<p class="text-component">th</p>
+<p class="text-component">Discovering new insights</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">10</p>
+<p class="text-component">th</p>
+<p class="text-component">Reducing headcount</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a26eafaf266ebbf21f40a7c30fda325d/round-boxes-q2-02-full.png" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Making employees more productive</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">There are several potential benefits or outcomes your organization may be trying to achieve with AI technologies—how do yours compare?</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Making processes more efficient</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Enhancing existing products and services</p>
+<img src="media/a26eafaf266ebbf21f40a7c30fda325d/round-boxes-q2-02-full.png" alt=""  class="image-component"/>
+<img src="media/d2ebf0f5d68d5032fa4487ca93f74e50/round-boxes-q2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Creating new products and services</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Enhancing relationships with clients and customers</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Improving decision making</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Lowering costs</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">7</p>
+<p class="text-component">th</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">8</p>
+<p class="text-component">th</p>
+<p class="text-component">Enabling new business models</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">9</p>
+<p class="text-component">th</p>
+<p class="text-component">Discovering new insights</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">10</p>
+<p class="text-component">th</p>
+<p class="text-component">Reducing headcount</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Making employees more productive</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">There are several potential benefits or outcomes your organization may be trying to achieve with AI technologies—how do yours compare?</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Making processes more efficient</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Enhancing existing products and services</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Creating new products and services</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Enhancing relationships with clients and customers</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Improving decision making</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">6</p>
+<p class="text-component">th</p>
+<p class="text-component">Lowering costs</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">7</p>
+<p class="text-component">th</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">8</p>
+<p class="text-component">th</p>
+<p class="text-component">Enabling new business models</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">9</p>
+<p class="text-component">th</p>
+<p class="text-component">Discovering new insights</p>
+<img src="media/61691114b00ee44e2635a92229031a3a/round-boxes-q2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">10</p>
+<p class="text-component">th</p>
+<p class="text-component">Reducing headcount</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a26eafaf266ebbf21f40a7c30fda325d/round-boxes-q2-02-full.png" alt=""  class="image-component"/>
+<img src="media/d2ebf0f5d68d5032fa4487ca93f74e50/round-boxes-q2-03-full.png" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Making employees more productive</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Which of the following are top challenges for your organization’s 
+AI initiatives?</p>
+<p class="text-component">Please select one challenge to compare to results</p>
+<p class="text-component">Managing AI-related risks</p>
+<p class="text-component">Integrating AI into the organization</p>
+<p class="text-component">Data challenges</p>
+<p class="text-component">High cost of AI technologies and solutions</p>
+<p class="text-component">Challenges implementing AI technologies</p>
+<p class="text-component">N = 2,737 
+Source: State of AI in the Enterprise, 3rd Edition, Deloitte
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following are top challenges for your organization’s 
+AI initiatives?</p>
+<img src="media/a39631f51e65655d639a328a6cd46163/list-infographic-green-full.png" alt=""  class="image-component"/>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">1st</p>
+<p class="text-component">2nd</p>
+<p class="text-component">3rd</p>
+<p class="text-component">4th</p>
+<p class="text-component">5th</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">6th</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">7th</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">8th</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">9th</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">10th</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<p class="text-component">Managing AI-related risks</p>
+<p class="text-component">Integrating AI into the organization</p>
+<p class="text-component">Data challenges</p>
+<p class="text-component">High cost of 
+AI technologies and solutions</p>
+<p class="text-component">Challenges implementing AI technologies</p>
+<p class="text-component">Choosing the right AI technologies</p>
+<p class="text-component">Lack of skills</p>
+<p class="text-component">Challenges proving business value</p>
+<p class="text-component">Difficulty identifying use cases</p>
+<p class="text-component">Lack of executive commitment</p>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<img src="media/682fe1f2e59bac6de6aa3612f9fdd0d8/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following are top challenges for your organization’s 
+AI initiatives?</p>
+<p class="text-component">1st</p>
+<p class="text-component">Managing AI-related risks</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">2nd</p>
+<p class="text-component">Integrating AI into the organization</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">3rd</p>
+<p class="text-component">Data challenges</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">4th</p>
+<p class="text-component">High cost of 
+AI technologies and solutions</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">5th</p>
+<p class="text-component">Challenges implementing AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">6th</p>
+<p class="text-component">Choosing the right AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">7th</p>
+<p class="text-component">Lack of skills</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">8th</p>
+<p class="text-component">Challenges proving business value</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">9th</p>
+<p class="text-component">Difficulty identifying use cases</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">10th</p>
+<p class="text-component">Lack of executive commitment</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a39631f51e65655d639a328a6cd46163/list-infographic-green-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<img src="media/682fe1f2e59bac6de6aa3612f9fdd0d8/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following are top challenges for your organization’s 
+AI initiatives?</p>
+<p class="text-component">1st</p>
+<p class="text-component">Managing AI-related risks</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">2nd</p>
+<p class="text-component">Integrating AI into the organization</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">3rd</p>
+<p class="text-component">Data challenges</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">4th</p>
+<p class="text-component">High cost of 
+AI technologies and solutions</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">5th</p>
+<p class="text-component">Challenges implementing AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">6th</p>
+<p class="text-component">Choosing the right AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">7th</p>
+<p class="text-component">Lack of skills</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">8th</p>
+<p class="text-component">Challenges proving business value</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">9th</p>
+<p class="text-component">Difficulty identifying use cases</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">10th</p>
+<p class="text-component">Lack of executive commitment</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a39631f51e65655d639a328a6cd46163/list-infographic-green-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<img src="media/682fe1f2e59bac6de6aa3612f9fdd0d8/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following are top challenges for your organization’s 
+AI initiatives?</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">30%</p>
+<p class="text-component">Managing AI-related risks</p>
+<p class="text-component">30%</p>
+<p class="text-component">Integrating AI into the organization</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">30%</p>
+<p class="text-component">Data challenges</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">29%</p>
+<p class="text-component">High cost of 
+AI technologies and solutions</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">28%</p>
+<p class="text-component">Challenges implementing AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">27%</p>
+<p class="text-component">Choosing the right AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">23%</p>
+<p class="text-component">Lack of skills</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">22%</p>
+<p class="text-component">Challenges proving business value</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">20%</p>
+<p class="text-component">Difficulty identifying use cases</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">18%</p>
+<p class="text-component">Lack of executive commitment</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a39631f51e65655d639a328a6cd46163/list-infographic-green-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<img src="media/682fe1f2e59bac6de6aa3612f9fdd0d8/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following are top challenges for your organization’s 
+AI initiatives?</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">1st</p>
+<p class="text-component">Managing AI-related risks</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">2nd</p>
+<p class="text-component">Integrating AI into the organization</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">3rd</p>
+<p class="text-component">Data challenges</p>
+<p class="text-component">4th</p>
+<p class="text-component">High cost of 
+AI technologies and solutions</p>
+<p class="text-component">5th</p>
+<p class="text-component">Challenges implementing AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">6th</p>
+<p class="text-component">Choosing the right AI technologies</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">7th</p>
+<p class="text-component">Lack of skills</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">8th</p>
+<p class="text-component">Challenges proving business value</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">9th</p>
+<p class="text-component">Difficulty identifying use cases</p>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<p class="text-component">10th</p>
+<p class="text-component">Lack of executive commitment</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/a39631f51e65655d639a328a6cd46163/list-infographic-green-full.png" alt=""  class="image-component"/>
+<img src="media/6823f14369e238e039d534c8f4cf85f6/list-infographic-blue-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<img src="media/682fe1f2e59bac6de6aa3612f9fdd0d8/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Which of the following ethical risks of AI is your company most concerned about?</p>
+<p class="text-component">Please select one risk to compare to results</p>
+<p class="text-component">Safety concerns about AI-powered systems</p>
+<p class="text-component">Lack of explainability and transparency in AI-derived decisions</p>
+<p class="text-component">Elimination of jobs due to AI-driven automation</p>
+<p class="text-component">Using AI to manipulate people's thinking and behavior</p>
+<p class="text-component">Potential bias of AI algorithms</p>
+<p class="text-component">N = 2,737
+Source: State of AI in the Enterprise, 3rd Edition, Deloitte
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following ethical risks of AI is your company most concerned about?</p>
+<img src="media/f15993f787c7554f02a84d6cb84e75ef/trianglepieces-artboard-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Safety concerns about 
+AI-powered systems</p>
+<p class="text-component">24%</p>
+<img src="media/2df4f27db2f49f3bc9b34d2807c86d70/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Lack of explainability and 
+transparency in AI-derived decisions</p>
+<p class="text-component">19%</p>
+<p class="text-component">Elimination of jobs due to AI-driven automation</p>
+<p class="text-component">19%</p>
+<p class="text-component">Using AI to manipulate people's thinking and behavior</p>
+<p class="text-component">19%</p>
+<p class="text-component">Potential bias of AI algorithms</p>
+<p class="text-component">14%</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: 5% had no ethical concerns </p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following ethical risks of AI is your company most concerned about?</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Safety concerns about 
+AI-powered systems</p>
+<p class="text-component">24%</p>
+<img src="media/2df4f27db2f49f3bc9b34d2807c86d70/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Lack of explainability and 
+transparency in AI-derived decisions</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Elimination of jobs due to AI-driven automation</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Using AI to manipulate people's thinking and behavior</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Potential bias of AI algorithms</p>
+<p class="text-component">14%</p>
+<img src="media/f15993f787c7554f02a84d6cb84e75ef/trianglepieces-artboard-4-full.png" alt=""  class="image-component"/>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<p class="text-component">Note: 5% had no ethical concerns </p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following ethical risks of AI is your company most concerned about?</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Safety concerns about 
+AI-powered systems</p>
+<p class="text-component">24%</p>
+<img src="media/2df4f27db2f49f3bc9b34d2807c86d70/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Lack of explainability and 
+transparency in AI-derived decisions</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Elimination of jobs due to AI-driven automation</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Using AI to manipulate people's thinking and behavior</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Potential bias of AI algorithms</p>
+<p class="text-component">14%</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/f15993f787c7554f02a84d6cb84e75ef/trianglepieces-artboard-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: 5% had no ethical concerns </p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following ethical risks of AI is your company most concerned about?</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Safety concerns about 
+AI-powered systems</p>
+<p class="text-component">24%</p>
+<img src="media/2df4f27db2f49f3bc9b34d2807c86d70/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Lack of explainability and 
+transparency in AI-derived decisions</p>
+<p class="text-component">19%</p>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Elimination of jobs due to AI-driven automation</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Using AI to manipulate people's thinking and behavior</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Potential bias of AI algorithms</p>
+<p class="text-component">14%</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/f15993f787c7554f02a84d6cb84e75ef/trianglepieces-artboard-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: 5% had no ethical concerns </p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Which of the following ethical risks of AI is your company most concerned about?</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">st</p>
+<p class="text-component">Safety concerns about 
+AI-powered systems</p>
+<p class="text-component">24%</p>
+<img src="media/2df4f27db2f49f3bc9b34d2807c86d70/arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">2</p>
+<p class="text-component">nd</p>
+<p class="text-component">Lack of explainability and 
+transparency in AI-derived decisions</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">3</p>
+<p class="text-component">rd</p>
+<p class="text-component">Elimination of jobs due to AI-driven automation</p>
+<p class="text-component">19%</p>
+<p class="text-component">4</p>
+<p class="text-component">th</p>
+<p class="text-component">Using AI to manipulate people's thinking and behavior</p>
+<p class="text-component">19%</p>
+<img src="media/c8b6b26cab97d5b9731192628cdcdc81/trianglepieces-artboard-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">5</p>
+<p class="text-component">th</p>
+<p class="text-component">Potential bias of AI algorithms</p>
+<p class="text-component">14%</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/f15993f787c7554f02a84d6cb84e75ef/trianglepieces-artboard-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: 5% had no ethical concerns </p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<img src="media/31a162c0f47c924f534973a2d853b421/cropped-bottomgrid-full.gif" alt=""  class="image-component"/>
+<p class="text-component">In your opinion, when are AI technologies likely to substantially transform your organization, if at all?</p>
+<p class="text-component">Please select one answer to compare to results</p>
+<p class="text-component">Now</p>
+<p class="text-component">Less than 1 year</p>
+<p class="text-component">In 1–3 years</p>
+<p class="text-component">In 3–5 years</p>
+<p class="text-component">Beyond 5 years</p>
+<p class="text-component">N = 2,737
+Note: Percentages may not total 100 percent due to a small number of respondents who answered “Don’t know"
+Source: State of AI in the Enterprise, 3rd Edition, Deloitte
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">In your opinion, when are AI technologies likely to substantially transform your organization, if at all?</p>
+<img src="media/4b7541e6d26e23e057c775154a30e512/pie-chart1-01-full.png" alt=""  class="image-component"/>
+<img src="media/73469977a7fbfb1d578c359c69785e12/pie-chart1-03-full.png" alt=""  class="image-component"/>
+<img src="media/251be29cfc3759bf9908d7bfb370f2c3/pie-chart1-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<p class="text-component">9%</p>
+<p class="text-component">Now</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/4aefed44bd64ccdcba9a165d6383c5d7/pie-chart2-02-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">23%</p>
+<p class="text-component">Less than 
+1 year</p>
+<img src="media/bf84509676357d205bacc45e0898a832/pie-chart3-01-full.png" alt=""  class="image-component"/>
+<img src="media/cc46299917f145c8610e139bf6aec83b/pie-chart3-02-full.png" alt=""  class="image-component"/>
+<img src="media/0a1c40c4d393627c2af7b28b0cf6cc86/pie-chart3-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">43%</p>
+<p class="text-component">In 1–3 years</p>
+<img src="media/0c06f4ecffafae88e104d0aa5b670dbe/pie-chart4-01-full.png" alt=""  class="image-component"/>
+<img src="media/0f1551a193ede13aa5546822ee57e94a/pie-chart4-02-full.png" alt=""  class="image-component"/>
+<img src="media/1c10a02f1c48c9df48935417d9aede50/pie-chart4-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">21%</p>
+<p class="text-component">In 3–5 years</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/60ea1066c151a7b65f2bfd8be1951d88/pie-chart5-01-full.png" alt=""  class="image-component"/>
+<img src="media/68b684b5e71bdd05b2544f0469ed5264/pie-chart5-02-full.png" alt=""  class="image-component"/>
+<img src="media/b7c234040222e0c551390ed6177b1e12/pie-chart5-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">3%</p>
+<p class="text-component">Beyond
+5 years</p>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Note: Percentages may not total 100 percent due to a small number of respondents who answered “Don’t know"
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">In your opinion, when are AI technologies likely to substantially transform your organization, if at all?</p>
+<p class="text-component">Your choice</p>
+<p class="text-component">23%</p>
+<p class="text-component">Less than 
+1 year</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">9%</p>
+<p class="text-component">Now</p>
+<img src="media/bf84509676357d205bacc45e0898a832/pie-chart3-01-full.png" alt=""  class="image-component"/>
+<img src="media/cc46299917f145c8610e139bf6aec83b/pie-chart3-02-full.png" alt=""  class="image-component"/>
+<img src="media/0a1c40c4d393627c2af7b28b0cf6cc86/pie-chart3-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">43%</p>
+<p class="text-component">In 1–3 years</p>
+<img src="media/0c06f4ecffafae88e104d0aa5b670dbe/pie-chart4-01-full.png" alt=""  class="image-component"/>
+<img src="media/0f1551a193ede13aa5546822ee57e94a/pie-chart4-02-full.png" alt=""  class="image-component"/>
+<img src="media/1c10a02f1c48c9df48935417d9aede50/pie-chart4-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">21%</p>
+<p class="text-component">In 3–5 years</p>
+<img src="media/60ea1066c151a7b65f2bfd8be1951d88/pie-chart5-01-full.png" alt=""  class="image-component"/>
+<img src="media/68b684b5e71bdd05b2544f0469ed5264/pie-chart5-02-full.png" alt=""  class="image-component"/>
+<img src="media/b7c234040222e0c551390ed6177b1e12/pie-chart5-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">3%</p>
+<p class="text-component">Beyond
+5 years</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<img src="media/81cad0f40ae23310c30350662089ead1/pie-chart2-04-full.png" alt=""  class="image-component"/>
+<img src="media/c75ed3f8bc841fe634f265744d751dc6/pie-chart1-02-full.png" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Note: Percentages may not total 100 percent due to a small number of respondents who answered “Don’t know"
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">In your opinion, when are AI technologies likely to substantially transform your organization, if at all?</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<p class="text-component">43%</p>
+<p class="text-component">In 1–3
+years</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/c75ed3f8bc841fe634f265744d751dc6/pie-chart1-02-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">9%</p>
+<p class="text-component">Now</p>
+<img src="media/0c06f4ecffafae88e104d0aa5b670dbe/pie-chart4-01-full.png" alt=""  class="image-component"/>
+<img src="media/0f1551a193ede13aa5546822ee57e94a/pie-chart4-02-full.png" alt=""  class="image-component"/>
+<img src="media/1c10a02f1c48c9df48935417d9aede50/pie-chart4-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">21%</p>
+<p class="text-component">In 3–5 years</p>
+<img src="media/60ea1066c151a7b65f2bfd8be1951d88/pie-chart5-01-full.png" alt=""  class="image-component"/>
+<img src="media/68b684b5e71bdd05b2544f0469ed5264/pie-chart5-02-full.png" alt=""  class="image-component"/>
+<img src="media/b7c234040222e0c551390ed6177b1e12/pie-chart5-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">3%</p>
+<p class="text-component">Beyond
+5 years</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/4aefed44bd64ccdcba9a165d6383c5d7/pie-chart2-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">23%</p>
+<p class="text-component">Less than 
+1 year</p>
+<img src="media/1c56f867d5cb9e9a9beeecb2d556524b/pie-chart3-04-full.png" alt=""  class="image-component"/>
+<img src="media/0a1c40c4d393627c2af7b28b0cf6cc86/pie-chart3-03-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">Note: Percentages may not total 100 percent due to a small number of respondents who answered “Don’t know"
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">In your opinion, when are AI technologies likely to substantially transform your organization, if at all?</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<p class="text-component">21%</p>
+<p class="text-component">In 3–5
+years</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/c75ed3f8bc841fe634f265744d751dc6/pie-chart1-02-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">9%</p>
+<p class="text-component">Now</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/4aefed44bd64ccdcba9a165d6383c5d7/pie-chart2-02-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">23%</p>
+<p class="text-component">Less than 
+1 year</p>
+<img src="media/60ea1066c151a7b65f2bfd8be1951d88/pie-chart5-01-full.png" alt=""  class="image-component"/>
+<img src="media/68b684b5e71bdd05b2544f0469ed5264/pie-chart5-02-full.png" alt=""  class="image-component"/>
+<img src="media/b7c234040222e0c551390ed6177b1e12/pie-chart5-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">3%</p>
+<p class="text-component">Beyond
+5 years</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/bf84509676357d205bacc45e0898a832/pie-chart3-01-full.png" alt=""  class="image-component"/>
+<img src="media/cc46299917f145c8610e139bf6aec83b/pie-chart3-02-full.png" alt=""  class="image-component"/>
+<img src="media/0a1c40c4d393627c2af7b28b0cf6cc86/pie-chart3-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">43%</p>
+<p class="text-component">In 1–3 years</p>
+<img src="media/14366167084242829c05e4bb98bc7c5a/pie-chart4-04-full.png" alt=""  class="image-component"/>
+<img src="media/1c10a02f1c48c9df48935417d9aede50/pie-chart4-03-full.png" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Note: Percentages may not total 100 percent due to a small number of respondents who answered “Don’t know"
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">In your opinion, when are AI technologies likely to substantially transform your organization, if at all?</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Your choice</p>
+<p class="text-component">3%</p>
+<p class="text-component">Beyond
+5 years</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/c75ed3f8bc841fe634f265744d751dc6/pie-chart1-02-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">9%</p>
+<p class="text-component">Now</p>
+<img src="media/533ca6578f9767d5376afc42ccb4c58e/pie-chart2-01-full.png" alt=""  class="image-component"/>
+<img src="media/4aefed44bd64ccdcba9a165d6383c5d7/pie-chart2-02-full.png" alt=""  class="image-component"/>
+<img src="media/fa93acccc9415d9dcfad46d9f05ea9c0/pie-chart2-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">23%</p>
+<p class="text-component">Less than 
+1 year</p>
+<img src="media/bf84509676357d205bacc45e0898a832/pie-chart3-01-full.png" alt=""  class="image-component"/>
+<img src="media/cc46299917f145c8610e139bf6aec83b/pie-chart3-02-full.png" alt=""  class="image-component"/>
+<img src="media/0a1c40c4d393627c2af7b28b0cf6cc86/pie-chart3-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">43%</p>
+<p class="text-component">In 1–3 years</p>
+<img src="media/9e35c588c8898de383c0fba82e96e56a/rounded-corner-box2-02-full.png" alt=""  class="image-component"/>
+<img src="media/63658c051ec6869cd1f4dbcdc051afc5/rounded-corner-box2filled-02-full.png" alt=""  class="image-component"/>
+<p class="text-component">Next</p>
+<img src="media/0c06f4ecffafae88e104d0aa5b670dbe/pie-chart4-01-full.png" alt=""  class="image-component"/>
+<img src="media/0f1551a193ede13aa5546822ee57e94a/pie-chart4-02-full.png" alt=""  class="image-component"/>
+<img src="media/1c10a02f1c48c9df48935417d9aede50/pie-chart4-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">21%</p>
+<p class="text-component">In 3–5 years</p>
+<img src="media/beb614e32dbe306497e3104a24893402/pie-chart5-04-full.png" alt=""  class="image-component"/>
+<img src="media/b7c234040222e0c551390ed6177b1e12/pie-chart5-03-full.png" alt=""  class="image-component"/>
+<img src="media/b98efa298503427a8f659cdcc9ce8c09/homepage-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">1</p>
+<p class="text-component">2</p>
+<p class="text-component">3</p>
+<p class="text-component">4</p>
+<p class="text-component">5</p>
+<img src="media/278f20d6e57706979118fd942e971b25/checkmark-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Note: Percentages may not total 100 percent due to a small number of respondents who answered “Don’t know"
+</p></div>
+            <div class="page"><img src="media/69cd7f5a8f5d3a2417a14fe75c761fe9/cropped-background-section-04-largertext-full.gif" alt=""  class="image-component"/>
+<p class="text-component">Data with AI: Where do you stand?</p>
+<img src="media/53385c239852050450c4173c5fa56945/del-sec-rgb-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">As used in this document, “Deloitte” means Deloitte Consulting LLP, a subsidiary of Deloitte LLP. Please see www.deloitte.com/us/about for a detailed description of our legal structure. Certain services may not be available to attest clients under the rules and regulations of public accounting. 
+
+This publication contains general information only and Deloitte is not, by means of this publication, rendering accounting, business, financial, investment, legal, tax, or other professional advice or services. This publication is not a substitute for such professional advice or services, nor should it be used as a basis for any decision or action that may affect your business. Before making any decision or taking any action that may affect your business, you should consult a qualified professional advisor. Deloitte shall not be responsible for any loss sustained by any person who relies on this publication. 
+
+Copyright © 2020 Deloitte Development LLC. All rights reserved.
+</p>
+<img src="media/d2e7318bd2fcd9217c2be96ff8cbda26/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back</p>
+<p class="text-component">To view the full reports, click the link below.</p>
+<img src="media/91be6bbf4e56a40dceb14f3e59874a19/search-bar-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">www.deloitte.com/us/ai-forum</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
