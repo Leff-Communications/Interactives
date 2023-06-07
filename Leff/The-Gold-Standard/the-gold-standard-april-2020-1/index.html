@@ -1,0 +1,471 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-april-2020-1',
+            issue: {"id":358065,"projectId":41781,"slug":"experience-5ef248a32539b","name":"The Gold Standard: June 2020","status":"published","creationDate":"2020-06-23T18:23:31.000Z","lastModifiedDate":"2020-07-14T17:28:35.000Z","deletionDate":null,"firstPublishedDate":"2020-06-25T21:40:15.000Z","wipExperienceVersionId":1204279,"publishedExperienceVersionId":1209022,"createdByMemberId":6387,"primaryIssueAliasId":487118,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5ef248a2788fb.jpg","importLinkShared":0,"lastPublishedDate":"2020-06-25T21:40:15.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pbfcb42b4f95d","title":"The Gold Standard: June 2020"},
+            docVersion: {"id":1209022,"experienceId":358065,"slug":"experience-version-5ef519bf2945b","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5ef519bf2945b.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5ef519bf29469","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/06\/25\/ecfce899240a030664d9f3f7160186b4\/page-thumbnail.jpg?imageOpt=1&crop=765,680,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-06-25T21:40:15.000Z","modificationDate":"2020-06-25T21:40:15.000Z","publishedDate":"2020-06-25T21:40:15.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: June 2020</title>
+
+
+
+
+    <meta property="og:title" content="The Gold Standard: June 2020"/>
+        <meta property="og:image" content="media/ecfce899240a030664d9f3f7160186b4/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: June 2020">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/ecfce899240a030664d9f3f7160186b4/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5ef519bf2945b.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5ef519bf2945b",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Professional services firms are publishing commitments to improving diversity in their ranks following the murder of George Floyd. How is diversity and inclusion (D&I) playing out in the thought leadership they have produced in recent months? We have seen the occasional report but my guess is that firms will ramp up their publication engines, given how hot the topic is. One firm that has been consistently ahead of the competition this year and earlier is McKinsey & Company—especially in terms of how the coronavirus pandemic disproportionately affects Black Americans.
+
+Here's a sampling of what firms have published in recent months, current as of June 17, 2020.</p>
+<img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<p class="text-component">Featured articles</p>
+<p class="text-component">Back to top</p>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<p class="text-component">BCG
+Financial institutions can break the cycle of racial inequality”</p>
+<p class="text-component">Heidrick & Struggles
+Meeting the inclusion imperative: How 
+leaders can link diversity, inclusion, and 
+accelerated performance</p>
+<p class="text-component">Korn Ferry
+Blacks in leadership: Harder than it should have been”</p>
+<p class="text-component">McKinsey & Company
+COVID-19's effects on minority-owned 
+small businesses in the United States”</p>
+<img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/a2db1e0a46e5d9ad3411014e79c7f8b7/section-full.png" alt=""  class="image-component"/>
+<p class="text-component">Landing page
+
+CEO perspective
+“A CEO plan for coronavirus: Actions to take now” 
+
+Tracking the crisis through its “Situational Threat Report Index
+“Tracking the global impact of the coronavirus outbreak”</p>
+<p class="text-component">Bain & Company</p>
+<p class="text-component">BCG
+Financial institutions can break the cycle of racial inequality”
+</p>
+<img src="media/9d1a76effc07e1c44b5fc066bd3e76aa/asset-17-full.png" alt=""  class="image-component"/>
+<p class="text-component">Heidrick & Struggles
+Meeting the inclusion imperative: How leaders can link diversity, inclusion, and accelerated performance</p>
+<img src="media/80a8852740024f5863e81360e0d33267/asset-16-full.png" alt=""  class="image-component"/>
+<p class="text-component">Korn Ferry
+Blacks in leadership: Harder than it should have been”</p>
+<img src="media/29373fb48e493ab6c32a52462d8b6f9a/asset-24-full.png" alt=""  class="image-component"/>
+<p class="text-component">McKinsey has heavily invested in D&I thought leadership. The firm has published several timely pieces that are helping to inform the current discussion on why diversity matters and the best ways to help minority communities.</p>
+<p class="text-component">McKinsey & Company</p>
+<img src="media/caa68ed79cd3c483d054126d94d7469f/asset-18-full.png" alt=""  class="image-component"/>
+<p class="text-component">Russell Reynolds
+Diversity and inclusion during a crisis: Five emerging lessons”</p>
+<img src="media/bc68c8b87ada6cd02eca30c93fe105c2/asset-23-full.png" alt=""  class="image-component"/>
+<p class="text-component">Diversity wins: How inclusion matters</p>
+<p class="text-component">Russell Reynolds
+Diversity and inclusion during a crisis: Five emerging lessons”</p>
+<p class="text-component">Featured themes</p>
+<p class="text-component">Supply-chain issues</p>
+<img src="media/edeebee23fa47607dff0e5895fdf0d60/category-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Emerging strategy lessons from covid-19,” BCG Henderson Institute
+
+The chairman of the BCG Henderson Institute and several other co-contributors weigh in on emerging strategy lessons from COVID-19.
+
+The COVID-19 crisis has posed a number of severe challenges for businesses, from reacting to the outbreak, preparing for a potential recession, anticipating an eventual rebound in demand and placing bets against the post-crisis landscape. But it also provides an opportunity for organizations to step back and assess their approach to strategy and their strategic capabilities. As the context in which businesses operate becomes more dynamic and unpredictable, driven by the pace of technological change and a high degree of interconnectedness, we should expect other shocks of a similar nature moving forward, whether the trigger comes from biological pathogens, cyberattacks, market crashes, or another sources. Some will be exogenous to the business world, but some will be endogenous.
+
+How can companies be better prepared 
+for when those shocks occur? We see 
+10 strategic lessons emerging from the current crisis.
+
+Read the article</p>
+<p class="text-component">Strategy</p>
+<img src="media/edeebee23fa47607dff0e5895fdf0d60/category-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">“COVID-19: Investing in black lives and livelihoods,” McKinsey & Company
+
+McKinsey consultants discuss why black Americans are disproportionally affected by the COVID-19 pandemic.
+
+Amid the rising deaths, infections, and possible economic implosion of the COVID-19 pandemic, our country’s most pressing need is to save lives and arrest any plunge into a prolonged recession or depression. The crisis is already hitting major social and economic systems, yet black Americans will experience a disproportionate share of the disruption—from morbidity and mortality to unemployment and bankruptcy. 
+
+McKinsey analysis shows that black Americans are almost twice as likely to live in the counties at highest risk of health and economic disruption, if or when the pandemic hits those counties. . . . In addition, we found that 39 percent of all jobs held by black Americans—compared with 34 percent held by white Americans—are now threatened by reductions in hours or pay, temporary furloughs, or permanent layoffs, totaling 7 million jobs.2
+
+Indeed, the pandemic underscores the consequences of the structural disparities that have persisted in this country for centuries while presenting an opportunity to invest in building more equitable systems that will benefit society overall. In this article, we outline some of the key findings from our report on COVID-19 and black America.
+
+Read the article or the full report upon which it is based</p>
+<p class="text-component">Public sector</p>
+<img src="media/2f442961890ed6322e152db5df34d322/category-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Touchless Retail: What the rest of the world could learn from China’s new ways to shop,” Capgemini 
+
+Capgemini reports on what retailers can learn from China on new ways to shop.
+
+Chinese consumers are known for the 
+speed at which they adopt new digital technologies. Even before the lockdown, online ordering and payments, had already become the norm in most large cities.
+
+With the COVID-19 crisis came a new imperative: one that further transformed shopping and buying habits. Pushed by necessity and bringing together innovations that were at various levels of maturity before the lockdown, Chinese retailers and brands brought to life a new way of shopping 
+that can be thought of as Touchless Retail. This means eliminating or making virtual all possible human touchpoints across the end-to-end customer journey from product selection to delivery at the doorstep:
+
+•Search, evaluation and product selection is   completed on a smartphone.
+•The order to payment cycle is also                   completed on smartphone.
+•Human intervention in order fulfillment and     delivery are reduced to the minimum with       the use of robotics and automation.
+•Automated drop-off or pick-up stations           installed in apartment buildings or local           communities prevent human contact at the   point of receipt.
+
+Read the article</p>
+<p class="text-component">Retailing</p>
+<img src="media/bba96817143f0623f4cef83c1ebbe72a/category-5-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Addressing climate change in a post-pandemic world,” McKinsey & Company
+
+In this McKinsey Quarterly article, 
+McKinsey consultants explore lessons from the pandemic that could help address 
+climate change.
+
+Given the scope and magnitude of this sudden crisis, and the long shadow it will cast, can the world afford to pay attention to climate change and the broader sustainability agenda at this time? Our firm belief is that we simply cannot afford to do otherwise. Not only does climate action remain critical over the next decade, but investments in climate-resilient infrastructure and the transition to a lower-carbon future can drive significant near-term job creation while increasing economic and environmental resiliency. And with near-zero interest rates for the foreseeable future, there is no better time than the present for such investments.
+
+To meet this need and to leverage this opportunity, we believe that leaders would benefit from considering three questions:
+
+•What lessons can be learned from the             current pandemic for climate change?
+•What implications—positive or                           negative—could our pandemic responses       hold for climate action?
+•What steps could companies, governments,   and individuals take to align our immediate     pandemic response with the imperatives 
+  of sustainability?
+
+Read the article</p>
+<p class="text-component">Climate change</p>
+<img src="media/a9cd8f9a07638a9e1bb0548c7fa7dcf3/category-6-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Coronavirus: Here’s streaming platforms’ path to lasting customer relationships,” 
+Bain & Company
+
+Bain notes that people are watching more video content while confined at home. Are streaming platforms up to the task?
+
+This is a critical moment for streaming platforms for multiple reasons. Due to the coronavirus crisis, households are consuming more content from streaming services. But recent Bain research indicates that by 2024 consumer demand in the US will max out at three to four streaming services per subscribing household.
+
+This implies only a few players will be able to reach meaningful scale over the long term. That means streaming services are under pressure not only to meet customers’ needs during the crisis, but also to take proactive steps now to put their businesses in a stronger position coming out of it. We see three major actions video-streaming services can take to accomplish both goals.
+
+Read the article</p>
+<p class="text-component">Media</p>
+<img src="media/eece5aab410f07e7ea1b58ec0f72d930/category-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">“What if LIBOR transition is postponed? A practical guide,” Oliver Wyman 
+
+The London Inter-bank Offered Rate (LIBOR) transition may seem esoteric, but lots of money is at stake. Oliver Wyman, which has followed the issue closely, addresses whether the pandemic will delay the transition.
+
+Market participants have been preparing for the permanent discontinuation of LIBOR, which industry regulators have indicated could be as early as the end of next year. This is a massive task impacting the entire financial services industry with, according to Oliver Wyman estimates, costs to the industry well over $5 billion dollars. But that was before COVID-19. So, if you’re involved in LIBOR . . . how should the market and your firm 
+react now?
+
+. . . Although regulators have indicated that the industry should stick to the 2021 date, it does seem possible that LIBOR transition may end up being extended by 1 or 2 years. The natural inclination of many will be to freeze their programs and restart at a later time. In our view, that would be a terrible mistake. LIBOR is still a fragile rate, unsecured interbank lending is unlikely to increase in volume, and regulators will still want the industry to be prepared for LIBOR’s end.
+
+But if there is a delay, the market and firms can use that time to their advantage.
+
+Read the report</p>
+<p class="text-component">Finance</p>
+<p class="text-component">This piece, published June 11, 2020, summarizes what financial institutions can do to promote the financial interests of Black customers. It looks like the firm turned this one around rather quickly.
+
+“By innovating radical new ways to invest in Black customers, institutions can transform the financial realities of these individuals, their businesses, and communities—as well as the local, state, and US economies. As lenders, they can provide greater access to capital. As shareholders, they can hold businesses accountable. As influencers and stakeholders, they can elevate policy. As employers, they can advance diversity and inclusion as well as pay equity in their own workplaces.”</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">Korn Ferry recently recirculated the survey results it published in late 2019 highlighting Black executives’ attitudes toward the workplace.
+
+“Nearly 60% of the Black executives who oversee major lines of business at Fortune 500 companies felt they had to work twice as hard—and accomplish twice as much—to be seen on the same level as their colleagues. At the same time, more than a third of the leaders said they were assigned extremely tough projects that no one else wanted to handle.”</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">In this piece published May 27, 2020, Russell Reynolds identifies five lessons emerging from the crisis on D&I: leading inclusively is getting harder, new forms of unconscious bias abound, existing D&I infrastructures must adapt or die, sponsors and allies need to supercharge their efforts, and if you don’t keep D&I on the leadership agenda, it will get lost. 
+
+“Some leaders may have diverted their focus away from diversity and inclusion as they grappled with urgent questions around how to manage new economic realities. Yet it is no longer an option to leave these issues unaddressed. If organizations are not actively renewing their commitment to stamping out discrimination, they can expect to see inequities grow deeper and more insidious.”</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">COVID-19: Investing in black lives and livelihoods”</p>
+<p class="text-component">The case for accelerating financial inclusion in 
+black communities”</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">BCG
+Financial institutions can break the cycle of racial inequality”</p>
+<p class="text-component">“</p>
+<p class="text-component">Heidrick & Struggles
+Meeting the inclusion imperative: How 
+leaders can link diversity, inclusion, and 
+accelerated performance</p>
+<p class="text-component">Korn Ferry
+Blacks in leadership: Harder than it should have been”</p>
+<p class="text-component">“</p>
+<p class="text-component">McKinsey & Company
+COVID-19's effects on minority-owned 
+small businesses in the United States”</p>
+<p class="text-component">“</p>
+<p class="text-component">Diversity wins: How inclusion matters</p>
+<p class="text-component">COVID-19: Investing in black lives and livelihoods”</p>
+<p class="text-component">“</p>
+<p class="text-component">The case for accelerating financial inclusion in 
+black communities”</p>
+<p class="text-component">“</p>
+<p class="text-component">Russell Reynolds
+Diversity and inclusion during a crisis: Five emerging lessons”</p>
+<p class="text-component">“</p>
+<p class="text-component">Heidrick published this extensive report at the end of April. It concludes that a few companies have made headway but most are struggling in their diversity efforts.
+
+“Fifty years or more of corporate efforts to build diverse workforces—and at least a decade of trying to ensure diverse employees feel included and able to contribute—have left most corporate leaders frustrated. Both diversity and inclusion have been harder to achieve than anyone expected, while the evidence mounts that companies that get them right can see a significant improvement in performance, including financial performance. However, too few companies are seeing their efforts to improve diversity and inclusion (D&I) pay off, and most are wondering how to move forward.”</p>
+<p class="text-component">“</p>
+<p class="text-component">Read the report</p>
+<p class="text-component">“</p>
+<p class="text-component">“Of all vulnerable small businesses, minority-owned ones may be most at risk. Many were in financially precarious positions even before COVID-19 lockdowns, and minority-owned 
+small businesses often are in industries more susceptible to disruption. Ensuring that these businesses survive in the current circumstances will require fundamental shifts in how private-, 
+public-, and social-sector organizations come together to support them.”</p>
+<p class="text-component">COVID-19's effect on minority-owned small businesses in the United States”
+May 27, 2020</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">“</p>
+<img src="media/b5f5f7ab6a94e5ec3c4658151d357451/asset-19-full.png" alt=""  class="image-component"/>
+<p class="text-component">“By following the trajectories of hundreds of companies in our data set since 2014, we find that the overall slow growth in diversity often observed in fact masks a growing polarization among these organizations. While most have made little progress, are stalled or even slipping backward, some are making impressive gains in diversity, particularly in executive teams. We show that these diversity winners are adopting systematic, business-led approaches to inclusion and diversity (I&D). And, with a special focus on inclusion, we highlight the areas where companies should take far bolder action to create a long-lasting inclusive culture and to promote inclusive behavior.”</p>
+<p class="text-component">Diversity wins: How inclusion matters
+May 19, 2020</p>
+<p class="text-component">Read the report</p>
+<p class="text-component">“McKinsey analysis shows that black Americans are almost twice as likely to live in the counties at highest risk of health and economic disruption, if or when the pandemic hits those counties. . . .In addition, we found that 39 percent of all jobs held by black Americans—compared with 34 percent held by white Americans—are now threatened by reductions in hours or pay, temporary furloughs, or permanent layoffs, totaling 7 million jobs. Indeed, the pandemic underscores the consequences of the structural disparities that have persisted in this country for centuries while presenting an opportunity to invest in building more equitable systems that will benefit society overall.”</p>
+<p class="text-component">COVID-19: Investing in black lives and livelihoods”
+April 14, 2020</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">“</p>
+<img src="media/9520b20e9821eacb4704b82e8fff30e9/asset-20-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Improving financial inclusion is not only our collective, societal obligation to support American families that have too often been historically marginalized but also a critical step in supporting the future economic livelihoods of black families. Moreover, increased inclusion of black Americans in the financial system would benefit the entire economy: black families would have greater opportunities to reinvest and grow their wealth and, subsequently, support increased economic activity.”</p>
+<p class="text-component">The case for accelerating financial inclusion in 
+black communities”
+February 25, 2020</p>
+<p class="text-component">“</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">“</p>
+<img src="media/a83f0d177a794b312ac7f088e38d65b3/category-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">“</p>
+<p class="text-component">BCG
+Financial institutions can break the cycle of racial inequality”</p>
+<p class="text-component">Heidrick & Struggles
+Meeting the inclusion imperative: How leaders can link diversity, inclusion, and accelerated performance </p>
+<p class="text-component">“</p>
+<p class="text-component">Korn Ferry
+Blacks in leadership: Harder than it should have been”</p>
+<p class="text-component">“</p>
+<p class="text-component">BCG
+Financial institutions can break the cycle of racial inequality”</p>
+<p class="text-component">McKinsey & Company
+Diversity wins: How inclusion matters</p>
+<p class="text-component">COVID-19: Investing in black lives and livelihoods”</p>
+<p class="text-component">The case for accelerating financial inclusion in black communities”</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">Financial institutions can break the cycle of racial inequality”
+BCG</p>
+<p class="text-component">Blacks in leadership: Harder than it should have been”
+Korn Ferry</p>
+<p class="text-component">COVID-19’s effect on minority-owned small businesses in the United States”
+May 27, 2020</p>
+<p class="text-component">“Of all vulnerable small businesses, minority-owned ones may be most at risk. Many were in financially precarious positions even before COVID-19 lockdowns, and minority-owned small businesses often are in industries more susceptible to disruption. Ensuring that these businesses survive in the current circumstances will require fundamental shifts in how private-, 
+public-, and social-sector organizations come together to support them.”
+
+Read the article</p>
+<p class="text-component">COVID-19: Investing in black lives and livelihoods”
+April 14, 2020</p>
+<p class="text-component">The case for accelerating financial inclusion in black communities”
+February 25, 2020</p>
+<img src="media/9520b20e9821eacb4704b82e8fff30e9/asset-20-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Improving financial inclusion is not only our collective, societal obligation to support American families that have too often been historically marginalized but also a critical step in supporting the future economic livelihoods of black families. Moreover, increased inclusion of black Americans in the financial system would benefit the entire economy: black families would have greater opportunities to reinvest and grow their wealth and, subsequently, support increased economic activity.”
+
+Read the article</p>
+<p class="text-component">The case for accelerating financial inclusion in black communities”
+February 25, 2020</p>
+<p class="text-component">“</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-june-2021',
+            issue: {"id":490307,"projectId":41781,"slug":"experience-60be492692746","name":"The Gold Standard: June 2021","status":"published","creationDate":"2021-06-07T16:28:22.000Z","lastModifiedDate":"2022-04-08T15:05:49.000Z","deletionDate":null,"firstPublishedDate":"2021-06-10T14:46:26.000Z","wipExperienceVersionId":1766106,"publishedExperienceVersionId":1775004,"createdByMemberId":14154,"primaryIssueAliasId":674459,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-60be49262c741.jpg","importLinkShared":0,"lastPublishedDate":"2021-06-10T19:27:01.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pcb82a3b3245d","title":"The Gold Standard: June 2021"},
+            docVersion: {"id":1775004,"experienceId":490307,"slug":"experience-version-60c2678552912","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-60c2678552912.js","themingBackgroundImageUri":null,"seoTitleKeywords":"The Gold Standard: June 2021","seoMetaKeywords":"","seoMetaDescription":"The Gold Standard: June 2021","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-60c2678552936","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/06\/10\/a414150aaec8c7c0574c8525c05c3fa7\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-06-10T19:27:01.000Z","modificationDate":"2021-06-10T19:27:01.000Z","publishedDate":"2021-06-10T19:27:01.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: June 2021 The Gold Standard: June 2021</title>
+
+
+
+        <meta name="description" content="The Gold Standard: June 2021"/>
+
+    <meta property="og:title" content="The Gold Standard: June 2021"/>
+        <meta property="og:image" content="media/a414150aaec8c7c0574c8525c05c3fa7/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: June 2021">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/a414150aaec8c7c0574c8525c05c3fa7/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-60c2678552912.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_60c2678552912",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">One year ago, I compiled the responses of 
+13 professional-services firms to the murder of George Floyd. Many made commitments to increase the number of Black employees and to fight bias in their organizations. What progress have they made in the past 12 months? I researched these same 13 firms’ statements and web postings 
+to find out.
+
+Many firms now have elaborate pages on their websites dedicated to diversity, equity, and inclusion (DE&I). Some published detailed reports this year on actions they took and progress they made. The Big Four accounting or advisory firms published the most detailed reviews of their diversity programs. Other firms say little about year-to-year movement. Few firms took the occasion of the anniversary of Floyd’s death to update the public on where they stood on their commitments (although that seemed like an obvious thing to do). In terms of thought leadership, most firms regularly published on DE&I themes in the past 12 months.
+
+Here’s what the firms have disclosed on diversity progress. (I made a good faith effort to locate their statements but may have missed some.)</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">BCG
+DE&I webpage</p>
+<p class="text-component">BCG released its first 2021 DE&I report earlier this year. It contains yearly comparisons by race or ethnicity and 
+gender. “For this year’s publication, we focused on our racial equity work,” wrote Joe Davis, BCG’s North American chairman. “This is a further signal of our commitment to being transparent, holding ourselves accountable, and driving real change. In order to lead with integrity within the business community, we must continue to work with industry leaders and our clients to better ourselves and society.”</p>
+<p class="text-component">Accenture
+DE&I webpage</p>
+<p class="text-component">Accenture’s global CEO and North America CEO offered details in this statement of the progress made since the firm committed to three actions last June. The actions were: set goals at beginning of fiscal year 2021 to increase Black and Hispanic representation overall and among managing directors by 2025; launch training to identify, speak up about, and report racism; and collaborate with its communities.</p>
+<p class="text-component">Bain
+DE&I webpage</p>
+<p class="text-component">This page summarizes Bain’s commitments to promote racial and social equity. (Breakdowns by race and ethnicity aren’t included.) “Judge us by our actions today, tomorrow, and in the future,” the firm writes. “These are the new commitments we’re making to promote racial and social equity both within our firm and our broader communities, over and above our existing investments in diversity, equity, and inclusion.” 
+
+In February, Bain announced the appointment of a partner as chief diversity office.</p>
+<p class="text-component">Booz Allen Hamilton
+DE&I webpage</p>
+<p class="text-component">Booz Allen’s president and CEO shared the firm’s progress on diversity issues in a DE&I report. “With a desire for increased transparency and accountability, we’ve established six race and social equity-focused pillars to address fundamental inequities both inside and beyond our firm,” he wrote in a joint statement with the firm’s chief people officer.</p>
+<p class="text-component">Deloitte
+DE&I webpage</p>
+<p class="text-component">The chairman of Deloitte Canada and Chile issued 
+a statement on the anniversary of George Floyd’s death: “We continue to work on making Deloitte a more inclusive and equitable place to work and we are urging those within our ecosystem to do the same. Nevertheless, our Board still does not reflect the countries in which we operate but we are making progress and remain committed to making it so 
+by 2023.”
+
+Deloitte published a “2021 Diversity, Equity, and Inclusion Transparency Report.” The firm said it would focus its effort on four priority areas: diversity and equity; inclusion and belonging; workforce well-being; and external impact.</p>
+<p class="text-component">Forrester
+DE&I webpage</p>
+<p class="text-component">Forrester reviewed its DE&I commitments here but offered no update on progress. The firm says, “At Forrester, diversity and inclusion are: 
+
+1. Genuine: We strive to make it work in the context of our business and the markets we serve. We show that D&I are essential to our culture, client experience, and how we engage with one another. 
+2. Trusting: We feel safe to bring our whole selves to work. 
+3. Vibrant: We seek out and amplify valuable new ideas 
+and perspectives.” </p>
+<p class="text-component">EY
+DE&I webpages:</p>
+<p class="text-component">EY, like the other big accounting firms, published a long report on its DE&I efforts. It also called attention to this statement 
+from the firm’s Global Executive (GE), its highest leadership body. “The GE is committed to holding the strategy, policies and accountability in place to build and sustain a diverse global workforce, equitable processes and systems, and an inclusive environment. This includes the executive leadership level. As such, the GE will strive to ensure that the broad range of differences across EY globally are represented and respected at the most senior levels within the organization, including in all appointments it makes, up to and including 
+the GE.”</p>
+<p class="text-component">Diversity and inclusiveness
+means growth</p>
+<p class="text-component">The importance of Diversity
+and Inclusiveness</p>
+<p class="text-component">Kearney
+DE&I webpage</p>
+<p class="text-component">Kearney reviewed its DE&I commitments on a webpage but doesn’t say anything about its progress over the past year. “We have committed to be the difference and lead by example, using our voice, power, and resources to act. A supportive organization that honors diversity, equity, and inclusion. A group of people that stands in solidarity with each other.”</p>
+<p class="text-component">KPMG
+DE&I webpage</p>
+<p class="text-component">Paul Knopp, KPMG’s US chairman and CEO, noted the firm’s US diversity aspirations for fiscal year 2025 in this report and said he and other executives would be held accountable for meeting them. “Accelerate 2025 is a firmwide commitment to understand the lived and shared experiences that our Black talent and all our underrepresented groups have in navigating the workplace,” he wrote, “and to identify real 
+or perceived barriers, pain points, and biases that may influence and impact moments that matter for our people.” </p>
+<p class="text-component">McKinsey & Company
+DE&I webpage</p>
+<p class="text-component">McKinsey reviewed its 10 commitments to diversity and reported on its progress in each of the areas. Year-to-year hiring comparisons are absent. 
+
+“In 2020, McKinsey put forth a public commitment to anti-racism and social justice. Drawing on our areas of core expertise, we’ve focused on building Black leadership within our organization and beyond, identifying solutions through data-based research and investing in social change within our wider community. While we know that we have a long way to go on our journey, we are proud to support the leaders, businesses, and communities working for a more just and equitable society.”</p>
+<p class="text-component">Marsh McLennan and Oliver Wyman
+DE&I webpages:</p>
+<p class="text-component">Neither Marsh McLennan nor Oliver Wyman, a unit of Marsh, offered DE&I hiring details. 
+
+Marsh McLennan named a chief inclusion and diversity
+officer earlier this year. 
+
+Oliver Wyman says of its commitment, “It’s not a talent program; it’s a way of life. Our commitment is rooted in our values, woven into our business strategies, and lived daily in the spirit of our culture. We believe inclusion drives diversity, and diversity enables better outcomes for us and our clients. We also believe in creating a culture where all of our colleagues can bring their full, authentic selves to work and feel included and positioned for success.”</p>
+<p class="text-component">PwC
+DE&I webpage</p>
+<p class="text-component">This is PwC’s “first annual” Diversity and Inclusion Transparency
+Report. “By publishing this report,” the firm’s top US executives wrote, “we are sharing our story and holding ourselves accountable for transformative progress and sharing what has worked well and acknowledging what hasn’t.” With respect to its US workforce, the firm notes that “we have work to do,” but 
+it does provide detailed breakdowns.</p>
+<p class="text-component">West Monroe Partners
+DE&I webpage</p>
+<p class="text-component">West Monroe featured only qualitative material on diversity on its DE&I website page. There’s no reference to targets or year-to-year comparisons. “At West Monroe, we treat all people equally, honestly and respectfully,” the firm says. “We are committed to fostering and promoting diversity, and to building an environment that lets everyone contribute 
+at their full potential. This means including perspectives 
+from backgrounds that vary by race, ethnicity, social background, religion, gender, gender identity, age, disability, sexual orientation, veteran status, and 
+national origin as well as diversity in skills, experiences, 
+and journeys.”</p>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/53326973592520236c0bb8f6b5ace14f/1-full.png" alt=""  class="image-component"/>
+<img src="media/d8040bd4e93569c7b4107cdf0f14fa5a/2-full.png" alt=""  class="image-component"/>
+<img src="media/1a172ce119dbacb3b5023eabeae651fb/3-full.png" alt=""  class="image-component"/>
+<img src="media/0e128b8cc36f0ea67d4ed73e3309989e/4-full.png" alt=""  class="image-component"/>
+<img src="media/5c5d3bbff4e64a2765adfe42fdee3884/5-full.png" alt=""  class="image-component"/>
+<img src="media/0109b36dd39991bc26fa928ad75cb2cc/6-full.png" alt=""  class="image-component"/>
+<img src="media/13237cb6d3eb942c8f544586b4627834/7-full.png" alt=""  class="image-component"/>
+<img src="media/b274c0db391d6405e364454697adc1f8/8-full.png" alt=""  class="image-component"/>
+<img src="media/f3b3f839df00f6e0978e4021fac2fa32/10-full.png" alt=""  class="image-component"/>
+<img src="media/91d84fd4bc20c96924d444125390e6bb/14-full.png" alt=""  class="image-component"/>
+<img src="media/2d5899d1e3adf39f82f2fafb9c67adf7/13-full.png" alt=""  class="image-component"/>
+<img src="media/15c14d48eed07223720885817ddc3187/12-full.png" alt=""  class="image-component"/>
+<img src="media/689bd2896189011baa1570e3ba16b9d8/11-full.png" alt=""  class="image-component"/>
+<p class="text-component">Marsh McLennan</p>
+<p class="text-component">Oliver Wyman</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

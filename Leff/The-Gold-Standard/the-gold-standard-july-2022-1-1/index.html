@@ -1,0 +1,302 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-july-2022-1-1',
+            issue: {"id":652831,"projectId":41781,"slug":"experience-62ceeae46d59f","name":"The Gold Standard: July 2022","status":"published","creationDate":"2022-07-13T15:55:16.000Z","lastModifiedDate":"2022-07-20T17:17:55.000Z","deletionDate":null,"firstPublishedDate":"2022-07-20T17:35:38.000Z","wipExperienceVersionId":2529282,"publishedExperienceVersionId":2541941,"createdByMemberId":27874,"primaryIssueAliasId":912341,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-62ceeae3e822f.jpg","importLinkShared":0,"lastPublishedDate":"2022-07-20T17:35:38.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":27874,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"62ceeae4-cb4d86d830ab8","title":"The Gold Standard: July 2022"},
+            docVersion: {"id":2541941,"experienceId":652831,"slug":"experience-version-62d83cea56dfd","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-62d83cea56dfd.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-62d83cea56e06","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/07\/20\/8504173552310393b19fa85bd042472d\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2022-07-20T17:35:38.000Z","modificationDate":"2022-07-20T17:35:38.000Z","publishedDate":"2022-07-20T17:35:38.000Z","committedByMemberId":27874,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: July 2022</title>
+
+
+
+
+    <meta property="og:title" content="The Gold Standard: July 2022"/>
+        <meta property="og:image" content="media/8504173552310393b19fa85bd042472d/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: July 2022">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/8504173552310393b19fa85bd042472d/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-62d83cea56dfd.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_62d83cea56dfd",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">In this post, I highlight some of the best thought leadership articles and reports that cross my desk. I note why they rise to the top of the pile and are worth reading (or skimming), even if they focus on functions or industries outside your areas of interest. Among the criteria I use to make the selections are freshness and provocativeness of insights and timeliness, analytical rigor, depth of prescriptions, and overall readability.
+
+Diversity, equity, and inclusion (DEI) remains a major thought leadership topic for professional services firms. The murder of George Floyd in May 2020 spurred many firms to increase their publication of articles on DEI, and those efforts continue. Also, they used the occasion of Pride Month in June to highlight their thinking on LGBTQ concerns. Discussion of general DEI themes such as diversity in the workplace remains a mainstay. However, more firms are beginning to explore DEI through the lens of specific groups, sectors, and geographies. Let’s look at some of the more interesting work on these topics from the past six months. 
+
+
+
+</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/3e39bc87d3eafffea5ef48820bd36b5b/processed-svg-up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">The authors took the occasion of Asian American Heritage Month in May to address the experiences of Asian Americans in the workplace, noting the persistence of discrimination, microaggressions, and “the bamboo ceiling.” They note that while, overall, Asian Americans are well educated and thrive economically, broad measures of success blur the community’s experience.
+
+For example, while 9 percent of the professional workforce in the United States identifies as Asian, only 2 percent of CEOs do. In Silicon Valley, Asian Americans are the largest cohort (47 percent) of entry-level nonmanagerial employees with a college degree or higher, but they are only half as likely as White employees to hold positions within two reporting levels of the CEO.
+
+The authors cite the diversity of the Asian American community. But, “one characteristic of Asian Americans across the board is that, in one way or another, we struggle with the challenges of acceptance and assimilation. The exact nature of the challenge varies by generation.” In conclusion, they call on corporate leaders to start paying attention to inclusion and belonging for Asian American employees and for Asian leaders to do more to help their Asian colleagues advance. 
+
+
+</p>
+<p class="text-component">Women’s path to leadership in tech</p>
+<p class="text-component">BCG and the Women’s Forum surveyed more than 1,500 women and men working in tech leadership in France, Germany, Italy, and the United Kingdom, as well as conducting 30 interviews with tech leaders. They conclude that women face hurdles rising through the tech ranks and that companies have a vested interest in supporting their upward mobility, especially given the competition for top talent in the industry. The report offers recommendations for senior leaders, line managers, human resources, and DEI managers, as well as for women in general.
+
+Their study found these similarities between women and men who rise to the top in tech: there is no ambition gap; they are equally comfortable taking risks or willing to take risks; and they have a high level of technical or tech-adjacent expertise. But, as women rise through the ranks, they overcome hurdles that most men don’t face:</p>
+<img src="media/9f1b105d0ae597bcd1a5f54e8c3fe270/asset-one-full.jpeg" alt=""  class="image-component"/>
+<img src="media/28243029e4eb0fd2b7dd1c2a8e96a7b2/asset-two-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Bain</p>
+<p class="text-component">BCG</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Asian American inclusion</p>
+<p class="text-component">Greater inclusion can help Asian Americans crack the bamboo ceiling</p>
+<p class="text-component">Women in tech</p>
+<p class="text-component">• Many have caregiving responsibilities that result in longer </p>
+<p class="text-component">leaves of absence. Some 60 percent of women compared with 45 percent of men have declined a role because of their caregiving responsibilities.</p>
+<p class="text-component">• There are too few role models and peers to help support and </p>
+<p class="text-component">guide them.</p>
+<p class="text-component">• They perceive a greater pressure to prove their skills—and </p>
+<p class="text-component">tech skills in particular—than men. </p>
+<p class="text-component">• They tend to rely more on strong networks of support, such as </p>
+<p class="text-component">recruiting firms, peers, mentors, sponsors, affiliation groups, and household members, while men are more likely to rely on their self-confidence in addition to their networks. </p>
+<p class="text-component">Advancing more women leaders in financial services: A global report</p>
+<p class="text-component">Women in financial services</p>
+<p class="text-component">Deloitte</p>
+<p class="text-component">This comprehensive report looks at women in leadership roles in financial services around the world. The authors found that among the most senior roles, women held 21 percent of board seats, 19 percent of C-suite roles, and 5 percent of CEO positions in 2021. 
+
+“These statistics illustrate that more work needs to be done to advance gender equity across the industry. They should also motivate firms to review and evaluate how they plan to advance women in leadership across their organizations,” the authors say.
+
+Deloitte also notes a multiplier effect in organizations: “For each woman added to the C-suite, there was a positive, quantifiable impact on the number of women in senior leadership levels just below the C-suite.”</p>
+<img src="media/efd7fcd4f88ac2f8b70d942dd5e12c45/asset-three-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">A rising tide lifts 
+all boats</p>
+<p class="text-component">Deloitte</p>
+<p class="text-component">Neurodiversity</p>
+<p class="text-component">Neurodiversity: The little known superpower</p>
+<p class="text-component">Korn Ferry</p>
+<p class="text-component">These articles observe that despite the increased focus on workforce DEI, the neurodivergent group is often overlooked. The result is much higher rates of unemployment and underemployment compared with the general population. 
+
+“Today, organizations are under pressure to integrate a diverse workforce, encourage out-of-the-box thinking to gain a competitive edge, and deal with a worker’s market,” the Deloitte authors say. “Hiring neurodivergent workers could be an integral part of the solution to these circumstances. These professionals could not only help employers turn the tide on the current labor shortage but also bring into their organizations different and valuable ways of thinking and problem-solving that could lead to innovative solutions and give companies a competitive advantage.”
+
+Companies that embrace recruitment and support of neurodiverse employees include SAP, EY, P&G, and Bank of America, the Korn Ferry authors note. Both articles discuss best practices for the hiring and support of neurodiverse employees. 
+</p>
+<img src="media/ee2267ff0a5e760170acfd692f7eb9c9/asset-five-four-combo-full.jpg" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Black representation in the beauty industry</p>
+<p class="text-component">The authors explore Black people’s experience within the beauty industry, finding that it is “markedly more frustrating than that of other people and filled with multiple friction points that non-Black consumers, entrepreneurs, and brands are less likely to face.” The research included two surveys, a focus group, analysis of retail store placement among Black and non-Black populations and the placement of Black beauty products within stores, and interviews with staff at beauty companies.   
+
+Among the findings:</p>
+<p class="text-component">• Black brands make up only 2.5 percent of revenue in the </p>
+<p class="text-component">beauty industry, yet Black consumers account for 11.1 percent of total beauty spending.</p>
+<img src="media/bc60174fe2aac6a90fffb35ac1275053/asset-six-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">McKinsey </p>
+<p class="text-component">Black representation in beauty </p>
+<p class="text-component">• Black consumers are three times more likely to be dissatisfied </p>
+<p class="text-component">than non-Black consumers with their options for hair and skin care and makeup.</p>
+<p class="text-component">• Black consumers prefer Black beauty brands and are 2.2 </p>
+<p class="text-component">times as likely to conclude that products from those brands will work for them.</p>
+<p class="text-component">• Addressing racial inequity in the beauty industry is a $2.6 </p>
+<p class="text-component">billion opportunity.</p>
+<p class="text-component">and</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

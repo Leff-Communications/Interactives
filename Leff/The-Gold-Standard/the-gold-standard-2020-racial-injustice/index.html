@@ -1,0 +1,542 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-2020-racial-injustice',
+            issue: {"id":353044,"projectId":41781,"slug":"experience-5edfac0e94b63","name":"The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice","status":"published","creationDate":"2020-06-09T15:34:38.000Z","lastModifiedDate":"2020-06-17T18:27:46.000Z","deletionDate":null,"firstPublishedDate":"2020-06-11T18:28:53.000Z","wipExperienceVersionId":1181660,"publishedExperienceVersionId":1195338,"createdByMemberId":14154,"primaryIssueAliasId":479994,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5edfac0dc3e7b.jpg","importLinkShared":0,"lastPublishedDate":"2020-06-17T18:29:24.000Z","lastModifiedByMemberId":14154,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p168576b41d23","title":"The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice"},
+            docVersion: {"id":1195338,"experienceId":353044,"slug":"experience-version-5eea6104b8e60","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5eea6104b8e60.js","themingBackgroundImageUri":null,"seoTitleKeywords":"The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice","seoMetaKeywords":"","seoMetaDescription":"The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5eea6104b8e76","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/06\/17\/09e64ace294fcc07dc019f2b244aa417\/page-thumbnail.jpg?imageOpt=1&crop=765,680,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-06-17T18:29:24.000Z","modificationDate":"2020-06-17T18:29:24.000Z","publishedDate":"2020-06-17T18:29:24.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice</title>
+
+
+
+        <meta name="description" content="The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice"/>
+
+    <meta property="og:title" content="The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice"/>
+        <meta property="og:image" content="media/09e64ace294fcc07dc019f2b244aa417/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: Firms’ responses to George Floyd’s murder and racial injustice">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/09e64ace294fcc07dc019f2b244aa417/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5eea6104b8e60.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5eea6104b8e60",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Professional services firms have joined many companies, including Leff, in denouncing racial injustice and police violence following the murder of George Floyd. Of the 13 firms whose comments I found on social media or their websites, most offered general statements of support for Black colleagues and the Black community. Exceptions include Accenture, Bain, McKinsey, and PwC, which made quite specific commitments. Following are links to, and some excerpts from, the firms’ statements, current as of June 16.</p>
+<img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<p class="text-component">Featured companies</p>
+<p class="text-component">“Our commitment to action” 
+
+Julie Sweet, CEO:
+“We remain the only professional services company in the US that       publishes our demographics for race each year as part of our             commitment to transparency. But our actions to date are not             enough. We have much more to do—and so today, we are               committing to take the following actions:
+
+•By September 1, which begins our next fiscal year, we will                   announce goals to increase our percentage of African                       American/Black and Hispanic American/Latinx people overall and   managing directors in the US by 2025, similar to how we have             announced our global goals to reach 50/50 gender equality by         2025, and 25% women managing directors by the end of 2020.
+
+•By September 1, we are adding new training to help our people       identify, speak up and report racism. This builds on our unconscious   bias training that was mandatory for all managing directors last         year and all of our people this fiscal year.
+
+•Working both locally and nationally, we will identify a portfolio of       specific opportunities to collaborate with our communities and         other partners to promote equality, fight racism and bigotry and       create more opportunities for employment and advancement. We   want to be part of building a better future together with other           companies, with our federal, state and local government leaders,     not-for-profits and the people of our communities.”</p>
+<p class="text-component">Accenture</p>
+<p class="text-component">Back to top</p>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<p class="text-component">Accenture</p>
+<p class="text-component">Bain</p>
+<p class="text-component">BCG</p>
+<p class="text-component">Booz Allen Hamilton</p>
+<p class="text-component">Deloitte</p>
+<img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">EY</p>
+<p class="text-component">Forrester</p>
+<p class="text-component">Kearney</p>
+<p class="text-component">KPMG</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">Oliver Wyman/Marsh &
+McClennan Companies</p>
+<p class="text-component">PwC</p>
+<p class="text-component">West Monroe Partners</p>
+<img src="media/e6d3a3675264ae98d1670352e5173108/bonus-goldstandard-june-2020-images-full.png" alt=""  class="image-component"/>
+<p class="text-component">Accenture</p>
+<p class="text-component">Bain</p>
+<p class="text-component">BCG</p>
+<p class="text-component">Booz Allen Hamilton</p>
+<p class="text-component">Deloitte</p>
+<p class="text-component">EY</p>
+<p class="text-component">Forrester</p>
+<p class="text-component">Kearney</p>
+<p class="text-component">KPMG</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">Oliver Wyman/Marsh &
+McClennan Companies</p>
+<p class="text-component">PwC</p>
+<p class="text-component">West Monroe Partners</p>
+<p class="text-component">Bain & Company</p>
+<p class="text-component">“Bain’s commitment to promote racial and social equity”
+
+Manny Maceda, CEO
+“Judge us by our actions today, tomorrow, and in the future. These    are the seven new commitments we’re making to promote racial  and social equity both within our firm and our broader    communities, over and above our existing investments in diversity,    equity, and inclusion.
+ 
+1. Commit $100M in pro-bono support over the next five years
+
+2. Formally establish racial and social equity as the fourth pillar of our Social Impact Practice
+
+3. Match up to $1M in employee donations to organizations focused on racial and social equity
+
+4. Partner with Bridgespan to identify opportunities to bring our capability to be in service of leaders and organizations focused on equity
+
+5. Hold a mandatory day of learning and reflection in the Americas on Juneteenth (June 19th)
+
+6. Be more aggressive in our agenda around diversity, equity, and inclusion, including launching a global diversity council; and diversifying our leadership team
+
+7. Further embed unconscious bias and inclusion training in all of our global and local programs”</p>
+<p class="text-component">Bain</p>
+<p class="text-component">“Advancing racial equity” social media post
+
+Rich Lesser, CEO:
+•Catalyzing change by committing $100M of our talent resources       spread over five years. Establishing multi-year partnerships with           leading organizations addressing racial injustice and inequal 
+  in America.
+
+•Accelerating representation of Black BCGers and further                     committing to make BCG a place where all talent thrives. Driving       retention parity, increasing representation in leadership, education   of leaders and staff, enhanced sponsorship and development, via   inclusion and other initiatives.
+
+•Advancing the pursuit of racial equity with our clients through the     lens of Total Societal Impact. Using the lens to ensure the topic of       racial equity is prominent.
+
+•Strengthening our supplier diversity efforts. Innovating our                   Minority/Women-owned Business Enterprise (MWBE) supplier policy     and measuring the diversity of our vendors.
+
+•Fostering accountability by accelerating the clarity, ambition, and   measurement of our goals. What we aspire to, what we are               working on, what progress we are making.
+
+•Donating $1 million over five years to organizations leading the         change. Starting with the NAACP Legal Defense and Educational     Fund and Southern Poverty Law Center.</p>
+<p class="text-component">BCG</p>
+<p class="text-component">Social media post
+
+“To empower all people to change the world, we must change the     world we’re in. Our pledge to the Black community: to listen with       empathy, learn with open minds, and act with purpose to achieve   justice and equity.”
+
+“Our commitment to advancing race and social equity: To empower   people, we must change the world we’re in”
+
+“We’re committing to an equity agenda built around internal and         external drivers of change:
+Move Forward as a Firm
+•Launch an independent review of how our business practices           impact people of color
+
+•Increase representation of people of color at all levels of the firm       through intensified investment and levers of accountability
+
+•Increase personal time and space for reflection and mental health
+
+•Accelerate diversity and inclusion learning opportunities for all           employees
+
+Empowering Social Change
+•Use our unique capabilities and talents to advance social justice       through work with community partners
+
+•Make racial and social justice a major element of our corporate       philanthropy”</p>
+<p class="text-component">Booz Allen Hamilton</p>
+<p class="text-component">“Deloitte stands against systemic bias, racism and unequal treatment”
+
+Joseph Ucuzoglu, CEO, Deloitte US with Janet Foutty, chair of the board, Deloitte US:
+“We have each made a meaningful personal donation today to             organizations that are committed to bringing about social justice and   repairing our communities. Our commitment to you is that we’ll be         back in touch, shortly, with specificity as to the plan we will execute       to ensure Deloitte is leading the change we want to see. Words,             emails, and donations don’t suffice.”</p>
+<p class="text-component">Deloitte</p>
+<p class="text-component">Social media video post
+
+Carmine Di Sibio, global chairman and CEO: 
+“We have the power and the responsibility to make change—to make   change on the status quo that exists out there today in terms of             racism. We at EY have 300,000 people around the world, and we           pledge to stand against racial injustice and racist violence in the           world and use our platform to enact meaningful change, both at EY     and in our communities around the world.”</p>
+<p class="text-component">EY</p>
+<p class="text-component">“The time has come” 
+
+George Colony, CEO:
+“Several months ago, we created a global, employee-led and                 executive-sponsored Diversity & Inclusion Council to undertake this         work. The events of this last week have underscored and accelerated   the criticality of our efforts. Our employees, like so many in society,         have shared that they want to take action and become better allies     to black and minority communities. We are rapidly educating                 ourselves. Forrester has decided to close our offices for business on         Friday, June 5, so that our employees can focus their time on taking       action that is right for them, whether that is to listen, learn, speak out,     educate, read, peacefully protest, or serve. My activities will include     rereading Invisible Man by Ralph Ellison.”</p>
+<p class="text-component">Forrester</p>
+<p class="text-component">“We see you. We stand with you.”
+
+Alex Liu, managing partner:
+“I have spoken with several colleagues and clients over the past week,  and am moved by their understandably raw and inconsolable      emotions of anger, outrage, despair, and helplessness. Kearney is      committed to expanding support programs for the near and longer-      term, but nothing can replace supportive outreach at this specific      time. We can all be allies for solidarity and inclusion, and against            intolerance, whether it be anti-religion, anti-gender, anti-immigrant,      anti-ethnicity, anti-race. There is far too much of all that evil, hate, and  bigotry in this supposedly modern, civilized world.”</p>
+<p class="text-component">Kearney</p>
+<p class="text-component">“Reflecting on KPMG's Role in Advancing Racial Equity and Justice”
+
+Paul Knopp, chairman and CEO-elect, KPMG U.S.:
+“I expect to be held personally accountable for tangible change. And   I will hold the KPMG leadership team accountable. It is essential that     we take actions that will lead to a better future. And not some distant   future. That time is now.
+
+  Today, we shared the immediate actions our firm is taking:
+
+•We will gather input and pull together voices across the firm to create   a concrete, multi-year strategic action plan to operationalize the           firm’s inclusion agenda. Our efforts will be transparent and                       measureable.
+
+•The KPMG Foundation has committed $500,000 to support community   efforts to combat racial inequity. The Foundation is working with our       Inclusion and Diversity team and the African Ancestry Business                 Resource Group to identify the most appropriate organizations to           support that are aligned to our mission and strategy.
+
+•We recently reviewed the challenges that our Black professionals can   face in their employee career journey. We commit to put into place       visible action steps to ensure that we are recruiting, developing and     advancing underrepresented talent.
+
+•We will explore partnerships with other companies similarly thinking         about how to pivot to a focus on equity and inclusion as a part of         their core business, starting with the several clients we know are as         committed as we are to pursuing impactful change. 
+
+•We will continue the open dialogue about race to drive awareness,       understanding and allyship.
+
+•We will launch a platform for sharing information to raise awareness       from an educational standpoint about the evolution of race and bias   in America.” </p>
+<p class="text-component">KPMG</p>
+<p class="text-component">“10 Actions”
+
+“Since we posted this statement, we have been taking stock of the         actions we have been pursuing in support of racial justice and equity.
+  As a result, we are committing to doing more to accelerate our             existing programs and to add new actions as we expand our efforts       to deliver change within our firm and to play our part in combating       racism across the world.
+
+  Much of what follows is focused on the Black community in the United   States, but we know that racism takes many forms and is not confined   to any one country or group. That is why this set of actions will go on     to anchor global efforts in favor of racial justice and inclusion for all.
+  Our actions are:
+
+1. Double our Black leadership and hiring of Black colleagues in our firm over the next four years.
+
+2. Engage our 32,000 colleagues in an anti-racism and inclusion program in addition to our existing training on unconscious bias. We will make these materials available publicly for others to use in their own organizations.
+
+3. Create a firmwide day of service dedicated to understanding racial injustice and giving back to our communities. On that day, we will recognize those who exemplify anti-racism and inclusion.
+
+4. Bring to bear the best available expertise to help us ensure our processes are free from bias and to support the attraction, development, advancement and retention of Black and diverse colleagues.
+
+5. Create a dedicated McKinsey Academy virtual leadership program and make it available at no cost to our clients to support rising Black executives. We will also broaden and expand our student internship programs across our firm to help grow more Black leaders.
+
+6. Building upon the McKinsey Global Institute and our related longstanding research on racial inequities, we will found a Black economic institute to translate insights into practical tools to enable our clients to advance Black economic empowerment and racial equity in the U.S. and beyond.
+
+7. Double our spending with diverse suppliers within three years.
+
+8. Contribute $2 million in cash to Generation to launch new programs in the U.S. to train and place Black learners in small and medium-sized Black-owned businesses. Globally, we will double our support for Generation to train and place 40,000 learners in 14 countries, predominantly from under-represented groups.
+
+9. Commit $200 million over the next 10 years in pro bono work globally to advance racial equity and economic empowerment among Black communities.
+
+10. Donate a total of $5 million in cash this year to nonprofits working to create educational opportunities and combat racism. The majority of this gift will be directed to organizations to be selected by our McKinsey Black Network colleagues.”</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">Employees of Oliver Wyman enabling racial & ethnic diversity
+
+“We mourn the disproportionate loss of innocent life borne by our             Black communities, and we recognize that we must all continue to         take action to combat racial prejudice in ourselves and wherever we   find it. We stand with all under-presented or marginalized communities   in the fight for justice, equality, diversity, and inclusion in society 
+  and in the workplace. In our offices and in our work, we fight for the       fundamental principles of human dignity, equity, community, and         mutual respect.” 
+  
+“Statement from Dan Glaser, CEO and President”
+
+Dan Glaser, CEO, Marsh & McLennan Companies:
+“We are living through a period of extraordinary uncertainty. Take care   of each other. Listen to one another. Reach out to your colleagues       and to those you love.”</p>
+<p class="text-component">Oliver Wyman/Marsh & McClennan Companies</p>
+<p class="text-component">“What PwC is doing to stand up against racism”
+
+Timothy F. Ryan, US chair and senior partner:
+“I know that change must start at home, so I want to share what we at   PwC are doing to support our Black colleagues, to improve diversity       and inclusion efforts within our firm, and to contribute to the efforts of   those who are fighting for racial justice and equality on the front lines:
+
+1. Creating a D&I Staff Advisory Council. We recently created a Diversity and Inclusion (D&I) Partner Advisory Council, but I will also be creating a D&I Staff Advisory Council, which will bring together employees from all levels of our organization to advise me and my leadership team on how we can be advancing this progress both internally and externally. This way, our staff from all levels and backgrounds will have a seat at the table to help build our plan, analyze the hundreds of suggestions that have been shared, and make decisions that impact their lives and well-being at the firm. We know this moment requires us to lift the voices of our diverse colleagues. We are making this commitment so they have direct access to express their perspectives and feelings with our firm’s most senior leaders.
+
+2. Being transparent and holding ourselves accountable by sharing our diversity strategy and results. We know that we need to be transparent and accountable to our employees about how we are doing when it comes to diversity and inclusion. To that end, starting this summer, we will be sharing our diversity plan and the progress on our goals with our people annually, so they can hold us accountable if we are not meeting expectations or not doing it fast enough.
+
+3. Donating to social justice organizations. Through the PwC Charitable Foundation, we will give $250,000 each to the NAACP Legal Defense
+and Educational Fund, Dream Corps, the American Civil Liberties Union
+Foundation, and the Center for Policing Equity, and match up to $1,000 of our people’s individual donations to these four organizations. Additionally, we will support our people as they start crowdfunding campaigns in support of organizations focused on social justice, and the firm will contribute up to $1,000 to each one.
+
+4. Donating time to nonprofits. One of our most valuable resources is our people, who represent every part of our country and also have deep expertise in solving important problems. To that end, through our pro bono program, Skills for Society, we will be giving our 55,000 employees one week of paid time each year to volunteer with nonprofits. Together, this can amount to 2.2 million hours of annual support.
+
+5. Empowering our markets to engage locally. PwC has more than 80 offices around the U.S., and we know each of these communities faces its own set of unique social justice issues and complexities. We will empower our offices to engage with local nonprofits, associations, and organizations as they deem fit in order to advance progress in their respective communities.
+
+6. Putting our best minds to work to advance public policy. 
+Our purpose is to build trust in society and solve important problems—so what better mission is there than putting our people to work to find solutions that address racial injustice in our country? We will be creating a two-year fellowship program that our people can apply to and through the program, they will be able to use their skills and passion to advance policy discussions that help combat the racial injustice and discrimination that continue to plague our Black communities. We anticipate dedicating 30 of our people to this effort, but knowing that we cannot do this alone, I will also invite all CEO
+Action signatory organizations to send one or more of their employees to this effort so we can scale the effort and our impact. This group will work with key stakeholders on the many aspects of public policy that need to evolve if we are to make improvement.
+ 
+I also hear time and again that a critical barrier to progress on racial justice is a lack of understanding of the Black experience in the U.S. It is our responsibility to do what we can to educate ourselves on what the Black community has faced for generations, and the issues that pervade our society today. To aid in that education, PwC will be purchasing digital copies of books that could be considered ‘required reading’ on race and blackness, and we will be making them available for free to our people. I am asking that each member of the PwC community take the time to read these so that we can deepen our understanding of the issues and be a greater part of the solution.”</p>
+<p class="text-component">PwC</p>
+<p class="text-component">“A statement from CEO Kevin McCarty: Our commitment to racial equity”
+
+Kevin McCarty, CEO:
+“At West Monroe we know we have to do more and do it differently, and      we’re committed to doing that. From education and internal change to  community partnerships, we acknowledge we need to be better. We also  acknowledge we don’t have all the answers. So, we will listen and learn.      We know we have not done enough, fast enough. We will not let that stop  us from continuously striving to improve racial equity at West Monroe and    in our communities.
+ 
+•We will invest to make an impact in our local communities and against         social injustice
+ 
+•We will allocate more time and resources to inclusion and diversity,               including an inclusion and diversity leader who will be 100% focused on       these issues
+
+•We will partner with our Black Employee Network and other ERGs to             ensure the actions we take are meaningful to our underrepresented             employees
+
+•We will push ourselves to have more vulnerable dialogue on topics of           race, ethnicity, social background, religion, gender, gender identity,             sexual orientation, and national origin. This won’t be easy, but we’re             committed to pushing ourselves out of our comfort zones  
+
+•We will increase our commitment to hiring and fostering diverse talent that   we can continue to learn from and make us a better firm”</p>
+<p class="text-component">West Monroe Partners</p>
+<p class="text-component">Landing page
+
+CEO perspective
+“A CEO plan for coronavirus: Actions to take now” 
+
+Tracking the crisis through its “Situational Threat Report Index
+“Tracking the global impact of the coronavirus outbreak”</p>
+<img src="media/e6d3a3675264ae98d1670352e5173108/bonus-goldstandard-june-2020-images-full.png" alt=""  class="image-component"/>
+<p class="text-component">“Our commitment to action” 
+
+Julie Sweet, CEO:
+“We remain the only professional services company in the US that publishes our demographics for race each year as part of our commitment to transparency. But our actions to date are not enough. We have much more to do—and so today, we are committing to take the following actions:
+
+•By September 1, which begins our next fiscal year, we will announce goals to increase our percentage of African American/Black and Hispanic American/Latinx people overall and managing directors in the US by 2025, similar to how we have announced our global goals to reach 50/50 gender equality by 2025, and 25% women managing directors by the end of 2020.
+
+•By September 1, we are adding new training to help our people identify, speak up and report racism. This builds on our unconscious bias training that was mandatory for all managing directors last year and all of our people this fiscal year.
+
+•Working both locally and nationally, we will identify a portfolio of specific opportunities to collaborate with our communities and other partners to promote equality, fight racism and bigotry and create more opportunities for employment and advancement. We want to be part of building a better future together with other companies, with our federal, state and local government leaders, not-for-profits and the people of our communities.”
+</p>
+<p class="text-component">Accenture</p>
+<p class="text-component">“Our global anguish and voice”
+
+Manny Maceda, CEO:
+“We are all asking ourselves what we as Bain can do to change the course of what is happening. As a firm, we believe in using our collective voice and talent for change with our clients and also speaking as an institution. We are certainly doing this in our response to the COVID virus as we align teams with clients for impact. We have lent our voice over the decade to legislation and change for our LGBTQ community. We are active with global IP rallying data around the power of inspiration in achieving gender diversity and parity. We are active in our communities with organizations for change. We will apply teams and resources across all these levers to do more around racial inequality. You have our commitment.” (author emphasis)</p>
+<p class="text-component">Bain</p>
+<p class="text-component">“Reflections in a time of pain and turmoil” 
+
+Rich Lesser, CEO:
+“As a community, we can show empathy and support for our colleagues as they struggle to make sense of this and wrestle with their own anxieties. As a firm, we can use our capabilities, access, and influence to make this a better world – in building a stronger public sector, and in helping businesses (including our own) to step up efforts in diversity and inclusion. As a collection of exceptional, values-oriented individuals, we can hope to help society move toward a more just world, with leaders passionately committed to creating opportunity, equality and a better life for all Americans. I’ll continue collaborating with Joe Davis, North American Leaders, and our Black+Latinx Network leaders as we find ways to further our commitments and double down on activities.”</p>
+<p class="text-component">BCG</p>
+<p class="text-component">Social media post
+
+“To empower all people to change the world, we must change the world we’re in. Our pledge to the Black community: to listen with empathy, learn with open minds, and act with purpose to achieve justice and equity.”</p>
+<p class="text-component">Booz Allen Hamilton</p>
+<p class="text-component">“Deloitte stands against systemic bias, racism and unequal treatment”
+
+Joseph Ucuzoglu, CEO, Deloitte US with Janet Foutty, chair of the board, Deloitte US:
+“We have each made a meaningful personal donation today to organizations that are committed to bringing about social justice and repairing our communities. Our commitment to you is that we’ll be back in touch, shortly, with specificity as to the plan we will execute to ensure Deloitte is leading the change we want to see. Words, emails, and donations don’t suffice.”</p>
+<p class="text-component">Deloitte</p>
+<p class="text-component">Social media video post
+
+Carmine Di Sibio, global chairman and CEO: 
+“We have the power and the responsibility to make change—to make change on the status quo that exists out there today in terms of racism. We at EY have 300,000 people around the world, and we pledge to stand against racial injustice and racist violence in the world and use our platform to enact meaningful change, both at EY and in our communities around the world.”</p>
+<p class="text-component">EY</p>
+<p class="text-component">“The time has come” 
+
+George Colony, CEO:
+“Several months ago, we created a global, employee-led and executive-sponsored Diversity & Inclusion Council to undertake this work. The events of this last week have underscored and accelerated the criticality of our efforts. Our employees, like so many in society, have shared that they want to take action and become better allies to black and minority communities. We are rapidly educating ourselves. Forrester has decided to close our offices for business on Friday, June 5, so that our employees can focus their time on taking action that is right for them, whether that is to listen, learn, speak out, educate, read, peacefully protest, or serve. My activities will include rereading Invisible Man by Ralph Ellison.”</p>
+<p class="text-component">Forrester</p>
+<p class="text-component">“We see you. We stand with you.”
+
+Alex Liu, managing partner:
+“I have spoken with several colleagues and clients over the past week, and am moved by their understandably raw and inconsolable emotions of anger, outrage, despair, and helplessness. Kearney is committed to expanding support programs for the near and longer-term, but nothing can replace supportive outreach at this specific time. We can all be allies for solidarity and inclusion, and against intolerance, whether it be anti-religion, anti-gender, anti-immigrant, anti-ethnicity, anti-race. There is far too much of all that evil, hate, and bigotry in this supposedly modern, civilized world.”</p>
+<p class="text-component">Kearney</p>
+<p class="text-component">“We see you. We stand with you.”
+
+Alex Liu, managing partner:
+“I have spoken with several colleagues and clients over the past week, and am moved by their understandably raw and inconsolable emotions of anger, outrage, despair, and helplessness. Kearney is committed to expanding support programs for the near and longer-term, but nothing can replace supportive outreach at this specific time. We can all be allies for solidarity and inclusion, and against intolerance, whether it be anti-religion, anti-gender, anti-immigrant, anti-ethnicity, anti-race. There is far too much of all that evil, hate, and bigotry in this supposedly modern, civilized world.”</p>
+<p class="text-component">Kearney</p>
+<p class="text-component">McKinsey & Company comments on racial bias and social injustice
+
+“It is an extremely painful time for communities across the United States and beyond. It has been difficult to witness yet another example of brutal racial injustice. While we all feel the heartache, the pain and frustration are especially deep for our black colleagues. We want to send a simple, clear and unequivocal message: we stand with our black colleagues, their families, friends, and communities. The killing of George Floyd, and the many appalling events that have come before, cannot be ignored. There is no place for racism, prejudice or hatred. Period. This belief is shared across our entire firm.
+We are amplifying our commitment to do our part to ensure that black lives are spoken for and valued, both inside our firm and beyond. We will use our skills productively to help our local communities break down unacceptable barriers to equality and opportunity.” (Video message from McKinsey’s global managing partner, Kevin Sneader, follows the statement.)</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">McKinsey & Company comments on racial bias and social injustice
+
+“It is an extremely painful time for communities across the United States and beyond. It has been difficult to witness yet another example of brutal racial injustice. While we all feel the heartache, the pain and frustration are especially deep for our black colleagues. We want to send a simple, clear and unequivocal message: we stand with our black colleagues, their families, friends, and communities. The killing of George Floyd, and the many appalling events that have come before, cannot be ignored. There is no place for racism, prejudice or hatred. Period. This belief is shared across our entire firm.
+We are amplifying our commitment to do our part to ensure that black lives are spoken for and valued, both inside our firm and beyond. We will use our skills productively to help our local communities break down unacceptable barriers to equality and opportunity.” (Video message from McKinsey’s global managing partner, Kevin Sneader, follows the statement.)</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">Employees of Oliver Wyman enabling racial &
+ethnic diversity
+
+“We mourn the disproportionate loss of innocent life borne by our Black communities, and we recognize that we must all continue to take action to combat racial prejudice in ourselves and wherever we find it. We stand with all under-presented or marginalized communities in the fight for justice, equality, diversity, and inclusion in society and in the workplace. In our offices and in our work, we fight for the fundamental principles of human dignity, equity, community, and mutual respect.”
+
+“Statement from Dan Glaser, CEO and President”
+
+Dan Glaser, CEO, Marsh & McLennan Companies:
+
+“We are living through a period of extraordinary uncertainty. Take care of each other. Listen to one another. Reach out to your colleagues and to those you love.”</p>
+<p class="text-component">Oliver Wyman/Marsh & McClennan Companies</p>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

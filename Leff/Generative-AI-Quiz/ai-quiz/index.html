@@ -1,0 +1,229 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'generative-ai-ceros-quiz',
+            issueAliasSlug: 'ai-quiz',
+            issue: {"id":752232,"projectId":110977,"slug":"experience-63fef325de9cf","name":"Generative AI ceros quiz","status":"published","creationDate":"2023-03-01T06:39:33.000Z","lastModifiedDate":"2023-04-14T21:04:08.000Z","deletionDate":null,"firstPublishedDate":"2023-03-01T17:21:01.000Z","wipExperienceVersionId":3004001,"publishedExperienceVersionId":3104157,"createdByMemberId":36346,"primaryIssueAliasId":1069896,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-63fef3241216c.jpg","importLinkShared":0,"lastPublishedDate":"2023-04-12T07:43:08.000Z","lastModifiedByMemberId":36346,"lastPublishedByMemberId":36346,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"63fef325-cbef70d5083f0","title":"Generative AI ceros quiz"},
+            docVersion: {"id":3104157,"experienceId":752232,"slug":"experience-version-6436610c71941","loadLowRes":1,"seoNoIndex":1,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-6436610c71941.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c71953","initiallyDisabled":true,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/e55a1cdb8774bdbd39069f86319d470a\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c769c8","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/b96216af7abbac5f3fbe4449979defa3\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c7d9be","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/2d69c702b2d371d199c823e195d845f6\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c82a6a","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/2526d2769d0a18c5e3bf8380e4df3b40\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c87ab1","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/cf1b61e73e2fc543ee8486c732730c80\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c8cd57","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/6a06db6c86effac4c4b2a87cf59a3630\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c9212b","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/ef48d816ec8f7a8ef941553c6f38a937\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c977c4","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/6c9ee764ccfec24ded27fb559a12673d\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610c9f2a3","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/2cd8db331f133bdabe2027ec2f4c9a9c\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610ca5a06","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/54f89f166280a940a153b5174794b87c\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610caa3bd","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/287aef70323d82275a16fc7ba502aba3\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-6436610caeea3","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2023\/04\/12\/cc61fbf09531be7e5061dc67e2f7c139\/page-thumbnail.jpg?imageOpt=1&crop=870,497,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2023-04-12T07:43:08.000Z","modificationDate":"2023-04-12T07:43:08.000Z","publishedDate":"2023-04-12T07:43:08.000Z","committedByMemberId":36346,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":1,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#54BAB7","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto|500|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":500,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|500|normal","variantName":"Medium","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af60b5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Md","familyGuid":"Uploaded|d3c5a2d0-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af60b5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bold","cssFamilyName":"ITC Avant Garde Std Md-zn7JcYg2","cssFileURL":"fonts\/09051c60-ce9c-4ac4-9640-a832f08bfb2d\/itc-itcavantgardestd-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af7666-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std XLt","familyGuid":"Uploaded|d3ccd64b-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af7666-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-XLt","cssFamilyName":"ITC Avant Garde Std XL-wdRFc3Du","cssFileURL":"fonts\/da78861d-2188-4c79-b95f-0b50e380f0ff\/itc-itcavantgardestd-xlt.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#54BAB7',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Generative AI ceros quiz</title>
+
+
+
+        <meta name="robots" content="noindex, nofollow"/>
+
+    <meta property="og:title" content="Generative AI ceros quiz"/>
+        <meta property="og:image" content="media/e55a1cdb8774bdbd39069f86319d470a/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Generative AI ceros quiz">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/e55a1cdb8774bdbd39069f86319d470a/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6436610c71941.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_6436610c71941",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #54BAB7;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #54BAB7;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    <script async
+    id="ceros-quiz-plugin"
+    src="//creative-services.ceros.com/ceros/quiz-plugin/v1-1/main.min.js?r=1"
+
+    data-quiz-type="score-boundaries"
+
+    data-score-boundary-result1="5"
+data-score-boundary-result2="6"
+data-score-boundary-result3="7"
+data-score-boundary-result4="8"
+data-score-boundary-result5="9"
+data-score-boundary-result6="10"
+
+></script>
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

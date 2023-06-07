@@ -1,0 +1,298 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-may-2022-1',
+            issue: {"id":631477,"projectId":41781,"slug":"experience-628655c9c7678","name":"The Gold Standard: May 2022","status":"published","creationDate":"2022-05-19T14:35:53.000Z","lastModifiedDate":"2022-05-19T19:31:19.000Z","deletionDate":null,"firstPublishedDate":"2022-05-19T19:32:26.000Z","wipExperienceVersionId":2423979,"publishedExperienceVersionId":2425252,"createdByMemberId":27874,"primaryIssueAliasId":877096,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-628655c9511e3.jpg","importLinkShared":0,"lastPublishedDate":"2022-05-19T19:32:26.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":27874,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"628655c9-c8128e8f16573","title":"The Gold Standard: May 2022"},
+            docVersion: {"id":2425252,"experienceId":631477,"slug":"experience-version-62869b4a404ac","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-62869b4a404ac.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-62869b4a404c4","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2022\/05\/19\/b386195064f54be376e0eec0df222de0\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2022-05-19T19:32:26.000Z","modificationDate":"2022-05-19T19:32:26.000Z","publishedDate":"2022-05-19T19:32:26.000Z","committedByMemberId":27874,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: May 2022</title>
+
+
+
+
+    <meta property="og:title" content="The Gold Standard: May 2022"/>
+        <meta property="og:image" content="media/b386195064f54be376e0eec0df222de0/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: May 2022">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/b386195064f54be376e0eec0df222de0/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-62869b4a404ac.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_62869b4a404ac",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">In this post, I highlight some of the best thought-leadership articles and reports that cross my desk. I note why they rise to the top of the pile and are worth reading (or skimming), even if they focus on functions or industries outside your areas of interest. Among the criteria I use to make the selections are freshness and provocativeness of insights and timeliness, analytical rigor, depth of prescriptions, and overall readability.
+
+Inflation is the big economic story of the day, with implications for consumers, businesses, and governments. The US Federal Reserve is raising interest rates in an attempt to rein in prices. Given the importance of this issue, professional services firms, with the exception of McKinsey, have published comparatively little thought leadership on how companies should manage inflation. That said, here are some of the better pieces to date: 
+
+
+</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/76b7c3205cc81679598e766f43d159a3/processed-svg-up-arrow-icon.svg" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Inflation is forcing B2B CEOs to rethink pricing”</p>
+<p class="text-component">Inflation is an investment opportunity, the authors say, not a calamity that inevitably leads to crisis scenarios. They point to three ways in which B2B companies could improve their performance: acting faster (adjust prices quickly to avoid margin erosion), enforcing discipline (consider temporary price escalators), and making nuanced price changes (avoid across-the-board price increases). 
+
+“Instead of viewing inflation narrowly as a signal to raise prices, senior leaders should heed it as a wake-up call to confront the open secret about their pricing practices,” the authors write. “With all eyes focused on pricing, they have an unprecedented opportunity to initiate long-overdue changes that will bring their pricing in line with best practices and help them respond to uncertainty now and in the future.”
+
+</p>
+<p class="text-component">Turning inflation disruption into value with six strategic steps”</p>
+<p class="text-component">The authors assert that a key to addressing inflation is cost cutting. “Companies that cut costs to improve productivity the most during previous inflationary periods achieved higher total shareholder returns compared with firms that took less action, based on our analysis of 5,700 global companies,” the authors say.
+
+They propose six tactics that allow companies to pursue cost cutting in a way that increases revenue and reduces dependence on tight labor markets while improving employee retention: get spending visibility, differentiate between strategic and nonstrategic spending, unpack the drivers of spending, reduce consumption, eliminate work, and automate.
+</p>
+<img src="media/3da8c931224e59dbd39b02997f60eabf/pick-one-full.jpg" alt=""  class="image-component"/>
+<img src="media/bf60ca200e96b9cd8a7e91473c2d5fad/pick-two-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">“</p>
+<p class="text-component">BCG</p>
+<p class="text-component">Bain</p>
+<p class="text-component">“</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Navigating inflation: A new playbook for CEOs”</p>
+<p class="text-component">McKinsey</p>
+<p class="text-component">“</p>
+<img src="media/8f99a06c66a523e3024663983f309d71/pick-four-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">The authors explore how CEOs can guide their companies and external stakeholders through this inflationary period. 
+
+“It’s important to recognize that the CEO’s focus cannot be limited to inflation’s implications for profitability,” the authors write. “Operating in today’s uncertain environment, with a much wider range of stakeholders, means that leaders must think about performance in much broader terms. The rapid decisions CEOs had to make in recent weeks about operations in Russia is only the latest example of these expanded considerations. CEOs must lead with the complete business cycle and their complete slate of stakeholders in mind.”
+
+According to the authors, the CEO inflation playbook comprises the following:
+
+
+First-order impacts</p>
+<p class="text-component">The ‘humane’ way of handling inflation” </p>
+<p class="text-component">Korn Ferry</p>
+<p class="text-component">“</p>
+<p class="text-component">This article offers a different take on the inflation story. Rather than recommending price increases and cost cutting, the authors consider whether this could be a moment to earn goodwill from employees and customers. For example, companies could delay price rises on some products or source goods from less expensive suppliers. If they do raise prices, companies could cite a purpose that improves employees’ well-being, such as transparently publishing a surcharge to cover costs associated with 
+the pandemic. 
+
+“This is the moment to be people-centric,” says Divina Gamble, coleader of the nonprofit practice at Korn Ferry. “That ultimately goes for how you treat employees, customers, and the public in general. Leaders have to really show that they’re investing in their people and that it’s not just about money.” 
+</p>
+<img src="media/e5ddcc60248bba71e69df56a954a5d35/pick-three-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">– redesigning product and service offerings for value </p>
+<p class="text-component">– clean-sheeting and building digital, integrated, </p>
+<p class="text-component">transparent, and agile supply chains</p>
+<p class="text-component">– transforming procurement to create value, not just cut </p>
+<p class="text-component">– adjusting to the new talent game</p>
+<p class="text-component">– setting prices to strengthen customer relationships</p>
+<p class="text-component">Preparing your portfolios for inflation”</p>
+<p class="text-component">Oliver Wyman</p>
+<p class="text-component">“</p>
+<p class="text-component">The authors focus on inflation’s impact on the portfolio companies of private equity firms and what PE executives can do to manage it. The value at stake is, on average, three to four percentage points of EBIT margin, they estimate. And most management teams have little or no experience dealing with inflation—the last time it was this high was 
+in 1982.
+
+The authors offer a six-point checklist for managing inflation at portfolio companies: 
+</p>
+<img src="media/1901926cc14c1d5425eb06ce13c3dbda/bain1-05-full.png" alt=""  class="image-component"/>
+<p class="text-component">– identify the components of the inflation impact</p>
+<p class="text-component">– understand contractual constraints and waivers</p>
+<p class="text-component">– role-play competitive stances</p>
+<p class="text-component">– customers like trade-offs, not ultimatums</p>
+<p class="text-component">and availability</p>
+<p class="text-component">costs</p>
+<p class="text-component">– standing up an inflation program management office</p>
+<p class="text-component">– arm the sales force with professional collateral and </p>
+<p class="text-component">external justifications</p>
+<p class="text-component">– set a goal, monitor the exercise, and run it like </p>
+<p class="text-component">a campaign</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

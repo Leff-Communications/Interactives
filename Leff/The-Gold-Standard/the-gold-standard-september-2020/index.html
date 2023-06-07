@@ -1,0 +1,355 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-september-2020',
+            issue: {"id":386973,"projectId":41781,"slug":"experience-5f64d22fa0bdc","name":"The Gold Standard: September 2020","status":"published","creationDate":"2020-09-18T15:28:47.000Z","lastModifiedDate":"2020-09-25T17:37:53.000Z","deletionDate":null,"firstPublishedDate":"2020-09-22T17:23:55.000Z","wipExperienceVersionId":1329329,"publishedExperienceVersionId":1342445,"createdByMemberId":6387,"primaryIssueAliasId":529478,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5f64d22f39b6e.jpg","importLinkShared":0,"lastPublishedDate":"2020-09-25T17:37:54.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p70a0502bcdf1","title":"The Gold Standard: September 2020"},
+            docVersion: {"id":1342445,"experienceId":386973,"slug":"experience-version-5f6e2af2d592d","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5f6e2af2d592d.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5f6e2af2d5942","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2020\/09\/25\/ad32837b4e61969e188a6955ff187f81\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2020-09-25T17:37:54.000Z","modificationDate":"2020-09-25T17:37:54.000Z","publishedDate":"2020-09-25T17:37:54.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: September 2020</title>
+
+
+
+
+    <meta property="og:title" content="The Gold Standard: September 2020"/>
+        <meta property="og:image" content="media/ad32837b4e61969e188a6955ff187f81/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: September 2020">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/ad32837b4e61969e188a6955ff187f81/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5f6e2af2d592d.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5f6e2af2d592d",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">The combination of a turbulent geopolitical environment, the COVID-19 pandemic, increasing income inequality, and the growing prominence of the Black Lives Matters movement has forced professional-services firms to rethink their values and how they want to be perceived in the marketplace and by their own employees. The result is a profound shift in marketing strategy, including a surprising willingness among some firms to take public positions that are at odds with the powers that be. In addition, firms have continued to refine their internal approaches to diversity and inclusion following the killing of George Floyd in May as well as to intensify publishing thought leadership on the issue.
+
+Let’s review what some of the firms have been doing.
+
+</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">EY</p>
+<p class="text-component">In this LinkedIn post, Accenture’s leadership details the firm’s commitment to increase the representation of Black and Hispanic and Latin American people in its US workforce.</p>
+<img src="media/eb9974812071fda5d2ff59d25122ab4a/acc1-04-full.png" alt=""  class="image-component"/>
+<p class="text-component">Accenture</p>
+<p class="text-component">Update on actions—we stand against racism”</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">“</p>
+<p class="text-component">Timothy F. Ryan, chair and senior partner of PwC US, announced that his firm was publicly releasing, for the first time, its diversity data and strategy.</p>
+<img src="media/ff0ee2c25bc305e6f2884cf8b45633be/pwc1-09-full.png" alt=""  class="image-component"/>
+<p class="text-component">PwC</p>
+<p class="text-component">Building on a culture of belonging: PwC’s first D&I transparency report”</p>
+<p class="text-component">“</p>
+<p class="text-component">Back to top</p>
+<img src="media/635ba6b15b5b3feb765f66e80a659b9f/up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component"></p>
+<p class="text-component">Taking provocative stances</p>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">Safeguarding our lives and our livelihoods: The imperative of our time”</p>
+<p class="text-component">“</p>
+<img src="media/eff636ffe527c0234db5c9bfcf47213f/mck1-03-full.png" alt=""  class="image-component"/>
+<p class="text-component">In this provocative article published in March, McKinsey authors took direct issue with Wall Street Journal editors and, by extension, the Trump administration. McKinsey partners are usually quite careful about offending governments or companies, but clearly the pandemic—not to mention the shootings of Breonna Taylor, George Floyd, Jacob Blake, and others—has pushed its leadership over the edge. </p>
+<p class="text-component">Acting on diversity and inclusion</p>
+<p class="text-component">The killing of George Floyd compelled professional-services firms to overhaul their approaches to diversity and inclusion. Their reconsideration has been reflected in public statements and commitments, and, to some extent, in the topics they pursue in thought leadership. Let’s catch up with firms’ statements on the subject since June.</p>
+<p class="text-component">The CEO of BCG, Rich Lesser, cosigned this July 30 article from the Business Roundtable. The authors urge government officials to take more steps to control the pandemic. It’s written in polite language, but it doesn’t take much imagination to read it as a criticism of the Trump administration’s response to COVID-19.</p>
+<img src="media/ed16edccb82256582b30a9ffe9cf7209/bcg2-02-full.png" alt=""  class="image-component"/>
+<img src="media/789345887da7aed6fb856ad36ab6d8e1/bcg1-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">BCG</p>
+<p class="text-component">A better strategy for reopening our communities, schools, and economy”</p>
+<p class="text-component">This LinkedIn post from Lesser doesn’t mince words in criticizing the Trump administration’s attempt to force some foreign students to leave the country (the policy was subsequently withdrawn).</p>
+<p class="text-component">BCG joins Amicus Brief opposing latest ICE directive”</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">Bain’s worldwide managing partner, Manny Maceda, announced the appointment of several partners to lead the firm’s newly created diversity, equity, and inclusion efforts.</p>
+<img src="media/1901926cc14c1d5425eb06ce13c3dbda/bain1-05-full.png" alt=""  class="image-component"/>
+<p class="text-component">Bain & Company</p>
+<p class="text-component">Bain & Company announces three new leadership positions focused on diversity, equity & inclusion”</p>
+<p class="text-component">“</p>
+<p class="text-component">Booz Allen announced a new employee giving campaign to support the Black community through partnerships with the Equal Justice Initiative, the Thurgood Marshall College Fund, Year Up, and Black Girls Code.</p>
+<img src="media/b2f447cc6b87d786e7cb63a4b2f87366/bah1-06-full.png" alt=""  class="image-component"/>
+<p class="text-component">Booz Allen Hamilton</p>
+<p class="text-component">On Giving Black Day, Booz Allen strengthens its commitment to racial and social equity with new employee giving campaign”</p>
+<p class="text-component">“</p>
+<p class="text-component">Booz Allen joins Mansfield Rule certification pilot to increase diversity and inclusion in legal departments”</p>
+<p class="text-component">“</p>
+<img src="media/a7a1cfdca352342c3f2cbe00f652608f/bah2-07-full.png" alt=""  class="image-component"/>
+<p class="text-component">I had never heard of the Mansfield Rule until I read this press release. The rule is meant to encourage diversity in the leadership of the legal profession. Booz Allen announced it was joining the certification process to increase diversity in its legal department and in its use of outside counsel. </p>
+<img src="media/df6809b10996b06244c57bed1235d0d4/sc1-010-full.png" alt=""  class="image-component"/>
+<p class="text-component">Stanton Chase</p>
+<p class="text-component">Stanton Chase leads AESC pledge against racial, social injustice”</p>
+<p class="text-component">This executive search firm announced that it had signed a pledge sponsored by the Association of Executive Search and Leadership Consultants committing it to pursuing inclusion in leadership teams.</p>
+<p class="text-component">“</p>
+<p class="text-component">In thought leadership, McKinsey has been especially active in addressing diversity and inclusion issues. In dealing with these issues head on, McKinsey and other firms have been indirectly contradicting the policies of the Trump administration, which pays lip service to racial and gender inequality. Some firms have decided that their long-term business interests are better served by confronting these difficult topics than by staying silent.</p>
+<p class="text-component">Aggressively pursuing thought leadership on diversity, inclusion, and inequality</p>
+<p class="text-component">This report focuses on the issues facing Hispanic and Latin Americans in the wake of the pandemic and possible interventions to foster more equitable public-health and economic outcomes. (In April, McKinsey published a detailed look at the impact of COVID-19 on Black Americans.)</p>
+<img src="media/84d67c873eea18637b7a4019f4b795eb/mck2-10-full.png" alt=""  class="image-component"/>
+<p class="text-component">McKinsey & Company</p>
+<p class="text-component">US Hispanic and Latino lives and livelihoods in the recovery from COVID-19</p>
+<p class="text-component">This article discusses the impact of the pandemic on Asian Americans. It speaks in part to the rise in anti-Asian bias during the pandemic, encouraged by the Trump administration’s use of anti-Asian rhetoric.</p>
+<img src="media/5261c7a06c8ef052d369798201d5d1ce/mck3-11-full.png" alt=""  class="image-component"/>
+<p class="text-component">COVID-19 and advancing Asian American recovery”</p>
+<p class="text-component">“</p>
+<img src="media/72c4db11c53d1422d97714f1be160f91/mck4-12-full.png" alt=""  class="image-component"/>
+<p class="text-component">Racial equity in financial services”</p>
+<p class="text-component">“</p>
+<p class="text-component">The W.K. Kellogg Foundation teamed up with McKinsey to examine racial equity in the financial services sector. One eye-opening finding: “At the entry level of US financial services firms, the proportion of people of color is in line with their representation in society—around 40 percent. However, this share falls steadily along the corporate pipeline until, by the C-suite, it has dropped by 75 percent. Nine out of ten people at this level are white.”</p>
+<p class="text-component">More Black Americans say their job and income have been negatively affected by COVID-19 compared with white Americans, this series of charts shows.</p>
+<img src="media/77727d23d34e7ec341449e524fa0a465/mck5-13-full.png" alt=""  class="image-component"/>
+<p class="text-component">How COVID-19 has impacted Black-white financial inequality”</p>
+<p class="text-component">“</p>
+<p class="text-component">This piece looks at the effect of the pandemic on gender equality, concluding that women’s jobs are 1.8 times more vulnerable to the crisis than men’s jobs.</p>
+<img src="media/66b5f9101bd7ad9e0f632be97f681756/mck6-14-full.png" alt=""  class="image-component"/>
+<p class="text-component">COVID-19 and gender equality: Countering the regressive effects”</p>
+<p class="text-component">“</p>
+<p class="text-component">Women in healthcare have made progress and continue to report high job satisfaction but encounter persistent obstacles to advancement, this report concludes.</p>
+<img src="media/9d4d51f05544dbfc373f95822286681b/mck7-15-full.png" alt=""  class="image-component"/>
+<p class="text-component">Women in healthcare: Moving from the front lines to the top rung</p>
+<p class="text-component">This article argues that companies must move beyond public gestures of support for LGBTQ+ issues to create a more positive work experience. </p>
+<img src="media/ce14a8fb867726d4d3818dc42417b6aa/mck8-16-full.png" alt=""  class="image-component"/>
+<p class="text-component">How the LGBTQ+ community fares in the workplace”</p>
+<p class="text-component">“</p>
+<p class="text-component">BCG got into the game on the impact of COVID-19 on Black Americans, concluding that the chief reasons for the disproportionate number of deaths among Black Americans are the greater risk of exposure to people with COVID-19 and less access to COVID-19 testing. </p>
+<img src="media/7332960e1ccabd7f166e1e88f169eefd/bcg3-21-full.png" alt=""  class="image-component"/>
+<p class="text-component">BCG</p>
+<p class="text-component">Bridging COVID-19’s racial divide”</p>
+<p class="text-component">“</p>
+<p class="text-component">A survey of 2,000 LGBTQ employees and 2,000 non-LGBTQ employees across the United States showed that despite significant investment in building a more inclusive workplace, organizations still need to do more.  </p>
+<img src="media/292d9aaa304bfcdfd1f78a82f44a63bc/bcg4-17-full.png" alt=""  class="image-component"/>
+<p class="text-component">A new LGBTQ workforce has arrived—inclusive cultures must follow”</p>
+<p class="text-component">“</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">The article asserts that society faces two pandemics: one from COVID-19 illness and subsequent disruption and one arising from inequality. The situation today amplifies income, education, and health inequalities. “Companies can and should act today to help address these inequalities,” the article concludes. </p>
+<img src="media/6f54e31c3851b26936b06bf8b821d897/ey1-18-full.png" alt=""  class="image-component"/>
+<p class="text-component">EY</p>
+<p class="text-component">How do we seize the opportunity to expand equality?”</p>
+<p class="text-component">“</p>
+<p class="text-component">This executive search firm has published a series of essays aimed at helping leaders address diversity and inclusion issues in the wake of Black Lives Matter protests. </p>
+<img src="media/5d82bab275f7dcd0fd2de29c36be0441/kf1-19-full.png" alt=""  class="image-component"/>
+<p class="text-component">Korn Ferry</p>
+<p class="text-component">The essentials: Fighting racism</p>
+<p class="text-component">The essentials: Fighting racism</p>
+<p class="text-component">This executive-search firm has published a series of essays aimed at helping leaders address diversity and inclusion issues in the wake of Black Lives Matter protests. </p>
+<p class="text-component">“COVID’s female toll”</p>
+<p class="text-component">Women are leaving the workforce at a higher rate than men during the pandemic. This article offers suggestions about how women can continue to advance their careers under the circumstances.  </p>
+<img src="media/9c3c88308eb65a8cd41f5e5ffb734f5e/kf2-20-full.png" alt=""  class="image-component"/>
+<p class="text-component">Why is Black talent opting out’ of corporate America?”</p>
+<p class="text-component">This article addresses the increased interest in diversity matters from a different angle: “While CEOs were putting out statements and creating more chief diversity officers, experts say any real change faces a simple but critical hurdle: convincing top Black executives to stay onboard. Indeed, by nearly all accounts, too many have looked at their opportunities, seen racism, and decided to opt out of the corporate world for more solo opportunities.” </p>
+<img src="media/3d006971d0e791f3952fdeaa459250b7/kf3-25-full.png" alt=""  class="image-component"/>
+<p class="text-component">“</p>
+<p class="text-component">‘</p>
+<p class="text-component">This article looks at what practical actions white men can take to be better allies during the pandemic. </p>
+<img src="media/23dbdb9cc94e0d2088171b4158e53f8a/ow1-24-full.png" alt=""  class="image-component"/>
+<p class="text-component">How white men can be better allies on race”</p>
+<p class="text-component">“</p>
+<p class="text-component">Oliver Wyman</p>
+<p class="text-component"></p>
+<p class="text-component">A new PwC survey finds that organizations are investing at “unprecedented rates” in diversity and inclusion programs, with 76 percent saying it is a value or priority. Despite the commitment, the survey found that progress is slow. </p>
+<img src="media/db4c599c693046f1fc1ccb824e8b8f8f/pwc2-23-full.png" alt=""  class="image-component"/>
+<p class="text-component">Global diversity & inclusion survey”</p>
+<p class="text-component">PwC</p>
+<p class="text-component">“</p>
+<p class="text-component">Global diversity & inclusion survey”</p>
+<p class="text-component">“</p>
+<p class="text-component">A survey by this executive-search firm finds that LGBTQ+ executives are less likely than others to believe their organizations are effective at fostering inclusive cultures and offers examples of what leading companies do to attract and retain LGBTQ+ talent.</p>
+<img src="media/3c24df8fd5b0ef4739f175fda7cb8ff9/rr1-22-full.png" alt=""  class="image-component"/>
+<p class="text-component">A leader’s guide to LGBTQ+ talent strategy”</p>
+<p class="text-component">Russell Reynolds</p>
+<p class="text-component">“</p>
+<p class="text-component">Some 70 percent of executives in Europe say diversity and inclusion will improve the performance of their organizations, according to the firm’s survey.</p>
+<img src="media/7cb9806ae63c1796037900e814db223b/rr2-22-full.png" alt=""  class="image-component"/>
+<p class="text-component">Diversity and inclusion pulse: A leader’s guide to Europe”</p>
+<p class="text-component">“</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

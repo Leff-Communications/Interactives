@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-september-2019',
+            issue: {"id":263728,"projectId":41781,"slug":"experience-5d767588607a5","name":"The Gold standard: September 2019","status":"published","creationDate":"2019-09-09T15:53:44.000Z","lastModifiedDate":"2020-01-03T21:03:13.000Z","deletionDate":null,"firstPublishedDate":"2019-09-09T20:41:22.000Z","wipExperienceVersionId":831303,"publishedExperienceVersionId":927245,"createdByMemberId":14154,"primaryIssueAliasId":359757,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5d76758801f07.jpg","importLinkShared":0,"lastPublishedDate":"2019-11-22T17:45:09.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":14154,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p9933b608a401","title":"The Gold standard: September 2019"},
+            docVersion: {"id":927245,"experienceId":263728,"slug":"experience-version-5dd81ea56513b","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5dd81ea56513b.js","themingBackgroundImageUri":null,"seoTitleKeywords":"The Gold standard: September 2019","seoMetaKeywords":"","seoMetaDescription":"The Gold standard: September 2019","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5dd81ea56514d","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/11\/22\/f8500b917c8e8943bdb8af4f3ac620ea\/page-thumbnail.jpg?imageOpt=1&crop=765,595,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-11-22T17:45:09.000Z","modificationDate":"2019-11-22T17:45:09.000Z","publishedDate":"2019-11-22T17:45:09.000Z","committedByMemberId":14154,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"mobile"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold standard: September 2019 The Gold standard: September 2019</title>
+
+
+
+        <meta name="description" content="The Gold standard: September 2019"/>
+
+    <meta property="og:title" content="The Gold standard: September 2019"/>
+        <meta property="og:image" content="media/f8500b917c8e8943bdb8af4f3ac620ea/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold standard: September 2019">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/f8500b917c8e8943bdb8af4f3ac620ea/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5dd81ea56513b.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5dd81ea56513b",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/acd4d50ffce980f1f4b4b6a2d1dd8e70/bg-image-full.png" alt=""  class="image-component"/>
+<p class="text-component">The Gold standard: September 2019 </p>
+<p class="text-component">In this monthly post, I highlight some of the best thought-leadership articles and reports that cross my desk. I’ll note why they rise to the top of the pile and are worth reading (or skimming), even if they focus on functions or industries outside your areas of interest.
+
+Among the criteria I use to make the selections are freshness and provocativeness of insights and timeliness, analytical rigor, depth of prescriptions, and overall readability.</p>
+<img src="media/1369633118ab69eb5fcd7492c9d99c8a/allan-full.png" alt=""  class="image-component"/>
+<p class="text-component">The pulse of fintech 2019
+KPMG
+</p>
+<p class="text-component">“</p>
+<p class="text-component">A path for Australia’s
+banks to delight
+customers”
+Bain</p>
+<p class="text-component">“</p>
+<p class="text-component">Navigating top talent
+decisions for mergers
+and acquisitions”
+Heidrick & Struggles</p>
+<p class="text-component">“</p>
+<p class="text-component">Ready or not, AI
+is coming to IT operations”
+BCG</p>
+<p class="text-component">“</p>
+<p class="text-component">Reimagining
+customer privacy for
+the digital age”
+Deloitte</p>
+<p class="text-component">Featured articles </p>
+<p class="text-component">The pulse of fintech 2019
+KPMG</p>
+<p class="text-component">“</p>
+<p class="text-component">A path for Australia’s
+banks to delight
+customers”
+Bain</p>
+<p class="text-component">“</p>
+<p class="text-component">Navigating top talent
+decisions for mergers
+and acquisitions”
+Heidrick & Struggles</p>
+<p class="text-component">“</p>
+<p class="text-component">Ready or not, AI
+is coming to IT operations”
+BCG</p>
+<p class="text-component">“</p>
+<p class="text-component">Reimagining
+customer privacy for 
+the digital age”
+Deloitte</p>
+<p class="text-component">“</p>
+<p class="text-component">Fintech is a hot topic. This report isn’t exactly thought leadership—no specific business problem is explored or prescriptions offered. But if you’re interested in knowing what’s going on in fintech around the world, this is an excellent place to look. Its comprehensiveness suggests that the authors know the subject quite well.  </p>
+<p class="text-component">Read the report</p>
+<p class="text-component">The pulse of 
+fintech 2019
+KPMG</p>
+<p class="text-component">“</p>
+<img src="media/9f57b5f5f4bae7d06b2a57eec967fadf/read-more-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/b01521860fc8dcb125a69f8d8a8a2e3b/image-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">What’s remarkable about this article is how critical it is of banks in Australia. Professional services firms usually use soft language, along the lines of, “you’re not doing as well as you could,” as opposed 
+to saying programs “largely failed” and created a “lackluster experience for many customers.” (That said, the authors don’t name specific banks.) The authors are clearly trying to be provocative and looking for a way to get some client conversations started. </p>
+<p class="text-component">Read the article</p>
+<p class="text-component">A path for Australia’s banks to delight customers” 
+Bain</p>
+<p class="text-component">“</p>
+<img src="media/9f57b5f5f4bae7d06b2a57eec967fadf/read-more-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/18641dbed03eb8d97ec8adab2cd36dd8/image-2-full.png" alt=""  class="image-component"/>
+<p class="text-component">This article offers a fresh look at a perennial topic for professional services firms—the HR component in mergers 
+and acquisitions. There’s no shame in revisiting an old subject, even if you’re 
+not breaking new ground. A key to making this approach work is to use real-world examples, which the authors do in 
+this piece. The article suggests the 
+authors have considerable experience 
+in this market. </p>
+<p class="text-component">Read the article</p>
+<p class="text-component">Navigating top talent decisions for mergers and acquisitions” 
+Heidrick & Struggles</p>
+<p class="text-component">“</p>
+<img src="media/9f57b5f5f4bae7d06b2a57eec967fadf/read-more-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/26341ea02bdde31f6e94ac120b3223ee/image-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">How do you produce thought leadership in a new area you think is important when 
+you have served few, if any, clients on the subject? My guess is that was the situation facing the authors of this article on how 
+AI could be useful in IT operations. A tipoff is the absence of real-world examples 
+and the modest attempt at offering prescriptions. Still, the authors do a good job of describing the opportunity, by including market sizing and use cases, and summoning a call to action.</p>
+<p class="text-component">Read the article</p>
+<p class="text-component">Ready or not, AI is coming to IT operations” 
+BCG</p>
+<p class="text-component">“</p>
+<img src="media/9f57b5f5f4bae7d06b2a57eec967fadf/read-more-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/606db1167c0e46c87fbdf89375ab6800/image-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Consumer privacy issues are front and center in today’s business world, so it was encouraging to find an article that addresses the topic at some depth. 
+In this case, the authors take the financial services industry to task for their relative lack of attention to customer privacy issues. They rate tools and technologies for their potential to encroach on 
+privacy and review the content of company privacy policies. So far, so good. Disappointing, though, is the once-over-lightly concluding prescriptive section. Is it a case of trying to avoid giving away too much? </p>
+<p class="text-component">Read the article</p>
+<p class="text-component">Reimagining customer privacy for the digital age”
+Deloitte</p>
+<p class="text-component">“</p>
+<img src="media/9f57b5f5f4bae7d06b2a57eec967fadf/read-more-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/afea584f4d54afa1d8d61931ebc6ed44/image-5-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/f09dc672b95d47fd528c7f42e3f35cee/back-to-top-arrow-full.png" alt=""  class="image-component"/>
+<p class="text-component">“</p>
+<p class="text-component">“</p>
+<p class="text-component">“</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

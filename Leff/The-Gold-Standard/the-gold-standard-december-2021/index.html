@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'leff-best-of-thought-leadership',
+            issueAliasSlug: 'the-gold-standard-december-2021',
+            issue: {"id":564091,"projectId":41781,"slug":"experience-61aa437cc7aa8","name":"The Gold Standard: December 2021","status":"published","creationDate":"2021-12-03T16:19:08.000Z","lastModifiedDate":"2022-12-07T17:44:45.000Z","deletionDate":null,"firstPublishedDate":"2021-12-09T15:42:29.000Z","wipExperienceVersionId":2105945,"publishedExperienceVersionId":2117904,"createdByMemberId":27874,"primaryIssueAliasId":779925,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-61aa437c66934.jpg","importLinkShared":0,"lastPublishedDate":"2021-12-09T15:42:29.000Z","lastModifiedByMemberId":27874,"lastPublishedByMemberId":27874,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-pf837c7de2511","title":"The Gold Standard: December 2021"},
+            docVersion: {"id":2117904,"experienceId":564091,"slug":"experience-version-61b223e5757e6","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-61b223e5757e6.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-61b223e575803","initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2021\/12\/09\/3513aaa481d692ab225be15bdc63fcb9\/page-thumbnail.jpg?imageOpt=1&crop=765,638,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2021-12-09T15:42:29.000Z","modificationDate":"2021-12-09T15:42:29.000Z","publishedDate":"2021-12-09T15:42:29.000Z","committedByMemberId":27874,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af70a5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-DemiObl","cssFamilyName":"ITC Avant Garde Std Bk-kdnQ7gZr","cssFileURL":"fonts\/bb2f6afd-b3e7-411a-a2ff-4e12de670c83\/itc-itcavantgardestd-demiobl.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The Gold Standard: December 2021</title>
+
+
+
+
+    <meta property="og:title" content="The Gold Standard: December 2021"/>
+        <meta property="og:image" content="media/3513aaa481d692ab225be15bdc63fcb9/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Gold Standard: December 2021">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/3513aaa481d692ab225be15bdc63fcb9/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-61b223e5757e6.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_61b223e5757e6",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/15a50cb355bc6849ef07000ff3b210ee/allan-full.png" alt=""  class="image-component"/>
+<img src="media/a6d5c578352aa2f61a67eda0e98e6210/leff-goldstandard-transparentlogo-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Welcome to the third annual Goldies awards, where we celebrate notable achievements in thought leadership publishing from professional-services firms in the past year.
+
+There were four major themes in thought leadership in 2021: climate change and sustainability; diversity, equity, and inclusion; the future of the workforce; and the future of the supply chain. Selecting the top pieces was especially hard this year, given how much professional-services firms published on these topics.
+
+For the awards, I leaned toward work that took a different angle from what competitors were writing about, even if those efforts offered excellent insights. For the sake of fairness, I chose at least two articles in each category. Some selections were highlighted during the year in the bi-monthly Gold Standard posts. Apologies in advance for superior work I might have missed. 
+
+
+</p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">Back to top</p>
+<img src="media/39977663983741d891c8aef28dd008b1/processed-svg-up-arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">We observed strong opposition to the Trump administration among some professional-services firms. Most recently, leaders of Accenture, BCG, Deloitte, EY, KPMG, and West Monroe partners joined dozens of other business executives in an open letter demanding that the administration move ahead with the presidential transition. “Every day that an orderly presidential transition process is delayed, our democracy grows weaker in the eyes of our own citizens and the nation’s stature on the global stage is diminished,” they wrote. </p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component"></p>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<img src="media/386864e1559ddc053aabdc76c4f1e5cf/goldstandard-pattern-edit-01-full.png" alt=""  class="image-component"/>
+<p class="text-component">The biodiversity crisis 
+is a business crisis”
+</p>
+<p class="text-component">BCG mounted a strong publishing effort on climate change and sustainability. One thought-provoking effort was this piece on business’s stake in biodiversity. It shows how business contributes to biodiversity loss and what it can do to become “biodiversity-positive.” The authors outline a four-stage approach that would require transformation of the four value chains that account for 90 percent of biodiversity loss: food, infrastructure and mobility, energy, and fashion.</p>
+<p class="text-component">Climate-related risks have financial statement impacts</p>
+<p class="text-component">This compilation of articles took a different approach on climate change. The contributions address how climate-change risks may affect corporate financial statements. Getting out in front of an issue is an important part of thought leadership, and the authors do that well here. One could imagine these pieces spurring conversations with chief financial officers of many companies. The authors discuss topics ranging from the potential impact on inventories to whether a company will be able to continue as a going concern.
+ </p>
+<p class="text-component">How cities can adapt to climate change</p>
+<p class="text-component">McKinsey was also exceptionally active this year in publishing on climate change and sustainability. In this report, cowritten with the C40 Cities Climate Leadership Group, the authors identify 15 high-potential actions that cities can take to address the impact of climate change. The first part of this outstanding report looks at systemic-resilience and hazard-specific actions, including straightforward approaches such as planting street trees, applying cool-surface treatments, and pursuing nature-based sustainable drainage methods. Part two explores how cities could carry out these ideas. The report benefits from many examples from cities around the world.
+
+ </p>
+<p class="text-component">Taking a stand on the presidential election</p>
+<p class="text-component">We observed strong opposition to the Trump administration among some professional-services firms. Most recently, leaders of Accenture, BCG, Deloitte, EY, KPMG, and West Monroe partners joined dozens of other business executives in an open letter demanding that the administration move ahead with the presidential transition. “Every day that an orderly presidential transition process is delayed, our democracy grows weaker in the eyes of our own citizens and the nation’s stature on the global stage is diminished,” they wrote. </p>
+<p class="text-component">Being transgender at work” </p>
+<p class="text-component">McKinsey and other firms had much to say this year about how companies could address diversity, equity, and inclusion (DEI). Several took the approach of (XX) steps to improve DEI performance. McKinsey paid particular attention to Black economic mobility in the United States. 
+ 
+But these McKinsey authors distinguished themselves with an in-depth look at the workplace experience of transgender employees, as well as steps that corporate America could take to foster an inclusive environment for them. The authors found, for example, that transgender adults are twice as likely as cisgender adults to be unemployed, and cisgender employees make 32 percent more money a year than transgender employees, even with similar or higher education levels. They conclude that companies cannot continue to ignore a sizable population that “experiences systemic barriers to employment, work performance, and career progression.” 
+
+
+ </p>
+<p class="text-component">Taking a stand on the presidential election</p>
+<p class="text-component">Making progress on DE&I: What leaders can learn from their digital transformation journey” </p>
+<p class="text-component">What set this piece apart was how companies could use their experience in digital transformations as a model for pursuing a DEI program. The authors ask why so many organizations struggle to make progress on DEI, despite years of investment in various kinds of programs. “A look at companies’ experience with digital suggests an answer: piecemeal, incremental approaches are not enough to drive change when systemic change is needed.”</p>
+<img src="media/34179689efbc883ddf920337f227682f/one-full.jpg" alt=""  class="image-component"/>
+<img src="media/c41949e3fa17bd54f4d01b34407abdce/two-full.jpg" alt=""  class="image-component"/>
+<img src="media/1bf4c02a0dcdddcda9689c4945146b3d/four-full.jpg" alt=""  class="image-component"/>
+<img src="media/a345c0f3c84f049facbcd8bc43fad4c9/five-full.jpeg" alt=""  class="image-component"/>
+<img src="media/0ace0da3b8af4e680299520b8b8de1a3/three-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">Climate change and sustainability</p>
+<p class="text-component">“</p>
+<p class="text-component">BCG</p>
+<p class="text-component">KPMG</p>
+<p class="text-component">McKinsey</p>
+<p class="text-component">Diversity, equity, and inclusion</p>
+<p class="text-component">“</p>
+<p class="text-component">McKinsey</p>
+<p class="text-component">“</p>
+<p class="text-component">Spencer Stuart</p>
+<p class="text-component">Future of the workforce</p>
+<p class="text-component">Decoding global ways of working</p>
+<p class="text-component">The Boston Consulting Group and its research partner The Network surveyed 209,000 people in 190 countries on their work preferences, including remote work. Among the interesting findings is the breakdown of enthusiasm for remote work by country (the Philippines is first in preference for all-remote work while Denmark is last). Overall, nine of ten people around the world said they want to work remotely at least some of the time. But only one in four said they want to switch to a completely remote model. And the desire to work remotely is not limited to knowledge workers. People in social care, services, and manufacturing all expressed interest in remote work, although it may be not be realistic, given the nature of the jobs.</p>
+<p class="text-component">BCG</p>
+<img src="media/2dcc68e27d7417f9a9312a190d220fe2/six-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Taking a stand on the presidential election</p>
+<p class="text-component">Great attrition or great attraction: The choice is yours” </p>
+<p class="text-component">This McKinsey Quarterly article is based on an extensive survey of employers and employees in Australia, Canada, Singapore, the United Kingdom, and the United States and combines analysis and prescriptions. The article tees up prescriptions for executives through a series of questions. </p>
+<p class="text-component">“</p>
+<p class="text-component">McKinsey</p>
+<img src="media/93d1cdc7dee47698f971d6b33090cb08/goldstandard-oct-2021-5-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">- Do we shelter toxic leaders? 
+- Do we have the right people in the right places
+
+- How strong was our culture before the pandemic? 
+- Is our work environment transactional? 
+- Are our benefits aligned with employee priorities? 
+- Employees want career paths and development
+
+- How are we building a sense of community?  
+</p>
+<p class="text-component">(especially managers)? </p>
+<p class="text-component">opportunities. Can we provide it? </p>
+<p class="text-component">Its conclusion is sobering for executives: “If you lead a large team or a company, remember this: the Great Attrition is real, will continue, and may get worse before it gets better.”</p>
+<p class="text-component">Supply chain</p>
+<p class="text-component">Traceability: The next supply chain revolution”</p>
+<p class="text-component">Many firms published this year on the supply-chain disruptions caused by the pandemic. In this article, Bain authors stepped back from the current turmoil and looked at the benefits of product traceability in the supply chain. These include higher efficiency, responsiveness, and sustainability. The article, summarizing a broader report that Bain wrote with the World Economic Forum, notes that traceability will also lead to more revenue growth, lower costs, and higher shareholder returns. The authors warn that companies that don’t pursue traceability open themselves up to supply-chain disruptions and product-safety concerns.</p>
+<p class="text-component">Bain</p>
+<img src="media/ffeac6094f0faa4ef83b9fe70c8d3c2f/eight-full.jpeg" alt=""  class="image-component"/>
+<p class="text-component">“</p>
+<p class="text-component">Supply chains as a game-changer in the fight against climate change”</p>
+<p class="text-component">In this article, BCG authors offer nine initiatives that companies can take to address their supply-chain emissions. (It’s a summary of a longer report from the World Economic Forum in collaboration with BCG.) They found that eight global supply chains account for more than 50 percent of annual greenhouse gas emissions. “Only a small proportion of these emissions are produced during final manufacturing. Most are embedded in the supply chain—in base materials, agriculture, and the freight transport needed to move goods around the world.” </p>
+<p class="text-component">“</p>
+<p class="text-component">BCG</p>
+<img src="media/6b647ea9723afb8bf09423d6747999a3/nine-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Making supply chain decarbonization happen”</p>
+<p class="text-component">I’m always interested in how competing firms address similar topics, and this McKinsey author also explored the role of the supply chain in decarbonization. The author notes that Scope 3 emissions—those generated upstream and downstream in the value chain—account for 80 percent of companies’ climate impact. The article details why organizations are finding it especially hard to reduce these emissions, including lack of transparent carbon-accounting and tracking practices and the challenges of working with multiple stakeholders and sustaining engagement of stakeholders over a long period. Companies must act: customers, regulators, and investors will be looking closely and subjecting underperformers to the public spotlight. </p>
+<p class="text-component">McKinsey</p>
+<img src="media/6cd626d47f80107e3a453fbdef65aa22/ten-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">“</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

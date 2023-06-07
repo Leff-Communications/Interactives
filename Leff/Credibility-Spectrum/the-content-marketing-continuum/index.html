@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'heathers-project',
+            issueAliasSlug: 'the-content-marketing-continuum',
+            issue: {"id":211698,"projectId":19406,"slug":"experience-5c91060cb4a5b","name":"The content marketing continuum","status":"published","creationDate":"2019-03-19T15:09:00.000Z","lastModifiedDate":"2019-04-05T20:45:10.000Z","deletionDate":null,"firstPublishedDate":"2019-04-02T17:43:32.000Z","wipExperienceVersionId":643406,"publishedExperienceVersionId":664463,"createdByMemberId":6387,"primaryIssueAliasId":291351,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-5c91060c6f093.jpg","importLinkShared":0,"lastPublishedDate":"2019-04-05T20:45:19.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":6387,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p8b1f73887efb","title":"The content marketing continuum"},
+            docVersion: {"id":664463,"experienceId":211698,"slug":"experience-version-5ca7be5f85f68","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v11\/experience-version-5ca7be5f85f68.js","themingBackgroundImageUri":null,"seoTitleKeywords":"The content marketing continuum","seoMetaKeywords":"","seoMetaDescription":"The content marketing continuum","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-5ca7be5f86040","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2019\/04\/05\/8879f2d4945bc861ff5df95840009b7f\/page-thumbnail.jpg?imageOpt=1&crop=870,442,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-04-05T20:45:19.000Z","modificationDate":"2019-04-05T20:45:19.000Z","publishedDate":"2019-04-05T20:45:19.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af6652-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-BkObl","cssFamilyName":"ITC Avant Garde Std Bk-cpYppPdI","cssFileURL":"fonts\/0b4d9c5c-cfa5-4ee8-baf8-b0ee95130979\/itc-itcavantgardestd-bkobl.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5969f30-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bk","cssFamilyName":"ITC Avant Garde Std Bk-y4IYhiFJ","cssFileURL":"fonts\/6a3713cc-385f-43e9-8636-c1f2051aec89\/itc-itcavantgardestd-bk.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Bk","familyGuid":"Uploaded|d3c5a10f-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a23d-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Demi","cssFamilyName":"ITC Avant Garde Std Bk-EFVqoG5Y","cssFileURL":"fonts\/ef010c1f-d1aa-4784-ade8-73ba0d790431\/itc-itcavantgardestd-demi.css","api":"Uploaded","woffFileURL":null},"Uploaded|d5af60b5-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Md","familyGuid":"Uploaded|d3c5a2d0-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d5af60b5-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Bold","cssFamilyName":"ITC Avant Garde Std Md-zn7JcYg2","cssFileURL":"fonts\/09051c60-ce9c-4ac4-9640-a832f08bfb2d\/itc-itcavantgardestd-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|d596a589-3d30-11e8-88f3-0e55d9bc9e68":{"familyName":"ITC Avant Garde Std Md","familyGuid":"Uploaded|d3c5a2d0-3d30-11e8-88f3-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":740,"variantGuid":"Uploaded|d596a589-3d30-11e8-88f3-0e55d9bc9e68","variantName":"ITC - ITCAvantGardeStd-Md","cssFamilyName":"ITC Avant Garde Std Md-BkzPxfqt","cssFileURL":"fonts\/457e52c5-e66c-4326-97c1-cf3a21b0fc6f\/itc-itcavantgardestd-md.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>The content marketing continuum The content marketing continuum</title>
+
+
+
+        <meta name="description" content="The content marketing continuum"/>
+
+    <meta property="og:title" content="The content marketing continuum"/>
+        <meta property="og:image" content="media/8879f2d4945bc861ff5df95840009b7f/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The content marketing continuum">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/8879f2d4945bc861ff5df95840009b7f/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5ca7be5f85f68.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_5ca7be5f85f68",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/95d21c8220ba9dc7c4f3673fd17c26b7/icon-1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Directly aimed at getting prospective buyers to make a purchase. Because 
+the clear aim of a brochure is to make a sale, readers are likely to view claims with skepticism. (Note that by some definitions, brochures and other blatantly commercial overtures do not qualify as content marketing.) 
+
+Similar to a brochure, website copy generally maintains a promotional tone 
+and appeals mainly to audiences that have already identified a specific need and are looking to meet it.
+</p>
+<p class="text-component">Brochure, commercial, website copy</p>
+<img src="media/fd6bb50c47f6bc63e112ce186def4788/icon-6-full.png" alt=""  class="image-component"/>
+<img src="media/76d2a4a027ead843791cdbc6cfe0e353/icon-5-full.png" alt=""  class="image-component"/>
+<img src="media/fb401e0f3aa9b50d90f92faf836dff93/icon-4-full.png" alt=""  class="image-component"/>
+<img src="media/cab4d7cc11e1bdf593a0a6cba0c36cef/icon-3-full.png" alt=""  class="image-component"/>
+<img src="media/95d21c8220ba9dc7c4f3673fd17c26b7/icon-1-full.png" alt=""  class="image-component"/>
+<img src="media/849c51f75058fd5a9df698491a49f5d4/5-full.png" alt=""  class="image-component"/>
+<img src="media/1fd0d6296a7a734a6435c852941a975f/4-full.png" alt=""  class="image-component"/>
+<img src="media/c669a86044f222e5f19df7a14a803be5/3-full.png" alt=""  class="image-component"/>
+<img src="media/d5ab5602d874626607c701d2e94cf00a/1-full.png" alt=""  class="image-component"/>
+<p class="text-component">Journalism</p>
+<p class="text-component">Article, white paper, report</p>
+<p class="text-component">Blog, LinkedIn post, 
+talking-head video</p>
+<p class="text-component">Brochure,
+commercial, website copy</p>
+<p class="text-component">Credibility</p>
+<img src="media/d6c9a8a1095758ece39cb3aecd30c582/leff-logo-full.png" alt=""  class="image-component"/>
+<img src="media/5df8ab2bccd162f9215740a4d85dc646/dashed-line-full.png" alt=""  class="image-component"/>
+<img src="media/5df8ab2bccd162f9215740a4d85dc646/dashed-line-full.png" alt=""  class="image-component"/>
+<img src="media/d3e243b76b8a662a1a5e99d154dccd12/yellow-shape-full.png" alt=""  class="image-component"/>
+<p class="text-component">The content marketing continuum</p>
+<p class="text-component">Volume of content produced</p>
+<img src="media/f441d7a8e3736dab3a0e18d458f1c2da/2-full.png" alt=""  class="image-component"/>
+<img src="media/fbd35536d9e77fb1448734dfcef4100a/arrow-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Case study</p>
+<p class="text-component">Case study</p>
+<p class="text-component">In theory, these would offer solutions to difficult business problems and draw in readers who face similar challenges. In practice, however, case studies tend to fall short on substance and credibility since the proposed solution is often, “Hire us.”</p>
+<img src="media/cab4d7cc11e1bdf593a0a6cba0c36cef/icon-3-full.png" alt=""  class="image-component"/>
+<p class="text-component">Blog, LinkedIn post, talking-head video</p>
+<p class="text-component">Offer a short, personal take on a timely topic, or perhaps a fresh take on a perennial one. While it’s possible to share insights in 600 or 800 words or a 2-minute video, these are often too introductory to be considered true thought leadership. Some blog posts can serve as a teaser for or lead-in to a more in-depth piece.</p>
+<img src="media/76d2a4a027ead843791cdbc6cfe0e353/icon-5-full.png" alt=""  class="image-component"/>
+<p class="text-component">Article, white paper, report</p>
+<p class="text-component">Seek to provide a better understanding of the context surrounding a complex business problem, and then propose what may be an equally complex solution. These may include distinctive market or industry analysis; insights into common misconceptions or pitfalls; and detailed, actionable advice. </p>
+<img src="media/fb401e0f3aa9b50d90f92faf836dff93/icon-4-full.png" alt=""  class="image-component"/>
+<p class="text-component">Journalism</p>
+<p class="text-component">(This is not content marketing, it is placed here to indicate that the extreme end of the spectrum would be complete editorial independence—something that no for-profit entity can every truly achieve. For example, however honest a consulting firm might be in its analysis, it could never publicly take a client 
+to task.) </p>
+<img src="media/fd6bb50c47f6bc63e112ce186def4788/icon-6-full.png" alt=""  class="image-component"/>
+<p class="text-component">The thought-leadership zone</p>
+<p class="text-component">When executed well, content 
+in these categories can fall anywhere in the shaded part of the continuum, from veiled sales pitch to pure thought leadership.</p>
+<p class="text-component">Note: Numbers 3–5 aren't on fixed spots along the continuum</p>
+<p class="text-component">Hover over numbers for more information</p>
+<img src="media/3a8e0801fbb655b82ac79e2d27b34d39/click-icon.svg" alt=""  class="image-component"/>
+<img src="media/bbbab06ca690b8093bcaa6a2ead22099/curve-full.png" alt=""  class="image-component"/>
+<p class="text-component">Fullscreen</p>
+<p class="text-component">Fullscreen</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

@@ -1,0 +1,426 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.8.2',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'leff-communications',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'test',
+            issueAliasSlug: 'b2b',
+            issue: {"id":80986,"projectId":13699,"slug":"experience-594c24e3daee2","name":"B2B Content Marketing Strategy","status":"published","creationDate":"2017-06-22T20:13:23.000Z","lastModifiedDate":"2018-02-26T21:19:29.000Z","deletionDate":null,"firstPublishedDate":"2017-07-18T21:35:19.000Z","wipExperienceVersionId":227269,"publishedExperienceVersionId":236530,"createdByMemberId":6387,"primaryIssueAliasId":129831,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/leff-communications\/studio-thumbnails\/page-594c277e2b7ab.jpg","importLinkShared":0,"lastPublishedDate":"2017-07-25T18:46:03.000Z","lastModifiedByMemberId":6387,"lastPublishedByMemberId":null,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"61bdf8da-p53059788856e","title":"B2B Content Marketing Strategy"},
+            docVersion: {"id":236530,"experienceId":80986,"slug":"experience-version-597791e9afff1","loadLowRes":1,"seoNoIndex":0,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/doc-version-json\/v15\/experience-version-597791e9afff1.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":null,"seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9b00b6","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/bbe5b6b25acf3b26e9a171bd5e214563\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9b8059","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/06b61af669cae46c6576cdcd633ee786\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9bcfbf","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/a0c21611d05dc1454a1eaa1f273d28b8\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9c47c3","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/c0f65cf10bbf0b4f349c4755c36b53e5\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9cb216","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/5dd5a1e335336f4c19e895b215c61b17\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9d985e","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/7c4ecffda2a9298858204b7240473a14\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791e9dd94d","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/89a5ea9f5fcbe4966b32f18be864bfc6\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791ea22c2c","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/69ab227a9751cc142ca42483bfd8867f\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791ea27446","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/2d989998a618eeef49afc4510dd1170f\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791ea2bdb9","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/c7cf5508b666ee6afdd2c4ca039a4fe2\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791ea30689","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/367bb331168e1fc35906295396acde74\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791eb350ad","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/280635ee18998c4673b2d504f03ea255\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791eb39cc9","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/aafd3191fa4db29db7b8f65d3c672e49\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791eb3e911","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/ae69a90890a2b5ff8db1993d9ede7d25\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791eb4531d","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/7699d790ed46da67367b5e0554502b96\/page-thumbnail-crop.jpg"},{"uri":"\/v1\/account\/leff-communications\/pages\/page-597791eb497a4","thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/leff-communications\/page-thumbnails\/2017\/07\/25\/071a0b9cc728bb7b34c4bf48a9ed3aa7\/page-thumbnail-crop.jpg"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2017-07-25T18:46:03.000Z","modificationDate":"2017-07-25T18:46:03.000Z","publishedDate":"2017-07-25T18:46:01.000Z","committedByMemberId":6387,"unsupportedBrowserRedirectUrl":"","ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":0,"tarExportUrl":null,"pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":0,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":1,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":false,"(BETA) Account Level Roles":false,"New Text Tool":false,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":false,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":false,"(New Text Tool) Columns":false,"Gemma":false,"App Switcher":false,"Experience Sharing":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>B2B Content Marketing Strategy</title>
+
+
+
+
+    <meta property="og:title" content="B2B Content Marketing Strategy"/>
+        <meta property="og:image" content="media/bbe5b6b25acf3b26e9a171bd5e214563/page-thumbnail-crop.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="B2B Content Marketing Strategy">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/bbe5b6b25acf3b26e9a171bd5e214563/page-thumbnail-crop.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-597791e9afff1.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_leff_communications_document_versions_experience_version_597791e9afff1",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.bd5bcfd527b1ef8545415e256fbf6680.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.e5086042fe929762e7fc82feaf1d6d5b.css"/>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/b1f6cf2561e228b867fe504721ecf5b2/text-full.png" alt=""  class="image-component"/>
+<img src="media/0c1e3d4d8228b91fe4943b9f6bf253fe/text2-full.png" alt=""  class="image-component"/>
+<img src="media/cad3b08677304d26706d384d93b4de11/logo-group-full.png" alt=""  class="image-component"/>
+<img src="media/c6c62d271f5749896a86f3784adbaaae/rectangle-full.png" alt=""  class="image-component"/>
+<img src="media/d93c74c424b3ddd6556a84935942bbc7/b2b-paths-full.png" alt=""  class="image-component"/>
+<img src="media/c5803b2c4cf74fe205bf3b264f95f398/rectangle-textframe-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/d803f6c5c7a8a1eccddd630dd9758f08/videos-full.png" alt=""  class="image-component"/>
+<img src="media/df9cdfbac4931c6719621d0864558e69/socialnetworks-full.png" alt=""  class="image-component"/>
+<img src="media/83a21d506722399d8916e121b726faaa/seo-full.png" alt=""  class="image-component"/>
+<img src="media/edaa8fe18466fcedadb274dc6a9bbce1/ads-full.png" alt=""  class="image-component"/>
+<img src="media/474074478728f9207a850d30623e196c/ppc-full.png" alt=""  class="image-component"/>
+<img src="media/89b94688b7a045caaaa95396d193f00f/reviews-full.png" alt=""  class="image-component"/>
+<img src="media/a1c265417a28254fb036d76c4e2b6260/email-full.png" alt=""  class="image-component"/>
+<img src="media/8ab7890f32404b955e7a3e239f004560/blogs-full.png" alt=""  class="image-component"/>
+<img src="media/c9843256d3cbba55a20c17b8ff2556d8/b2b-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/63e523f5f6b759932de662ea5c66d105/b2c-full.png" alt=""  class="image-component"/>
+<img src="media/968117b09ae752461f8096f2eecf1a3a/text-lowbody-full.png" alt=""  class="image-component"/>
+<img src="media/986de71e4455dfe1daa8f7df2f72d96a/text-topbody-full.png" alt=""  class="image-component"/>
+<img src="media/c83197da1c91a40521cb72ee6db0fe3d/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/a496344e54057035c13384fc9624f97b/dottedbox-full.png" alt=""  class="image-component"/>
+<img src="media/3bdcf766fc7a27dbe91f4d08413c6262/rectangle-center-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/7e41f0442983149810ff06769d3cfe0a/footnote-full.png" alt=""  class="image-component"/>
+<img src="media/cf92719c1762a5314587ba13693739a6/percentages2-full.png" alt=""  class="image-component"/>
+<img src="media/a8e93f937122895c6b4a72587dfd5413/percentages-full.png" alt=""  class="image-component"/>
+<img src="media/dbb8116b836d80c9864cbcaab8200584/butjust-full.png" alt=""  class="image-component"/>
+<img src="media/5ca57de5babd95bfd62b64cba9afadcc/sidetext2-full.png" alt=""  class="image-component"/>
+<img src="media/f368b3e8ab1d092d8325d6648fc00a71/sidetext1-full.png" alt=""  class="image-component"/>
+<img src="media/8b23a6838d1e35ed2317a976c9ee4d36/piechart2-full.png" alt=""  class="image-component"/>
+<img src="media/b6d1d7fcdf10e873b647a8af10ae2a6a/piechart1-full.png" alt=""  class="image-component"/>
+<img src="media/6ae3d7a8638270e2ee5059fcd051a2f9/centerline-full.png" alt=""  class="image-component"/>
+<img src="media/973aada149449374309935f0535737db/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/390233ec7b1eb7ae5a98eeb53e36e3ea/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/e8bc1d2d41dcfca4144db0aa5627047b/red-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/c0cb0f8aa7dc4af891cc307d17ea4b68/blue-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/7d643b0818c88e2aa93398172ee04a88/green-arrow-2-full.png" alt=""  class="image-component"/>
+<img src="media/d502f5337f7d5fe74eae2adc39080c25/green-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/55e0f8c06dc4b0d711ef97a5153c0f8e/red-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/ef362f9e2a26b2a10c3ae51e309192c6/blue-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8c5f6cbdf0576957870f9bad6ed97b81/medium-length-cycle-full.png" alt=""  class="image-component"/>
+<img src="media/db589466de7bcf2a0259ec2ee719a51f/short-length-cycle-full.png" alt=""  class="image-component"/>
+<img src="media/db589466de7bcf2a0259ec2ee719a51f/short-length-cycle-full.png" alt=""  class="image-component"/>
+<img src="media/1d029511d38e8bc3f6bf9903f6071325/blue-textgroup-2-full.png" alt=""  class="image-component"/>
+<img src="media/af6766510aebb34448b756db9a13aa4d/red-textgroup-2-full.png" alt=""  class="image-component"/>
+<img src="media/be3376539e41df40f99d77fc220bd09f/green-textgroup-2-full.png" alt=""  class="image-component"/>
+<img src="media/76dda60b1114c60d108f5ef0aec6d3e8/b2b-full.png" alt=""  class="image-component"/>
+<img src="media/c67c59d02dbcc06d29d303020757a1a7/b2c-full.png" alt=""  class="image-component"/>
+<img src="media/f7b1374cac425eaee34593e689ff6659/green-textgroup-1-full.png" alt=""  class="image-component"/>
+<img src="media/c15808895afb5f1696efa5832cf774ad/money-full.png" alt=""  class="image-component"/>
+<img src="media/9f853f0a214a7572646bb59655fa9b8f/check-box-full.png" alt=""  class="image-component"/>
+<img src="media/99d9059522137ba5aa8af03debe76e9b/blue-eye-full.png" alt=""  class="image-component"/>
+<img src="media/c15808895afb5f1696efa5832cf774ad/money-full.png" alt=""  class="image-component"/>
+<img src="media/2faa2ceb1bc7d929a146e15e1745c5d6/longer-cycle-full.png" alt=""  class="image-component"/>
+<img src="media/c040c7dac486374e29daa30825306a44/conversion-full.png" alt=""  class="image-component"/>
+<img src="media/bf1f7b3518903404381fb38232f0e7be/product-service-full.png" alt=""  class="image-component"/>
+<img src="media/65ea79c63188a259b51fef384548df4d/brand-perception-full.png" alt=""  class="image-component"/>
+<img src="media/c040c7dac486374e29daa30825306a44/conversion-full.png" alt=""  class="image-component"/>
+<img src="media/846aaf6ab1bfea93509114f67af8ba90/red-textgroup-1-full.png" alt=""  class="image-component"/>
+<img src="media/bf1f7b3518903404381fb38232f0e7be/product-service-full.png" alt=""  class="image-component"/>
+<img src="media/1bd56cdfd107595a81601a23cd660372/medium-cycle-full.png" alt=""  class="image-component"/>
+<img src="media/9f853f0a214a7572646bb59655fa9b8f/check-box-full.png" alt=""  class="image-component"/>
+<img src="media/d57fc516c7ca949b6dbd8dcf3b2451ba/blue-textgroup-1-full.png" alt=""  class="image-component"/>
+<img src="media/99d9059522137ba5aa8af03debe76e9b/blue-eye-full.png" alt=""  class="image-component"/>
+<img src="media/a05627cbe71586bf19cdaf6550186f64/blog-post-blue-full.png" alt=""  class="image-component"/>
+<img src="media/44233fd4e30882ad906957a28e1c94af/long-cycle-full.png" alt=""  class="image-component"/>
+<img src="media/65ea79c63188a259b51fef384548df4d/brand-perception-full.png" alt=""  class="image-component"/>
+<img src="media/30eafd2c788ff3eebc804eb21652fbc9/lines-full.png" alt=""  class="image-component"/>
+<img src="media/0e9662e0b889de761137ab682df29210/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/cf970f2b468e9be58cf9f34debbd3fa2/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/c9e2ea1ccded097f0a6492370b634bfe/support-full.png" alt=""  class="image-component"/>
+<img src="media/6bc8bfcb895a3ed353a234143bd1ba5a/sales-full.png" alt=""  class="image-component"/>
+<img src="media/dad0f062bd80b506897e2caef8af810d/profile-full.png" alt=""  class="image-component"/>
+<img src="media/a3202c57ad473e661197cc1cbc12ff9d/intel-full.png" alt=""  class="image-component"/>
+<img src="media/4cb9bacfcc96fc053d7c75d4ae1f92e6/elevate-full.png" alt=""  class="image-component"/>
+<img src="media/291339e0ef840082bba5f97e53d033ad/companysbrand-full.png" alt=""  class="image-component"/>
+<img src="media/3380cfe37ed3d8a80d68cfb9cf1434de/codify-full.png" alt=""  class="image-component"/>
+<img src="media/bbac38ff9fb5f68a4f6dcb3c4415a8f7/build-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/5768dff660922a857f0a1e5f0e210b3f/whendone-full.png" alt=""  class="image-component"/>
+<img src="media/30eafd2c788ff3eebc804eb21652fbc9/lines-full.png" alt=""  class="image-component"/>
+<img src="media/ffc817abd9c417978869ea26f8c812ea/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/3078797ac0dc7db0587a5fd29f09a0d8/text-body-low-full.png" alt=""  class="image-component"/>
+<img src="media/c5ef8e70ae53de1cd6d04e8f797225d0/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/eba5f93e6ed4afe02d2f1bd99f4670bf/thought-leadership-full.png" alt=""  class="image-component"/>
+<img src="media/d1423806dc0fcf50fca96d8929041547/content-marketing-full.png" alt=""  class="image-component"/>
+<img src="media/ba55cc87f0effbf1e98790f76064b895/icon-group-2-full.png" alt=""  class="image-component"/>
+<img src="media/eeba437450bd5b1a8b00ae756a4f5ab5/icon-group-1-full.png" alt=""  class="image-component"/>
+<img src="media/05c0e3dcb6e3833f9fcf5a63ca8e6f36/lines-blue-full.png" alt=""  class="image-component"/>
+<img src="media/962652eebdca3a57aa955beaf0924e06/top-text-full.png" alt=""  class="image-component"/>
+<img src="media/8c6a7da407efab4693de6f219326b1b0/rectangle-bg-dark-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/bc7d695878ee81c78f3959392f249003/footnote-full.png" alt=""  class="image-component"/>
+<img src="media/138753fa7b239e0a6e1e7c112f9730a4/text-full.png" alt=""  class="image-component"/>
+<img src="media/c98b5a89a00693124600e9ee50584147/text-2-full.png" alt=""  class="image-component"/>
+<img src="media/f75fbfd8702088ba13886cf0640cde46/rectangle-full.png" alt=""  class="image-component"/>
+<img src="media/9c0cf6640a5965f5aa6a614efe3c2cf0/whitepapers-full.png" alt=""  class="image-component"/>
+<img src="media/cd36a2cf0ea9fd660d3b60e7c91435b2/webinars-full.png" alt=""  class="image-component"/>
+<img src="media/6e05b6306809c7b9fe4d49f4f714b08f/videos-full.png" alt=""  class="image-component"/>
+<img src="media/45c1ee856eab3293e7b598dfe6423e95/inpersonevents-full.png" alt=""  class="image-component"/>
+<img src="media/4969d80f5ad15e15a0b15d19a5b3f777/casestudies-full.png" alt=""  class="image-component"/>
+<img src="media/2a750923373a4f46e6a8548b5028e49f/top-five-full.png" alt=""  class="image-component"/>
+<img src="media/1e572c5e17a355f1c6fd645138d9c89c/white-line-full.png" alt=""  class="image-component"/>
+<img src="media/9b1bdb6910d26704f4e0c619bdbd53cb/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/5c83f8e5a62657d82254a49fc0084a99/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/e372a2e078c48fa2e15407637269146b/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/569975e63b06a3c0f893d40c9843df7c/twitteryoutube-full.png" alt=""  class="image-component"/>
+<img src="media/09c09eec61ce6a555ffbf4253ab1821e/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/422d7dd5cf236ff2011f0fd6855cac95/text-body-2-full.png" alt=""  class="image-component"/>
+<img src="media/a2b65bd439ab4099c2a0229b201cfc43/linkedinslideshare-full.png" alt=""  class="image-component"/>
+<img src="media/94e8333da67858eb75e5e6331d4f7a98/facebookinstagram-full.png" alt=""  class="image-component"/>
+<img src="media/85e227b17569745e0c4e2126a457ab08/diagram-full.png" alt=""  class="image-component"/>
+<img src="media/c67c59d02dbcc06d29d303020757a1a7/b2c-full.png" alt=""  class="image-component"/>
+<img src="media/76dda60b1114c60d108f5ef0aec6d3e8/b2b-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/295871d36b788512957d5b723e566b9c/text-full.png" alt=""  class="image-component"/>
+<img src="media/c04da31075096a2ad4a1d4e58efec96f/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/cca7ef64366b5e8fbff1e75aa7688f68/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/49bc73132d346e618c128727827f706b/manage-full.png" alt=""  class="image-component"/>
+<img src="media/aa85bfa1434059f381069ddd2dcbc88b/develop-full.png" alt=""  class="image-component"/>
+<img src="media/fb9e0ff589f6aac4b8d3b1b03eebff36/determine-full.png" alt=""  class="image-component"/>
+<img src="media/e074febeb8a9eb60f419458aa334c2c5/create-full.png" alt=""  class="image-component"/>
+<img src="media/a4cf71787dd93cfffca6eddc4526e5f8/arrow-full.png" alt=""  class="image-component"/>
+<img src="media/a4cf71787dd93cfffca6eddc4526e5f8/arrow-full.png" alt=""  class="image-component"/>
+<img src="media/a4cf71787dd93cfffca6eddc4526e5f8/arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8d3c28a3d111ce3bc5c04ddc30f0c97f/4-full.png" alt=""  class="image-component"/>
+<img src="media/a54a673fecd680cbb933ebf064e61f4c/3-full.png" alt=""  class="image-component"/>
+<img src="media/178efe33134b61f9cad43af2aec2435b/2-full.png" alt=""  class="image-component"/>
+<img src="media/76e9b2efe7951c80235ed18aa1faf8f7/1-full.png" alt=""  class="image-component"/>
+<img src="media/1db98ffeac88e451199af4329bd80c66/rectangle-full.png" alt=""  class="image-component"/>
+<img src="media/30eafd2c788ff3eebc804eb21652fbc9/lines-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/cc0794b675b293897b6e134515530493/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/428349e32ac6e5fead4ab2e82907acc1/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/8e591965aaf66fc4893e3e41e1234ca4/white-arrow-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/822b6cc2f5713a0496be15af446109e6/text-full.png" alt=""  class="image-component"/>
+<img src="media/7d25928be55f4857f6fb8196698d346a/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/e6d21ed8a57c136f6fe0f5cf6a16c8c7/text-red-full.png" alt=""  class="image-component"/>
+<img src="media/608507ae68cecb1db8876cc4fd9f67ca/text-orange-full.png" alt=""  class="image-component"/>
+<img src="media/8c71f3ceb8bea66881081b9687ba806a/text-darkblue-full.png" alt=""  class="image-component"/>
+<img src="media/586f9a9fd3caf570df84621072aff2d3/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/44854f3dec383681ea1820f95a154b63/text-blue-full.png" alt=""  class="image-component"/>
+<img src="media/b06bff05364a9d898c788f503fceea3e/red-full.png" alt=""  class="image-component"/>
+<img src="media/82e6501f91dd8a2cfcf24b4832fb662d/orange-full.png" alt=""  class="image-component"/>
+<img src="media/2efc5b4688ad454988df470bd1e64c16/darkblue-full.png" alt=""  class="image-component"/>
+<img src="media/e44bd92faa415b5b4a59515c8574668a/blue-full.png" alt=""  class="image-component"/>
+<img src="media/1e572c5e17a355f1c6fd645138d9c89c/white-line-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/9dcf963e7b19bdd4b784a96592d4c87a/text-full.png" alt=""  class="image-component"/>
+<img src="media/1720a201d08033dbd3cd843bb2ce34f5/chart-full.png" alt=""  class="image-component"/>
+<img src="media/1e572c5e17a355f1c6fd645138d9c89c/white-line-full.png" alt=""  class="image-component"/>
+<img src="media/a99540d79a415c28d59239c77090fb73/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/525bb41dcc25029cd0ae1e2d3b66a3a5/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/5a6af2352698fc08fd6be5cd40bed8c4/text-group-2-full.png" alt=""  class="image-component"/>
+<img src="media/9e5379e3d738c4864e2ebcadfe3b8737/text-group-1-full.png" alt=""  class="image-component"/>
+<img src="media/2ce25977df843e3ce18939bf6b933d48/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/12bd5353a80759113473f9adeff79de8/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/1aaaebff9aa151b275f6002e95edc20c/content-full.png" alt=""  class="image-component"/>
+<img src="media/f59c53a2792b76ab9abbfc8941333ace/channels-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/457611111cdcb050c83a167a80d276c8/whitelines-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/ac853a473a515ca3a44c2f278f7da3d8/text-5-full.png" alt=""  class="image-component"/>
+<img src="media/1ae9ef4be58a9d7d788b63c8efbbd9f3/text-4-full.png" alt=""  class="image-component"/>
+<img src="media/44c6e4dfd0b1a0f12d14bd7508b18577/text-3-full.png" alt=""  class="image-component"/>
+<img src="media/ea5fe1b758de9e51381621c5772d3336/text-2-full.png" alt=""  class="image-component"/>
+<img src="media/bf142c2af1500e4ae59093d2c7d1f7a0/text-1-full.png" alt=""  class="image-component"/>
+<img src="media/a373a480ee68c27649fa4a58b32441b9/trafficsource-full.png" alt=""  class="image-component"/>
+<img src="media/a5f91c4334e9e88e7057a437d0a0cdcd/timeonsite-full.png" alt=""  class="image-component"/>
+<img src="media/dfb46db798e69b7c9270591169447599/subscribers-full.png" alt=""  class="image-component"/>
+<img src="media/d3898da567f4f957029c8ae05777ae7d/shares-full.png" alt=""  class="image-component"/>
+<img src="media/9ce64929f7d5cbbc929a63a617592263/comments-full.png" alt=""  class="image-component"/>
+<img src="media/30eafd2c788ff3eebc804eb21652fbc9/lines-full.png" alt=""  class="image-component"/>
+<img src="media/7d129f4f5f8c5ae87ca744ec18b4bd71/text-bottom-full.png" alt=""  class="image-component"/>
+<img src="media/e28a7819a6cd613d4c0f8e44b39b8b3e/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/7da3d9392743276421d77969ed16256e/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/e69328a748548fa2af31aa198348bad3/text-title-full.png" alt=""  class="image-component"/>
+<img src="media/a93dac5b833bc2c6b9adb2451c15c935/text-body-full.png" alt=""  class="image-component"/>
+<img src="media/14643730a91e8a906cfd73d679887427/topbar-full.png" alt=""  class="image-component"/>
+<img src="media/73199c52d5016ffbdd1060d21259a108/rectangle-bg-full.png" alt=""  class="image-component"/></div>
+            <div class="page"><img src="media/3474e21a92f4e7ac93ba293de7f6af11/related-reading-1-full.png" alt=""  class="image-component"/>
+<img src="media/f879c675e67bcc09518b892253ddf2fd/related-reading-4-full.png" alt=""  class="image-component"/>
+<img src="media/a3489b5aafe3417b17748878414fd47b/related-reading-3-full.png" alt=""  class="image-component"/>
+<img src="media/58eeade75a3730bdc7b6eca335c93f51/related-reading-2-full.png" alt=""  class="image-component"/>
+<img src="media/01550e971b6e14b9daa4f4ed9f0df787/related-reading-5-full.png" alt=""  class="image-component"/>
+<img src="media/d847d21d7711b3598a762fbe941e6765/copyright-full.png" alt=""  class="image-component"/>
+<img src="media/cad3b08677304d26706d384d93b4de11/logo-group-full.png" alt=""  class="image-component"/>
+<img src="media/c6c62d271f5749896a86f3784adbaaae/rectangle-full.png" alt=""  class="image-component"/>
+<img src="media/d93c74c424b3ddd6556a84935942bbc7/b2b-paths-full.png" alt=""  class="image-component"/>
+<img src="media/c5803b2c4cf74fe205bf3b264f95f398/rectangle-textframe-full.png" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
